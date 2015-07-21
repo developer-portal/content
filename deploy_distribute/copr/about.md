@@ -5,4 +5,4 @@ section: deployment
 ---
 
 # Copr Build Service
-A page about Copr Build Service
+This content needs to be created...
