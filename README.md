@@ -6,7 +6,7 @@ The website would consist of several sections. Each section would contain a set 
 **Each content file** must start with initial section in YAML syntax describing the title and where the file belongs. An example for DevAssistant:
 ```yaml
 ---
-title: DevAssistant
+title: Some Title
 page: devassistant
 ---
 ```
