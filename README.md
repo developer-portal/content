@@ -48,3 +48,4 @@ section: tools         # This page would be linked from the main menu in a group
   * xdgapp
   * rolekit
   * openshift
+1. fedoranext
