@@ -1,6 +1,10 @@
+---
+title: Fedora 23 Accepted System Wide Changes Proposals
+section: fedora-features
+---
 ## Fedora 23 Accepted System Wide Changes Proposals
 
-These changes have been accepted by the Fedora [[Fedora_Engineering_Steering_Committee |Engineering Steering Committee]] for the Fedora 23 Release as System Wide Changes.
+These changes have been accepted by the Fedora Engineering Steering Committee for the Fedora 23 Release as System Wide Changes.
 
 ###Harden All Packages
 Hardening is  the process of securing a system/application by reducing its unnecessary functions, or restricting access.
@@ -51,7 +55,7 @@ The newest SELinux userspace project release 2015-02-02 includes a change of the
 * Owner: Miroslav Grepl
 * Release notes owner:
 
-###[[Changes/Two Week Atomic | Two Week Atomic###
+###Two Week Atomic
 Fedora Atomic Host is an implementation of the Project Atomic pattern for a specialized operating system for the deployment of containerized applications. For the past two Fedora releases, we've included an Atomic Host cloud image as a non-blocking deliverable. However, upstream Atomic is moving very fast — by the end of the alpha, beta, final stabilization cycle Fedora uses, the released artifact is basically obsolete. Additionally, the Project Atomic team at Red Hat would like to do their ongoing development work in the Fedora upstream, and the six-month release cycle does not lend itself to that.
 ####Owners####
 * Owner:  Matthew Miller, Colin Walters, Joe Brockmeier, Kushal Das, Adam Miller, Dennis Gilmore
