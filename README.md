@@ -25,6 +25,7 @@ section: tools         # This page would be linked from the main menu in a group
 
 ### Section and Page Names
 First level is a section id. Second level is a page id.
+
 1. tools
   * devassistant
   * docker
@@ -49,5 +50,5 @@ First level is a section id. Second level is a page id.
   * xdgapp
   * rolekit
   * openshift
-1. fedoranext
+5. fedoranext
   * fedoranext
