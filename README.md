@@ -1,5 +1,5 @@
-# content
-Content for the Fedora Developer Portal in Markdown syntax.
+# Content for Fedora Developer Portal
+Contains files with content in Markdown syntax.
 
 ## How To Create a Content
 The website would consist of several sections. Each section would contain a set of pages.
