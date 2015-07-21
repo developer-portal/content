@@ -1,3 +1,8 @@
+---
+title: Ruby on Rails
+page: ruby
+---
+
 ## Ruby on Rails installation
 
 ### Installing Rails from RubyGems.org

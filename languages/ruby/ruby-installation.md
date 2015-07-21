@@ -1,3 +1,9 @@
+---
+title: Ruby
+page: ruby
+section: tech-languages
+---
+
 ## Ruby Installation
 
 ### CRuby

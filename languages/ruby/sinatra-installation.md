@@ -1,3 +1,8 @@
+---
+title: Sinatra
+page: ruby
+---
+
 ## Sinatra installation
 
 To install Sinatra on Fedora as a gem, install Ruby first and then run:
