@@ -1,7 +1,7 @@
 ---
-title: Fedora 23 Accepted System Wide Changes Proposals
-section: fedora-23-self-contained-changes
-page: Fedora Changes and Proposal
+title: Self Contained Changes
+section: fedoranext
+page: fedoranext
 ---
 ## Fedora 23 Accepted Self Contained Changes Proposals ##
 These changes have been accepted by the Fedora Engineering Steering Committee for the Fedora 23 Release as Self Contained Changes.

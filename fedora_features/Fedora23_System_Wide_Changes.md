@@ -1,7 +1,7 @@
 ---
-title: Fedora 23 Accepted System Wide Changes Proposals
-section: fedora-23-system-wide-changes
-page: Fedora Changes and Proposal
+title: System Wide Changes
+section: fedoranext
+page: fedoranext
 ---
 ## Fedora 23 Accepted System Wide Changes Proposals
 
