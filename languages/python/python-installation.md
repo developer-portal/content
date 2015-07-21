@@ -1,3 +1,9 @@
+---
+title: Python
+page: python
+section: tech-languages
+---
+
 ## Python Installation
 
 Python is installed by default in Fedora.

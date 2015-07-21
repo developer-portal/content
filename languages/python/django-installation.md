@@ -1,3 +1,8 @@
+---
+title: Django
+page: python
+---
+
 ## Django installation
 
 To install Django on Fedora:

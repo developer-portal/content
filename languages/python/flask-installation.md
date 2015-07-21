@@ -1,3 +1,8 @@
+---
+title: Flask
+page: python
+---
+
 ## Flask installation
 
 To install flask on Fedora:
