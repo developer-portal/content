@@ -26,11 +26,28 @@ section: tools         # This page would be linked from the main menu in a group
 ### Section and Page Names
 First level is a section id. Second level is a page id.
 
+#### Start
+1. start-sw
+  * web-app
+  * cli-app
+  * gui-app
+  * mobile-app
+2. start-hw
+  * raspberry-pi
+  * arduino
+  * embeded-devices
+3. start-tips
+  * collaboration
+  * documentation
+
+#### Tools
 1. tools
   * devassistant
   * docker
   * vagrant
-2. tech-languages
+
+#### Technology
+1. tech-languages
   * python
   * ruby
   * php
@@ -43,7 +60,9 @@ First level is a section id. Second level is a page id.
   * postgre
   * mariadb
   * sqlite
-4. deployment
+
+#### Deployment
+1. deployment
   * copr
   * scl
   * nulecule
