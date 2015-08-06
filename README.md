@@ -1,6 +1,8 @@
 # Content for Fedora Developer Portal
 Contains files with content in Markdown syntax.
 
+[Fedora Developer Portal project page](https://fedoraproject.org/wiki/Websites/Developer)
+
 ## How To Create a Content
 The website would consist of several sections. Each section would contain a set of pages.
 Each content file must start with initial section in YAML syntax describing the title and where the file belongs.
