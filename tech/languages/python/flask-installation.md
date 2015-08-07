@@ -5,15 +5,14 @@ page: python
 
 ## Flask installation
 
-To install flask on Fedora:
+To install Flask on Fedora:
 
-For python 2:
+For Python 2:
 ```
 # dnf install python-flask
 ```
 
-For python 3:
+For Python 3:
 ```
 # dnf install python3-flask
 ```
-
