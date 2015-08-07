@@ -12,9 +12,18 @@ To use Vagrant with Docker, you need to install the `vagrant` and `docker` packa
 # dnf install vagrant docker
 ```
 
+And start `docker` service:
+
+```
+# systemctl start docker
+```
+
 Vagrant itself comes with the support for Docker baked-in. By installing Docker alongside
 Vagrant you can start using Docker both as a provider and a provisioner. Please refer to
 the official documentation at https://docs.vagrantup.com/v2/ for more.
+
+And do not forget that when using Docker as a Vagrant provider, all Vagrant commands have to
+be ran as root (e.g. with `sudo`). This is similar to running Docker commands directly.
 
 ### Using Docker as a default
 
