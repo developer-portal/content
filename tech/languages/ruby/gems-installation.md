@@ -18,7 +18,6 @@ might fail to install due to complication errors. If you need to compile gems C 
 
 In case you lack the C compiler on your Fedora, you can install C development tools group:
 
-
 ```
 # dnf group install "C Development Tools and Libraries"
 ```

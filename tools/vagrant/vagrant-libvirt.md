@@ -29,6 +29,7 @@ sub-package. To get it, type:
 ```
 
 And install the policy by coping the polkit `.rules` file:
+
 ```
 # cp /usr/share/vagrant/gems/doc/vagrant-libvirt-0.0.26/polkit/10-vagrant-libvirt.rules /usr/share/polkit-1/rules.d/
 ```
