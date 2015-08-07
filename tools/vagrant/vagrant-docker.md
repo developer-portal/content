@@ -22,8 +22,8 @@ Vagrant itself comes with the support for Docker baked-in. By installing Docker 
 Vagrant you can start using Docker both as a provider and a provisioner. Please refer to
 the official documentation at https://docs.vagrantup.com/v2/ for more.
 
-And do not forget that when using Docker as a Vagrant provider, all Vagrant commands have to
-be ran as root (e.g. with `sudo`). This is similar to running Docker commands directly.
+Note: All Vagrant commands have to be ran as root (e.g. with `sudo`). This is similar to running
+Docker commands directly.
 
 ### Using Docker as a default
 
@@ -43,3 +43,21 @@ Or set it for your environment with:
 ```
 export VAGRANT_DEFAULT_PROVIDER=docker
 ```
+
+### Using Docker from Vagrant without password prompts
+
+To use Vagrant with Docker without password prompts it is enough to add yourself to the `vagrant`
+group. This will make `docker` commands password-less as well.
+
+To do so, type:
+
+```
+# groupadd docker && gpasswd -a ${USER} docker && systemctl restart docker
+$ newgrp docker
+```
+
+Above commands will create the group `vagrant` and add current running user to this group. This user
+also need to have administrator privileges.
+
+Note: This has security implications, read about this in the official docs at
+https://docs.docker.com/articles/security/#docker-daemon-attack-surface.
