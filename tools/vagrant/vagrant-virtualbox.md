@@ -26,7 +26,7 @@ provider was changed from VirtualBox to libvirt. To use VirtualBox provider with
 commands, one has to explicitly append `--provider=virtualbox`.
 
 To avoid this, you can set the default provider for your project in the beginning of your
-Vagranfile as:
+Vagrantfile as:
 
 ```
 # Vagrantfile
