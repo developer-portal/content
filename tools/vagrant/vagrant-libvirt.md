@@ -6,7 +6,7 @@ page: vagrant
 ## Vagrant with libvirt support installation
 
 
-To install Vagrant with libvirt support, you need to install the `vagrant-libvirt` package:
+To use Vagrant with libvirt, you need to install the `vagrant-libvirt` package:
 
 ```
 # dnf install vagrant-libvirt
