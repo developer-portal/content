@@ -7,7 +7,7 @@ page: go
 
 ### Go packages from upstream
 
-Upstream projects can be installed with `go get` command. To install `gorilla/context` from GitHub run:
+Upstream projects can be installed with `go get` command. Package names follows the import paths so to install `gorilla/context` from GitHub run:
 
 ```
 $ go get github.com/gorilla/context
