@@ -36,6 +36,8 @@ This variant have the advantage of properly stating of all system dependencies a
 
 The disadvantage of installing Fedora packaged gems is the lack of versions to choose from. There is only one version that is usually available for a given Fedora at a time.
 
+Note that system gems are installed into `/usr/share/gems` and this path needs to be included in `$GEM_PATH` in case you are about to modify it.
+
 #### IsItFedoraRuby
 
 To look whether the required gem is available as an RPM package, look at

@@ -4,7 +4,7 @@ page: ruby
 section: tech-languages
 ---
 
-## Ruby Installation
+## Ruby installation
 
 ### CRuby
 
