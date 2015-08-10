@@ -3,7 +3,7 @@ title: Gems
 page: ruby
 ---
 
-## Gems Installation
+## Gems installation
 
 You can install new gems on Fedora by either installing upstream gems from RubyGems.org or packaged gems from Fedora official repositories.
 
