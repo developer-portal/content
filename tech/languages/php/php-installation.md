@@ -11,55 +11,54 @@ section: tech-languages
 To install PHP, simply type:
 
 ```
-# dnf install php
+# dnf install php-cli
 ```
 
-Above command will install latest stable PHP
-packages including some additional modules. 
+Above command will install latest stable PHP package, which includes the command-line interface executing PHP scripts, /usr/bin/php, and the CGI interface. 
 
-### Web server
 
-To fully make use of PHP you will probably
-want to install web server. 
-Apache is one of the recommended and easy to
-set up. To install Apache, type:
+You might want to install some other packages, e.g. phpunit for unit tests or composer to manage dependencies of PHP projects. You can install them with:
 
 ```
-# dnf install httpd
+# dnf install phpunit composer
 ```
 
-Above command will install latest Apache web server.
-Default working directory is /var/www/html.
-
-To enable Apache autostart on boot, type:
+### PHP modules
+PHP provides only a few set of extensions, other should be installed separately. For example, if you need "mysqli" extension, use:
 
 ```
-# systemctl enable httpd.service
+# dnf install php-mysqli
 ```
 
-To start Apache, type:
+### PEAR
+
+The PHP Extension and Application Repository is a repository of PHP software code. 
+To install PEAR, type:
 
 ```
-# systemctl start httpd.service
+# dnf install php-pear
 ```
-
-### MySQL server
-
-PHP applications can use MySQL server to store data.
-To install MySQL server (Mariadb) type:
+Use pear command to install PEAR extensions. To install Mail_Mime package (for example), type:
 
 ```
-# dnf install mariadb mariadb-server php-mysql
+# pear install Mail_Mime
 ```
 
-To enable Mariadb autostart on boot:
+You can [find more PEAR modules](http://pear.php.net/packages.php).
+
+
+### Frameworks
+
+We have packaged two popular PHP frameworks in Fedora: Zend and Symfony. 
+
+To install Zend framework, type:
 
 ```
-# systemctl enable mariadb.service
+# dnf install php-ZendFramework
 ```
 
-To start Mariadb, type:
+To install Symfony, type:
 
 ```
-# systemctl start mariadb.service
+# dnf install php-symfony
 ```
