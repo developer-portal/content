@@ -1,7 +1,8 @@
 # Content for Fedora Developer Portal
-Contains files with content in Markdown syntax.
 
 [Fedora Developer Portal project page](https://fedoraproject.org/wiki/Websites/Developer)
+
+[Content required for the first iteration](https://github.com/developer-portal/content/milestones/first%20release)
 
 ## How To Create a Content
 The website would consist of several sections. Each section would contain a set of pages.
