@@ -46,6 +46,17 @@ Use pear command to install PEAR extensions. To install Mail_Mime package (for e
 
 You can [find more PEAR modules](http://pear.php.net/packages.php).
 
+### PHP Developement Server
+
+PHP contains simple web server which can be used instead of full-featured web server. It is intended to be used only for development, not for a production environment. 
+
+You can start PHP Development Server by typing this in your project's root:
+
+```
+# php --server localhost:8080 --docroot  .
+```
+Server will be accessible on http://localhost:8080/ .
+
 
 ### Frameworks
 
@@ -54,7 +65,7 @@ We have packaged two popular PHP frameworks in Fedora: Zend and Symfony.
 To install Zend framework, type:
 
 ```
-# dnf install php-ZendFramework
+# dnf install php-ZendFramework2
 ```
 
 To install Symfony, type:
