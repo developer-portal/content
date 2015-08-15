@@ -46,7 +46,7 @@ Use pear command to install PEAR extensions. To install Mail_Mime package (for e
 
 You can [find more PEAR modules](http://pear.php.net/packages.php).
 
-### PHP Developement Server
+### PHP Development Server
 
 PHP contains simple web server which can be used instead of full-featured web server. It is intended to be used only for development, not for a production environment. 
 
