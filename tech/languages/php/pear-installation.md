@@ -4,9 +4,9 @@ page: php
 section: tech-languages
 ---
 
-## PHP
+## PHP Installation
 
-### PHP Installation
+### PHP
 
 To install PHP, simply type:
 
@@ -29,6 +29,22 @@ PHP provides only a few set of extensions, other should be installed separately.
 ```
 # dnf install php-mysqli
 ```
+
+### PEAR
+
+The PHP Extension and Application Repository is a repository of PHP software code. 
+To install PEAR, type:
+
+```
+# dnf install php-pear
+```
+Use pear command to install PEAR extensions. To install Mail_Mime package (for example), type:
+
+```
+# pear install Mail_Mime
+```
+
+You can [find more PEAR modules](http://pear.php.net/packages.php).
 
 ### PHP Development Server
 
