@@ -1,6 +1,7 @@
 ---
 title: Gems
 page: ruby
+order: 2
 ---
 
 ## Gems installation

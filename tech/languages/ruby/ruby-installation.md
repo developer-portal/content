@@ -2,6 +2,7 @@
 title: Ruby
 page: ruby
 section: tech-languages
+order: 1
 ---
 
 ## Ruby installation

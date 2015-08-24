@@ -1,6 +1,7 @@
 ---
 title: Ruby on Rails
 page: ruby
+order: 4
 ---
 
 ## Ruby on Rails installation

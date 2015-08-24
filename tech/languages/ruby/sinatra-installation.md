@@ -1,6 +1,7 @@
 ---
 title: Sinatra
 page: ruby
+order: 5
 ---
 
 ## Sinatra installation

@@ -1,6 +1,7 @@
 ---
 title: Bundler
 page: ruby
+order: 3
 ---
 
 ## Bundler installation

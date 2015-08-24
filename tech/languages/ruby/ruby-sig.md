@@ -1,6 +1,7 @@
 ---
 title: Ruby SIG
 page: ruby
+order: 6
 ---
 
 ## Ruby Special Interest Group
