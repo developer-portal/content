@@ -1,6 +1,7 @@
 ---
 title: Vagrant plugins
 page: vagrant
+order: 5
 ---
 
 ## Vagrant plugins

@@ -1,6 +1,7 @@
 ---
 title: Vagrant with Docker provider
 page: vagrant
+order: 4
 ---
 
 ## Vagrant with Docker support installation

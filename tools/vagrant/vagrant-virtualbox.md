@@ -1,6 +1,7 @@
 ---
 title: Vagrant with VirtualBox provider
 page: vagrant
+order: 3
 ---
 
 ## Vagrant with VirtualBox support installation
