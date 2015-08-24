@@ -14,7 +14,12 @@ Every file except the main page would start with:
 ---
 title: Some Title      # This title is shown in menus
 page: devassistant     # This is an ID of your content (select value from the list below)
+order: 1
 ---
+
+`order` attribute is optional, but it is highly recommended to include. Our templates sort navigation items according to this value
+(smaller value means they come first).
+
 ```
 The main page would contain:
 ```yaml
