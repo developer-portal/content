@@ -21,6 +21,9 @@
 1. General Content
 2. how to install the associated package/s on fedora
   1. whats the difference from upstream distribution?
+  2. Are there some more implementations/versions? 
+    3. CRuby vs JRuby, Python2 vs Python3
+    4. How to choose between them (rubypick)
 3. how to install other libraries from Fedora and/or upstream
   1. e.g. RubyGems, pip, etc.
   2. is there a special path you need to set up (GOLANG, GEM_PATH)? 
