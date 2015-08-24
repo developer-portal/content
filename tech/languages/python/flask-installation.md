@@ -1,6 +1,7 @@
 ---
 title: Flask
 page: python
+order: 4
 ---
 
 ## Flask installation

@@ -1,6 +1,7 @@
 ---
 title: Go packages
 page: go
+order: 2
 ---
 
 ## Go packages installation

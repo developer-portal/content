@@ -1,6 +1,7 @@
 ---
 title: Modules
 page: perl
+order: 2
 ---
 
 ## Perl modules

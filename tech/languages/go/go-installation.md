@@ -2,6 +2,7 @@
 title: Go installation
 page: go
 section: tech-languages
+order: 1
 ---
 
 ## Go installation

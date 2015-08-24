@@ -1,6 +1,7 @@
 ---
 title: Django
 page: python
+order: 3
 ---
 
 ## Django installation

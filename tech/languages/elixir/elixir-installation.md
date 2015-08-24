@@ -2,6 +2,7 @@
 title: Elixir
 page: elixir
 section: tech-languages
+order: 1
 ---
 
 ## Elixir installation

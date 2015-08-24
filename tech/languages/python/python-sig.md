@@ -1,6 +1,7 @@
 ---
 title: Python SIG
 page: python
+order: 5
 ---
 
 ## Python Special Interest Group

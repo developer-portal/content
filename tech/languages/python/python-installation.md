@@ -2,6 +2,7 @@
 title: Python
 page: python
 section: tech-languages
+order: 1
 ---
 
 ## Python Installation

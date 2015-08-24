@@ -2,6 +2,7 @@
 title: Perl
 page: perl
 section: tech-languages
+order: 1
 ---
 
 ## Perl installation
