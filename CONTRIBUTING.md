@@ -21,16 +21,16 @@
 1. General Content
 2. how to install the associated package/s on fedora
   1. whats the difference from upstream distribution?
-  2. Are there some more implementations/versions? 
+  2. Are there some more implementations/versions?
     3. CRuby vs JRuby, Python2 vs Python3
     4. How to choose between them (rubypick)
 3. how to install other libraries from Fedora and/or upstream
   1. e.g. RubyGems, pip, etc.
-  2. is there a special path you need to set up (GOLANG, GEM_PATH)? 
+  2. is there a special path you need to set up (GOLANG, GEM_PATH)?
   3. how to use packaged version of libraries in upstream bundle tools like Bundler
 4. how to install famous frameworks
   1. e.g. Ruby on Rails, Django, etc.
-  2. only if there are packaged for fedora or require special action on Fedora that would be unclear from upstream 
+  2. only if there are packaged for fedora or require special action on Fedora that would be unclear from upstream
 5. is there a specific Special Interest Group within Fedora? mention it (Ruby SIG, Python SIG)
 
 ### Databases content
@@ -47,5 +47,6 @@
 ## Style and Formatting
 * giprefer # to sudo for commands requiring root password or root user
 * keep the names of upstream project and files e.g. Makefile will have capital M
-* referencing commands and names of binaries that would be ran in command line should be done using back-ticks `` 
-* link to github markdown: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet 
+* referencing commands and names of binaries that would be ran in command line should be done using back-ticks ``
+* empty lines before and after headlines and code blocks
+* link to github markdown: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
