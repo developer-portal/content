@@ -1,8 +1,6 @@
 # Content for Fedora Developer Portal
 
-[Fedora Developer Portal project page](https://fedoraproject.org/wiki/Websites/Developer)
-
-[Content required for the first iteration](https://github.com/developer-portal/content/milestones/first%20release)
+[Project Page](https://fedoraproject.org/wiki/Websites/Developer) | [First Milestone](https://github.com/developer-portal/content/milestones/first%20release) | [How To Contribute](https://github.com/developer-portal/content/blob/master/CONTRIBUTING.md)
 
 ## How To Create a Content
 The website would consist of several sections. Each section would contain a set of pages.
