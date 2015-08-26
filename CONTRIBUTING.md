@@ -26,7 +26,7 @@
     4. How to choose between them (rubypick)?
 3. How to install other libraries from Fedora and/or upstream?
   1. e.g. RubyGems, pip, etc.
-  2. Is there a special path you need to set up (`$GOLANG`, `$GEM_PATH`)?
+  2. Is there a special path you need to set up (`$GOPATH`, `$GEM_PATH`)?
   3. How to use packaged version of libraries in upstream bundle tools like [Bundler](http://bundler.io/)?
 4. How to install famous frameworks?
   1. e.g. Ruby on Rails, Django, etc.
