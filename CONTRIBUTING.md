@@ -45,7 +45,7 @@
 1. General Content
 
 ## Style and Formatting
-* Prefer `#` to `sudo` for commands requiring root password or root user.
+* Please use `$ sudo ...` for commands requiring root password or root user.
 * Use the names of upstream project and files properly - e.g. `Makefile` will have capital M.
 * Referencing commands and names of binaries that would be ran in command line should be done using back-ticks ``.
 * Add empty lines before and after headlines and code blocks.
