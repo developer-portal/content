@@ -1,5 +1,5 @@
 ---
-title: Go installation
+title: Go
 page: go
 section: tech-languages
 order: 1
