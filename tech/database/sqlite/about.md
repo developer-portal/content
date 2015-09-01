@@ -11,10 +11,10 @@ To install basic SQLite (if it is not already), simply type:
     $ sudo dnf install sqlite
 
 This package provides the basic library and the command-line client `sqlite`. In
-order to access SQLite databases from various programming languages, the
-language bindings need to be installed separately:
+order to access SQLite databases from various programming languages (C, Tcl,
+Java), the language bindings need to be installed separately:
 
-    $ sudo dnf install sqlite sqlite-devel sqlite-tcl sqlite-jdbc
+    $ sudo dnf install sqlite-devel sqlite-tcl sqlite-jdbc
 
 ## Graphical clients
 
