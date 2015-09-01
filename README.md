@@ -3,21 +3,22 @@
 [Project Page](https://fedoraproject.org/wiki/Websites/Developer) | [First Milestone](https://github.com/developer-portal/content/milestones/first%20release) | [How To Contribute](https://github.com/developer-portal/content/blob/master/CONTRIBUTING.md)
 
 ## How To Create a Content
+1. Read our [contribution guide](./CONTRIBUTING.md) about writing a content
+2. Learn about [markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+3. [Create new](https://help.github.com/articles/creating-new-files/) or modify existing files with content
+
+### Structure
 The website would consist of several sections. Each section would contain a set of pages.
 Each content file must start with initial section in YAML syntax describing the title and where the file belongs.
 
-### An Example for DevAssistant
+#### An Example for DevAssistant
 Every file except the main page would start with:
 ```yaml
 ---
 title: Some Title      # This title is shown in menus
 page: devassistant     # This is an ID of your content (select value from the list below)
-order: 1
+order: 1               # Optional - order in menu
 ---
-
-`order` attribute is optional, but it is highly recommended to include. Our templates sort navigation items according to this value
-(smaller value means they come first).
-
 ```
 The main page would contain:
 ```yaml
@@ -29,10 +30,10 @@ section: tools         # This page would be linked from the main menu in a group
 ```
 
 
-### Section and Page Names
+#### Section and Page Names
 First level is a section id. Second level is a page id.
 
-#### Start
+##### Start
 1. start-sw
   * web-app
   * cli-app
@@ -46,13 +47,13 @@ First level is a section id. Second level is a page id.
   * collaboration
   * documentation
 
-#### Tools
+##### Tools
 1. tools
   * devassistant
   * docker
   * vagrant
 
-#### Technology
+##### Technology
 1. tech-languages
   * python
   * ruby
@@ -67,7 +68,7 @@ First level is a section id. Second level is a page id.
   * mariadb
   * sqlite
 
-#### Deployment
+##### Deployment
 1. deployment
   * copr
   * scl
