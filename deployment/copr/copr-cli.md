@@ -5,14 +5,14 @@ page: copr
 
 # Command Line Interface
 
-Copr features a command line interface that can help you with managing projects, submitting builds, etc.
+[Copr](https://copr.fedoraproject.org/)) features a command line interface that can help you with managing projects, submitting builds, etc.
  
 ## Setting Up
 
 Install the copr-cli package:
 
 ```
-# dnf install copr-cli
+$ sudo dnf install copr-cli
 ```
 
 Log into the Copr web interface and get your API token at the [Copr API Page](https://copr.fedoraproject.org/api/)
@@ -56,17 +56,17 @@ Now, when your build has been finished, you can add the repository and install y
 First, make sure you have installed dnf core plugins:
 
 ```
-# dnf install dnf-plugins-core
+$ sudo dnf install dnf-plugins-core
 ```
 
 Enable your repository:
 
 ```
-# dnf copr enable your_name/test-project
+$ sudo dnf copr enable your_name/test-project
 ```
 
 And install the package:
 
 ```
-# dnf install package
+$ sudo dnf install package
 ```
