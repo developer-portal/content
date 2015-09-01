@@ -4,7 +4,7 @@ page: ruby
 order: 3
 ---
 
-## Bundler installation
+# Bundler installation
 
 To install Bundler on Fedora as a gem, install Ruby first and then run:
 

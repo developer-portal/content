@@ -6,9 +6,9 @@ order: 1
 version: 5.6.12
 ---
 
-## PHP
+# PHP
 
-### PHP Installation
+## PHP Installation
 
 To install PHP, simply type:
 
@@ -24,7 +24,7 @@ You might want to install some other packages, e.g. PHPUnit for unit tests or Co
 $ sudo dnf install phpunit composer
 ```
 
-### PHP modules
+## PHP modules
 
 PHP provides only a few set of extensions, other should be installed separately. Packages of PHP modules are prefixed with php-, so if you need e.g. "mysqli" extension, use:
 
@@ -32,7 +32,7 @@ PHP provides only a few set of extensions, other should be installed separately.
 $ sudo dnf install php-mysqli
 ```
 
-### PHP Development Server
+## PHP Development Server
 
 PHP contains simple web server which can be used instead of full-featured web server. It is intended to be used only for development, not for a production environment.
 

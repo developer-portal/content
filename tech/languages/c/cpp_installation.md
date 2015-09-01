@@ -3,12 +3,12 @@ title: C++
 page: c++
 ---
 
-## C++
+# C++
 
 Like C, C++ is also a compiled language. It has many similarities with C and to some extent it is safe to say that C is
 subset of C++ and C++ supports every programming technique supported by C. Next command shows how to install C++ compiler:
 
-### GCC-C++ Installation
+## GCC-C++ Installation
 
 ```
 # sudo dnf install gcc-c++
@@ -20,8 +20,8 @@ To compile and link your program you can do the same as was described in section
 # g++ -std=c++14 your_source.cpp -o your_binary
 ```
 
-Again in the command above there are a few examples of possible options which can be used. 
-`-std=c++14` states the version of standard used when compiling your code. `-o name` again states the name of your binary program. 
+Again in the command above there are a few examples of possible options which can be used.
+`-std=c++14` states the version of standard used when compiling your code. `-o name` again states the name of your binary program.
 You can than run your program by typing:
 
 ```
@@ -36,7 +36,7 @@ To view all the options that G++ can use, visit the manual page by typing:
 
 You will see that the manual page is identical with the one shown for GCC.
 
-### CLANG Installation
+## CLANG Installation
 
 Clang works both for C++ and C and the installation is the same as for C:
 

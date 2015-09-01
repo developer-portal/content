@@ -4,8 +4,7 @@ page: vagrant
 order: 4
 ---
 
-## Vagrant with Docker support installation
-
+# Vagrant with Docker support installation
 
 To use Vagrant with Docker, you need to install the `vagrant` and `docker` packages:
 
@@ -26,7 +25,7 @@ the official documentation at https://docs.vagrantup.com/v2/ for more.
 Note: All Vagrant commands have to be ran as root (e.g. with `sudo`). This is similar to running
 Docker commands directly.
 
-### Using Docker as a default
+# Using Docker as a default
 
 To use Docker provider with any Vagrant commands, one has to explicitly append `--provider=docker`.
 
@@ -45,7 +44,7 @@ Or set it for your environment with:
 export VAGRANT_DEFAULT_PROVIDER=docker
 ```
 
-### Using Docker from Vagrant without password prompts
+## Using Docker from Vagrant without password prompts
 
 To use Vagrant with Docker without password prompts it is enough to add yourself to the `vagrant`
 group. This will make `docker` commands password-less as well.

@@ -4,9 +4,9 @@ page: ruby
 order: 4
 ---
 
-## Ruby on Rails installation
+# Ruby on Rails installation
 
-### Installing Rails from RubyGems.org
+## Installing Rails from RubyGems.org
 
 To install Ruby on Rails on Fedora as a gem, install Ruby first together with `ruby-devel`, `gcc`, `libxml2-devel` packages, and then install Rails using the `gem` command:
 
@@ -18,7 +18,7 @@ $ gem install rails
 
 You might need to install other header files depending on the gems used in your application like installing `sqlite-devel` package for `sqlite3` gem. Note that you can always install the gems from the official repositories as RPM packages to avoid this.
 
-### Installing Rails from Fedora official repositories
+## Installing Rails from Fedora official repositories
 
 To install RPM-packaged Ruby on Rails run:
 

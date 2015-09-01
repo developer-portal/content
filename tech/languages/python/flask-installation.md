@@ -4,7 +4,7 @@ page: python
 order: 4
 ---
 
-## Flask installation
+# Flask installation
 
 To install Flask on Fedora:
 

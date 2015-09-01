@@ -6,7 +6,7 @@ order: 1
 version: 5.22
 ---
 
-## Perl installation
+# Perl installation
 
 To install a full Perl environment, simply type:
 

@@ -4,9 +4,9 @@ page: vagrant
 order: 5
 ---
 
-## Vagrant plugins
+# Vagrant plugins
 
-### Upstream plugins
+## Upstream plugins
 
 There are many more plugins for Vagrant apart from the providers mentioned here. They come in form of Ruby gems and usually have `vargant-` prefix in their name.
 
@@ -20,7 +20,7 @@ If the installation fails it's most likely similar to installation failures of o
 
 To search for Vagrant plugins you can directly search RubyGems.org at https://rubygems.org/search?utf8=%E2%9C%93&query=vagrant-.
 
-#### Packaged plugins
+## Packaged plugins
 
 Some Vagrant plugins are packaged for Fedora and delivered as system plugins (in Vagrant terminology). If available they are the preferred method of getting Vagrant plugins on Fedora, especially because the installation is most likely without issues.
 
@@ -36,7 +36,7 @@ To list available packaged gems try:
 $ dnf search vagrant-*
 ```
 
-##### vagrant-registration
+## vagrant-registration
 
 `vagrant-registration` plugin for Vagrant allows developers to easily register their guests for updates on systems with a subscription model (like Red Hat Enterprise Linux).
 

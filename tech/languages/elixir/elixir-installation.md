@@ -6,7 +6,7 @@ order: 1
 version: 1.0.5
 ---
 
-## Elixir installation
+# Elixir installation
 
 To install Elixir on Fedora run:
 

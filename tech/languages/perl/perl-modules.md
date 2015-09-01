@@ -4,7 +4,7 @@ page: perl
 order: 2
 ---
 
-## Perl modules
+# Perl modules
 
 Fedora currently ships with over three thousand of actively maintained Perl modules in its repositories; in most cases installing the module of your choice should be as simple as:
 

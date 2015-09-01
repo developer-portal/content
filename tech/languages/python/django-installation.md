@@ -4,7 +4,7 @@ page: python
 order: 3
 ---
 
-## Django installation
+# Django installation
 
 To install Django on Fedora:
 

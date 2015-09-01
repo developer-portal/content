@@ -4,7 +4,7 @@ page: ruby
 order: 5
 ---
 
-## Sinatra installation
+# Sinatra installation
 
 To install the latest upstream version of Sinatra, install Ruby first and then install Sinatra from RubyGems.org using the `gem` command:
 

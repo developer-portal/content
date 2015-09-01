@@ -4,7 +4,7 @@ page: vagrant
 order: 6
 ---
 
-## Synced folders with NFS
+# Synced folders with NFS
 
 NFS is a faster way of sharing your project's files between host and guests that
 sync the files instantly.
@@ -39,7 +39,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-### Using NFS shares from Vagrant without password prompts
+## Using NFS shares from Vagrant without password prompts
 
 To not enter password many times a day when using NFS, put the following inside
 your `/etc/sudoers` file by running `sudo visudo` (do not try to edit the file

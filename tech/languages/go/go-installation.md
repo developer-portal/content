@@ -6,7 +6,7 @@ order: 1
 version: 1.5
 ---
 
-## Go installation
+# Go installation
 
 To install Go compiler, type:
 

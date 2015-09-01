@@ -4,8 +4,7 @@ page: vagrant
 order: 2
 ---
 
-## Vagrant with libvirt support installation
-
+# Vagrant with libvirt support installation
 
 To use Vagrant with libvirt, you need to install the `vagrant-libvirt` package:
 
@@ -17,7 +16,7 @@ There is also *@vagrant* group available now so you can use that one as well. *@
 was created with using libvirt provider in mind.
 
 
-### Using libvirt from Vagrant without password prompts
+## Using libvirt from Vagrant without password prompts
 
 
 Using `libvirt` provider require you to type your administrator password every time you create,

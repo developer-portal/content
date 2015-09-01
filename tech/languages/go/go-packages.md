@@ -4,9 +4,9 @@ page: go
 order: 2
 ---
 
-## Go packages installation
+# Go packages installation
 
-### Go packages from upstream
+## Go packages from upstream
 
 Upstream projects can be installed with `go get` command. Package names follows the import paths so to install `gorilla/context` from GitHub run:
 
@@ -14,7 +14,7 @@ Upstream projects can be installed with `go get` command. Package names follows 
 $ go get github.com/gorilla/context
 ```
 
-### Go packages from Fedora
+## Go packages from Fedora
 
 Alternatively, various Go packages are packaged and available in Fedora.
 

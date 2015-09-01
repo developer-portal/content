@@ -4,8 +4,7 @@ page: vagrant
 order: 3
 ---
 
-## Vagrant with VirtualBox support installation
-
+# Vagrant with VirtualBox support installation
 
 To use Vagrant with VirtualBox, you just need to install the `vagrant` package:
 
@@ -20,7 +19,7 @@ https://www.virtualbox.org/.
 How to use Vagrant together with VirtualBox can be found in Vagrant official documentation
 at https://docs.vagrantup.com/v2/.
 
-### Using VirtualBox as a default
+## Using VirtualBox as a default
 
 Fedora project cannot support VirtualBox provider in Fedora and therefore the default Vagrant
 provider was changed from VirtualBox to libvirt. To use VirtualBox provider with any Vagrant
