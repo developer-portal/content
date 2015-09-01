@@ -2,6 +2,7 @@
 title: PHP
 page: php
 section: tech-languages
+version: 5.6.12
 ---
 
 ## PHP

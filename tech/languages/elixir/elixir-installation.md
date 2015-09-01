@@ -3,6 +3,7 @@ title: Elixir
 page: elixir
 section: tech-languages
 order: 1
+version: 1.0.5
 ---
 
 ## Elixir installation

@@ -3,6 +3,7 @@ title: Ruby
 page: ruby
 section: tech-languages
 order: 1
+version: 2.2.2
 ---
 
 ## Ruby installation

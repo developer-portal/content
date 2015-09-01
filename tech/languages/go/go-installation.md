@@ -2,6 +2,7 @@
 title: Go installation
 page: go
 order: 1
+version: 1.5
 ---
 
 ## Go installation

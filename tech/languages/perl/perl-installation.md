@@ -3,6 +3,7 @@ title: Perl
 page: perl
 section: tech-languages
 order: 1
+version: 5.22
 ---
 
 ## Perl installation
