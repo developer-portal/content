@@ -13,13 +13,13 @@ You can install new gems on Fedora by either installing upstream gems from RubyG
 Installing upstream gems is as easy as running `gem install GEM_NAME` command, however some gems might fail to install due to complication errors. If you need to compile gems C extensions, install Ruby header files with the following command:
 
 ```
-# dnf install ruby-devel
+$ sudo dnf install ruby-devel
 ```
 
 In case you lack the C compiler on your Fedora, you can install C development tools group:
 
 ```
-# dnf group install "C Development Tools and Libraries"
+$ sudo dnf group install "C Development Tools and Libraries"
 ```
 
 Other missing header files will depend on the particular gem you want to install. In Fedora the sub-packages containing header files are always suffixed with `-devel` so for example to install the `pg` gem, you will need to compile its C extensions against PostgreSQL header files that can be installed by installing `postgresql-devel` sub-package.
@@ -31,9 +31,9 @@ Many gems from RubyGems.org are packaged and available in base Fedora to install
 To install `thor` gem you therefore install `rubygem-thor` package:
 
 ```
-# dnf install rubygem-thor
+$ sudo dnf install rubygem-thor
 or
-# dnf install 'rubygem(thor)'
+$ sudo dnf install 'rubygem(thor)'
 ```
 
 This variant have the advantage of properly stating of all system dependencies and no need for any header files or development tools. Therefore you can just install the package and run it. It might also contain any security fixes or fixes that makes the gems run smoothly on Fedora without additional tweaking. This makes it a safer choice as you get the security fixes for your gems with your system updates.

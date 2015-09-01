@@ -8,5 +8,5 @@ page: php
 To install the latest upstream version of Zend Framework 2, install PHP first and then install Zend Framework 2:
 
 ```
-# dnf install php-ZendFramework2
+$ sudo dnf install php-ZendFramework2
 ```

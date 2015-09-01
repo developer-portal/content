@@ -13,16 +13,16 @@ To use NFS with Vagrant, `nfs-utils` package needs to be installed and nfs-serve
 needs to be running. If it is not, run:
 
 ```
-# dnf install nfs-utils && systemctl enable nfs-server
+$ sudo dnf install nfs-utils && sudo systemctl enable nfs-server
 ```
 
 Afterwards enable `nfs`, `rpc-bind` and `mountd` services for `firewalld`:
 
 ```
-# firewall-cmd --permanent --add-service=nfs &&
-  firewall-cmd --permanent --add-service=rpc-bind &&
-  firewall-cmd --permanent --add-service=mountd &&
-  firewall-cmd --reload
+$ sudo firewall-cmd --permanent --add-service=nfs &&
+  sudo firewall-cmd --permanent --add-service=rpc-bind &&
+  sudo firewall-cmd --permanent --add-service=mountd &&
+  sudo firewall-cmd --reload
 ```
 
 You need these services added for the zone you will run your virtual bridge
@@ -42,7 +42,7 @@ end
 ### Using NFS shares from Vagrant without password prompts
 
 To not enter password many times a day when using NFS, put the following inside
-your `/etc/sudoers` file by running `# visudo` (do not try to edit the file
+your `/etc/sudoers` file by running `sudo visudo` (do not try to edit the file
 directly, `visudo` will check that the content of the file is correct before
 saving):
 
@@ -59,6 +59,6 @@ Cmnd_Alias VAGRANT_EXPORTS_REMOVE = /bin/sed -r -e * d -ibak /etc/exports
 Afterwards add yourself to the `vagrant` group if you are not there already by running:
 
 ```
-# gpasswd -a ${USER} vagrant
+$ sudo gpasswd -a ${USER} vagrant
 $ newgrp vagrant
 ```

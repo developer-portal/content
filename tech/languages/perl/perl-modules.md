@@ -15,24 +15,24 @@ If available, this is the preferred method.
 If you require a module that isn't already available, you may still install them with the common Perl utilities such as `cpan` from Perl core:
 
 ```
-# cpan My::Module
+$ sudo cpan My::Module
 ```
 
 or the popular `cpanm`:
 
 ```
-# dnf install cpanminus
-# cpanm My::Module
+$ sudo dnf install cpanminus
+$ sudo cpanm My::Module
 ```
 
 However, note that binary modules installed this way may seemingly inexplicably break after upgrading to a newer Fedora release.  The reason is Perl doesn't maintain binary compatibility between major versions.  If this happens, remember to reinstall the local modules with:
 
 ```
-# cpan -f -i My::Module
+$ sudo cpan -f -i My::Module
 ```
 
 or:
 
 ```
-# cpanm --reinstall My::Module
+$ sudo cpanm --reinstall My::Module
 ```

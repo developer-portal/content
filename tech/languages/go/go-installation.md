@@ -11,7 +11,7 @@ version: 1.5
 To install Go compiler, type:
 
 ```
-# dnf install go
+$ sudo dnf install go
 ```
 
 `go` and `gofmt` binaries will become available on the system,

@@ -23,5 +23,5 @@ The package name idiom is that the import paths of libraries are fully qualified
 To install `golang-googlecode-net-devel` package, you use DNF as usual:
 
 ```
-# dnf install golang-googlecode-net-devel
+$ sudo dnf install golang-googlecode-net-devel
 ```

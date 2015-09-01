@@ -27,7 +27,7 @@ Some Vagrant plugins are packaged for Fedora and delivered as system plugins (in
 To install the plugin from Fedora repositories type:
 
 ```
-# dnf install PLUGIN
+$ sudo dnf install PLUGIN
 ```
 
 To list available packaged gems try:
@@ -42,4 +42,4 @@ $ dnf search vagrant-*
 
 This plugin would run register action on vagrant up before any provisioning and unregister on vagrant halt or vagrant destroy. The actions then call the registration capabilities that have to be provided for given OS.
 
-More information: https://github.com/projectatomic/adb-vagrant-registration
+More information [on the project page](https://github.com/projectatomic/adb-vagrant-registration).

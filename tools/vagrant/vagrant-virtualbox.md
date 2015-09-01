@@ -10,7 +10,7 @@ order: 3
 To use Vagrant with VirtualBox, you just need to install the `vagrant` package:
 
 ```
-# dnf install vagrant
+$ sudo dnf install vagrant
 ```
 
 Vagrant itself comes with the support for VirtualBox baked-in. Unfortunately, VirtualBox is

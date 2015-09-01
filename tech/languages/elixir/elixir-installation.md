@@ -11,7 +11,7 @@ version: 1.0.5
 To install Elixir on Fedora run:
 
 ```
-# dnf install elixir
+$ sudo dnf install elixir
 ```
 
 This will install Elixir including `iex` interactive shell and `mix` build tool.

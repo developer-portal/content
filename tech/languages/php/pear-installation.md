@@ -6,18 +6,18 @@ page: php
 ## PEAR Installation
 
 
-The PHP Extension and Application Repository is a repository of PHP software code. 
+The PHP Extension and Application Repository is a repository of PHP software code.
 To install PEAR, type:
 
 ```
-# dnf install php-pear
+$ sudo dnf install php-pear
 ```
 
 ### Upstream PEAR modules
 Use pear command to install PEAR extensions. To install Mail_Mime package (for example), type:
 
 ```
-# pear install Mail_Mime
+$ sudo pear install Mail_Mime
 ```
 You can [find more PEAR modules](http://pear.php.net/packages.php).
 
@@ -28,5 +28,5 @@ Many PEAR modules are packaged and available in base Fedora to install. Not all 
 To install Mail_Mime you therefore install php-pear-Mail-Mime package:
 
 ```
-# dnf install php-pear-Mail-Mime
+$ sudo dnf install php-pear-Mail-Mime
 ```

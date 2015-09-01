@@ -8,5 +8,5 @@ page: php
 To install the latest upstream version of Symfony, install PHP first and then install Symfony:
 
 ```
-# dnf install php-symfony
+$ sudo dnf install php-symfony
 ```

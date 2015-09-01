@@ -10,13 +10,13 @@ order: 4
 To use Vagrant with Docker, you need to install the `vagrant` and `docker` packages:
 
 ```
-# dnf install vagrant docker
+$ sudo dnf install vagrant docker
 ```
 
 And start `docker` service:
 
 ```
-# systemctl start docker
+$ sudo systemctl start docker
 ```
 
 Vagrant itself comes with the support for Docker baked-in. By installing Docker alongside
@@ -53,7 +53,7 @@ group. This will make `docker` commands password-less as well.
 To do so, type:
 
 ```
-# groupadd docker && gpasswd -a ${USER} docker && systemctl restart docker
+$ sudo groupadd docker && sudo gpasswd -a ${USER} docker && sudo systemctl restart docker
 $ newgrp docker
 ```
 

@@ -10,7 +10,7 @@ order: 2
 To use Vagrant with libvirt, you need to install the `vagrant-libvirt` package:
 
 ```
-# dnf install vagrant-libvirt
+$ sudo dnf install vagrant-libvirt
 ```
 
 There is also *@vagrant* group available now so you can use that one as well. *@vagrant* group
@@ -26,13 +26,13 @@ to allow Vagrant to use `libvirt` without explicit approvals. We included this f
 sub-package. To get it, type:
 
 ```
-# dnf install vagrant-libvirt-doc
+$ sudo dnf install vagrant-libvirt-doc
 ```
 
 And install the policy by coping the polkit `.rules` file:
 
 ```
-# cp /usr/share/vagrant/gems/doc/vagrant-libvirt-0.0.26/polkit/10-vagrant-libvirt.rules /usr/share/polkit-1/rules.d/
+$ sudo cp /usr/share/vagrant/gems/doc/vagrant-libvirt-0.0.26/polkit/10-vagrant-libvirt.rules /usr/share/polkit-1/rules.d/
 ```
 
 This is example for Fedora 22, for other versions change the version of `vagrant-libvirt` component in
