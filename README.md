@@ -7,6 +7,9 @@
 2. Learn about [markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 3. [Create new](https://help.github.com/articles/creating-new-files/) or modify existing files with content
 
+## How To Test Your Changes
+You can easily review the markdown formatting directly on Github but if you want to see how your changes look in context of the whole website, you might want to take a look at the [Website repository](https://github.com/developer-portal/website) and run a local instance of the portal.
+
 ### Structure
 The website would consist of several sections. Each section would contain a set of pages.
 Each content file must start with initial section in YAML syntax describing the title and where the file belongs.
@@ -28,7 +31,6 @@ page: devassistant     # This is an ID of your content (select value from the li
 section: tools         # This page would be linked from the main menu in a group called tools (select value from the list below)
 ---
 ```
-
 
 #### Section and Page Names
 First level is a section id. Second level is a page id.
