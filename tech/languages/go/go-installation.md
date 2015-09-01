@@ -1,6 +1,7 @@
 ---
 title: Go installation
 page: go
+section: tech-languages
 order: 1
 version: 1.5
 ---
