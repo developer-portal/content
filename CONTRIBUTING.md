@@ -92,7 +92,7 @@ You can fix this issue by...
 When you tell users to run a set of commands, tell them what is going on. This mostly applies to cases where the documentation text contains some procedure (a set of commands) to do some complicated stuff. When that happens, don't just put in the commands, but explain them.
 
 #### Bad example:
-```bash
+```
 $ sudo systemctl disable firewalld
 $ sudo systemctl stop firewalld
 $ sudo cp PREUPGRADE_DIR/cleanconf/etc/sysconfig/iptables /etc/sysconfig/iptables
@@ -100,7 +100,7 @@ etc.
 ```
 
 #### Good example:
-```bash
+```
 First, disable and stop the firewalld service:\n
 $ sudo systemctl disable firewalld
 $ sudo systemctl stop firewalld
