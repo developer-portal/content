@@ -19,7 +19,7 @@ However, you can get older version either by installing [Software Collection pac
 
 Fedora also ships MariaDB with Galera patch. The package with MariaDB Galera is called `mariadb-galera-server` and the wsrep plugin is available in package `galera`. See section [How to install MariaDB Galera on Fedora](#how-to-install-mariadb-galera-on-fedora) for more information.
 
-# How to install MariaDB on Fedora
+## How to install MariaDB on Fedora
 In order to install MariaDB client package, run:
 ```
 $ sudo dnf install mariadb
@@ -45,7 +45,7 @@ For connecting to the MariaDB server using ODBC, install `unixODBC` and `mysql-c
 $ sudo dnf install unixODBC mysql-connector-java
 ```
 
-# <a name="basic-tutorial-for-mariadb-in-fedora"></a>Basic tutorial for MariaDB in Fedora
+## <a name="basic-tutorial-for-mariadb-in-fedora"></a>Basic tutorial for MariaDB in Fedora
 
 MariaDB runs on port 3306 by default and creates local unix socker at `/var/lib/mysql/mysql.sock`. Data are stored into `/var/lib/mysql` directory and logs are located under `/var/log/mariadb/` by default. In order to change these directories, pay attention to use correct SELinux context and owner.
 
@@ -72,10 +72,10 @@ $ sudo mysql_secure_installation
 ```
 This tool asks you several questions and you are supposed to answer interactively. Do not provide the system administrator's password for your Linux system here. Use a different strong password, since this is a separate authentication for a MySQL user called "root."
 
-# How to configure MariaDB
+## How to configure MariaDB
 Configuration of both, client and server, is done by editing files `/etc/my.cnf`, `~/.my.cnf` and any files under `/etc/my.cnf.d/` with `.cnf` suffix. For more informations how to change configuration, see [the upstream documentation](https://mariadb.com/kb/en/mariadb/server-system-variables/#about-the-server-system-variables).
 
-## How to configure MariaDB server for local development
+### How to configure MariaDB server for local development
 When developing an application that uses MariaDB as the storage engine, developer uses typically one user account that has full access to one dedicated database scheme. In order to do so, run the commands from section [Basic tutorial for MariaDB in Fedora](#basic-tutorial-for-mariadb-in-fedora) and then create the user and the dedicated database:
 
 ```
@@ -105,7 +105,7 @@ By specifying  `-p` without password, you'll be asked for the password interacti
 
 In various frameworks or libraries, you will usually use the username, password and database to access the database.
 
-## How to run MariaDB in production development
+### How to run MariaDB in production development
 In order to run MariaDB in production development, you should pay extra attention to setup the service with minimizing risk of being exploited. Except other things, this means:
  * use `mysql_secure_installation` as mentioned above
  * do not accept connectoins from all adresses if not absolutely necessary
@@ -124,7 +124,7 @@ Allow to listen on all interfaces (or your preferred network interface) by addin
 bind-address = 0.0.0.0
 ```
 
-## Other common configuration
+### Other common configuration
 In order to change configuration paramenters for the MariaDB server, create the a configuration file under `/etc/my.cnf.d/` directory.
 
 The following example shows content of the file `/etc/my.cnf.d/myconfig.cnf` that contains several options, that are often changed (use any variables that matches your needs).
@@ -169,7 +169,7 @@ $ sudo systemctl start mariadb
 $ sudo docker pull fedora/mariadb
 ```
 
-# How to extend MariaDB server by installing extensions available in Fedora
+## How to extend MariaDB server by installing extensions available in Fedora
 [MariaDB Connect Storage Engine](https://mariadb.com/kb/en/mariadb/connect/) enables MariaDB to access external local or remote data (MED). In order to install this engine, run:
 ```
 $ dnf install mariadb-connect-engine
@@ -180,7 +180,7 @@ In order to install [The Open Query GRAPH computation engine](https://mariadb.co
 $ dnf install mariadb-oqgraph-engine
 ```
 
-# MariaDB server available as a dynamic library:
+## MariaDB server available as a dynamic library:
 
 In Fedora, MariaDB server is available also as a dynamic library, that can be handy in some applications. This library (`libmysqld.so`) is available in package `mariadb-embedded` and header files for building an application against this library are available in package `mariadb-embedded-devel`.
 
