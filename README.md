@@ -29,6 +29,7 @@ The main page would contain:
 title: DevAssistant    # This title is shown in menus
 page: devassistant     # This is an ID of your content (select value from the list below)
 section: tools         # This page would be linked from the main menu in a group called tools (select value from the list below)
+description:           # a short description to be shown in the section menu
 ---
 ```
 
