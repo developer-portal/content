@@ -26,7 +26,7 @@ Run:
 $ sudo dnf install fedora-packager rpmdevtools
 $ rpmdev-setuptree
 $ cd ~/rpmbuild/SOURCES
-$ wget wget http://ftp.gnu.org/gnu/hello/hello-2.8.tar.gz
+$ wget http://ftp.gnu.org/gnu/hello/hello-2.8.tar.gz
 $ cd ~/rpmbuild/SPECS
 $ rpmdev-newspec --macros hello.spec
 ```
@@ -74,7 +74,7 @@ If you prefer video over wiki, you can check recording of [Packaging Workshop](h
 
 ## Packaging for other distribution
 
-Command rpmbuild create package only for architecture and distribution of your own workstation. If you want to create RPM for other distribution and other architecture, you need to use [Mock](https://fedoraproject.org/wiki/Mock). It can build packages for different architectures and different Fedora or RHEL versions than the build host has. Mock creates chroots and builds packages in them. Its only task is to reliably populate a chroot and attempt to build a package in that chroot.
+Command rpmbuild creates package only for architecture and distribution of your own workstation. If you want to create RPM for other distribution and other architecture, you need to use [Mock](https://fedoraproject.org/wiki/Mock). It can build packages for different architectures and different Fedora or RHEL versions than the build host has. Mock creates chroots and builds packages in them. Its only task is to reliably populate a chroot and attempt to build a package in that chroot.
 
 ### Setup
 
@@ -95,11 +95,12 @@ $ rpmbuild -bs hello.spec
 ```
 
 Then you can run:
+
 ```bash
 $ mock -r epel-7-i386.cfg hello.src.rpm
 ```
 
-This create CentOS/RHEL package for i386 architecture even when your workstation architecture is x86_64 and your workstation is e.g. Fedora. List of available configuration can be found at `/etc/mock/` directory.
+This creates CentOS/RHEL package for i386 architecture even when your workstation architecture is x86_64 and your workstation is e.g. Fedora. List of available configurations can be found at `/etc/mock/` directory.
 
 You can create RPM directly from git (or any other SCM) using mock-scm plugin. Just try:
 
@@ -113,7 +114,7 @@ More detailed tutorial can be found on page [Using Mock to test package builds](
 
 ### Create Yum/Dnf repository
 
-Once you have your RPM packages ready, you can put them in one directory (one directory per distribution-architecture) and run there:
+Once you have your RPM packages ready, you can put them in a directory (one directory per distribution-architecture) and run there:
 
 ```bash
 $ sudo dnf install createrepo_c
@@ -121,7 +122,7 @@ $ cd where_are_your_packages/
 $ createrepo_c --deltas --retain-old-md 1 ./
 ```
 
-This will create Yum/Dnf repository. You can expose it to web and that link can provided to user who use it as baseurl in repo file (stored in /etc/yum.repos.d/):
+This will create Yum/Dnf repository. When you expose it to web and provide a link to it to users, they can use it as baseurl in a repo file (stored in /etc/yum.repos.d/), like:
 
 ```
 [myproject]
@@ -130,4 +131,4 @@ baseurl=http://yourdomain.com/repository/
 enabled=1
 ```
 
-Note: If you are building Open Source package you can use [Copr service](../Copr/about.html), which automates mock and createrepo_c part while it provides nice WebUI.
+Note: If you are building Open-source software package, you can use [Copr service](../Copr/about.html), which automates mock and createrepo_c part while it provides nice WebUI.
