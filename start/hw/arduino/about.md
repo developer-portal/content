@@ -2,6 +2,7 @@
 title: Work with Arduino
 page: arduino
 section: start-hw
+page_logo: /static/img/icons/icon_arduino.png
 ---
 
 # Arduino platform

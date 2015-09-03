@@ -2,6 +2,7 @@
 title: Web Application
 page: web-app
 section: start-sw
+page_logo: /static/img/icons/icon_webapp.png
 ---
 
 # Web Application

@@ -2,6 +2,7 @@
 title: Provide Documentation
 page: documentation
 section: start-tips
+page_logo: /static/img/icons/icon_docs.png
 ---
 
 # {{page.title}}

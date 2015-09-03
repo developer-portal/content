@@ -2,6 +2,7 @@
 title: Work with Other Embeded Devices
 page: embeded-devices
 section: start-hw
+page_logo: /static/img/icons/icon_embedded.png
 ---
 
 # {{page.title}}
