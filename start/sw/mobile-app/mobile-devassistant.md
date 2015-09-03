@@ -51,9 +51,9 @@ INFO: Downloading android SDK from http://dl.google.com/android/android-sdk_r24.
 INFO: Downloading done
 INFO: Copy android template project to project destination
 INFO: .
-[devassistant]$ cp -r /home/phracek/.devassistant/files/crt/android-studio/. "my_test"
+[devassistant]$ cp -r /home/$USER/.devassistant/files/crt/android-studio/. "my_test"
 INFO: For import project into Android Studio execute command:
-INFO: /home/phracek/android-studio/bin/studio.sh my_test/build.gradle
+INFO: /home/$USER/android-studio/bin/studio.sh my_test/build.gradle
 
 ```
 
@@ -61,14 +61,15 @@ For configuring AVD manager run:
 ```
 $ da crt android-studio --name my_test --avd
 ```
-which automatically shows AVD Manager where you can specify your mobile device
+
+This automatically shows AVD Manager where you can specify your mobile device.
 
 For downloading SDKs run:
 
 ```
 $ da crt android-studio --name my_text --sdk
 ```
-which automatically shows SDK Manager where you can select Android SDK which you would like to download it.
+This automatically shows SDK Manager where you can specify Android SDK which you would like to download and use it.
 
 ```
 
