@@ -1,6 +1,7 @@
 ---
 title: C++
-page: c++
+page: c
+order: 2
 ---
 
 # C++

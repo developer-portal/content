@@ -1,6 +1,7 @@
 ---
 title: Automake
-page: automake
+page: c
+order: 3
 ---
 
 # Automake
