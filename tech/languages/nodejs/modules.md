@@ -36,13 +36,13 @@ Most modules are prefixed with 'nodejs-'. There are, however, a few exceptions (
 
 ## Using modules
 
-To be able to require() installed modules, you must first explicitly link them.
+npm allows using require() only on locally installed modules. If you want to require() modules installed by dnf, you need to type:
 
 ```
-$ sudo link express
+$ npm link express
 ```
 
-If you really want this behavior, you can set $NODE_PATH as follows: 
+or to load global modules by default, you can set $NODE_PATH as follows: 
 
 ```
 export NODE_PATH=/usr/lib/node_modules
