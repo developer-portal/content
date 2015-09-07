@@ -61,7 +61,7 @@ dnf config-manager --set-enabled updates-testing
 to enable testing repository permanently. To use it temporarily, you need to type:
 
 ```
-yum|dnf install nodejs-<module-name> --enablerepo=updates-testing
+sudo dnf install nodejs-<module-name> --enablerepo=updates-testing
 ```
 
 Second one is joining [Node.js SIG](https://fedoraproject.org/wiki/SIGs/Node.js) and help us improve and provide better software.
