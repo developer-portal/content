@@ -18,7 +18,7 @@ $ vagrant plugin install PLUGIN
 
 If the installation fails it's most likely similar to installation failures of other gems.
 
-To search for Vagrant plugins you can directly search RubyGems.org at https://rubygems.org/search?utf8=%E2%9C%93&query=vagrant-.
+To search for Vagrant plugins you can directly [search RubyGems.org](https://rubygems.org/search?utf8=%E2%9C%93&query=vagrant-).
 
 ## Packaged plugins
 
