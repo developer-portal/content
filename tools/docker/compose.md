@@ -32,7 +32,7 @@ In this example we'll go through a simple development environment setup:
 
 ### Docker
 
-This guide expects that you have docker engine installed, configured and running (if your user is not able to reach docker, prefix all `docker` commands with `sudo `; for more information see section docker of this site).
+This guide expects that you have docker engine installed, configured and running (for more information see section docker of this site).
 
 
 ### Images
@@ -65,14 +65,14 @@ CMD ./manage.py runserver 0.0.0.0:8000
 Let's build it:
 
 ```
-$ docker build --tag=fedora-django .
+# docker build --tag=fedora-django .
 ```
 
 And now PostgreSQL (stock one is just fine):
 
 ```
 $ cd Fedora-Dockerfiles/postgresql
-$ docker build --tag=fedora-postgresql .
+# docker build --tag=fedora-postgresql .
 ```
 
 
@@ -128,7 +128,7 @@ Take `fedora-django` image and use it for `web` container, map port `8000` from 
 Let's start new project with command `django-admin`:
 
 ```
-$ docker-compose run web django-admin startproject awesome_web .
+# docker-compose run web django-admin startproject awesome_web .
 ```
 
 Since the container runs as root by default, even our project will be created as root, let's fix it:
@@ -160,8 +160,8 @@ DATABASES = {
 Nowadays this is done by `manage.py migrate`. We need to run the database container first, then populate the database:
 
 ```
-$ docker-compose up -d db
-$ docker-compose run web python manage.py migrate
+# docker-compose up -d db
+# docker-compose run web python manage.py migrate
 Operations to perform:
   Synchronize unmigrated apps: staticfiles, messages
   Apply all migrations: admin, contenttypes, auth, sessions
@@ -186,7 +186,7 @@ Running migrations:
 Is the database really populated?
 
 ```
-$ docker exec -ti awesomeweb_db_1 bash
+# docker exec -ti awesomeweb_db_1 bash
 bash-4.3$ psql
 psql (9.4.4)
 Type "help" for help.
@@ -258,19 +258,19 @@ Cannot start container bg1f8cb2d227a6efa5e82d9669235430f63dadc76a5ddd4907248f1ed
 Best way to figure out what's wrong is to check logs:
 
 ```
-$ docker-compose logs
+# docker-compose logs
 ```
 
 In thiscase , the `db` service was not running, so we can check logs of it exclusively:
 
 ```
-$ docker-compose logs db
+# docker-compose logs db
 ```
 
 ## Time to spin the whole environment!
 
 ```
-$ docker-compose up
+# docker-compose up
 ```
 
 That's it! You have your development environment running in docker containers! You can check easily:
