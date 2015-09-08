@@ -1,5 +1,5 @@
 ---
-title: Modules
+title: Node.js modules
 page: nodejs
 order: 2
 ---
@@ -7,6 +7,8 @@ order: 2
 # Modules
 
 ## Installation
+
+### Installing modules via dnf
 
 To install additional modules from Fedora repositories, use:
 
@@ -20,7 +22,7 @@ or
 $ sudo dnf install 'npm(module-name)'
 ```
 
-For example, to install express, you need to type:
+For example, to install `express`, you need to type:
 
 ```
 $ sudo dnf install nodejs-express
@@ -32,11 +34,15 @@ or
 $ sudo dnf install 'npm(express)'
 ```
 
-Most modules are prefixed with 'nodejs-'. There are, however, a few exceptions (for example mocha), which are not prefixed.
+Most modules are prefixed with `nodejs-`. There are, however, a few exceptions (for example mocha), which are not prefixed.
 
-## Using modules
+### Installing modules via npm
 
-npm allows using require() only on locally installed modules. If you want to require() modules installed by dnf, you need to type:
+Installing modules via npm is not recommended as it might cause dependency problems. If you need to install modules via npm, install them locally.
+
+## Using modules installed via dnf
+
+npm allows using `require()` only on locally installed modules. If you want to `require()` modules installed by dnf, you need to type:
 
 ```
 $ npm link express
@@ -48,9 +54,11 @@ or to load global modules by default, you can set $NODE_PATH as follows:
 export NODE_PATH=/usr/lib/node_modules
 ```
 
+You will be able to `require()` modules installed locally by npm.
+
 ## Missing modules
 
-npm is one of the largest ecosystem of open source libraries in the world and contains thousands of modules and it is impossible to have them all packaged as rpms. However, if you are missing a package and think that it really should be in Fedora repositories, you have several choices:
+npm is one of the largest ecosystem of open source libraries in the world and contains thousands of modules and it is impossible to have them all packaged as RPMs. However, if you are missing a package and think that it really should be in Fedora repositories, you have several choices:
 
 First one is enabling testing repository. Chances are new modules are already packaged but not yet in stable repositories. To do that, type:
 

@@ -16,4 +16,6 @@ To install npm, simply type:
 $ sudo dnf install npm
 ```
 
-This will install v8 engine, nodejs runtime and npm package manager and its dependencies.
+This will install V8 Javascript Engine, Node.js runtime and npm package manager and their dependencies.
+
+Installing Node.js modules is covered in next section.
