@@ -2,6 +2,7 @@
 title: Work with Raspberry Pi
 page: raspberry-pi
 section: start-hw
+page_logo: /static/img/icons/icon_rasppi.png
 ---
 
 # {{page.title}}

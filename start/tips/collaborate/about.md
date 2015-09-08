@@ -2,6 +2,7 @@
 title: Collaborate Effectively
 page: collaborate
 section: start-tips
+page_logo: /static/img/icons/icon_collab.png
 ---
 
 # {{page.title}}
