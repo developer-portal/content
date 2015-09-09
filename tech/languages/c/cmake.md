@@ -1,6 +1,7 @@
 ---
 title: CMake
-page: cmake
+page: c
+order: 4
 ---
 
 # CMake

@@ -3,6 +3,7 @@ title: C
 page: c
 section: tech-languages
 version: 5.2.1
+order: 1
 ---
 
 # C Installation and Usage

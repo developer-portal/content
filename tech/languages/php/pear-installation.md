@@ -1,6 +1,7 @@
 ---
 title: PEAR
 page: php
+order: 2
 ---
 
 # PEAR Installation

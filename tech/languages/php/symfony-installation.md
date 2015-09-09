@@ -1,6 +1,7 @@
 ---
 title: Symfony
 page: php
+order: 3
 ---
 
 # Symfony installation
