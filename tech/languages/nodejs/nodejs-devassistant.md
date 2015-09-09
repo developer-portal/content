@@ -1,13 +1,12 @@
 ---
-title: DevAssistant
+title: Node.js assistants for DevAssistant
 page: nodejs
 order: 5
 ---
 
 # Node.js assistants
 
-DevAssistant provides several assistants for Node.JS.
-If you run `da` command from command line then projects are created in current working directory.
+DevAssistant provides several assistants for Node.JS. If you run `da` command from the command line then projects are created in the current working directory.
 In case that you run `da-gui` then projects are created in directories which you specify.
 
 ## Assistant for basic application
@@ -23,6 +22,5 @@ $ da crt nodejs app -n <app_name>
 In order to create a basic web template application with Express, run:
 
 ```
-$ da crt nodejs express -n <express_name>
+$ da crt nodejs express -n <app_name>
 ```
-
