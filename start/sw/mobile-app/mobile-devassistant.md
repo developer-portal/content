@@ -1,7 +1,7 @@
 ---
 title: Google Android Studio
 page: mobile-app
-order: 5
+order: 2
 ---
 
 # How to install Google Android Studio on Fedora

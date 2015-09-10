@@ -1,7 +1,7 @@
 ---
 title: Mobile application
 page: mobile-app
-section: start
+section: start-sw
 order: 1
 ---
 
