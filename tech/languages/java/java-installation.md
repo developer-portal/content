@@ -7,15 +7,15 @@ section: tech-languages
 
 ## Java installation
 
-Fedora comes with OpenJDK - a free and open source implementation of the Java Platform, Standard Edition. To install it, simply type:
+Fedora comes with [OpenJDK](http://openjdk.java.net/) - a free and open source implementation of the Java Platform, Standard Edition. To install it, simply type:
 
 ```
 $ sudo dnf install java-1.8.0-openjdk-devel
 ```
 
-This command will install Java runtime environment and associated development tools.
+This command will install Java Development Kit - runtime environment and associated development tools.
 
-IcedTea-Web may come handy if your plan is to develop Java applets or to experiment with Java Web Start. To install it, simply type:
+[IcedTea-Web](http://icedtea.classpath.org/wiki/IcedTea-Web) may come handy if your plan is to develop Java applets or to experiment with Java Web Start. To install it, simply type:
 
 ```
 $ sudo dnf install icedtea-web
