@@ -209,5 +209,5 @@ $ docker-compose up
 That's it! You have your development environment running in docker containers! You can check easily:
 
 ```
-$ elinks -dump http://$(docker inspect -f '{{ .NetworkSettings.IPAddress }}' awesomeweb_web_1):8000
+$ elinks -dump http://$(docker inspect -f '{{raw}}{{ .NetworkSettings.IPAddress }}{{endraw}}' awesomeweb_web_1):8000
 ```
