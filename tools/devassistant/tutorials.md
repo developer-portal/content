@@ -4,9 +4,11 @@ page: devassistant
 order: 1
 ---
 
+# Tutorials
+
 For the tutorials presented here, we assume you already have DevAssistant
 installed. If you do not, or you are not sure, check out the [installation
-guide](#about.md/##Installing DevAssistant on Fedora). Now, let us try out
+guide](about.html#installing-devassistant-on-fedora). Now, let us try out
 kickstarting the development with some concrete examples. Mind you that each
 language has different needs, so the assistants for Python look a little
 different than those for Perl. For the most part, however, the arguments like
@@ -17,7 +19,7 @@ the name of the project or your GitHub username are always the same.
 To launch DevAssistant, either run the `da` (or `da-gui` for the GUI) binaries,
 or find DevAssistant in your Applications menu. In these tutorials, we will use
 the command-line `da` binary, but the usage of the GUI is very much the same.
-Check out the [notes](#notes.md) for more information about the GUI.
+Check out the [notes](notes.html) for more information about the GUI.
 
 If you are unsure what assistant to run, you can use the `--help` or `-h` flag:
 

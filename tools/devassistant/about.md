@@ -2,7 +2,7 @@
 title: About DevAssistant
 page: devassistant
 section: tools
-description: Basic information about DevAssistant
+description: DevAssistant can help you set up your development environment, publish your code, and do many of the chores that somehow keep you from the important stuff - writing your software.
 ---
 
 # What is DevAssistant
@@ -23,11 +23,11 @@ gets you a fully functioning Maven-based Java application with dependencies,
 metadata, and a fresh GitHub repository with the code already uploaded. The
 same can be said about mostly every major language, because there is an
 assistant (a script) for that. Have a look at a few examples of how to run
-DevAssistant in the [tutorials](#tutorials.md).
+DevAssistant in the [tutorials](tutorials.html).
 
 You can run DevAssistant from the command line, or you can use the graphical
 user interface (GUI). We strongly recommend using the command line interface
-for reasons described in the [notes](#notes.md).
+for reasons described in the [notes](notes.html).
 
 ## Installing DevAssistant on Fedora
 
@@ -70,7 +70,7 @@ If that is not possible for whatever reason, you may install DevAssistant from
     $ pip3 install devassistant --user
 
 If you do this, however, you will not have any assistants available, and will
-have to [install them yourself](#about.md/##Installing New Assistants).
+have to [install them yourself](about.html#installing-new-assistants).
 
 ## Under the Hood
 
@@ -94,7 +94,7 @@ the assistants fall into:
   start writing a completely new project, one that isn't existing yet.
 * **Tweak** current project – This sort of assistants are run on the code you
   are currently working, be it one that you created with DevAssistant, or
-  someone else's. In [Tutorials](#tutorials.md), there is a tutorial on
+  someone else's. In [Tutorials](tutorials.html), there is a tutorial on
   how to publish your code to GitHub with a `tweak` assistant
 * **Prepare** someone's code – As opposed to `create` assistants, `prepare`
   assistants set up code of an existing project for you to contribute to.
@@ -122,12 +122,12 @@ along with the app:
 
 All you need is to point your browser to the address the assistant provided you
 with. If you want to go through a more detailed description of how to develop
-with DevAssistant, visit the [tutorials page](#tutorials.md).
+with DevAssistant, visit the [tutorials page](tutorials.html).
 
 If you can not find an assistant on the [DevAssistant Package
 Index](https://dapi.devassistant.org) for a workflow you use often, or there is
 one missing for your project, you can write an assistant yourself. To see how,
-see the [page for developers](#developers.md).
+see the [page for developers](developers.html).
 
 ## Installing New Assistants
 
