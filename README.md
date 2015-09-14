@@ -14,7 +14,6 @@ You can easily review the markdown formatting directly on Github but if you want
 The website would consist of several sections. Each section would contain a set of pages.
 Each content file must start with initial section in YAML syntax describing the title and where the file belongs.
 
-**Tip**: Any internal links that work here, in the repository, would also work on the portal.
 
 #### An Example for DevAssistant
 Every file except the main page would start with:
