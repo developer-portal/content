@@ -2,7 +2,7 @@
 title: PostgreSQL
 page: postgresql
 section: tech-database
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tristique felis. Duis ornare velit at libero sollicitudin congue. Mauris a pharetra augue. Ut vehicula sed neque sed congue. 
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tristique felis. Duis ornare velit at libero sollicitudin congue. Mauris a pharetra augue. Ut vehicula sed neque sed congue.
 ---
 
 <!--
@@ -22,7 +22,7 @@ PostgreSQL is an advanced Object-Relational database management system (DBMS).
 Fedora distribution provides feature-full package set for PostgreSQL client and
 server, server-compatible plug-ins and database connectors.
 
-# Quick Start
+## Quick Start
 
 PostgreSQL installation on Fedora box and basic command-line usage:
 
@@ -59,19 +59,19 @@ create additional user, password and database:
 ```
 $ sudo su - postgres
 $ createuser testuser -P
-Enter password for new role: 
-Enter it again: 
+Enter password for new role:
+Enter it again:
 $ createdb testdb --owner testuser
 $ # add 'local all testuser md5' line **before** 'local all all peer' line
 $ # (typical mistake is "just" appending the line at the and of the file)
-$ vim ~/data/pg_hba.conf 
+$ vim ~/data/pg_hba.conf
 $ cat ~/data/pg_hba.conf | grep ^local
 local   all             testuser                                md5
 local   all             all                                     peer
 $ ^D
 $ sudo systemctl restart postgresql
 $ psql -d testdb -U testuser
-Password for user testuser: 
+Password for user testuser:
 psql (9.3.9)
 Type "help" for help.
 

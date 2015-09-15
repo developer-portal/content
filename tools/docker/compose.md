@@ -170,10 +170,10 @@ Type "help" for help.
 
 postgres=# \l
                                       List of databases
-    Name     |      Owner       | Encoding |  Collate   |   Ctype    |   Access privileges   
+    Name     |      Owner       | Encoding |  Collate   |   Ctype    |   Access privileges
 -------------+------------------+----------+------------+------------+-----------------------
- awesome_web | awesome_web_user | UTF8     | en_US.utf8 | en_US.utf8 | 
- postgres    | postgres         | UTF8     | en_US.utf8 | en_US.utf8 | 
+ awesome_web | awesome_web_user | UTF8     | en_US.utf8 | en_US.utf8 |
+ postgres    | postgres         | UTF8     | en_US.utf8 | en_US.utf8 |
  template0   | postgres         | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
              |                  |          |            |            | postgres=CTc/postgres
  template1   | postgres         | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
@@ -184,7 +184,7 @@ postgres=# \connect awesome_web
 You are now connected to database "awesome_web" as user "postgres".
 awesome_web=# \dt
                        List of relations
- Schema |            Name            | Type  |      Owner       
+ Schema |            Name            | Type  |      Owner
 --------+----------------------------+-------+------------------
  public | auth_group                 | table | awesome_web_user
  public | auth_group_permissions     | table | awesome_web_user

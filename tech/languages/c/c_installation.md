@@ -6,9 +6,9 @@ version: 5.2.1
 order: 1
 ---
 
-# C Installation and Usage
+# C installation and usage
 
-## GCC Installation
+## GCC installation
 
 C is a compiled language and as such it needs a compiler. To install a gcc compiler, simply type:
 
@@ -44,7 +44,7 @@ To see all the options which you can use with `gcc` simply view its man page lik
 $ man gcc
 ```
 
-## CLANG Installation
+## CLANG installation
 
 GCC is just one of many compilers that are available for compiling C code. Another recently very popular compiler is Clang.
 Clang is designed to provide a substitute to GCC. One of its primary goals is to provide more detailed information about the

@@ -2,10 +2,10 @@
 title: SQLite
 page: sqlite
 section: tech-database
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tristique felis. Duis ornare velit at libero sollicitudin congue. Mauris a pharetra augue. Ut vehicula sed neque sed congue. 
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tristique felis. Duis ornare velit at libero sollicitudin congue. Mauris a pharetra augue. Ut vehicula sed neque sed congue.
 ---
 
-# SQLite Installation
+# SQLite installation
 
 To install basic SQLite (if it is not already), simply type:
 
@@ -30,7 +30,8 @@ the `sqliteman` package:
 ```
 $ sudo dnf install sqliteman
 ```
-# Working with SQLite
+
+## Working with SQLite
 
 SQLite stores it's data in single database file. To open such file (which will
 be created if necessary), pass it's name as CLI argument to `sqlite3`
@@ -52,7 +53,7 @@ If you are new to SQL databases and like to know more, you can visit a
 [sqliteman]: http://sqliteman.yarpen.cz/ "Sqliteman home page"
 [sql-tut]:   http://www.w3schools.com/sql/default.asp "W3CSchools SQL Tutorial"
 
-# Getting help with SQLite
+## Getting help with SQLite
 
 As is the custom in Fedora, SQLite documentation is available in `-doc`
 sub-package. Additionally, the JavaDoc documentation for JDBC bindings is

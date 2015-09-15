@@ -1,8 +1,11 @@
 ---
-title: Build Tools
+title: Java build tools
 page: java
 order: 2
 ---
+
+# Java build tools
+
 The most popular build tools used by millions of Java developers are packaged in official Fedora repositories. This page contains information on how easy it is to install them.
 
 ## Maven installation

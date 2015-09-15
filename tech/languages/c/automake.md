@@ -6,8 +6,6 @@ order: 3
 
 # Automake
 
-## Automake Description
-
 When you work on a project and you want to distribute this project among other users you also need to provide instructions about how to build the project.
 Traditionally these instructions were provided in a file called Makefile which is basically a recipe that holds all the information
 you need to build the package on your system. This can be achieved by using the command `make`. After initiating the command `make`
@@ -17,7 +15,7 @@ However, if you have a project that will be built on a different platform than i
 This is why the `configure` script was introduced. Configure script can automatically adjust the Makefile according to the system
 requirements. The script probes the system for important information about the compilation and build processes and it creates Makefiles for your project.
 
-## Automake Installation
+## Automake installation
 
 To install automake you only need to install the automake package:
 
@@ -25,7 +23,7 @@ To install automake you only need to install the automake package:
 $ sudo dnf install automake
 ```
 
-## Automake Usage
+## Automake usage
 
 To use the automake to create your own `configure` script you need to create a few input files that will be used by `autoreconf` command which
 creates the configure script. These files are `configure.ac` and `Makefile.am`. `Configure.ac` contains instructions to create `configure` script.

@@ -6,7 +6,7 @@ order: 1
 version: 2.7.10
 ---
 
-# Python Installation
+# Python installation
 
 Python is installed by default in Fedora.
 

@@ -9,7 +9,7 @@ order: 2
 Like C, C++ is also a compiled language. It has many similarities with C and to some extent it is safe to say that C is
 subset of C++ and C++ supports every programming technique supported by C. Next command shows how to install C++ compiler:
 
-## GCC-C++ Installation
+## GCC-C++ installation
 
 ```
 # sudo dnf install gcc-c++
@@ -37,7 +37,7 @@ To view all the options that G++ can use, visit the manual page by typing:
 
 You will see that the manual page is identical with the one shown for GCC.
 
-## CLANG Installation
+## CLANG installation
 
 Clang works both for C++ and C and the installation is the same as for C:
 

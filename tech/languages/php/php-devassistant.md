@@ -4,7 +4,9 @@ page: php
 order: 5
 ---
 
-# LAMP assistant
+# PHP assistants
+
+## LAMP assistant
 
 Nowadays DevAssistant provides only assistant for LAMP. If you run `da` command from the command line then projects are created in the current working directory.
 In case that you run `da-gui` then projects are created in directories which you specify.

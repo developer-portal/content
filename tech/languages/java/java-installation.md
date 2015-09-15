@@ -5,7 +5,7 @@ order: 1
 section: tech-languages
 ---
 
-## Java installation
+# Java installation
 
 Fedora comes with OpenJDK - a free and open source implementation of the Java Platform, Standard Edition. To install it, simply type:
 

@@ -6,8 +6,6 @@ order: 4
 
 # CMake
 
-## CMake Description
-
 CMake is a multi-platform software designed for automated compilation on various operating systems.
 It uses C++ compiler and make build evniroment to build your project.
 CMake uses special configuration files CMakeLists.txt. CMakeLists.txt is a file containing `cmake` commands.
@@ -23,7 +21,7 @@ To discover the full application of various features that CMake has to offer use
 [CMake latest documantation](http://www.cmake.org/cmake/help/v3.3/)
 
 
-## CMake Installation
+## CMake installation
 
 To install CMake all you need to do is:
 
@@ -31,7 +29,7 @@ To install CMake all you need to do is:
 # sudo dnf install cmake
 ```
 
-## CMake Usage
+## CMake usage
 
 The beauty of CMake is that after you create a simple CMakeLists.txt file you only need to use this command:
 

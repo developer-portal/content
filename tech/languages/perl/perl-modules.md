@@ -1,5 +1,5 @@
 ---
-title: Modules
+title: Perl modules
 page: perl
 order: 2
 ---
