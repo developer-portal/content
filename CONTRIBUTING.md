@@ -1,12 +1,15 @@
 # Contribution Guidelines to Fedora Developer Portal
 
 ## How To Contribute
+
 1. Find the issue to work on.
   1. Create an issue if it does not exist already.
 1. Create a pull-request.
 
 ## Content
+
 ### General Content
+
 1. A simple paragraph about the tech/tool
 2. Installation and setup
 3. Fedora-specific stuff
@@ -16,6 +19,7 @@
   2. Custom content if not in upstream or if upstream uses different OS
 
 ### Language content
+
 (You can get inspiration from Ruby content if unsure.)
 
 1. General Content
@@ -34,6 +38,7 @@
 5. Is there a Special Interest Group within Fedora? Mention it ([Ruby SIG](https://fedoraproject.org/wiki/Ruby_SIG), [Python SIG](https://fedoraproject.org/wiki/Ruby_SIG)).
 
 ### Databases content
+
 1. General Content
 2. How to install the given database and its client tools from Fedora repositories?
   1. postgresql vs postgresql-server, sqliteman etc.
@@ -42,13 +47,16 @@
 1. How to setup a development/basic production database?
 
 ### Tool Content
+
 1. General Content
 
 ## Style and Formatting
+
 * Please use `$ sudo ...` for commands requiring root password or root user.
 * Use the names of upstream project and files properly - e.g. `Makefile` will have capital M.
 * Referencing commands and names of binaries that would be ran in command line should be done using back-ticks ``.
 * Add empty lines before and after headlines and code blocks.
+* Format headlines as normal sentences e.g. About my program called Program, *not* About My Program Called Program
 * Take a look at [Github markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
@@ -59,30 +67,37 @@
 Don't use complicated sentences. Not everyone reading the documentation will be fluent in English, and if the solution texts get translated, it might be to Japanese, which is a language so fundamentally different that anything even a little bit complicated turns into a translation nightmare.
 
 ### Simple from technical standpoint
+
 Keep the doc simple from a '''technical standpoint''' too. Not everyone reading the documentation will be an experienced admin/user.
 
 ### Avoid shorthands
+
 They're just too informal.
 
 #### Bad example:
+
 ```
 The update won't be available...
 ```
 
 #### Good example:
+
 ```
 The update will not be available...
 ```
 
 ### Be direct
+
 Avoid passive voice.
 
 #### Bad example:
+
 ```
 This can be fixed by...
 ```
 
 #### Good example:
+
 ```
 You can fix this issue by...
 ```
@@ -92,6 +107,7 @@ You can fix this issue by...
 When you tell users to run a set of commands, tell them what is going on. This mostly applies to cases where the documentation text contains some procedure (a set of commands) to do some complicated stuff. When that happens, don't just put in the commands, but explain them.
 
 #### Bad example:
+
 ```
 $ sudo systemctl disable firewalld
 $ sudo systemctl stop firewalld
@@ -100,6 +116,7 @@ etc.
 ```
 
 #### Good example:
+
 ```
 First, disable and stop the firewalld service:\n
 $ sudo systemctl disable firewalld
@@ -112,14 +129,17 @@ etc.
 If this makes the particular documentation too long, you could create a separate page about it and provide a link to the user instead.
 
 ### Be sure
+
 If we say things like "this should be in...", it makes us sound like we don't even know what's actually going on.
 
 #### Bad example:
+
 ```
 You should be able to find this list in /etc/whatever/list.
 ```
 
 #### Good example:
+
 ```
 The list is located in /etc/whatever/list.
 ```
