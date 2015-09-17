@@ -131,4 +131,4 @@ baseurl=http://yourdomain.com/repository/
 enabled=1
 ```
 
-Note: If you are building Open-source software package, you can use [Copr service](../Copr/about.html), which automates mock and createrepo_c part while it provides nice WebUI.
+Note: If you are building an open-source software package, you can use [Copr service](/deployment/copr/about.html), which automates `mock` and `createrepo_c` part while it provides nice WebUI.
