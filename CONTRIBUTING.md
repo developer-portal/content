@@ -59,6 +59,11 @@
 * Format headlines as normal sentences e.g. About my program called Program, *not* About My Program Called Program
 * Take a look at [Github markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
+### Internal links
+
+To reference a page in this repository, use the full path and replace `.md` extension to `.html`:
+
+e.g. to reference `/tech/tools/vagrant/vagrant-libvirt.md` write `[Vagrant with libvirt](/tech/tools/vagrant/vagrant-libvirt.html)`
 
 ## Some general hints how to write documentation
 
