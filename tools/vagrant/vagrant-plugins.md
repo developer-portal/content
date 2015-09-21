@@ -36,7 +36,7 @@ To list available packaged gems try:
 $ dnf search vagrant-*
 ```
 
-## vagrant-registration
+### vagrant-registration
 
 `vagrant-registration` plugin for Vagrant allows developers to easily register their guests for updates on systems with a subscription model (like Red Hat Enterprise Linux).
 

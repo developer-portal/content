@@ -2,6 +2,8 @@
 title: Vagrant
 page: vagrant
 section: tools
+description: Create reproducible and portable development environments that can be easily shared in your team.
+
 order: 1
 ---
 

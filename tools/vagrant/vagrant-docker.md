@@ -25,7 +25,7 @@ the official documentation at https://docs.vagrantup.com/v2/ for more.
 Note: All Vagrant commands have to be ran as root (e.g. with `sudo`). This is similar to running
 Docker commands directly.
 
-# Using Docker as a default
+## Using Docker as a default
 
 To use Docker provider with any Vagrant commands, one has to explicitly append `--provider=docker`.
 
