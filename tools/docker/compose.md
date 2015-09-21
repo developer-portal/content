@@ -1,6 +1,6 @@
 ---
 title: Docker Compose
-page: docker-compose
+page: docker
 section: tools
 ---
 
