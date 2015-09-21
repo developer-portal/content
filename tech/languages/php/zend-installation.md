@@ -6,7 +6,7 @@ order: 4
 
 # Zend Framework 2 installation
 
-To install the latest upstream version of Zend Framework 2, install PHP first and then install Zend Framework 2:
+To install the latest upstream version of Zend Framework 2, type:
 
 ```
 $ sudo dnf install php-ZendFramework2

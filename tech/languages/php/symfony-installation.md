@@ -6,7 +6,7 @@ order: 3
 
 # Symfony installation
 
-To install the latest upstream version of Symfony, install PHP first and then install Symfony:
+To install the latest upstream version of Symfony, type:
 
 ```
 $ sudo dnf install php-symfony

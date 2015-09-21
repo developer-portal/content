@@ -26,7 +26,7 @@ $ sudo dnf install phpunit composer
 
 ## PHP modules
 
-PHP provides only a few set of extensions, other should be installed separately. Packages of PHP modules are prefixed with php-, so if you need e.g. "mysqli" extension, use:
+PHP provides only a few set of extensions, other should be installed separately. Packages of PHP modules are prefixed with `php-`, so if you need e.g. `mysqli` extension, use:
 
 ```
 $ sudo dnf install php-mysqli
@@ -36,9 +36,9 @@ $ sudo dnf install php-mysqli
 
 PHP contains simple web server which can be used instead of full-featured web server. It is intended to be used only for development, not for a production environment.
 
-You can start PHP Development Server by typing this in your project's root:
+You can start PHP development server by typing this in your project's root:
 
 ```
 $ sudo php --server localhost:8080 --docroot  .
 ```
-Server will be accessible on http://localhost:8080/ .
+Server will be accessible on `http://localhost:8080/`.

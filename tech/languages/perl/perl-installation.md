@@ -14,4 +14,4 @@ To install a full Perl environment, simply type:
 $ sudo dnf install perl-core
 ```
 
-This will bring in the language interpreter and all the so-called "core" modules, the basic Perl development environment as recommended by Perl upstream.
+This will bring in the language interpreter and all the so-called **core** modules, the basic Perl development environment as recommended by Perl upstream.

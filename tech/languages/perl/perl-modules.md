@@ -12,7 +12,7 @@ Fedora currently ships with over three thousand of actively maintained Perl modu
 
 If available, this is the preferred method.
 
-If you require a module that isn't already available, you may still install them with the common Perl utilities such as `cpan` from Perl core:
+If you require a module that is not already available, you may still install them with the common Perl utilities such as `cpan` from Perl core:
 
 ```
 $ sudo cpan My::Module
@@ -25,7 +25,7 @@ $ sudo dnf install cpanminus
 $ sudo cpanm My::Module
 ```
 
-However, note that binary modules installed this way may seemingly inexplicably break after upgrading to a newer Fedora release.  The reason is Perl doesn't maintain binary compatibility between major versions.  If this happens, remember to reinstall the local modules with:
+However, note that binary modules installed this way may seemingly inexplicably break after upgrading to a newer Fedora release.  The reason is Perl does not maintain binary compatibility between major versions.  If this happens, remember to reinstall the local modules with:
 
 ```
 $ sudo cpan -f -i My::Module
