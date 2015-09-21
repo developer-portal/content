@@ -7,8 +7,6 @@ description: DevAssistant can help you set up your development environment, publ
 
 # What is DevAssistant
 
-## The basics
-
 DevAssistant is a tool that helps you start with developing software — for every
 project, you need dependencies, a certain file and directory structure, and
 often some services or the firewall set up. You no longer need to copy commands
