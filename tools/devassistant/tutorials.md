@@ -1,10 +1,10 @@
 ---
-title: Tutorials
+title: Getting started with DevAssistant
 page: devassistant
 order: 1
 ---
 
-# Tutorials
+# Getting started with DevAssistant
 
 For the tutorials presented here, we assume you already have DevAssistant
 installed. If you do not, or you are not sure, check out the [installation
@@ -14,7 +14,7 @@ language has different needs, so the assistants for Python look a little
 different than those for Perl. For the most part, however, the arguments like
 the name of the project or your GitHub username are always the same.
 
-## The Basics
+## The basics
 
 To launch DevAssistant, either run the `da` (or `da-gui` for the GUI) binaries,
 or find DevAssistant in your Applications menu. In these tutorials, we will use
@@ -87,7 +87,7 @@ a familiar help message:
     {django,flask,gtk3,lib}
 
 
-## Getting Started with Flask
+## Getting started with Flask
 
 For simplicity, let us walk through setting up a project based on Flask. Flask
 is a lightweight but robust Python web framework, and it is perfect for

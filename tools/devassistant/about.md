@@ -1,5 +1,5 @@
 ---
-title: About DevAssistant
+title: DevAssistant
 page: devassistant
 section: tools
 description: DevAssistant can help you set up your development environment, publish your code, and do many of the chores that somehow keep you from the important stuff - writing your software.
@@ -9,7 +9,7 @@ description: DevAssistant can help you set up your development environment, publ
 
 ## The Basics
 
-DevAssistant is a tool that helps you start with developing software—for every
+DevAssistant is a tool that helps you start with developing software — for every
 project, you need dependencies, a certain file and directory structure, and
 often some services or the firewall set up. You no longer need to copy commands
 from lengthy tutorials online before developing any web app, library, or a
@@ -155,4 +155,3 @@ Installing through `da pkg install` saves the assistants in a hidden folder
 other users. Update the assistants by running:
 
     $ da pkg update
-

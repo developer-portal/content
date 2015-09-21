@@ -1,10 +1,10 @@
 ---
-title: Notes
+title: More on DevAssistant
 page: devassistant
 order: 3
 ---
 
-# Notes
+# More on DevAssistant
 
 ## Using the Command Line Interface vs. the GUI
 
@@ -24,4 +24,3 @@ following sites.
 * [DevAssistant User Documentation](http://doc.devassistant.org/en/latest/user_documentation.html)
 * [DevAssistant Blog](https://blog.devassistant.org)
 * [DevAssistant Developer Documentation](http://doc.devassistant.org/en/latest/developer_documentation.html)
-

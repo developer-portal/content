@@ -1,8 +1,10 @@
 ---
-title: Write Your Own Assistant
+title: Creating assistants for DevAssistant
 page: devassistant
 order: 2
 ---
+
+# Creating assistants for DevAssistant
 
 This section is intended for developers that want to make their own assistants
 for their project. If you want to learn how to use DevAssistant, go to
@@ -11,7 +13,7 @@ condensed to be as clear and short as possible. For a much more detailed
 tutorial, visit [DevAssistant
 documentation](http://doc.devassistant.org/en/latest/developer_documentation/create_assistant.html).
 
-# Write Your Own Assistant
+## Why to create an assistant
 
 If you contribute to a software project, especially one that many contributors
 work on, you can benefit greatly from having an assistant set suited precisely
@@ -24,6 +26,8 @@ on that
 [here](http://doc.devassistant.org/en/latest/developer_documentation/create_assistant/yaml/tutorial.html)),
 we strongly suggest you start creating the whole package (DAP—DevAssistant
 Package), and this tutorial takes that into consideration.
+
+## Installing `dap` assistant
 
 If you have DevAssistant installed (to check that, see the [installation
 guide](about.html#installing-devassistant-on-fedora)), see if you also have the
@@ -41,7 +45,7 @@ or install the DAP locally for your account only:
 
     $ da pkg install dap
 
-## Create the package
+## Creating the package
 
 With all the necessary bits and pieces in place, you can start with creating
 the package. Go to your working directory and create a new DAP with the desired
@@ -78,7 +82,7 @@ because otherwise you will not be able to package it or publish it on the
 [DevAssistant Package Index (DAPI)](https://dapi.devassistant.org). Do not
 forget to include a licence of your choice too.
 
-## Write a Sample Assistant
+## Writing sample assistant
 
 An assistant is a [YAML
 file](http://doc.devassistant.org/en/latest/developer_documentation/create_assistant/yaml.html)
