@@ -7,8 +7,8 @@ order: 2
 # Creating assistants for DevAssistant
 
 This section is intended for developers that want to make their own assistants
-for their project. If you want to learn how to use DevAssistant, go to
-[Tutorials](tutorials.html). Furthermore, the tutorial is significantly
+for their project. If you want to learn how to use DevAssistant, read
+[Getting Started with DevAssistant](tutorials.html). Furthermore, the tutorial is significantly
 condensed to be as clear and short as possible. For a much more detailed
 tutorial, visit [DevAssistant
 documentation](http://doc.devassistant.org/en/latest/developer_documentation/create_assistant.html).
@@ -27,7 +27,7 @@ on that
 we strongly suggest you start creating the whole package (DAP—DevAssistant
 Package), and this tutorial takes that into consideration.
 
-## Installing `dap` assistant
+## Installing the `dap` assistant
 
 If you have DevAssistant installed (to check that, see the [installation
 guide](about.html#installing-devassistant-on-fedora)), see if you also have the

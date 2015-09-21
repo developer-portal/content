@@ -7,7 +7,7 @@ description: DevAssistant can help you set up your development environment, publ
 
 # What is DevAssistant
 
-## The Basics
+## The basics
 
 DevAssistant is a tool that helps you start with developing software — for every
 project, you need dependencies, a certain file and directory structure, and
@@ -72,7 +72,7 @@ If that is not possible for whatever reason, you may install DevAssistant from
 If you do this, however, you will not have any assistants available, and will
 have to [install them yourself](about.html#installing-new-assistants).
 
-## Under the Hood
+## Under the hood
 
 DevAssistants is essentially an engine that loads and executes scripts called
 assistants, one for each workflow you need to cover—the assistants may be tied
@@ -129,7 +129,7 @@ Index](https://dapi.devassistant.org) for a workflow you use often, or there is
 one missing for your project, you can write an assistant yourself. To see how,
 see the [page for developers](developers.html).
 
-## Installing New Assistants
+## Installing new assistants
 
 Getting DevAssistant the way described on the top of this page gets you also a
 common set of assistants for major languages. These assistants are packaged in
