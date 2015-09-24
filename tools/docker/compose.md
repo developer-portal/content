@@ -19,12 +19,7 @@ The package is named `docker-compose`, you can install it easily:
 
 # Docker Compose Tutorial
 
-In this example we'll go through a simple development environment setup:
-
-1. start a [Django](https://www.djangoproject.com/) project
-2. mount sources inside a docker container (application will change as we code)
-3. our choice of database will be PostgreSQL (which we link to the container with sources)
-4. the whole development environment will be managed by docker-compose
+In this example we will go through a simple [Django](https://www.djangoproject.com/) & [PostgreSQL](http://www.postgresql.org/) development environment setup managed by `docker-compose`. We will mount the application sources inside a docker container, which will allow us to interpret code as we change it. The application container will be linked with the database container so our Django application will be able to communicate with our PostgreSQL database.
 
 
 ## Prerequisites
@@ -37,13 +32,13 @@ This guide expects that you have docker engine installed, configured and running
 
 ### Images
 
-We'll use fedora-based images from [fedora-dockerfiles](https://github.com/fedora-cloud/Fedora-Dockerfiles).
+We will use fedora-based images from [fedora-dockerfiles](https://github.com/fedora-cloud/Fedora-Dockerfiles).
 
 ```
 $ git clone https://github.com/fedora-cloud/Fedora-Dockerfiles.git
 ```
 
-Let's start with Django. Since we'll mount sources inside container, we won't use stock `Dockerfile` (you can check it, it's in `Fedora-Dockerfiles/Django/Dockerfile`). This is what we use:
+Let's start with Django. Since we will mount sources inside container, we will not use stock `Dockerfile` (you can check it, it is in `Fedora-Dockerfiles/Django/Dockerfile`). This is what we use:
 
 ```
 FROM fedora
@@ -86,7 +81,7 @@ $ mkdir awesome_web
 $ cd awesome_web
 ```
 
-Whole database will live in subdirectory `db` (postgres user has to own it -- docker still lacks user namespaces):
+Whole database will live in subdirectory `db` (postgres user has to own it — docker still lacks user namespaces; `26` is UID of `postgres` user, see `/usr/share/doc/setup/uidgid`):
 
 ```
 $ mkdir db
@@ -120,7 +115,7 @@ Explanation:
 
 Take `fedora-django` image and use it for `web` container, map port `8000` from container to `8000` on host, mount directory `awesome_web` (that's where sources will be) to `/code` within container and link the `web` container to `db` container.
 
-`db` container is even more simple. Mount `db` directory inside container so PostgreSQL can populate it. We also need to set some environment variables to create database with username/password access (don't forget to change those!).
+`db` container is even more simple. Mount `db` directory inside container so PostgreSQL can populate it. We also need to set some environment variables to create database with username/password access (do not forget to change those!).
 
 
 ## Create Django project
@@ -247,7 +242,7 @@ This is how your directory layout should look:
 
 ## Troubleshooting
 
-It may happen to you that something doesn't work and you'll end up with error message like this:
+It may happen to you that something does not work and you will end up with error message like this:
 
 ```
 Starting awesomeweb_db_1...
@@ -255,7 +250,7 @@ Cannot start container bg1f8cb2d227a6efa5e82d9669235430f63dadc76a5ddd4907248f1ed
     Cannot link to a non running container: /awesomeweb_db_1 AS /awesomeweb_web_run_2/awesomeweb_db_1
 ```
 
-Best way to figure out what's wrong is to check logs:
+Best way to figure out what went wrong is to check logs:
 
 ```
 # docker-compose logs
