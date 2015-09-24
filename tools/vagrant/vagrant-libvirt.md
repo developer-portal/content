@@ -31,8 +31,8 @@ $ sudo dnf install vagrant-libvirt-doc
 And install the policy by coping the polkit `.rules` file:
 
 ```
-$ sudo cp /usr/share/vagrant/gems/doc/vagrant-libvirt-0.0.26/polkit/10-vagrant-libvirt.rules /usr/share/polkit-1/rules.d/
+$ sudo cp /usr/share/vagrant/gems/doc/vagrant-libvirt-0.0.30/polkit/10-vagrant-libvirt.rules /usr/share/polkit-1/rules.d/
 ```
 
-This is example for Fedora 22, for other versions change the version of `vagrant-libvirt` component in
+This is example for Fedora 23, for other versions change the version of `vagrant-libvirt` component in
 the above path to the one installed.
