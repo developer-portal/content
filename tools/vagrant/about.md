@@ -23,3 +23,7 @@ Vagrant work on top of some virtualization or containerization technology. To in
 
 Vagrant can be extended by plenty of plugins, some of them are even packaged in
 Fedora. [Read more](/tech/tools/vagrant/vagrant-plugins.html).
+
+## Limitations
+
+Vagrant packaged in Fedora currently does not support Windows guests. This is due to missing various dependencies that will be hopefully added to Fedora. The other limitation is the lack of support for `vagrant push`. This is unfortunately due to the licencing of the libraries used by upstream and probably will not be resolved in the foreseeable future.
