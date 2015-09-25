@@ -38,36 +38,16 @@ We will use fedora-based images from [fedora-dockerfiles](https://github.com/fed
 $ git clone https://github.com/fedora-cloud/Fedora-Dockerfiles.git
 ```
 
-Let's start with Django. Since we will mount sources inside container, we will not use stock `Dockerfile` (you can check it, it is in `Fedora-Dockerfiles/Django/Dockerfile`). This is what we use:
+Let's start with Django.
 
 ```
-FROM fedora
-MAINTAINER http://fedoraproject.org/wiki/Cloud
-
-RUN dnf -y update && dnf clean all
-RUN dnf -y install python-pip python-django git sqlite python-psycopg2 && dnf clean all
-
-# create directory /code and mount sources there
-RUN mkdir /code
-WORKDIR /code
-VOLUME /code
-
-EXPOSE 8000
-
-CMD ./manage.py runserver 0.0.0.0:8000
-```
-
-Let's build it:
-
-```
-# docker build --tag=fedora-django .
+docker build --tag=fedora-django Fedora-Dockerfiles/Django
 ```
 
 And now PostgreSQL (stock one is just fine):
 
 ```
-$ cd Fedora-Dockerfiles/postgresql
-# docker build --tag=fedora-postgresql .
+# docker build --tag=fedora-postgresql Fedora-Dockerfiles/postgresql
 ```
 
 
