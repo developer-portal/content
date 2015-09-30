@@ -14,13 +14,13 @@ To install Go compiler, type:
 $ sudo dnf install go
 ```
 
-`go` and `gofmt` binaries will become available on the system,
-but you will still need to provide `$GOPATH` explicitly.
+`go` and `gofmt` binaries will become available on the system.
 
-To set the `$GOPATH` to be your home directory, run:
+Go code lives in [a workspace](https://golang.org/doc/code.html#Workspaces) which is defined by `GOPATH` environment variable. [Upstream documentation](https://golang.org/doc/code.html#GOPATH) uses `$HOME/work` for your Go workspace:
 
 ```
-$ echo 'export GOPATH=$HOME' >> $HOME/.profile
+$ mkdir -p $HOME/work
+$ echo 'export GOPATH=$HOME/work' >> $HOME/.profile
 $ source $HOME/.profile
 ```
 
@@ -28,5 +28,5 @@ Run `go env` to check that `$GOPATH` is set correctly:
 
 ```
 $ go env | grep GOPATH
-GOPATH="/home/$USER"
+GOPATH="/home/$USER/work"
 ```
