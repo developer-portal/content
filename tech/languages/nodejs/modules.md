@@ -4,7 +4,7 @@ page: nodejs
 order: 2
 ---
 
-# Modules
+# Node.js modules
 
 ## Installation
 
