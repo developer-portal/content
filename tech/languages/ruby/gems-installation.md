@@ -31,6 +31,11 @@ gcc: error: /usr/lib/rpm/redhat/redhat-hardened-cc1: No such file or directory
 ```
 To solve this, simply run `sudo dnf install redhat-rpm-config`.
 
+If you are getting compilation issues mentioning `Failed to complete patch task`, you are likely missing `patch` command:
+```
+$ sudo dnf install patch
+```
+
 ## Installing gems from official Fedora repositories
 
 Many gems from RubyGems.org are packaged and available in base Fedora to install. These packages have `rubygem-` prefix to upstream gem names and a `rubygem(name)` virtual provide, and also comes with precompiled extensions.
