@@ -42,11 +42,13 @@ $ sudo systemctl enable docker
 
 For additional Systemd configuration options for Docker, like adding an HTTP Proxy, refer to Docker documentation [Systemd article](https://docs.docker.com/articles/systemd/)
 
-## Creating a Docker group
+## Why can’t I use docker command as a non root user, by default?
 
 The Docker daemon binds to a Unix socket instead of a TCP port. By default that Unix socket is owned by the user `root` and other users can access it with `sudo`. For this reason, Docker daemon always runs as the `root` user.
 
-To avoid having to use `sudo` when you use the Docker command, create a Unix group called `docker` and add users to it. When the Docker daemon starts, it makes the ownership of the Unix socket read/writable by the `docker` group.
+You can either [set up sudo](http://www.projectatomic.io/blog/2015/08/why-we-dont-let-non-root-users-run-docker-in-centos-fedora-or-rhel) to give docker access to non-root users.
+
+Or you can create a Unix group called `docker` and add users to it. When the Docker daemon starts, it makes the ownership of the Unix socket read/writable by the `docker` group.
 
 **Warning:** The `docker` group is equivalent to the `root` user; For details on how this impacts security in your system, see [Docker Daemon Attack Surface](https://docs.Docker.com/articles/security/#Docker-daemon-attack-surface) for details.
 
