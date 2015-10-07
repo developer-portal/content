@@ -7,6 +7,4 @@ order: 1
 
 # Mobile application
 
-Smartphones, tables and other devices allow to create a simple,smart or even clever applications.
-Nowadays this section covers Google Android Studio how to install it and how to make your own
-```hello world``` mobile application.
+Today wide range of smart mobile devices make it possible to create clever applications. See [Google Android Studio](/start/sw/mobile-app/mobile-devassistant.html) for a step-by-step instructions to install Android Studio and create your own ```hello world``` mobile application.
