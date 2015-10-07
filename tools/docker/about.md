@@ -18,7 +18,7 @@ To install and run Docker read these [instructions and tips](/tools/docker/docke
 
 ## Basic usage
 
-[Read more](/tools/docker/docker-2.html).
+To know how to run a container from existing image or how to create you own image see [Basic usage](/tools/docker/docker-2.html).
 
 ## Configuring Docker
 
