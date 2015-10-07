@@ -22,7 +22,7 @@ To know how to run a container from existing image or how to create you own imag
 
 ## Configuring Docker
 
-[Read more](/tools/docker/docker-3.html).
+For instructions how to configure docker engine see [Configuring Docker](/tools/docker/docker-3.html).
 
 ## Featured Images
 
