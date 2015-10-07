@@ -18,4 +18,4 @@ $ sudo dnf install npm
 
 This will install V8 Javascript Engine, Node.js runtime and npm package manager and their dependencies.
 
-Installing Node.js modules is covered in next section.
+Installing Node.js modules is covered in [Node.js modules](/tech/languages/nodejs/modules.html).

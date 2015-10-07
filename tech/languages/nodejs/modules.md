@@ -42,19 +42,17 @@ Installing modules via npm is not recommended as it might cause dependency probl
 
 ## Using modules installed via dnf
 
-npm allows using `require()` only on locally installed modules. If you want to `require()` modules installed by dnf, you need to type:
+npm allows using `require()` only on locally installed modules. If you want to `require()` modules installed by dnf, type in your project folder:
 
 ```
-$ npm link express
+$ sudo npm link express
 ```
 
 or to load global modules by default, you can set $NODE_PATH as follows: 
 
 ```
-export NODE_PATH=/usr/lib/node_modules
+$ export NODE_PATH=/usr/lib/node_modules
 ```
-
-You will be able to `require()` modules installed locally by npm.
 
 ## Missing modules
 
@@ -63,13 +61,13 @@ npm is one of the largest ecosystem of open source libraries in the world and co
 First one is enabling testing repository. Chances are new modules are already packaged but not yet in stable repositories. To do that, type:
 
 ```
-dnf config-manager --set-enabled updates-testing
+$ sudo dnf config-manager --set-enabled updates-testing
 ```
 
 to enable testing repository permanently. To use it temporarily, you need to type:
 
 ```
-sudo dnf install nodejs-<module-name> --enablerepo=updates-testing
+$ sudo dnf install nodejs-<module-name> --enablerepo=updates-testing
 ```
 
 Second one is joining [Node.js SIG](https://fedoraproject.org/wiki/SIGs/Node.js) and help us improve and provide better software.
