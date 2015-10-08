@@ -1,9 +1,9 @@
 ---
-title: Featured images
+title: Featured Docker images
 page: docker
 section: tools
 ---
 
-#**Features Images**
+# Features Docker images
 
 TODO

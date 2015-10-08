@@ -1,10 +1,10 @@
 ---
-title: Basic Usage
+title: Docker basics
 page: docker
 section: tools
 ---
 
-# Basic usage
+# Docker basics
 
 ## Getting started with images
 
@@ -23,16 +23,17 @@ $ sudo docker search fedora
 ## Running a container
 
 Use [docker run](https://docs.docker.com/userguide/dockerizing) to run an application inside a container.
-The following command pulls fedora image, creates a container from it and runs Bash shell inside it.
+The following command pulls Fedora image, creates a container from it and runs Bash shell inside it.
 
 ```
 $ sudo docker run -it fedora bash
 ```
 
 Other useful [options](https://docs.docker.com/reference/commandline/run) to use with `run` are for example `-d` to run a container in background (to daemonize it) or `--name` to give container a name which you can later use with `docker stop/start`.
+
 See also [Docker run reference](http://docs.docker.com/reference/run).
 
-Other userful commands regarding running containers are for example:
+Other useful commands regarding running containers are for example:
 
 * [docker ps](https://docs.docker.com/reference/commandline/ps) to list running containers
 * [docker stop](https://docs.docker.com/reference/commandline/stop) to stop running container and [docker start](https://docs.docker.com/reference/commandline/start) to start stopped container
@@ -41,18 +42,16 @@ Other userful commands regarding running containers are for example:
 
 ## Creating an image
 
-If you change anything (like install new packages in the above example with Bash) in the running container and exit the container the changes are not automatically saved into the fedora image.
+If you change anything (like install new packages in the above example with Bash) in the running container and exit the container the changes are not automatically saved into the Fedora image.
 If you want to save them in an image, use [docker commit](https://docs.docker.com/userguide/dockerimages/#updating-and-committing-an-image).
 
 Another option how to create an image is by building it from Dockerfile, see below.
 
 ## Writing a Dockerfile
 
-There are already existing Dockerfiles in [Fedora-Dockerfiles](https://github.com/fedora-cloud/Fedora-Dockerfiles) repository.
-You can use them as examples for creating your own Dockerfile.
-Each directory contains a Dockerfile and a README with instructions how to build the image and run a container from it.
+There are already existing Dockerfiles in [Fedora-Dockerfiles](https://github.com/fedora-cloud/Fedora-Dockerfiles) repository. You can use them as examples for creating your own Dockerfile. Each directory contains a Dockerfile and a README with instructions how to build the image and run a container from it.
 
-A Dockerfile content can be as simple as
+A Dockerfile content can be as simple as:
 
 ```
 FROM fedora:latest

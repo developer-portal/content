@@ -1,5 +1,5 @@
 ---
-title: Installation
+title: Getting started with Docker on Fedora
 page: docker
 section: tools
 ---
@@ -8,13 +8,13 @@ section: tools
 
 ## Installation
 
-On Fedora 22 and above install docker package:
+On Fedora 22 and above install the `docker` package:
 
 ```
 $ sudo dnf install docker
 ```
 
-On Fedora 21 install docker-io package:
+On Fedora 21 install the `docker-io` package:
 
 ```
 $ sudo yum install docker-io
@@ -40,9 +40,9 @@ To make Docker start when you boot your system, use the command:
 $ sudo systemctl enable docker
 ```
 
-For additional Systemd configuration options for Docker, like adding an HTTP Proxy, refer to Docker documentation [Systemd article](https://docs.docker.com/articles/systemd/)
+For additional systemd configuration options for Docker, like adding an HTTP Proxy, refer to the Docker documentation [Systemd article](https://docs.docker.com/articles/systemd/).
 
-## Why can’t I use docker command as a non root user, by default?
+## Why can’t I use docker command as a non `root` user, by default?
 
 The Docker daemon binds to a Unix socket instead of a TCP port. By default that Unix socket is owned by the user `root` and other users can access it with `sudo`. For this reason, Docker daemon always runs as the `root` user.
 
@@ -55,8 +55,8 @@ Or you can create a Unix group called `docker` and add users to it. When the Doc
 To create the `docker` group and add your user:
 
 ```
-$ sudo groupadd docker
-$ sudo usermod -aG docker your_username
+$ sudo groupadd docker && sudo gpasswd -a ${USER} docker && sudo systemctl restart docker
+$ newgrp docker
 ```
 
-You have to log out and log back in for these changes to take effect. Then you can verify if your changes were successful by running Docker without `sudo`.
+You have to log out and log back in (or restart Docker daemon and use `newgrp` commnad as mentioned here) for these changes to take effect. Then you can verify if your changes were successful by running Docker without `sudo`.
