@@ -1,10 +1,10 @@
 ---
-title: Featured Docker images
+title: Docker images
 page: docker
 section: tools
 ---
 
-# Features Docker images
+# Docker images
 
 ## Fedora images
 
