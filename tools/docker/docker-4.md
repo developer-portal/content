@@ -36,7 +36,7 @@ $ sudo docker pull centos:6
 
 There is always `centos:latest` tag for the latest released version.
 
-### Software Collection based images
+### Software Collections based images
 
 You can also get Docker images based on [Software Collections](https://www.softwarecollections.org/en/) which are currently released under [the OpenShift organization](https://hub.docker.com/u/openshift/). Some of them are enabled for [Source-To-Image](https://github.com/openshift/source-to-image).
 
