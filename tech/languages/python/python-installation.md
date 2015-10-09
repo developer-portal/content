@@ -4,6 +4,7 @@ page: python
 section: tech-languages
 order: 1
 version: 2.7.10
+description: General-purpose, high-level programming language supporting multiple programming paradigms.
 ---
 
 # Python installation

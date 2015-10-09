@@ -3,6 +3,7 @@ title: Java
 page: java
 order: 1
 section: tech-languages
+description: General-purpose, object-oriented and concurrent computer programming language.
 ---
 
 # Java installation

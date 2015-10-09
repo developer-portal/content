@@ -4,6 +4,7 @@ page: nodejs
 section: tech-languages
 order: 1
 version: 0.10.36
+description: Server-side JavaScript environment based on V8 engine.
 ---
 
 # Node.js

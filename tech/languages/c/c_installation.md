@@ -4,6 +4,7 @@ page: c
 section: tech-languages
 version: 5.2.1
 order: 1
+description: A general-purpose, imperative computer programming language.
 ---
 
 # C installation and usage

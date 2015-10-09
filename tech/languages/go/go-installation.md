@@ -4,6 +4,7 @@ page: go
 section: tech-languages
 order: 1
 version: 1.5
+description: An open source programming language built to craft simple, reliable, and efficient software.
 ---
 
 # Go installation

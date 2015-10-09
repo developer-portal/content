@@ -4,6 +4,7 @@ page: ruby
 section: tech-languages
 order: 1
 version: 2.2.2
+description: A dynamic programming language with a focus on readability, simplicity and productivity.
 ---
 
 # Ruby installation

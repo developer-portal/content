@@ -4,6 +4,7 @@ page: perl
 section: tech-languages
 order: 1
 version: 5.22
+description: Highly capable, multi-purpose and feature-rich programming language.
 ---
 
 # Perl installation

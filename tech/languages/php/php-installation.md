@@ -4,6 +4,7 @@ page: php
 section: tech-languages
 order: 1
 version: 5.6.12
+description: Server-side HTML embedded scripting language.
 ---
 
 # PHP

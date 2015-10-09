@@ -2,7 +2,8 @@
 title: Groovy
 page: groovy
 order: 1
-section: tech-languages
+section: Powerful, optionally typed and dynamic language with static compilation capabilities on JVM.
+description:
 ---
 
 # Groovy installation
