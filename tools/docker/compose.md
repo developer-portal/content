@@ -1,6 +1,7 @@
 ---
 title: Docker Compose
 page: docker
+order: 5
 ---
 
 # Docker Compose
