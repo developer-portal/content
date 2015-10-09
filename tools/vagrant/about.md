@@ -22,7 +22,7 @@ Vagrant work on top of some virtualization or containerization technology. To in
 ## Plugins
 
 Vagrant can be extended by plenty of plugins, some of them are even packaged in
-Fedora. [Read more](/tech/tools/vagrant/vagrant-plugins.html).
+Fedora. [Read more](/tools/vagrant/vagrant-plugins.html).
 
 ## Limitations
 
