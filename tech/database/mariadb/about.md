@@ -2,7 +2,7 @@
 title: MariaDB
 page: mariadb
 section: tech-database
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tristique felis. Duis ornare velit at libero sollicitudin congue. Mauris a pharetra augue. Ut vehicula sed neque sed congue.
+description: Transactional SQL database, an enhanced drop-in replacement for MySQL.
 ---
 
 # MariaDB SQL database
