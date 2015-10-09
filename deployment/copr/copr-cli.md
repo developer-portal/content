@@ -1,12 +1,12 @@
 ---
-title: Command Line Interface
+title: Copr command line interface
 page: copr
 ---
 
-# Command Line Interface
+# Copr command Line Interface
 
 [Copr](https://copr.fedoraproject.org/)) features a command line interface that can help you with managing projects, submitting builds, etc.
- 
+
 ## Setting Up
 
 Install the copr-cli package:
