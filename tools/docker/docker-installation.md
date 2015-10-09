@@ -1,6 +1,7 @@
 ---
 title: Getting started with Docker on Fedora
 page: docker
+order: 1
 ---
 
 # Getting started with Docker

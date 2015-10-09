@@ -1,6 +1,7 @@
 ---
 title: Docker basics
 page: docker
+order: 2
 ---
 
 # Docker basics

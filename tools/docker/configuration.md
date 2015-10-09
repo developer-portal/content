@@ -1,6 +1,7 @@
 ---
 title: Configuring Docker
 page: docker
+order: 3
 ---
 
 # Configuring Docker
