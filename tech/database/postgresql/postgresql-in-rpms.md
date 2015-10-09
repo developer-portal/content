@@ -1,5 +1,5 @@
 ---
-title: README.rpm-dist
+title: PostgreSQL in RPMs
 page: postgresql
 order: 1
 ---

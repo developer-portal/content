@@ -80,7 +80,7 @@ testdb=>
 
 ## Documentation
 
-Packaging documentation is available as [README.rpm-dist](README.rpm-dist.html)
+Packaging documentation is available as [README.rpm-dist](postgresql-in-rpms.html)
 file in `postgresql` package (client package).  Anybody running PostgreSQL on
 Fedora should start here:
 
