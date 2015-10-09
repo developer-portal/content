@@ -15,9 +15,9 @@ order: 1
 
 Vagrant work on top of some virtualization or containerization technology. To install Vagrant read the provider-specific instructions and tips:
 
-- [Vagrant with libvirt](/tech/tools/vagrant/vagrant-libvirt.html)
-- [Vagrant with VirtualBox](/tech/tools/vagrant/vagrant-virtualbox.html)
-- [Vagrant with docker](/tech/tools/vagrant/vagrant-docker.html)
+- [Vagrant with libvirt](/tools/vagrant/vagrant-libvirt.html)
+- [Vagrant with VirtualBox](/tools/vagrant/vagrant-virtualbox.html)
+- [Vagrant with docker](/tools/vagrant/vagrant-docker.html)
 
 ## Plugins
 
