@@ -1,7 +1,6 @@
 ---
 title: Docker images
 page: docker
-section: tools
 ---
 
 # Docker images

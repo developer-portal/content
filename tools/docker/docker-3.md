@@ -1,7 +1,6 @@
 ---
 title: Configuring Docker
 page: docker
-section: tools
 ---
 
 # Configuring Docker

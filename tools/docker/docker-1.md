@@ -1,7 +1,6 @@
 ---
 title: Getting started with Docker on Fedora
 page: docker
-section: tools
 ---
 
 # Getting started with Docker

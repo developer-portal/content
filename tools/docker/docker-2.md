@@ -1,7 +1,6 @@
 ---
 title: Docker basics
 page: docker
-section: tools
 ---
 
 # Docker basics
