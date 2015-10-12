@@ -6,6 +6,8 @@ order: 3
 
 # Django installation
 
+Django is one of the most popular high-level web frameworks, it is, along with [Flask](/tech/languages/python/flask-installation.md), your best bet if you want to try some web development. [The documentation](https://docs.djangoproject.com/en/1.8/) is first class, too!
+
 To install Django on Fedora:
 
 For Python 2:
