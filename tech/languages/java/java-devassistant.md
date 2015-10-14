@@ -17,10 +17,10 @@ In order to create a basic JSF web application template, run:
 $ da crt java jsf -n <app_name>
 ```
 
-## Assistant for Maven build manager
+## Assistant for Maven project
 
-In order to create a Maven build manager, run:
+In order to create a simple Maven project, run:
 
 ```
-$ da crt java maven -n <manager_name>
+$ da crt java maven -n <project_name>
 ```
