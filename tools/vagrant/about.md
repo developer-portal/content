@@ -17,7 +17,7 @@ Vagrant work on top of some virtualization or containerization technology. To in
 
 - [Vagrant with libvirt](/tools/vagrant/vagrant-libvirt.html)
 - [Vagrant with VirtualBox](/tools/vagrant/vagrant-virtualbox.html)
-- [Vagrant with docker](/tools/vagrant/vagrant-docker.html)
+- [Vagrant with Docker](/tools/vagrant/vagrant-docker.html)
 
 ## Plugins
 
