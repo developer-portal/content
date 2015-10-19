@@ -24,7 +24,7 @@ Similarly for Python 3:
 $ sudo dnf install python3
 ```
 
-The above command will install the latest stable Python 2/3 package and also the useful [python-pip](/tech/languages/python/pypi-installation.md).
+The above command will install the latest stable Python 2/3 package and also the useful [python-pip](/tech/languages/python/pypi-installation.html).
 
 ## PyPy
 
