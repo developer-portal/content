@@ -40,6 +40,6 @@ $ dnf search vagrant-*
 
 `vagrant-registration` plugin for Vagrant allows developers to easily register their guests for updates on systems with a subscription model (like Red Hat Enterprise Linux).
 
-This plugin would run register action on vagrant up before any provisioning and unregister on vagrant halt or vagrant destroy. The actions then call the registration capabilities that have to be provided for given OS.
+This plugin would run register action on vagrant up before any provisioning and unregister on `vagrant halt` or `vagrant destroy`. The actions then call the registration capabilities that have to be provided for given OS.
 
 More information [on the project page](https://github.com/projectatomic/adb-vagrant-registration).
