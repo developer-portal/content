@@ -28,7 +28,7 @@ In this example we will go through a simple [Django](https://www.djangoproject.c
 
 ### Docker
 
-This guide expects that you have Docker engine installed, configured and running (for more information see section docker of this site).
+This guide expects that you have Docker engine installed, configured and running (for more information see [the Fedora installation guide](/tools/docker/docker-installation.html)).
 
 
 ### Images
