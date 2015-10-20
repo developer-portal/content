@@ -18,20 +18,20 @@ The package is named `docker-compose`, you can install it easily with:
 ```
 
 
-# Example usage
+## Example usage
 
 In this example we will go through a simple [Django](https://www.djangoproject.com/) & [PostgreSQL](http://www.postgresql.org/) development environment setup managed by `docker-compose`. We will mount the application sources inside a Docker container, which will allow us to interpret code as we change it. The application container will be linked with the database container so our Django application will be able to communicate with our PostgreSQL database.
 
 
-## Prerequisites
+### Prerequisites
 
 
-### Docker
+#### Docker
 
 This guide expects that you have Docker engine installed, configured and running (for more information see [the Fedora installation guide](/tools/docker/docker-installation.html)).
 
 
-### Images
+#### Images
 
 We will use Fedora-based images from [fedora-dockerfiles](https://github.com/fedora-cloud/Fedora-Dockerfiles).
 
@@ -52,7 +52,7 @@ And now PostgreSQL (stock one is just fine):
 ```
 
 
-## Guide
+### Guide
 
 We will name our project `awesome_web`. So let's start by creating a directory for the project (in a directory where you store your projects):
 
@@ -69,7 +69,7 @@ $ mkdir db
 # chown 26:26 db
 ```
 
-### `docker-compose` configuration
+#### `docker-compose` configuration
 
 First thing to do will be to create a YAML configuration file named `docker-compose.yml`. The file should live in the root of our project.
 
@@ -99,7 +99,7 @@ Take `fedora-django` image and use it for `web` container, map port `8000` from 
 `db` container is even more simple. Mount `db` directory inside container so PostgreSQL can populate it. We also need to set some environment variables to create database with username/password access (do not forget to change those!).
 
 
-### Create Django project
+#### Create Django project
 
 Let's start new project with command `django-admin`:
 
@@ -131,7 +131,7 @@ DATABASES = {
 ```
 
 
-### Time to populate database
+#### Time to populate database
 
 Nowadays this is done by `manage.py migrate`. We need to run the database container first, then populate the database:
 
@@ -221,7 +221,7 @@ This is how your directory layout should look:
 └── docker-compose.yml
 ```
 
-## Troubleshooting
+### Troubleshooting
 
 It may happen to you that something does not work and you will end up with error message like this:
 
@@ -243,7 +243,7 @@ In thiscase , the `db` service was not running, so we can check logs of it exclu
 # docker-compose logs db
 ```
 
-## Time to spin the whole environment!
+### Time to spin the whole environment!
 
 ```
 # docker-compose up
