@@ -8,72 +8,72 @@ order: 5
 
 [docker-compose](https://docs.docker.com/compose/) is a tool to orchestrate docker containers. No more 4 lines long `docker run` commands, just one YAML file which describes your whole setup.
 
-In this example we'll go through a simple development environment setup:
 
-* first step will be to start a [Django](https://www.djangoproject.com/) project
-* we will bindmount sources inside a docker container (app will change as we code)
-* our choice of database will be PostgreSQL (which we link to the container with sources)
-* the whole development environment will be managed by docker-compose
+## Installation
 
-We will name our project `awesome_web`. So let's start by creating directory for it:
+The package is named `docker-compose`, you can install it easily:
 
 ```
+# dnf install docker-compose
+```
+
+
+# Docker Compose Tutorial
+
+In this example we will go through a simple [Django](https://www.djangoproject.com/) & [PostgreSQL](http://www.postgresql.org/) development environment setup managed by `docker-compose`. We will mount the application sources inside a docker container, which will allow us to interpret code as we change it. The application container will be linked with the database container so our Django application will be able to communicate with our PostgreSQL database.
+
+
+## Prerequisites
+
+
+### Docker
+
+This guide expects that you have docker engine installed, configured and running (for more information see section docker of this site).
+
+
+### Images
+
+We will use fedora-based images from [fedora-dockerfiles](https://github.com/fedora-cloud/Fedora-Dockerfiles).
+
+```
+$ git clone https://github.com/fedora-cloud/Fedora-Dockerfiles.git
+```
+
+Let's start with Django.
+
+```
+docker build --tag=fedora-django Fedora-Dockerfiles/Django
+```
+
+And now PostgreSQL (stock one is just fine):
+
+```
+# docker build --tag=fedora-postgresql Fedora-Dockerfiles/postgresql
+```
+
+
+## The Guide
+
+We will name our project `awesome_web`. So let's start by creating a directory for the project (in a directory where you store your projects):
+
+```
+$ cd ${MY_PROJECTS}
 $ mkdir awesome_web
 $ cd awesome_web
 ```
 
-Whole database will live in subdirectory `db` (postgres user has to own it -- docker still lacks user namespaces):
+Whole database will live in subdirectory `db` (postgres user has to own it — docker still lacks user namespaces; `26` is UID of `postgres` user, see `/usr/share/doc/setup/uidgid`):
 
 ```
 $ mkdir db
 # chown 26:26 db
 ```
 
-## Prerequisites
-
-We'll use fedora-based images from [fedora-dockerfiles](https://github.com/fedora-cloud/Fedora-Dockerfiles).
-
-```
-$ git clone https://github.com/fedora-cloud/Fedora-Dockerfiles.git
-```
-
-Let's start with Django. Since we'll bindmount sources inside container, we won't use `Dockerfile` from `Fedora-Dockerfiles`, we'll improve it a bit instead:
-
-```
-FROM fedora
-MAINTAINER http://fedoraproject.org/wiki/Cloud
-
-RUN dnf -y update && dnf clean all
-RUN dnf -y install python-pip python-django git sqlite python-psycopg2 && dnf clean all
-
-# create directory /code and mount sources there
-RUN mkdir /code
-WORKDIR /code
-VOLUME /code
-
-EXPOSE 8000
-
-CMD ./manage.py runserver 0.0.0.0:8000
-```
-
-```
-$ cd Fedora-Dockerfiles/Django
-$ docker build --tag=fedora-django .
-$ cd ../..
-```
-
-And now PostgreSQL:
-
-```
-$ cd Fedora-Dockerfiles/postgresql
-$ docker build --tag=fedora-postgresql .
-```
-
-
 ## `docker-compose` configuration
 
+First thing to do will be to create a YAML configuration file named `docker-compose.yml`. The file should live in the root of our project.
+
 ```
-$ cat docker-compose.yml
 web:
   image: fedora-django
   ports:
@@ -94,9 +94,9 @@ db:
 
 Explanation:
 
-Take `fedora-django` image and use it for `web` container, map port `8000` from container to `8000` on host, bindmount directory `awesome_web` (that's where sources will be) to `/code` within container and link the `web` container to `db` container.
+Take `fedora-django` image and use it for `web` container, map port `8000` from container to `8000` on host, mount directory `awesome_web` (that's where sources will be) to `/code` within container and link the `web` container to `db` container.
 
-`db` container is even more simple. Mount `db` directory inside container so PostgreSQL can populate it. We also need to set some environment variables to create database with username/password access (don't forget to change those!).
+`db` container is even more simple. Mount `db` directory inside container so PostgreSQL can populate it. We also need to set some environment variables to create database with username/password access (do not forget to change those!).
 
 
 ## Create Django project
@@ -104,7 +104,7 @@ Take `fedora-django` image and use it for `web` container, map port `8000` from 
 Let's start new project with command `django-admin`:
 
 ```
-$ docker-compose run web django-admin startproject awesome_web .
+# docker-compose run web django-admin startproject awesome_web .
 ```
 
 Since the container runs as root by default, even our project will be created as root, let's fix it:
@@ -113,7 +113,7 @@ Since the container runs as root by default, even our project will be created as
 $ sudo chown -R $UID:$UID awesome_web
 ```
 
-Since we use PostgreSQL, we need change `DATABASE` variable in `settings.py`:
+Since we use PostgreSQL, we need change `DATABASES` variable in `settings.py`:
 ```
 $ $EDITOR awesome_web/awesome_web/settings.py
 ...
@@ -136,8 +136,8 @@ DATABASES = {
 Nowadays this is done by `manage.py migrate`. We need to run the database container first, then populate the database:
 
 ```
-$ docker-compose up -d db
-$ docker-compose run web python manage.py migrate
+# docker-compose up -d db
+# docker-compose run web python manage.py migrate
 Operations to perform:
   Synchronize unmigrated apps: staticfiles, messages
   Apply all migrations: admin, contenttypes, auth, sessions
@@ -162,7 +162,7 @@ Running migrations:
 Is the database really populated?
 
 ```
-$ docker exec -ti awesomeweb_db_1 bash
+# docker exec -ti awesomeweb_db_1 bash
 bash-4.3$ psql
 psql (9.4.4)
 Type "help" for help.
@@ -199,11 +199,54 @@ awesome_web=# \dt
 (10 rows)
 ```
 
+This is how your directory layout should look:
+
+```
+├── awesome_web
+│   ├── awesome_web
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   ├── wsgi.py
+│   └── manage.py
+├── db
+│   ├── base
+│   ├── global
+│   ├── pg_clog
+│   ├── pg_dynshmem
+│   ├── pg_hba.conf
+│   ├── pg_ident.conf
+│   ├── pg_log
+│   ├── <...and more>
+└── docker-compose.yml
+```
+
+## Troubleshooting
+
+It may happen to you that something does not work and you will end up with error message like this:
+
+```
+Starting awesomeweb_db_1...
+Cannot start container bg1f8cb2d227a6efa5e82d9669235430f63dadc76a5ddd4907248f1edc11490a:
+    Cannot link to a non running container: /awesomeweb_db_1 AS /awesomeweb_web_run_2/awesomeweb_db_1
+```
+
+Best way to figure out what went wrong is to check logs:
+
+```
+# docker-compose logs
+```
+
+In thiscase , the `db` service was not running, so we can check logs of it exclusively:
+
+```
+# docker-compose logs db
+```
 
 ## Time to spin the whole environment!
 
 ```
-$ docker-compose up
+# docker-compose up
 ```
 
 That's it! You have your development environment running in docker containers! You can check easily:
