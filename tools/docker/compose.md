@@ -14,7 +14,7 @@ order: 5
 The package is named `docker-compose`, you can install it easily with:
 
 ```
-# dnf install docker-compose
+$ sudo dnf install docker-compose
 ```
 
 
@@ -42,13 +42,13 @@ $ git clone https://github.com/fedora-cloud/Fedora-Dockerfiles.git
 Let's start with Django.
 
 ```
-# docker build --tag=fedora-django Fedora-Dockerfiles/Django
+$ sudo docker build --tag=fedora-django Fedora-Dockerfiles/Django
 ```
 
 And now PostgreSQL (stock one is just fine):
 
 ```
-# docker build --tag=fedora-postgresql Fedora-Dockerfiles/postgresql
+$ sudo docker build --tag=fedora-postgresql Fedora-Dockerfiles/postgresql
 ```
 
 
@@ -66,7 +66,7 @@ Whole database will live in subdirectory `db` (`postgres` user has to own it —
 
 ```
 $ mkdir db
-# chown 26:26 db
+$ sudo chown 26:26 db
 ```
 
 #### `docker-compose` configuration
@@ -104,7 +104,7 @@ Take `fedora-django` image and use it for `web` container, map port `8000` from 
 Let's start new project with command `django-admin`:
 
 ```
-# docker-compose run web django-admin startproject awesome_web .
+$ sudo docker-compose run web django-admin startproject awesome_web .
 ```
 
 Since the container runs as root by default, even our project will be created as root, let's fix it:
@@ -136,8 +136,8 @@ DATABASES = {
 Nowadays this is done by `manage.py migrate`. We need to run the database container first, then populate the database:
 
 ```
-# docker-compose up -d db
-# docker-compose run web python manage.py migrate
+$ sudo docker-compose up -d db
+$ sudo docker-compose run web python manage.py migrate
 Operations to perform:
   Synchronize unmigrated apps: staticfiles, messages
   Apply all migrations: admin, contenttypes, auth, sessions
@@ -162,7 +162,7 @@ Running migrations:
 Is the database really populated?
 
 ```
-# docker exec -ti awesomeweb_db_1 bash
+$ sudo docker exec -ti awesomeweb_db_1 bash
 bash-4.3$ psql
 psql (9.4.4)
 Type "help" for help.
@@ -234,19 +234,19 @@ Cannot start container bg1f8cb2d227a6efa5e82d9669235430f63dadc76a5ddd4907248f1ed
 Best way to figure out what went wrong is to check logs:
 
 ```
-# docker-compose logs
+$ sudo docker-compose logs
 ```
 
 In thiscase , the `db` service was not running, so we can check logs of it exclusively:
 
 ```
-# docker-compose logs db
+$ sudo docker-compose logs db
 ```
 
 ### Time to spin the whole environment!
 
 ```
-# docker-compose up
+$ sudo docker-compose up
 ```
 
 That's it! You have your development environment running in docker containers! You can check easily:
