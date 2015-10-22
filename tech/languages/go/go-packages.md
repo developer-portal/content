@@ -14,6 +14,13 @@ Upstream projects can be installed with `go get` command. Package names follows 
 $ go get github.com/gorilla/context
 ```
 
+If the requested package comes with an executable binary, you should find it in `$GOPATH/bin` directory. To use it, you need to add this path to your `$PATH`:
+
+```
+$ echo 'export PATH=$GOPATH/bin:$PATH' >> $HOME/.profile
+$ source $HOME/.profile
+```
+
 ## Go packages from Fedora
 
 Alternatively, various Go packages are packaged and available in Fedora.
