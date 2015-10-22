@@ -2,7 +2,7 @@
 title: DevAssistant
 page: devassistant
 section: tools
-description: DevAssistant can help you set up your development environment, publish your code, and do many of the chores that somehow keep you from the important stuff — writing your software.
+description: Set up your development environment, publish your code, and do many of the chores that somehow keep you from the important stuff — writing your software.
 ---
 
 # What is DevAssistant
