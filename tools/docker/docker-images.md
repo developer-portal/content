@@ -68,7 +68,7 @@ The [official CentOS repository](https://hub.docker.com/u/centos/) contains Dock
 
 These Docker images are based on [Software Collections](https://www.softwarecollections.org/en/). Some of them (older versions) are released under [the OpenShift organization](https://hub.docker.com/u/openshift/), the newer versions are available under [CentOS organization](https://hub.docker.com/u/centos/). Some of them are enabled for [Source-To-Image](https://github.com/openshift/source-to-image).
 
-To download them just run `docker pull openshift/IMAGE_NAME` or `docker pull centos/IMAGE_NAME`.
+To download them just run `docker pull IMAGE_NAME`.
 
 |    Image Name                   |    Description                            |
 | :------------------------------ | ----------------------------------------- |
