@@ -13,7 +13,7 @@ order: 1
 
 ## Installation
 
-Vagrant work on top of some virtualization or containerization technology. To install Vagrant read the provider-specific instructions and tips:
+Vagrant works on top of some virtualization or containerization technology. To install Vagrant read the provider-specific instructions and tips:
 
 - [Vagrant with libvirt](/tools/vagrant/vagrant-libvirt.html)
 - [Vagrant with VirtualBox](/tools/vagrant/vagrant-virtualbox.html)
