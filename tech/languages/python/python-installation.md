@@ -28,7 +28,7 @@ The above command will install the latest stable Python 2/3 package and also the
 
 ## PyPy
 
-Fedora also includes PyPy, a significantly faster (under most circumstances), JIT enabled, Python interpreter. It is not 100% compatible with CPython, so some modules may not work.
+Fedora also includes PyPy, a significantly faster (under most circumstances), JIT enabled, Python interpreter. It is not 100% compatible with CPython, so some modules might not work.
 
 You can install PyPy with:
 
