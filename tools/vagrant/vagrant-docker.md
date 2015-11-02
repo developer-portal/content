@@ -19,8 +19,8 @@ $ sudo systemctl start docker
 ```
 
 Vagrant itself comes with the support for Docker baked-in. By installing Docker alongside
-Vagrant you can start using Docker both as a provider and a provisioner. Please refer to
-the official documentation at https://docs.vagrantup.com/v2/ for more.
+Vagrant you can start using Docker both as a provider and as a provisioner. Please refer to
+the [official documentation](https://docs.vagrantup.com/v2/) for more.
 
 Note: All Vagrant commands have to be ran as root (e.g. with `sudo`). This is similar to running
 Docker commands directly.
@@ -56,8 +56,7 @@ $ sudo groupadd docker && sudo gpasswd -a ${USER} docker && sudo systemctl resta
 $ newgrp docker
 ```
 
-Above commands will create the group `vagrant` and add current running user to this group. This user
+Above commands will create the group `vagrant` and add current user to this group. This user
 also need to have administrator privileges.
 
-Note: This has security implications, read about this in the official docs at
-https://docs.docker.com/articles/security/#docker-daemon-attack-surface.
+Note: This has security implications, read about this in the [official docs](https://docs.docker.com/articles/security/#docker-daemon-attack-surface).
