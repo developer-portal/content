@@ -45,7 +45,7 @@ Installing modules via npm is not recommended as it might cause dependency probl
 npm allows using `require()` only on locally installed modules. If you want to `require()` modules installed by dnf, type in your project folder:
 
 ```
-$ sudo npm link express
+$ npm link express
 ```
 
 or to load global modules by default, you can set $NODE_PATH as follows: 
