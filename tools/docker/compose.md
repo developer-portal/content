@@ -114,6 +114,7 @@ $ sudo chown -R $UID:$UID awesome_web
 ```
 
 Since we use PostgreSQL, we need change `DATABASES` variable in `settings.py`:
+
 ```
 $ $EDITOR awesome_web/awesome_web/settings.py
 ...
