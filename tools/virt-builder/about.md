@@ -36,9 +36,9 @@ package in Fedora:
 
 Build a minimal virtual machine:
 
-    $ virt-builder fedora-22
+    $ virt-builder fedora-23
 
-will build a Fedora 22 image for the same architecture as virt-builder (so
+will build a Fedora 23 image for the same architecture as virt-builder (so
 running it from an i386 installation will try to build an i386 image, if
 available).  This will have all default configuration (minimal size, no user
 accounts, random root password, only the bare minimum installed software,
@@ -47,30 +47,30 @@ etc.).
 Import the above disk image into libvirt:
 
     $ virt-install --import \
-       --name f22vm1 --ram 2048 \
+       --name f23vm1 --ram 2048 \
        --disk path=disk.img,format=raw --os-variant fedora20
 
 ## Examples to create custom virtual machines
 
-###  Create a Fedora 22 VM and update it
+###  Create a Fedora 23 VM and update it
 
-Prepare a QCOW2 Fedora-22 VM, with 40GB disk size, and update to latest
+Prepare a QCOW2 Fedora 23 VM, with 40GB disk size, and update to latest
 available packages:
 
-    $ virt-builder fedora-22 -o f22vm2.qcow2 --format qcow2 \
+    $ virt-builder fedora-23 -o f23vm2.qcow2 --format qcow2 \
         --update --selinux-relabel --size 40G
 
 Import the disk image into libvirt, and provide it 4GB of memory:
 
-    $ virt-install --name f22vm2 --ram 4096 \
-        --disk path=f22vm2.qcow2,format=qcow2,cache=writeback \
-        --nographics --import --os-variant fedora22
+    $ virt-install --name f23vm2 --ram 4096 \
+        --disk path=f23vm2.qcow2,format=qcow2,cache=writeback \
+        --nographics --import --os-variant fedora23
 
 ### Create a Rawhide VM
 
 This creates a Rawhide VM:
 
-    $ virt-builder fedora-22 \
+    $ virt-builder fedora-23 \
         --install fedora-repos-rawhide \
         --edit '/etc/yum.repos.d/fedora-rawhide.repo: s/enabled=0/enabled=1/' \
         --update \
@@ -90,12 +90,12 @@ Enumerate all virtual machines:
 
 Start a VM:
 
-    $ sudo virsh start f22vm1
+    $ sudo virsh start f23vm1
 
 Take a snapshot of a running virtual machine:
 
-    $ sudo virsh snapshot-create-as f22vm1 snap1 "Clean f22 VM"
+    $ sudo virsh snapshot-create-as f23vm1 snap1 "Clean F23 VM"
 
 Revert to a specific snapshot:
 
-    $ sudo virsh snapshot-revert f22vm1 snap1
+    $ sudo virsh snapshot-revert f23vm1 snap1
