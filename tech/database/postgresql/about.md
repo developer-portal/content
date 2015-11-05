@@ -27,7 +27,7 @@ server, server-compatible plug-ins and database connectors.
 PostgreSQL installation on Fedora box and basic command-line usage:
 
 ```bash
-$ sudo yum install postgresql postgresql-server # install client/server
+$ sudo dnf install postgresql postgresql-server # install client/server
 $ sudo postgresql-setup initdb                  # initialize PG cluster
 $ sudo systemctl start postgresql               # start cluster
 $ sudo su - postgres                            # login as DB admin
@@ -93,7 +93,7 @@ $ less /usr/share/doc/postgresql/README.rpm-dist
 Install/use official documentation with:
 
 ```
-$ sudo yum install postgresql-docs
+$ sudo dnf install postgresql-docs
 $ firefox /usr/share/doc/postgresql-docs/html/index.html         # HTML version
 $ rpm -ql postgresql-docs | grep pdf
 /usr/share/doc/postgresql-docs/postgresql-9.3.9-US.pdf
@@ -135,7 +135,7 @@ syntax (example with
 [hstore](http://www.postgresql.org/docs/9.4/static/hstore.html) extension):
 
 ```
-$ sudo yum install postgresql-contrib           -- install extension (hstore)
+$ sudo dnf install postgresql-contrib           -- install extension (hstore)
 $ sudo su - postgres                            -- switch user to DB admin
 $ psql -d quick-start                           -- connect to an existing DB
 psql (9.3.9)
