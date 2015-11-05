@@ -1,9 +1,10 @@
 ---
 title: Mono
 page: csharp
-order: 1
 section: tech-languages
-description: C# provided by Mono: a cross-platform, open source, .NET development framework
+order: 1
+version: 7.8.4
+description: "C# provided by Mono: a cross-platform, open source, .NET development framework"
 ---
 
 # Mono installation
