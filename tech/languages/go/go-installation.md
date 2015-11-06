@@ -21,7 +21,7 @@ Go code lives in [a workspace](https://golang.org/doc/code.html#Workspaces) whic
 
 ```
 $ mkdir -p $HOME/work
-$ echo 'export GOPATH=$HOME/work' >> $HOME/.profile
+$ echo 'export GOPATH=$HOME/work' >> $HOME/.bashrc
 $ source $HOME/.profile
 ```
 
