@@ -22,7 +22,7 @@ Go code lives in [a workspace](https://golang.org/doc/code.html#Workspaces) whic
 ```
 $ mkdir -p $HOME/work
 $ echo 'export GOPATH=$HOME/work' >> $HOME/.bashrc
-$ source $HOME/.profile
+$ source $HOME/.bashrc
 ```
 
 Run `go env` to check that `$GOPATH` is set correctly:
