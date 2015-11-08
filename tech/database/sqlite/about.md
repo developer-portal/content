@@ -47,7 +47,7 @@ now insert the SQL commands to execute.
 If you prefer using GUI, the [Sqliteman][sqliteman] application enables you to
 construct your SQL queries using visual tool.
 
-If you are new to SQL databases and like to know more, you can visit a
+If you are new to SQL databases and would like to learn more, you can visit a
 [W3CSchools SQL tutorial][sql-tut], which should give you a nice head start.
 
 [sqliteman]: http://sqliteman.yarpen.cz/ "Sqliteman home page"
@@ -56,16 +56,14 @@ If you are new to SQL databases and like to know more, you can visit a
 ## Getting help with SQLite
 
 As is the custom in Fedora, SQLite documentation is available in `-doc`
-sub-package. Additionally, the JavaDoc documentation for JDBC bindings is
-available as well:
+sub-package. Additionally, the JavaDoc documentation for JDBC bindings is also
+available:
 
 ```
 $ sudo dnf install sqlite-doc sqlite-jdbc-javadoc
 ```
 
-After the packages are installed, the actual documentation in HTML format is
-located within `/usr/share/doc/PACKAGE` directory. For example, to view
-documentation for SQLite itself, you can open this URL in your browser:
+After the packages are installed, the actual documentation is located within `/usr/share/doc/PACKAGE` directory and is formatted in HTML. For example, to view documentation for SQLite itself, you can open this URL in your browser:
 
 ```
 file:///usr/share/doc/sqlite-doc/index.html
