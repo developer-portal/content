@@ -51,9 +51,9 @@ quick-start=#
 
 # Controlling access to PG cluster (pg_hba.conf, users, passwords)
 
-Sometimes is useful to create new user (with password) for specific database
-application.  There is set of utilities in `postgresql` package (see
-`rpm -ql postgresql | grep /usr/bin`) that may ease some of those tasks.  Lets try to
+Sometimes it is useful to create a new user (with password) for specific database
+applications.  There is set of utilities in the `postgresql` package (see
+`rpm -ql postgresql | grep /usr/bin`) that may simplify some of those tasks.  Lets try to
 create additional user, password and database:
 
 ```
@@ -80,9 +80,7 @@ testdb=>
 
 ## Documentation
 
-Packaging documentation is available as [README.rpm-dist](postgresql-in-rpms.html)
-file in `postgresql` package (client package).  Anybody running PostgreSQL on
-Fedora should start here:
+Packaging documentation is available as [README.rpm-dist](postgresql-in-rpms.html) in the `postgresql` package (client package).  Anybody running PostgreSQL on Fedora should start here:
 
 ```bash
 $ rpm -qd postgresql | grep README.rpm-dist
@@ -104,7 +102,7 @@ This documentation is also available [online](http://www.postgresql.org/docs/),
 please choose the version installed on your box
 (`rpm -q postgresql --qf "%{VERSION}\n"`).
 
-Other documentation available online:
+Other documentation available on-line:
 
 * [Fedora PostgreSQL Homepage](https://fedoraproject.org/wiki/PostgreSQL)
 * [PostgreSQL project](http://www.postgresql.org/about/)
@@ -127,9 +125,9 @@ Other documentation available online:
 * [pg-semver](https://admin.fedoraproject.org/pkgdb/packages/pg-semver)
 * [postgresql-ip4r](https://admin.fedoraproject.org/pkgdb/packages/postgresql-ip4r)
 
-### How to use extension:
+### How to use extensions:
 
-PostgreSQL implements [CREATE
+PostgreSQL implements the [CREATE
 EXTENSION](http://www.postgresql.org/docs/9.4/static/sql-createextension.html)
 syntax (example with
 [hstore](http://www.postgresql.org/docs/9.4/static/hstore.html) extension):
@@ -160,9 +158,9 @@ quick-start=# SELECT 'a=>1,b=>2'::hstore;       -- use the extension
 
 ## PostgreSQL in containers
 
-Currently there is prepared Docker container for Fedora 21.  Documentation
+Currently there is a prepared Docker container for Fedora 21.  Documentation
 is available on the [Fedora-Dockerfiles github
 page](https://github.com/fedora-cloud/Fedora-Dockerfiles/tree/master/postgresql).
 
-There is also available PostgreSQL image
+There is also a PostgreSQL image available
 [for OpenShift](https://github.com/openshift/postgresql).
