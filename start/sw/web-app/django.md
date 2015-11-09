@@ -68,12 +68,12 @@ Now we will check if we really have empty enviroment:
 pip freeze
 ```
 
-It should return nothing.
+It will return nothing.
 
 ## How to install Django
 
-Now if you installed virtualenv don't leave it, we will install Django 1.8. If you didn't install virtualenv use this command 
-in your working directory:
+Now if you installed virtualenv do not leave it, we will install Django 1.8. If you did not install virtualenv use this command 
+inside your working directory:
 
 ```
 pip install django==1.8
@@ -85,7 +85,7 @@ and when it's finished use following command to start your first project called 
 django-admin startproject mysite
 ```
 
-Now if you will check your directory using ls you should see new directory called mysite. We 
+Now if you will check your directory using ls you will see new directory called mysite. We 
 will go inside that directory and we will run our project by following commands:
 
 ```
@@ -93,7 +93,7 @@ cd mysite/
 python manage.py runserver
 ```
 
-You should see message with information about your development server. There is URL you should enter into your browser 
-and see welcome page that it worked.
+You will see message with information about your development server. When you insert URL into your browser, 
+you will see welcome page.
 And you successfully started your first Django project.
 
