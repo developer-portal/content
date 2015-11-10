@@ -113,7 +113,8 @@ Since the container runs as root by default, even our project will be created as
 $ sudo chown -R $UID:$UID awesome_web
 ```
 
-Since we use PostgreSQL, we need change `DATABASES` variable in `settings.py`:
+Since we use PostgreSQL, we need to change `DATABASES` variable in `settings.py`:
+
 ```
 $ $EDITOR awesome_web/awesome_web/settings.py
 ...
