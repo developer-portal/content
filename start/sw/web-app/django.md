@@ -33,6 +33,13 @@ Enter this command to your command line for installation:
 pip install virtualenv
 ```
 
+or installation from official repository:
+
+```
+sudo dnf install python-virtualenv
+```
+
+
 Get inside your working directory or create new where you want to store your virtual enviroment:
 
 ```
