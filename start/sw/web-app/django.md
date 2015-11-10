@@ -79,6 +79,20 @@ inside your working directory:
 pip install django==1.8
 ```
 
+or installation by official repository. 
+
+For Python 2:
+
+```
+sudo dnf install python-django
+```
+
+or Python 3:
+
+```
+sudo dnf install python3-django
+```
+
 and when it's finished use following command to start your first project called mysite:
 
 ```
