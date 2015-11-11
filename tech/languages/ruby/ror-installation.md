@@ -11,8 +11,8 @@ order: 4
 To install Ruby on Rails on Fedora as a gem, install Ruby first together with `ruby-devel`, `gcc`, `libxml2-devel` packages, and then install Rails using the `gem` command:
 
 ```
-# dnf group install "C Development Tools and Libraries"
-# dnf install ruby-devel libxml2-devel
+$ sudo dnf group install "C Development Tools and Libraries"
+$ sudo dnf install ruby-devel libxml2-devel
 $ gem install rails
 ```
 
