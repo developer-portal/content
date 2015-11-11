@@ -25,13 +25,16 @@ $ sudo dnf group install "C Development Tools and Libraries"
 Other missing header files will depend on the particular gem you want to install. In Fedora the sub-packages containing header files are always suffixed with `-devel` so for example to install the `pg` gem, you will need to compile its C extensions against PostgreSQL header files that can be installed by installing `postgresql-devel` sub-package.
 
 If you installed all the above, but the extensions would still not compile, you are probably running a Fedora image that misses `redhat-rpm-config` package. In that case `gcc` compiler would complain about one of the following:
+
 ```
 gcc: error: conftest.c: No such file or directory
 gcc: error: /usr/lib/rpm/redhat/redhat-hardened-cc1: No such file or directory
 ```
+
 To solve this, simply run `sudo dnf install redhat-rpm-config`.
 
 If you are getting compilation issues mentioning `Failed to complete patch task`, you are likely missing `patch` command:
+
 ```
 $ sudo dnf install patch
 ```
