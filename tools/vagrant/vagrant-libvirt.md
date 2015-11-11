@@ -36,3 +36,11 @@ $ sudo cp /usr/share/vagrant/gems/doc/vagrant-libvirt-0.0.30/polkit/10-vagrant-l
 
 This is example for Fedora 23, for other versions change the version of `vagrant-libvirt` component in
 the above path to the one installed.
+
+As this package allows everyone in a `vagrant` group to access libvirt without password, you need to add yourself to this group to take advantage of the file:
+
+```
+$ sudo getent group vagrant >/dev/null || sudo groupadd -r vagrant
+$ sudo gpasswd -a ${USER} vagrant
+$ newgrp vagrant
+```
