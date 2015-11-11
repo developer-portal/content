@@ -59,6 +59,7 @@ Cmnd_Alias VAGRANT_EXPORTS_REMOVE = /bin/sed -r -e * d -ibak /etc/exports
 Afterwards add yourself to the `vagrant` group if you are not there already by running:
 
 ```
+$ sudo getent group vagrant >/dev/null || sudo groupadd -r vagrant
 $ sudo gpasswd -a ${USER} vagrant
 $ newgrp vagrant
 ```
