@@ -22,8 +22,8 @@ To compile and link your program you can do the same as was described in section
 ```
 
 Again in the command above there are a few examples of possible options which can be used.
-`-std=c++14` states the version of standard used when compiling your code. `-o name` again states the name of your binary program.
-You can than run your program by typing:
+`-std=c++14` states the version of standard used when compiling your code. `-o your_binary` again states the name of your binary program.
+You can then run your program by typing:
 
 ```
 # ./your_binary

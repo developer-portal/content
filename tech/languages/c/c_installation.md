@@ -37,7 +37,7 @@ There are many options which you can use when running a compiler. These are some
 $ gcc -std=c11 your_source.c -o your_binary
 ```
 
-The option `-std=c11` states that the c11 or iso9899:2011 C language standard will be used when compiling your code.
+The option `-std=c11` states that the C11 or ISO/IEC 9899:2011 C language standard will be used when compiling your code.
 The `-o name` option simply states the name of the binary created by `gcc` command.
 To see all the options which you can use with `gcc` simply view its man page like this:
 

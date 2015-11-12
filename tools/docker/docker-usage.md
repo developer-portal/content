@@ -70,4 +70,4 @@ $ sudo docker build -t "my-image" .
 
 If the build is successful you can see the `my-image` image in `docker images` output.
 
-See also [Build your own image](http://docs.docker.com/linux/step_four) and [Building an image from a Dockerfile](https://docs.docker.com/userguide/dockerimages/#building-an-image-from-a-dockerfile) for more through description.
+See also [Build your own image](http://docs.docker.com/linux/step_four) and [Building an image from a Dockerfile](https://docs.docker.com/userguide/dockerimages/#building-an-image-from-a-dockerfile) for more thorough description.
