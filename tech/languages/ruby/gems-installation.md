@@ -48,7 +48,9 @@ To install `thor` gem you therefore install `rubygem-thor` package:
 ```
 $ sudo dnf install rubygem-thor
 ```
+
 or
+
 ```
 $ sudo dnf install 'rubygem(thor)'
 ```
