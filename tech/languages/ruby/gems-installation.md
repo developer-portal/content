@@ -10,7 +10,7 @@ You can install new gems on Fedora by either installing upstream gems from RubyG
 
 ## Installing gems from RubyGems.org
 
-Installing upstream gems is as easy as running `gem install GEM_NAME` command, however some gems might fail to install due to complication errors. If you need to compile gems C extensions, install Ruby header files with the following command:
+Installing upstream gems is as easy as running `gem install GEM_NAME` command, however some gems might fail to install due to compilation errors. If you need to compile gems C extensions, install Ruby header files with the following command:
 
 ```
 $ sudo dnf install ruby-devel
@@ -47,7 +47,9 @@ To install `thor` gem you therefore install `rubygem-thor` package:
 
 ```
 $ sudo dnf install rubygem-thor
+```
 or
+```
 $ sudo dnf install 'rubygem(thor)'
 ```
 
