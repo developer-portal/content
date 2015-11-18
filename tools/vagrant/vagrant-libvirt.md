@@ -20,27 +20,9 @@ was created with using libvirt provider in mind.
 
 
 Using `libvirt` provider requires you to type your administrator password every time you create,
-start, halt or destroy your domains. Fortunately you can avoid this by setting `polkit rules`
-to allow Vagrant to use `libvirt` without explicit approvals. We include this file in `-doc`
-sub-package. To get it, type:
+start, halt or destroy your domains. Fortunately you can avoid this by adding yourself to the `libvirt` group:
 
 ```
-$ sudo dnf install vagrant-libvirt-doc
-```
-
-And install the policy by copying the polkit `.rules` file:
-
-```
-$ sudo cp /usr/share/vagrant/gems/doc/vagrant-libvirt-0.0.30/polkit/10-vagrant-libvirt.rules /usr/share/polkit-1/rules.d/
-```
-
-This is an example for Fedora 23, for other versions change the version of `vagrant-libvirt` component in
-the above path to the one installed.
-
-As this package allows everyone in a `vagrant` group to access libvirt without password, you need to add yourself to this group to take advantage of the file:
-
-```
-$ sudo getent group vagrant >/dev/null || sudo groupadd -r vagrant
-$ sudo gpasswd -a ${USER} vagrant
-$ newgrp vagrant
+$ sudo gpasswd -a ${USER} libvirt
+$ newgrp libvirt
 ```
