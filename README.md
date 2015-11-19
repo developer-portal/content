@@ -1,13 +1,13 @@
 # Content for Fedora Developer Portal
 
-[Project Page](https://fedoraproject.org/wiki/Websites/Developer) | [First Milestone](https://github.com/developer-portal/content/milestones/first%20release) | [How To Contribute](https://github.com/developer-portal/content/blob/master/CONTRIBUTING.md)
+[Project page](https://fedoraproject.org/wiki/Websites/Developer) |  [How to contribute](https://github.com/developer-portal/content/blob/master/CONTRIBUTING.md)
 
-## How To Create a Content
+## How to submit content
 1. Read our [contribution guide](./CONTRIBUTING.md) about writing a content
 2. Learn about [markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 3. [Create new](https://help.github.com/articles/creating-new-files/) or modify existing files with content
 
-## How To Test Your Changes
+## How to test your changes
 You can easily review the markdown formatting directly on Github but if you want to see how your changes look in context of the whole website, you might want to take a look at the [Website repository](https://github.com/developer-portal/website) and run a local instance of the portal.
 
 ### Structure
@@ -15,7 +15,7 @@ The website would consist of several sections. Each section would contain a set 
 Each content file must start with initial section in YAML syntax describing the title and where the file belongs.
 
 
-#### An Example for DevAssistant
+#### An example for DevAssistant
 Every file except the main page would start with:
 ```yaml
 ---
