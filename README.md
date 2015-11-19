@@ -1,6 +1,8 @@
 # Content for Fedora Developer Portal
 
-[Project page](https://fedoraproject.org/wiki/Websites/Developer) |  [How to contribute](https://github.com/developer-portal/content/blob/master/CONTRIBUTING.md)
+This repository contains the text content for the [Fedora Developer Portal](https://developer.fedoraproject.org/). See [project page](https://fedoraproject.org/wiki/Websites/Developer) on Fedora Wiki.
+
+If you are here to submit issue or PR regarding the portal itself, please do so in the website repository: https://github.com/developer-portal/website.
 
 ## How to submit content
 1. Read our [contribution guide](./CONTRIBUTING.md) about writing a content
