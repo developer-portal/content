@@ -7,10 +7,10 @@ description: Transactional SQL database, an enhanced drop-in replacement for MyS
 
 # MariaDB SQL database
 
-[MariaDB](https://mariadb.org/en/about/) is a dropin replacement of MySQL, forked by the community from the latter. To learn more about MariaDB, visit [upstream feature page](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-features/), and to see main differences from MySQL, see [compatibility documentation](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-compatibility/).
+[MariaDB](https://mariadb.org/en/about/) is a drop-in replacement of MySQL, forked by the community from the latter. To learn more about MariaDB, visit [upstream feature page](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-features/), and to see main differences from MySQL, see [compatibility documentation](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-compatibility/).
 
 ## What implementations of MySQL we have in Fedora
-[MariaDB](https://apps.fedoraproject.org/packages/mariadb) is preffered MySQL implementation in Fedora. MariaDB can be usually used instead of MySQL as a dropin replacement in most practical cases and most of the applications will work exactly the same. However, when you need to install Community MySQL, it is available as [community-mysql package](https://apps.fedoraproject.org/packages/community-mysql) in Fedora repositories.
+[MariaDB](https://apps.fedoraproject.org/packages/mariadb) is preferred MySQL implementation in Fedora. MariaDB can be usually used instead of MySQL as a drop-in replacement in most practical cases and most of the applications will work exactly the same. However, when you need to install Community MySQL, it is available as [community-mysql package](https://apps.fedoraproject.org/packages/community-mysql) in Fedora repositories.
 
 Generally, most of the [documentation for MySQL](http://dev.mysql.com/doc/) is valid also for MariaDB.
 
@@ -18,9 +18,9 @@ Generally, most of the [documentation for MySQL](http://dev.mysql.com/doc/) is v
 
 Fedora usually ships only the most recent stable version of MariaDB, which is 10.0. Learn more about this version at [upstream documentation](https://mariadb.com/kb/en/mariadb/what-is-mariadb-100/). The package is called `mariadb` (client tools) and `mariadb-server` (server daemon).
 
-However, you can get older version either by installing [Software Collection package of MariaDB 5.5](https://www.softwarecollections.org/en/scls/rhscl/mariadb55/) or by downloading [packages provided by upstream](https://downloads.mariadb.org/).
+However, you can get an older version either by installing [Software Collection package of MariaDB 5.5](https://www.softwarecollections.org/en/scls/rhscl/mariadb55/) or by downloading [packages provided by upstream](https://downloads.mariadb.org/).
 
-Fedora also ships MariaDB with Galera patch. The package with MariaDB Galera is called `mariadb-galera-server` and the wsrep plugin is available in package `galera`. See section [How to install MariaDB Galera on Fedora](#how-to-install-mariadb-galera-on-fedora) for more information.
+Fedora also ships MariaDB with Galera patch. The package with MariaDB Galera is called `mariadb-galera-server` and the wsrep plug-in is available in package `galera`. See section [How to install MariaDB Galera on Fedora](#how-to-install-mariadb-galera-on-fedora) for more information.
 
 ## How to install MariaDB on Fedora
 
@@ -42,7 +42,7 @@ If you need to connect to the MariaDB server using GUI, install either phpMyAdmi
 $ sudo dnf install phpMyAdmin
 ```
 
-Or install Libre Office Base with JDBC plugin for MySQL:
+Or install Libre Office Base with JDBC plug-in for MySQL:
 
 ```
 $ sudo dnf install libreoffice-base mysql-connector-java
@@ -56,7 +56,7 @@ $ sudo dnf install unixODBC mysql-connector-java
 
 ## <a name="basic-tutorial-for-mariadb-in-fedora"></a>Basic tutorial for MariaDB in Fedora
 
-MariaDB runs on port 3306 by default and creates local unix socker at `/var/lib/mysql/mysql.sock`. Data are stored into `/var/lib/mysql` directory and logs are located under `/var/log/mariadb/` by default. In order to change these directories, pay attention to use correct SELinux context and owner.
+MariaDB runs on port 3306 by default and creates a local unix socket at `/var/lib/mysql/mysql.sock`. By default, data is stored in the `/var/lib/mysql` directory and logs are located under `/var/log/mariadb/`. In order to change these directories, pay attention to use correct SELinux context and owner.
 
 Right after installing, the data directory is empty. It is initialized during the first start.
 
@@ -72,7 +72,7 @@ In order to setup MariaDB to start after system reboot, run:
 $ sudo systemctl enable mariadb
 ```
 
-Without any further configuration, root user has no password set by default and so it is allowed to connect without the password:
+The root user has no password set by default and so it is allowed to connect without the password:
 
 ```
 mysql -u root
@@ -92,14 +92,13 @@ Configuration of both, client and server, is done by editing files `/etc/my.cnf`
 
 ### How to configure MariaDB server for local development
 
-When developing an application that uses MariaDB as the storage engine, developer uses typically one user account that has full access to one dedicated database scheme. In order to do so, run the commands from section [Basic tutorial for MariaDB in Fedora](#basic-tutorial-for-mariadb-in-fedora) and then create the user and the dedicated database:
+When developing an application that uses MariaDB as the storage engine, developers typically use one user account that has full access to one dedicated database scheme. In order to do so, run the commands from section [Basic tutorial for MariaDB in Fedora](#basic-tutorial-for-mariadb-in-fedora) and then create the user and the dedicated database:
 
 ```
 $ sudo systemctl start mariadb
 $ sudo systemctl enable mariadb
 $ sudo mysql_secure_installation
-...
-$ sudo mysql -u root -p
+...My Account sudo mysql -u root -p
 MariaDB [(none)]> create database db1;
 Query OK, 1 row affected (0.00 sec)
 
@@ -125,11 +124,11 @@ In various frameworks or libraries, you will usually use the username, password 
 
 ### How to run MariaDB in production development
 
-In order to run MariaDB in production development, you should pay extra attention to setup the service with minimizing risk of being exploited. Except other things, this means:
+In order to run MariaDB in production development, you should pay extra attention to setting up the service in order to minimize the risk of being exploited. Among other things, this means:
  * use `mysql_secure_installation` as mentioned above
- * do not accept connectoins from all adresses if not absolutely necessary
- * use strong passwords every-time
- * use only user permissions that are necessary for the application
+ * do not accept connections from all addresses unless absolutely necessary
+ * `Always use a strong passwordd`
+ * Limit user permissions to those necessary for the application to run
 
 By default, MariaDB cannot be accessed from another computer. In order to allow access from another computer, we need to do the following things.
 
@@ -145,9 +144,9 @@ bind-address = 0.0.0.0
 
 ### Other common configuration
 
-In order to change configuration paramenters for the MariaDB server, create the a configuration file under `/etc/my.cnf.d/` directory.
+In order to change configuration parameters for the MariaDB server, create the a configuration file under `/etc/my.cnf.d/` directory.
 
-The following example shows content of the file `/etc/my.cnf.d/myconfig.cnf` that contains several options, that are often changed (use any variables that matches your needs).
+The following example shows content of the file `/etc/my.cnf.d/myconfig.cnf` which contains several commonly changed options (use any variables that matches your needs).
 ```
 # The maximum permitted number of simultaneous client connections:
 max_connections = 20
@@ -156,7 +155,7 @@ max_connections = 20
 ft_min_word_len = 3
 
 # The maximum length of the word to be included in a FULLTEXT index:
-ft_max_word_len = 15
+ft_max_word_len = My Account
 
 # In case the native AIO is broken, it can be disabled by:
 innodb_use_native_aio = 0
@@ -210,4 +209,4 @@ $ dnf install mariadb-oqgraph-engine
 
 ## MariaDB server available as a dynamic library:
 
-In Fedora, MariaDB server is available also as a dynamic library, that can be handy in some applications. This library (`libmysqld.so`) is available in package `mariadb-embedded` and header files for building an application against this library are available in package `mariadb-embedded-devel`.
+In Fedora, MariaDB server is available also as a dynamic library, that can be handy in some applications. This library (`libmysqld.so`) is available in the package `mariadb-embedded` and header files for building an application against this library are available in the package `mariadb-embedded-devel`.

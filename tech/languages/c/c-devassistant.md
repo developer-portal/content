@@ -6,8 +6,8 @@ order: 5
 
 # C and C++ assistants
 
-DevAssistant provides assistants for C and C++ programming languages. If you run `da` command from the command line then projects are created in the current working directory.
-In case that you run `da-gui` then projects are created in directories which you specify.
+DevAssistant provides assistants for C and C++ programming languages. If you run `da` command from command line, projects are created in current working directory.
+If you run `da-gui`, you can specify directories where the projects will be created.
 
 ## Assistant for C application
 

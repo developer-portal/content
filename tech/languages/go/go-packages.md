@@ -17,8 +17,8 @@ $ go get github.com/gorilla/context
 If the requested package comes with an executable binary, you should find it in `$GOPATH/bin` directory. To use it, you need to add this path to your `$PATH`:
 
 ```
-$ echo 'export PATH=$GOPATH/bin:$PATH' >> $HOME/.profile
-$ source $HOME/.profile
+$ echo 'export PATH=$GOPATH/bin:$PATH' >> $HOME/.bashrc
+$ source $HOME/.bashrc
 ```
 
 ## Go packages from Fedora
