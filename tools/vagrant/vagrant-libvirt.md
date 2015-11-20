@@ -12,8 +12,11 @@ To use Vagrant with libvirt, you need to install the `vagrant-libvirt` package:
 $ sudo dnf install vagrant-libvirt
 ```
 
-There is also *@vagrant* group available now so you can use that one as well. *@vagrant* group
-was created with using libvirt provider in mind.
+There is also *@vagrant* package collection created with libvirt provider in mind. So you can use it to install all necessary Vagrant packages as well
+
+```
+$ sudo dnf install @vagrant
+```
 
 
 ## Using libvirt from Vagrant without password prompts
