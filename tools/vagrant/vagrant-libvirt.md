@@ -39,6 +39,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
+Read more on the `vagrant-libvirt` configuration in the [upstream documentation](https://github.com/pradels/vagrant-libvirt).
 
 ## Using libvirt from Vagrant without password prompts
 
