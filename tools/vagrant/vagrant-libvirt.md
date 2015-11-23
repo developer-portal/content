@@ -15,6 +15,12 @@ $ sudo dnf install vagrant-libvirt
 There is also *@vagrant* group available now so you can use that one as well. *@vagrant* group
 was created with using libvirt provider in mind.
 
+You also need the libvirt daemon running:
+
+```
+$ sudo systemctl enable libvirtd
+```
+
 
 ## Using libvirt from Vagrant without password prompts
 
