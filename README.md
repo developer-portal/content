@@ -9,7 +9,7 @@ This repository contains the text content for the [Fedora Developer Portal](http
 
 Please submit your **ideas**, **bug reports** or **requests** regarding:
 - content of the portal in our [content repository issue tracker](https://github.com/developer-portal/content/issues).
-- the project, our processes or the portal itself on our [website repository issue tracker](https://github.com/developer-portal/websites/issues).
+- the project, our processes or the portal itself on our [website repository issue tracker](https://github.com/developer-portal/website/issues).
 
 ## How to submit content
 
