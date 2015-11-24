@@ -2,11 +2,14 @@
 **[Project Page](https://fedoraproject.org/wiki/Websites/Developer)** |
 [Content Repository](https://github.com/developer-portal/content) |
 **[Website Repository](https://github.com/developer-portal/website)**
+
 <hr>
 
-This repository contains the text content for the [Fedora Developer Portal](https://developer.fedoraproject.org/). See the [project page](https://fedoraproject.org/wiki/Websites/Developer) on Fedora Wiki.
+This repository contains the text content for the [Fedora Developer Portal](https://developer.fedoraproject.org/).
 
-If you are here to submit issue or PR regarding the portal itself, please do so in the website repository: https://github.com/developer-portal/website.
+Please submit your **idea**, **bug report** or **request** regarding:
+- the content of the portal in our [content repository issue tracker]().
+- the project, our processes or the portal itself on our [website repository issue tracker]().
 
 ## How to submit content
 
