@@ -53,8 +53,7 @@ Now you have to open your master document, which is by default called `index.rst
 
 ```
 .. toctree::
-   :maxdepth: 2
-   introduction        <--- add a link like this
+   introduction
 ```
 
 ## See the results
