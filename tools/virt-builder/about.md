@@ -36,19 +36,20 @@ package in Fedora:
 
 Build a minimal virtual machine:
 
-    $ virt-builder fedora-23
+    $ virt-builder fedora-23 --root-password password:123456
 
-will build a Fedora 23 image for the same architecture as virt-builder (so
-running it from an i386 installation will try to build an i386 image, if
-available).  This will have all default configuration (minimal size, no user
-accounts, random root password, only the bare minimum installed software,
-etc.).
+will build a Fedora 23 image (called 'fedora-23.img', in the current
+working directory, which will later be imported into libvirt for use)
+for the same architecture as virt-builder (so running it from an i386
+installation will try to build an i386 image, if available).  This will
+have all default configuration (minimal size, no user accounts, random
+root password, only the bare minimum installed software, etc.).
 
 Import the above disk image into libvirt:
 
     $ virt-install --import \
        --name f23vm1 --ram 2048 \
-       --disk path=disk.img,format=raw --os-variant fedora20
+       --disk path=fedora-23.img,format=raw --os-variant fedora23
 
 ## Examples to create custom virtual machines
 
@@ -79,6 +80,9 @@ This creates a Rawhide VM:
 
 Import it into libvirt, with similar sytax as shown in previous examples.
 
+NOTE: The 'fedora-repos-rawhide' RPM can also be installed from
+inside the image too: `dnf install fedora-repos-rawhide`.
+
 ## Manipulating the virtual machines
 
 Use the libvirt shell interface `virsh(1)` or `virt-manager(1)` to
@@ -96,6 +100,21 @@ Take a snapshot of a running virtual machine:
 
     $ sudo virsh snapshot-create-as f23vm1 snap1 "Clean F23 VM"
 
+NOTE: With this kind of snapshot, the original and its delta (the
+snapshot) are stored in a single disk image file (convenient for moving
+them across machines).  The VM disk image should be of QCOW2 format.
+
 Revert to a specific snapshot:
 
     $ sudo virsh snapshot-revert f23vm1 snap1
+
+Cleaning up VMs and their associated storage:
+
+To gracefully shutdown and delete a virtual machine (including all its
+associated disk images):
+
+    $ sudo virsh stop f23vm1
+    $ sudo virsh undefine f23vm1 --remove-all-storage
+
+NOTE: The flag `--remove-all-storage` will delete the VM's disk image(s),
+so ensure you took out relevant data from your VMs.
