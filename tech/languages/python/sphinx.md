@@ -73,5 +73,5 @@ You will probably want to use `html` for local testing purposes and `dirhtml` fo
 
 
 ## What next
-- See working examples to get an inspiration <http://sphinx-doc.org/examples.html>
-- See the full Sphinx possibilities and features <http://sphinx-doc.org/contents.html>
+- See working examples to get an inspiration [Sphinx examples](http://sphinx-doc.org/examples.html)
+- See the full Sphinx possibilities and features [Sphinx contents](http://sphinx-doc.org/contents.html)
