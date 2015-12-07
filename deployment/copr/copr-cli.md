@@ -3,11 +3,11 @@ title: Copr command line interface
 page: copr
 ---
 
-# Copr command Line Interface
+# Copr command line interface
 
 [Copr](https://copr.fedoraproject.org/) features a command line interface that can help you with managing projects, submitting builds, etc.
 
-## Setting Up
+## Setup
 
 Install the copr-cli package:
 
@@ -23,7 +23,7 @@ Log into the Copr web interface and get your API token at the [Copr API Page](ht
 $ vim ~/.config/copr
 ```
 
-## Creating a New Project
+## Creating a new project
 
 To create a new project called `test-project`, which would provide packages for Fedora 22, type:
 
@@ -31,7 +31,7 @@ To create a new project called `test-project`, which would provide packages for 
 $ copr-cli create --chroot fedora-22-i386 --chroot fedora-22-x86_64 test-project
 ```
 
-## Submitting a Build
+## Submitting a build
 
 There are curently two ways of getting your SRPM(s) into Copr:
 
@@ -49,7 +49,7 @@ $ copr-cli build test-project-2 ~/packages/package-1.6-1.fc22.src.rpm
 
 The command line tool will now monitor your build and keeps you updated about any changes and results. You can safely interrupt it with `ctrl+c` at any time. The build will continue running.
 
-## Adding a Repository and Installing
+## Adding a repository and installing the package
 
 Now, when your build has been finished, you can add the repository and install your package:
 

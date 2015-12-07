@@ -67,9 +67,9 @@ Import the disk image into libvirt, and provide it 4GB of memory:
         --disk path=f23vm2.qcow2,format=qcow2,cache=writeback \
         --nographics --import --os-variant fedora23
 
-### Create a Rawhide VM
+### Create a rawhide VM
 
-This creates a Rawhide VM:
+This creates a rawhide VM:
 
     $ virt-builder fedora-23 \
         --install fedora-repos-rawhide \

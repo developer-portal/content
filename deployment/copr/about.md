@@ -19,4 +19,3 @@ There is nice a [Screenshot Tutorial](https://fedorahosted.org/copr/wiki/Screens
 If you prefer using the command line, there is [documentation of copr-cli](copr-cli.html).
 
 Note: you can only use Copr for FOSS projects. More details can be found in the [What I can build in Copr](https://fedorahosted.org/copr/wiki/UserDocs#WhatIcanbuildinCopr) section of [Copr FAQ](https://fedorahosted.org/copr/wiki/UserDocs#FAQ).
-
