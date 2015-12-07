@@ -46,7 +46,7 @@ export VAGRANT_DEFAULT_PROVIDER=docker
 
 ## Using Docker from Vagrant without password prompts
 
-To use Vagrant with Docker without password prompts it is enough to add yourself to the `vagrant`
+To use Vagrant with Docker without password prompts it is enough to add yourself to the `docker`
 group. This will make `docker` commands password-less as well.
 
 To do so, type:
@@ -56,7 +56,7 @@ $ sudo groupadd docker && sudo gpasswd -a ${USER} docker && sudo systemctl resta
 $ newgrp docker
 ```
 
-Above commands will create the group `vagrant` and add current user to this group. This user
+Above commands will create the group `docker` and add current user to this group. This user
 also need to have administrator privileges.
 
 Note: This has security implications, read about this in the [official docs](https://docs.docker.com/articles/security/#docker-daemon-attack-surface).
