@@ -31,7 +31,7 @@ Virt-builder tool is provided as part of `libguestfs-tools-c` RPM
 package in Fedora:
 
 ```
-    $ dnf install libguestfs-tools-c
+    $ sudo dnf install libguestfs-tools-c
 ```
 
 ## Simple usage
@@ -96,7 +96,7 @@ NOTE: The 'fedora-repos-rawhide' RPM can also be installed from
 inside the image too:
 
 ```
-dnf install fedora-repos-rawhide
+sudo dnf install fedora-repos-rawhide
 ```
 
 ## Manipulating the virtual machines
