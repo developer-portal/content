@@ -70,6 +70,7 @@ available packages:
 ```
 
 Import the disk image into libvirt, and provide it 4GB of memory:
+
 ```
     $ virt-install --name f23vm2 --ram 4096 \
         --disk path=f23vm2.qcow2,format=qcow2,cache=writeback \
@@ -92,7 +93,11 @@ This creates a rawhide VM:
 Import it into libvirt, with similar sytax as shown in previous examples.
 
 NOTE: The 'fedora-repos-rawhide' RPM can also be installed from
-inside the image too: `dnf install fedora-repos-rawhide`.
+inside the image too:
+
+```
+dnf install fedora-repos-rawhide
+```
 
 ## Manipulating the virtual machines
 
