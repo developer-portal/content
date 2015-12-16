@@ -8,7 +8,9 @@ order: 2
 
 Fedora currently ships with over three thousand of actively maintained Perl modules in its repositories; in most cases installing the module of your choice should be as simple as:
 
-# dnf install 'perl(My::Module)'
+```
+$ sudo dnf install 'perl(My::Module)'
+```
 
 If available, this is the preferred method.
 

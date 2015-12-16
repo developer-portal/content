@@ -45,6 +45,21 @@ To see all the options which you can use with `gcc` simply view its man page lik
 $ man gcc
 ```
 
+### Compiling 32-bit binaries on a 64-bit Fedora
+
+Let us assume you have a shiny modern computer with a 64-bit processor (AMD, Intel or similar compatible processor, this architecture is called x86_64 in Fedora) and installed 64-bit Fedora with gcc as per instructions above. GCC will naturally create 64-bit binaries suitable for your system. Yet sometimes for some sad reason you want to create a 32-bit binary (architecture like old Pentiums, called i686 in Fedora). Maybe you want to be compatible with some ancient piece of hardware or software. No matter the reason, first you need to
+
+```
+$ sudo dnf install libgcc.i686 glibc-devel.i686
+```
+
+If you use additional -devel packages, install them as well with the .i686 suffix. Then you can tell gcc to produce 32-bit binaries using "-m32" option:
+
+```
+$ gcc -m32 your_source.c -o your_binary
+```
+
+
 ## CLANG installation
 
 GCC is just one of many compilers that are available for compiling C code. Another recently very popular compiler is Clang.

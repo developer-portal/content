@@ -12,9 +12,34 @@ To use Vagrant with libvirt, you need to install the `vagrant-libvirt` package:
 $ sudo dnf install vagrant-libvirt
 ```
 
-There is also *@vagrant* group available now so you can use that one as well. *@vagrant* group
-was created with using libvirt provider in mind.
+There is also *@vagrant* package collection created with libvirt provider in mind. With the following command you can install all necessary Vagrant packages as well:
 
+```
+$ sudo dnf install @vagrant
+```
+
+Afterwards make sure that libvirt daemon is running and that you have `kvm` module loaded in the kernel:
+
+```
+$ sudo systemctl enable libvirtd
+$ lsmod | grep kvm
+kvm_intel             167936  3
+kvm                   499712  1 kvm_intel
+```
+
+If you do not have KVM capabilities, you will need to use `qemu` driver within your Vagrantfile as follows:
+
+```
+Vagrant.configure("2") do |config|
+...
+  config.vm.provider :libvirt do |libvirt|
+    libvirt.driver = "qemu"
+  end
+...
+end
+```
+
+Read more on the `vagrant-libvirt` configuration in the [upstream documentation](https://github.com/pradels/vagrant-libvirt).
 
 ## Using libvirt from Vagrant without password prompts
 

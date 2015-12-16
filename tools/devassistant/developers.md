@@ -158,7 +158,7 @@ Elsewhere in the assistant, the file will be only referred to by its handle
 `foo`. Repeating the handle name with `&` is necessary due to technical
 limitations of the current implementation.
 
-### Run Section
+### Run section
 
 The run section is a procedural section where you put the commands that should
 be executed during the assistant's run. Typically, you create a directory to

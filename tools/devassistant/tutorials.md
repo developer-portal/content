@@ -177,7 +177,7 @@ the DevAssistant log. You now have a fully functioning webserver after running
 a single command in DevAssistant, and can start editing it with your favourite
 editor.
 
-## Publishing Existing Code to GitHub
+## Publishing existing code to GitHub
 
 If you are interested in DevAssistant, there is a good chance you are already
 working on some code on your own, but that code is not yet published anywhere.
@@ -191,7 +191,7 @@ the name of the current directory, and pushes the sources there. If you so
 wish, you can specify a different GitHub username or omit the `--push` flag to
 only create the repository, but not push the code into it immediately.
 
-## Checking out or Forking a GitHub repository
+## Checking out or forking a GitHub repository
 
 With DevAssistant, not only the creation of your own software is easy, but
 the modification of others' code is too. To check out a GitHub repository, run:

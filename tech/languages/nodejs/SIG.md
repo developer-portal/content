@@ -1,7 +1,7 @@
 ---
 title: Node.js SIG
 page: nodejs
-order: 2
+order: 3
 ---
 
 # Node.js Special Interest Group

@@ -22,7 +22,7 @@ PostgreSQL is an advanced Object-Relational database management system (DBMS).
 Fedora distribution provides feature-full package set for PostgreSQL client and
 server, server-compatible plug-ins and database connectors.
 
-## Quick Start
+## Quick start
 
 PostgreSQL installation on Fedora box and basic command-line usage:
 

@@ -1,22 +1,36 @@
 # Content for Fedora Developer Portal
+**[Project Page](https://fedoraproject.org/wiki/Websites/Developer)** |
+[Content Repository](https://github.com/developer-portal/content) |
+**[Website Repository](https://github.com/developer-portal/website)**
 
-[Project Page](https://fedoraproject.org/wiki/Websites/Developer) | [First Milestone](https://github.com/developer-portal/content/milestones/first%20release) | [How To Contribute](https://github.com/developer-portal/content/blob/master/CONTRIBUTING.md)
+<hr>
 
-## How To Create a Content
-1. Read our [contribution guide](./CONTRIBUTING.md) about writing a content
+This repository contains the text content for the [Fedora Developer Portal](https://developer.fedoraproject.org/).
+
+Please submit your **ideas**, **bug reports** or **requests** regarding:
+- content of the portal in our [content repository issue tracker](https://github.com/developer-portal/content/issues).
+- the project, our processes or the portal itself on our [website repository issue tracker](https://github.com/developer-portal/website/issues).
+
+## How to submit content
+
+1. Read our [contribution guide](./CONTRIBUTING.md) about writing content
 2. Learn about [markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-3. [Create new](https://help.github.com/articles/creating-new-files/) or modify existing files with content
+3. [Create new](https://help.github.com/articles/creating-new-files/) or modify existing files within this repository
 
-## How To Test Your Changes
-You can easily review the markdown formatting directly on Github but if you want to see how your changes look in context of the whole website, you might want to take a look at the [Website repository](https://github.com/developer-portal/website) and run a local instance of the portal.
+## How to test your changes
+
+You can easily review the markdown formatting directly on Github but if you want to see how your changes look in context of the whole website, you might want to take a look at the [website](https://github.com/developer-portal/website) repository and run a local instance of the portal.
 
 ### Structure
-The website would consist of several sections. Each section would contain a set of pages.
-Each content file must start with initial section in YAML syntax describing the title and where the file belongs.
+
+The website consists of several sections. Each section contains a set of pages.
+Each content file must start with an initial section in YAML syntax describing the title and where the file belongs.
 
 
-#### An Example for DevAssistant
+#### An example for DevAssistant
+
 Every file except the main page would start with:
+
 ```yaml
 ---
 title: Some Title      # This title is shown in menus
@@ -24,7 +38,9 @@ page: devassistant     # This is an ID of your content (select value from the li
 order: 1               # Optional - order in menu
 ---
 ```
+
 The main page would contain:
+
 ```yaml
 ---
 title: DevAssistant    # This title is shown in menus
@@ -34,10 +50,12 @@ description: Lorem ipsum...    # a short description to be shown in the section 
 ---
 ```
 
-#### Section and Page Names
+#### Section and page names
+
 First level is a section id. Second level is a page id.
 
 ##### Start
+
 1. start-sw
   * web-app
   * cli-app
@@ -52,12 +70,15 @@ First level is a section id. Second level is a page id.
   * documentation
 
 ##### Tools
+
 1. tools
+  * abrt
   * devassistant
   * docker
   * vagrant
 
 ##### Technology
+
 1. tech-languages
   * python
   * ruby
@@ -73,6 +94,7 @@ First level is a section id. Second level is a page id.
   * sqlite
 
 ##### Deployment
+
 1. deployment
   * copr
   * scl
