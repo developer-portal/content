@@ -30,13 +30,13 @@ It's recommanded to keep your project inside virtual enviroment. But you can ski
 Enter this command to your command line for installation:
 
 ```
-pip install virtualenv
-```
-
-or installation from official repository:
-
-```
 sudo dnf install python-virtualenv
+```
+
+or installation for Python3:
+
+```
+sudo dnf install python3-virtualenv
 ```
 
 
@@ -47,18 +47,10 @@ mkdir working-dir
 cd working-dir
 ```
 
-Now we will create virtual enviroment called venv inside this directory using following command.
-
-For Python 2:
+Now we will create virtual enviroment called venv inside this directory using following command:
 
 ```
-virtualenv -p /usr/bin/python2.7 venv
-```
-
-or Python 3:
-
-```
-virtualenv -p /user/bin/python3.4 venv
+virtualenv venv
 ```
 
 When it's done, we will activate our virtualenv. Now we will use following commands:
@@ -79,14 +71,14 @@ It will return nothing.
 
 ## How to install Django
 
-Now if you installed virtualenv do not leave it, we will install Django 1.8. If you did not install virtualenv use this command 
+Now if you installed virtualenv do not leave it, we will install Django now. If you installed virtualenv use this command 
 inside your working directory:
 
 ```
-pip install django==1.8
+pip install django
 ```
 
-or installation by official repository. 
+If you did not use this command. 
 
 For Python 2:
 
@@ -115,6 +107,5 @@ python manage.py runserver
 ```
 
 You will see message with information about your development server. When you insert URL into your browser, 
-you will see welcome page.
+you will see welcome page (default URL for development server is http://127.0.0.1:8000/).
 And you successfully started your first Django project.
-
