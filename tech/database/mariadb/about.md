@@ -125,6 +125,7 @@ In various frameworks or libraries, you will usually use the username, password 
 ### How to run MariaDB in production development
 
 In order to run MariaDB in production development, you should pay extra attention to setting up the service in order to minimize the risk of being exploited. Among other things, this means:
+
  * use `mysql_secure_installation` as mentioned above
  * do not accept connections from all addresses unless absolutely necessary
  * `Always use a strong passwordd`
@@ -133,11 +134,13 @@ In order to run MariaDB in production development, you should pay extra attentio
 By default, MariaDB cannot be accessed from another computer. In order to allow access from another computer, we need to do the following things.
 
 Allow to accept connections on port 3306:
+
 ```
 firewall-cmd --permanent --zone=public --add-port=3306/tcp
 ```
 
 Allow to listen on all interfaces (or your preferred network interface) by adding configuration option:
+
 ```
 bind-address = 0.0.0.0
 ```
@@ -147,6 +150,7 @@ bind-address = 0.0.0.0
 In order to change configuration parameters for the MariaDB server, create the a configuration file under `/etc/my.cnf.d/` directory.
 
 The following example shows content of the file `/etc/my.cnf.d/myconfig.cnf` which contains several commonly changed options (use any variables that matches your needs).
+
 ```
 # The maximum permitted number of simultaneous client connections:
 max_connections = 20
