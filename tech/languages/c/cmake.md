@@ -7,8 +7,8 @@ order: 4
 # CMake
 
 CMake is a multi-platform software designed for automated compilation on various operating systems.
-It uses C++ compiler and make build evniroment to build your project.
-CMake uses special configuration files CMakeLists.txt. CMakeLists.txt is a file containing `cmake` commands.
+It uses a C or C++ compiler and `make` to build your project.
+CMake uses a configuration file named `CMakeLists.txt`, which is a file containing `cmake` commands.
 With these commands you can specify directories, libraries, header files, output binary files and many more
 features that are part of your project and are important for succesfully building your project.
 
