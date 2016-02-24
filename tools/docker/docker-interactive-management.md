@@ -1,7 +1,6 @@
 ---
 title: sen
 page: docker
-section: tools
 description: Manage your containers interactively!
 ---
 
