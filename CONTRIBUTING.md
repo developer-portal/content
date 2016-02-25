@@ -36,6 +36,7 @@
   1. e.g. Ruby on Rails, Django, etc.
   2. Add this section only if they are packaged for Fedora or require special action on Fedora that would be unclear from upstream.
 5. Is there a Special Interest Group within Fedora? Mention it ([Ruby SIG](https://fedoraproject.org/wiki/Ruby_SIG), [Python SIG](https://fedoraproject.org/wiki/Ruby_SIG)).
+6. Mention [Fedora-Dockerfiles](https://github.com/fedora-cloud/Fedora-Dockerfiles) if there is a Dockerfile.
 
 ### Databases content
 
@@ -44,7 +45,8 @@
   1. postgresql vs postgresql-server, sqliteman etc.
 3. How to install packaged extensions?
   1. e.g. postgis, postgresql-contrib for hstore etc.
-1. How to setup a development/basic production database?
+4. How to setup a development/basic production database?
+5. Does [Fedora-Dockerfiles](https://github.com/fedora-cloud/Fedora-Dockerfiles) contain Dockerfile for this database technology?
 
 ### Tool Content
 
