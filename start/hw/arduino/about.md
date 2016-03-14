@@ -2,7 +2,7 @@
 title: Work with Arduino
 page: arduino
 section: start-hw
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in tristique felis. Duis ornare velit at libero sollicitudin congue. Mauris a pharetra augue. Ut vehicula sed neque sed congue. 
+description: Using Arduino with Fedora as a workstation.
 ---
 
 # Arduino platform
@@ -46,11 +46,9 @@ To list all supported boards use <code>ino list-models</code> command. To build 
 For more information about the project and supported options, please refer to the [documentation](http://inotool.org/) or use the <code>-h</code> option after the specific command.
 
 <!--
-## Platform IO 
+## Platform IO
 
 Add this section once platform-io is packaged for Fedora
 
 http://platformio.org/
 -->
-
-

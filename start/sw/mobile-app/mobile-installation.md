@@ -3,6 +3,7 @@ title: Mobile application
 page: mobile-app
 section: start-sw
 order: 1
+description: Creating mobile applications using Google Android Studio.
 ---
 
 # Mobile application
