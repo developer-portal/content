@@ -1,6 +1,6 @@
 ---
 title: Node.js assistants for DevAssistant
-page: nodejs
+subsection: nodejs
 order: 5
 ---
 

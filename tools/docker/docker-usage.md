@@ -1,6 +1,6 @@
 ---
 title: Docker basics
-page: docker
+subsection: docker
 order: 2
 ---
 

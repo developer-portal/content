@@ -1,6 +1,6 @@
 ---
 title: Gems
-page: ruby
+subsection: ruby
 order: 2
 ---
 

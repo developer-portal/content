@@ -1,6 +1,6 @@
 ---
 title: Vagrant with libvirt provider
-page: vagrant
+subsection: vagrant
 order: 2
 ---
 

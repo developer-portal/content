@@ -1,6 +1,6 @@
 ---
 title: Pypi
-page: python
+subsection: python
 order: 2
 ---
 

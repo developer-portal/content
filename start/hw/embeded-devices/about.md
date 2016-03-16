@@ -2,7 +2,7 @@
 label: need-help
 
 title: Work with Other Embeded Devices
-page: embeded-devices
+subsection: embeded-devices
 section: start-hw
 description:
 ---

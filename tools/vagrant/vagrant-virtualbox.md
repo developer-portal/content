@@ -1,6 +1,6 @@
 ---
 title: Vagrant with VirtualBox provider
-page: vagrant
+subsection: vagrant
 order: 3
 ---
 

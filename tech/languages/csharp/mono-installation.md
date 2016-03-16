@@ -1,6 +1,6 @@
 ---
 title: Mono
-page: csharp
+subsection: csharp
 section: tech-languages
 order: 1
 version: 7.8.4

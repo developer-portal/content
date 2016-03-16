@@ -1,6 +1,6 @@
 ---
 title: PostgreSQL
-page: postgresql
+subsection: postgresql
 section: tech-database
 description: World's most advanced open source database.
 ---

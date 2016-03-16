@@ -1,6 +1,6 @@
 ---
 title: Elixir
-page: elixir
+subsection: elixir
 section: tech-languages
 order: 1
 version: 1.0.5

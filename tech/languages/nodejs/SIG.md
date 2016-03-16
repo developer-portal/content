@@ -1,6 +1,6 @@
 ---
 title: Node.js SIG
-page: nodejs
+subsection: nodejs
 order: 3
 ---
 

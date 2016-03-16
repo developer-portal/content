@@ -1,6 +1,6 @@
 ---
 title: Perl modules
-page: perl
+subsection: perl
 order: 2
 ---
 

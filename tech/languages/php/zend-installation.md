@@ -1,6 +1,6 @@
 ---
 title: Zend Framework 2
-page: php
+subsection: php
 order: 4
 ---
 

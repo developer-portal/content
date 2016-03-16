@@ -1,6 +1,6 @@
 ---
 title: Google Android Studio
-page: mobile-app
+subsection: mobile-app
 order: 2
 ---
 

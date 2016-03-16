@@ -1,6 +1,6 @@
 ---
 title: Python assistants for DevAssistant
-page: python
+subsection: python
 order: 6
 ---
 

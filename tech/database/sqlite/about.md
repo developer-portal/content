@@ -1,6 +1,6 @@
 ---
 title: SQLite
-page: sqlite
+subsection: sqlite
 section: tech-database
 description: Software library that implements a self-contained server-less transactional SQL database engine.
 ---

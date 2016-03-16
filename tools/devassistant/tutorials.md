@@ -1,6 +1,6 @@
 ---
 title: Getting started with DevAssistant
-page: devassistant
+subsection: devassistant
 order: 1
 ---
 

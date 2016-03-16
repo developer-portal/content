@@ -2,7 +2,7 @@
 label: need-help
 
 title: Collaborate Effectively
-page: collaborate
+subsection: collaborate
 section: start-tips
 description: 
 ---

@@ -1,6 +1,6 @@
 ---
 title: Bundler
-page: ruby
+subsection: ruby
 order: 3
 ---
 

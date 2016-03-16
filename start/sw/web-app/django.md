@@ -1,6 +1,6 @@
 ---
 title: Python Django      
-page: web-app
+subsection: web-app
 order: 2
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: PostgreSQL in RPMs
-page: postgresql
+subsection: postgresql
 order: 1
 ---
 

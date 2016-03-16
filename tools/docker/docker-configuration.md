@@ -1,6 +1,6 @@
 ---
 title: Configuring Docker
-page: docker
+subsection: docker
 order: 3
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: C and C++ assistants for DevAssistant
-page: c
+subsection: c
 order: 5
 ---
 

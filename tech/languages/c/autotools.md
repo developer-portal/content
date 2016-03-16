@@ -1,6 +1,6 @@
 ---
 title: Autotools
-page: c
+subsection: c
 order: 3
 ---
 

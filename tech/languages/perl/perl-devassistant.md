@@ -1,6 +1,6 @@
 ---
 title: Perl assistants for DevAssistant
-page: perl
+subsection: perl
 order: 3
 ---
 

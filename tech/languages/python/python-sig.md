@@ -1,6 +1,6 @@
 ---
 title: Python SIG
-page: python
+subsection: python
 order: 5
 ---
 

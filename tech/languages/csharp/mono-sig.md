@@ -1,6 +1,6 @@
 ---
 title: Mono SIG
-page: csharp
+subsection: csharp
 order: 3
 ---
 

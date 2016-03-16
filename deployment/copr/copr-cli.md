@@ -1,6 +1,6 @@
 ---
 title: Copr command line interface
-page: copr
+subsection: copr
 ---
 
 # Copr command line interface

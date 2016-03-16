@@ -1,6 +1,6 @@
 ---
 title: C++
-page: c
+subsection: c
 order: 2
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Sinatra
-page: ruby
+subsection: ruby
 order: 5
 ---
 

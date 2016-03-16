@@ -1,6 +1,6 @@
 ---
 title: Django
-page: python
+subsection: python
 order: 3
 ---
 

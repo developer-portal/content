@@ -2,7 +2,7 @@
 label: need-help
 
 title: Desktop GUI Application
-page: gui-app
+subsection: gui-app
 section: start-sw
 description: 
 ---

@@ -1,6 +1,6 @@
 ---
 title: DevAssistant
-page: devassistant
+subsection: devassistant
 section: tools
 description: Set up your development environment, publish your code, and do many of the chores that somehow keep you from the important stuff — writing your software.
 ---

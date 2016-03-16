@@ -1,6 +1,6 @@
 ---
 title: Cabal
-page: haskell
+subsection: haskell
 order: 2
 ---
 

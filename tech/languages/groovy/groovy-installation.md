@@ -1,6 +1,6 @@
 ---
 title: Groovy
-page: groovy
+subsection: groovy
 order: 1
 section: Powerful, optionally typed and dynamic language with static compilation capabilities on JVM.
 description:

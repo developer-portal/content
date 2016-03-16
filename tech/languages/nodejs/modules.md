@@ -1,6 +1,6 @@
 ---
 title: Node.js modules
-page: nodejs
+subsection: nodejs
 order: 2
 ---
 

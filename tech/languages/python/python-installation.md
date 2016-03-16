@@ -1,6 +1,6 @@
 ---
 title: Python
-page: python
+subsection: python
 section: tech-languages
 order: 1
 version: 2.7.10

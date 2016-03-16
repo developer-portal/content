@@ -1,6 +1,6 @@
 ---
 title: PEAR
-page: php
+subsection: php
 order: 2
 ---
 

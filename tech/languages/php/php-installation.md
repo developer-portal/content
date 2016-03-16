@@ -1,6 +1,6 @@
 ---
 title: PHP
-page: php
+subsection: php
 section: tech-languages
 order: 1
 version: 5.6.12

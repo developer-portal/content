@@ -1,6 +1,6 @@
 ---
 title: Static Analysis
-page: c
+subsection: c
 order: 6
 ---
 

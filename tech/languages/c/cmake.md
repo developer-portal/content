@@ -1,6 +1,6 @@
 ---
 title: CMake
-page: c
+subsection: c
 order: 4
 ---
 

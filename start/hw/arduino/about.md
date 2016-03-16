@@ -1,6 +1,6 @@
 ---
 title: Work with Arduino
-page: arduino
+subsection: arduino
 section: start-hw
 description: Using Arduino with Fedora as a workstation.
 ---

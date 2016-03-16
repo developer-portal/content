@@ -1,6 +1,6 @@
 ---
 title: Ruby
-page: ruby
+subsection: ruby
 section: tech-languages
 order: 1
 version: 2.2.2

@@ -1,6 +1,6 @@
 ---
 title: PHP assistants for DevAssistant
-page: php
+subsection: php
 order: 5
 ---
 

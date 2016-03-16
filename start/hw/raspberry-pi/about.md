@@ -2,7 +2,7 @@
 label: need-help
 
 title: Work with Raspberry Pi
-page: raspberry-pi
+subsection: raspberry-pi
 section: start-hw
 description:
 ---

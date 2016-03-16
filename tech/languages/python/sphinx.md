@@ -1,6 +1,6 @@
 ---
 title: Sphinx
-page: python
+subsection: python
 order: 5
 ---
 

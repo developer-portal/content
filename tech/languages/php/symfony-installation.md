@@ -1,6 +1,6 @@
 ---
 title: Symfony
-page: php
+subsection: php
 order: 3
 ---
 

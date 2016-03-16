@@ -1,6 +1,6 @@
 ---
 title: MariaDB
-page: mariadb
+subsection: mariadb
 section: tech-database
 description: Transactional SQL database, an enhanced drop-in replacement for MySQL.
 ---

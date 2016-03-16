@@ -1,6 +1,6 @@
 ---
 title: Go packages
-page: go
+subsection: go
 order: 2
 ---
 

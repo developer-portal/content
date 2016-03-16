@@ -1,6 +1,6 @@
 ---
 title: Mono build and development tools
-page: csharp
+subsection: csharp
 order: 2
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Ruby assistants for DevAssistant
-page: ruby
+subsection: ruby
 order: 7
 ---
 

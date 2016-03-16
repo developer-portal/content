@@ -1,6 +1,6 @@
 ---
 title: Copr Build Service
-page: copr
+subsection: copr
 section: deployment
 description: >
   Copr is a service that builds your application as an RPM and provides you

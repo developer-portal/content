@@ -1,6 +1,6 @@
 ---
 title: Java build tools
-page: java
+subsection: java
 order: 2
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Java assistants for DevAssistant
-page: java
+subsection: java
 order: 4
 ---
 

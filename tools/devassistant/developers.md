@@ -1,6 +1,6 @@
 ---
 title: Creating assistants for DevAssistant
-page: devassistant
+subsection: devassistant
 order: 2
 ---
 

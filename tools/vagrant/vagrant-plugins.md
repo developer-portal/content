@@ -1,6 +1,6 @@
 ---
 title: Vagrant plugins
-page: vagrant
+subsection: vagrant
 order: 5
 ---
 

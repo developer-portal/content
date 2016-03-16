@@ -1,6 +1,6 @@
 ---
 title: Docker Compose
-page: docker
+subsection: docker
 order: 5
 ---
 

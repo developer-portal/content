@@ -34,7 +34,7 @@ Every file except the main page would start with:
 ```yaml
 ---
 title: Some Title      # This title is shown in menus
-page: devassistant     # This is an ID of your content (select value from the list below)
+subsection: devassistant     # This is an ID of your content (select value from the list below)
 order: 1               # Optional - order in menu
 ---
 ```
@@ -44,7 +44,7 @@ The main page would contain:
 ```yaml
 ---
 title: DevAssistant    # This title is shown in menus
-page: devassistant     # This is an ID of your content (select value from the list below)
+subsection: devassistant     # This is an ID of your content (select value from the list below)
 section: tools         # This page would be linked from the main menu in a group called tools (select value from the list below)
 description: Lorem ipsum...    # a short description to be shown in the section menu
 ---

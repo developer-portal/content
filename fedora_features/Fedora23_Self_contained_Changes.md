@@ -1,7 +1,7 @@
 ---
 title: Self Contained Changes
 section: fedoranext
-page: fedoranext
+subsection: fedoranext
 ---
 ## Fedora 23 Accepted Self Contained Changes Proposals ##
 These changes have been accepted by the Fedora Engineering Steering Committee for the Fedora 23 Release as Self Contained Changes.

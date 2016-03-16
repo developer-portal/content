@@ -1,6 +1,6 @@
 ---
 title: C
-page: c
+subsection: c
 section: tech-languages
 version: 5.2.1
 order: 1

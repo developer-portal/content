@@ -1,6 +1,6 @@
 ---
 title: Go
-page: go
+subsection: go
 section: tech-languages
 order: 1
 version: 1.5

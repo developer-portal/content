@@ -1,6 +1,6 @@
 ---
 title: Node.js
-page: nodejs
+subsection: nodejs
 section: tech-languages
 order: 1
 version: 0.10.36

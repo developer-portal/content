@@ -1,6 +1,6 @@
 ---
 title: ABRT
-page: abrt
+subsection: abrt
 section: tools
 description: Handle crashes of your applications automatically and debug with ease!
 order: 1

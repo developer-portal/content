@@ -1,6 +1,6 @@
 ---
 title: More on DevAssistant
-page: devassistant
+subsection: devassistant
 order: 3
 ---
 

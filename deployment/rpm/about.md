@@ -1,6 +1,6 @@
 ---
 title: RPM Packaging
-page: rpm
+subsection: rpm
 section: deployment
 description: >
   How to package your application and ship it to RPM based systems.

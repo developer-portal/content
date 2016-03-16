@@ -1,6 +1,6 @@
 ---
 title: Ruby on Rails
-page: ruby
+subsection: ruby
 order: 4
 ---
 

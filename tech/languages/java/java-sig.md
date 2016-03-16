@@ -1,6 +1,6 @@
 ---
 title: Java SIG
-page: java
+subsection: java
 order: 3
 ---
 

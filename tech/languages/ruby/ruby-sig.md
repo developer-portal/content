@@ -1,6 +1,6 @@
 ---
 title: Ruby SIG
-page: ruby
+subsection: ruby
 order: 6
 ---
 

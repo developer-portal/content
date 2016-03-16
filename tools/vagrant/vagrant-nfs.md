@@ -1,6 +1,6 @@
 ---
 title: Synced folders with NFS
-page: vagrant
+subsection: vagrant
 order: 6
 ---
 

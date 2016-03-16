@@ -1,6 +1,6 @@
 ---
 title: Haskell SIG
-page: haskell
+subsection: haskell
 order: 3
 ---
 

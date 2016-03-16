@@ -1,6 +1,6 @@
 ---
 title: Vagrant with Docker provider
-page: vagrant
+subsection: vagrant
 order: 4
 ---
 

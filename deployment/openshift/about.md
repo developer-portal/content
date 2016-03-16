@@ -2,7 +2,7 @@
 label: need-help
 
 title: OpenShift
-page: openshift
+subsection: openshift
 section: deployment
 description:
 ---
