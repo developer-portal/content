@@ -12,4 +12,4 @@ Please submit your **ideas**, **bug reports** or **requests** regarding:
 - the project, our processes or the portal itself on our [website repository issue tracker](https://github.com/developer-portal/website/issues).
 
 ## Contributing content
-Refer to our website for contributors at [developer-portal.github.io](https://developer-portal.github.io/).
+Information about contributing is at [developer-portal.github.io](https://developer-portal.github.io/).
