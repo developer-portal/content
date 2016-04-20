@@ -3,6 +3,8 @@ title: Secondary Architectures
 subsection: secondary_architectures
 section: deployment
 description: Building your application for architectures like s390(x), PowerPC, ARMv8
+
+order: 1
 ---
 
 # Secondary Architectures
@@ -26,7 +28,7 @@ Make sure you first follow below checklist before you start building your applic
 
 The following example (iprutils package) will demonstrate how to get an rpm package available in Fedora repository:
 
-````
+```
 # Clone existing package available in Fedora repository e.g. iprutils
 $ fedpkg clone -a iprutils && cd iprutils && ls
    0001-Service-start-is-controled-by-udev-rule.patch  iprdbg.8.gz  iprutils.spec  sources
@@ -39,11 +41,11 @@ $ fedpkg sources && ls
 $ fedpkg srpm
   0001-Service-start-is-controled-by-udev-rule.patch  iprdbg.8.gz  iprutils-2.4.11.1-1.fc25.src.rpm  iprutils-2.4.11.1.tar.gz  iprutils.spec  sources
 
-````
+```
 
 Further, to modify source or spec file follow below steps:
 
-````
+```
 # Create required directory structure in ~/rpmbuild/
 $ rpmbuild-setuptree
 
@@ -56,7 +58,7 @@ $ cp iprutils.spec ~/rpmbuild/SOURCES/
 # Create srpm file
 $ rpmbuild -bs ~/rpmbuild/SOURCES/iprutils.spec
 
-````
+```
 Generated srpm will be available in ~/rpmbuild/SRPMS/ directory
 
 **Note:** iprutils package which is used as an example may get updated later on and hence content may change.
