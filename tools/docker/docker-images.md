@@ -14,15 +14,15 @@ It is necessary to realize that when working with Docker containers, content of 
 
 You can find all the official Docker images provided by Fedora community in the [official Fedora repository](https://hub.docker.com/_/fedora/) on Docker Hub.
 
-Docker images in `fedora/` namespace feature `fedora:latest` tag for rawhide and `fedora:22` tag for Fedora 22.
+Docker images in `fedora/` namespace feature `fedora:latest` tag for rawhide and `fedora:23` tag for Fedora 23.
 
-To get Fedora 22 base image, run:
+To get Fedora 23 base image, run:
 
 ```
 Pull the image from docker.io
-$ sudo docker pull fedora:22
+$ sudo docker pull fedora:23
 Run some command from the image
-$ sudo docker run --rm -ti fedora:22 bash
+$ sudo docker run --rm -ti fedora:23 bash
 ```
 
 There are also a lot of application Docker images built as layered images on top of Fedora base image. It's sources live in [Fedora Dockerfiles repository](https://github.com/fedora-cloud/Fedora-Dockerfiles) and are available under `fedora/` namespace on the Docker Hub.
