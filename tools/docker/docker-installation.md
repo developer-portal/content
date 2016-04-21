@@ -14,12 +14,6 @@ On Fedora 22 and above install the `docker` package:
 $ sudo dnf install docker
 ```
 
-On Fedora 21 install the `docker-io` package:
-
-```
-$ sudo yum install docker-io
-```
-
 To start the Docker service use:
 
 ```
