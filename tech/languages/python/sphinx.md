@@ -1,7 +1,7 @@
 ---
 title: Sphinx
 subsection: python
-order: 5
+order: 6
 ---
 
 # Sphinx

@@ -1,7 +1,7 @@
 ---
 title: Python assistants for DevAssistant
 subsection: python
-order: 6
+order: 7
 ---
 
 # Python assistants
