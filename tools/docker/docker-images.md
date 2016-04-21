@@ -28,6 +28,7 @@ $ sudo docker run --rm -ti fedora:23 bash
 There are also a lot of application Docker images built as layered images on top of Fedora base image. It's sources live in [Fedora Dockerfiles repository](https://github.com/fedora-cloud/Fedora-Dockerfiles) and are available under `fedora/` namespace on the Docker Hub.
 
 For example, to pull and run the MariaDB Docker container, run:
+
 ```
 Pull the image from docker.io
 $ sudo docker pull fedora/mariadb
