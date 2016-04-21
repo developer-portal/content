@@ -71,6 +71,4 @@ $ da crt android-studio --name my_text --sdk
 ```
 This automatically shows SDK Manager where you can specify Android SDK which you would like to download and use it.
 
-```
-
  
