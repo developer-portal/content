@@ -11,7 +11,7 @@ Gjs is a Javascript binding for GNOME and can be used to interact with Gtk+. It 
 To install Gjs on Fedora, run:
 
 ```
-sudo yum install gjs gjs-devel
+sudo dnf install gjs gjs-devel
 ```
 
 ## Getting started
