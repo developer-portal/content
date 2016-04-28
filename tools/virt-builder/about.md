@@ -2,7 +2,7 @@
 title: Virt-builder
 subsection: virt-builder
 section: tools
-description: Tool to quickly build (and custoimze) virtual machine images
+description: Tool to quickly build (and customize) virtual machine images
 ---
 
 # Virt-builder
