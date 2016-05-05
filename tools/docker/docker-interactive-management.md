@@ -1,5 +1,5 @@
 ---
-title: sen
+title: sen — interactive management
 subsection: docker
 description: Manage your containers interactively!
 ---
@@ -15,7 +15,7 @@ description: Manage your containers interactively!
 
 Feel free to visit [original project](https://github.com/TomasTomecek/sen) page for more information.
 
-![sen preview](/tools/docker/sen-preview.gif)
+<img src="/content/tools/docker/sen-preview.gif" width="97%">
 
 
 ## Installation
