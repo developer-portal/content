@@ -29,7 +29,7 @@ $ sudo dnf install rubygem-rails
 This will install the framework itself, but if you wish to install all default gems suggested by Rails for new applications, run:
 
 ```
-$ sudo dnf install rubygem-{rails,sqlite3,coffee-rails,sass-rails,uglifier,jquery-rails,turbolinks,jbuilder,therubyracer,sdoc,spring,byebug,web-console}
+$ sudo dnf install rubygem-{rails,sqlite3,coffee-rails,sass-rails,uglifier,jquery-rails,turbolinks,jbuilder,sdoc,spring,byebug,web-console} nodejs
 ```
 
 To take advantage of packaged gems, you need to run `rails` command with `--skip-bundle` option and then run `bundle --local` to lock your dependencies using system gems:
