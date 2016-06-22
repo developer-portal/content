@@ -20,14 +20,21 @@ $ sudo dnf install gobject-introspection-devel webkitgtk3-devel gtksourceview3-d
 You can than install the IDE using `cabal` by:
 
 ```
-First update all the packages:\n
+First update all the packages:
+
 $ cabal update
-Now upgrade cabal to the latest stable version:\n
+
+Now upgrade cabal to the latest stable version:
+
 $ cabal install Cabal
-Install build packages and tools:\n
+
+Install build packages and tools:
+
 $ cabal install alex happy
 $ cabal install gtk2hs-buildtools
-Install the IDE:\n
+
+Install the IDE:
+
 $ cabal install leksah
 ```
 
