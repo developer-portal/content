@@ -17,24 +17,28 @@ You have to also install the necessary libraries for successful build by:
 $ sudo dnf install gobject-introspection-devel webkitgtk3-devel gtksourceview3-devel
 ```
 
-You can than install the IDE using `cabal` by:
+You can than install the IDE using `cabal`. First update all the packages by:
 
 ```
-First update all the packages:
-
 $ cabal update
+```
 
 Now upgrade cabal to the latest stable version:
 
+```
 $ cabal install Cabal
+```
 
 Install build packages and tools:
 
+```
 $ cabal install alex happy
 $ cabal install gtk2hs-buildtools
+```
 
 Install the IDE:
 
+```
 $ cabal install leksah
 ```
 
