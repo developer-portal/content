@@ -17,7 +17,7 @@ $ cd /etc/yum.repos.d/
 $ touch mongodb-org-3.2.repo
 ```
 
-Insert this content inside mongodb-org-*release_series*.repo, edit if you have using another version.
+Insert this content inside mongodb-org-*release_series*.repo, edit if you want install another version.
 ```
 [mongodb-org-3.2]
 name=MongoDB Repository
