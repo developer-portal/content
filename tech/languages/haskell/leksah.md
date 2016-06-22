@@ -17,7 +17,7 @@ You have to also install the necessary libraries for successful build by:
 $ sudo dnf install gobject-introspection-devel webkitgtk3-devel gtksourceview3-devel
 ```
 
-You can than install the IDE using cabal by:
+You can than install the IDE using `cabal` by:
 
 ```
 $ cabal update
@@ -33,6 +33,6 @@ Than you can run the IDE:
 $ leksah
 ```
 
-NOTE: It might happen that you need to reboot the system befor using the Leksah.
+NOTE: It might happen that you need to reboot the system before using Leksah.
 
 
