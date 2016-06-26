@@ -99,7 +99,7 @@ This example is taken from [How to create a GNU Hello RPM package](https://fedor
 
 ### Resources
 
-You can learn more about all sections and tags of SPEC file at [Fedora documentation "How to create and RPM package"](https://fedoraproject.org/wiki/How_to_create_an_RPM_package).
+You can learn more about all sections and tags of SPEC file at [Fedora documentation "How to create an RPM package"](https://fedoraproject.org/wiki/How_to_create_an_RPM_package).
 
 If you prefer video over wiki, you can check recording of [Packaging Workshop](http://youtu.be/H4vxkuoimzc) at YouTube. Red Hat subscribers can check [Getting Started with RPMs](https://access.redhat.com/videos/214983) video.
 
