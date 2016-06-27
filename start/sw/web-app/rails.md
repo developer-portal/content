@@ -35,14 +35,19 @@ ruby -v
 
 ```
 Use this command if you do not want rubygems to install the documentation for each package locally.
+
 ```
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 ```
+
 Install bundler
+
 ```
 gem install bundler
 ```
+
 Whenever you install a new version of Ruby or a gem, you should run the rehash sub-command. This will make rails executables known to rbenv, which will allow us to run those executables:
+
 ``` 
 rbenv rehash 
 ``` 
@@ -55,6 +60,7 @@ Rails depends on a Javascript runtime, install nodejs.
 sudo dnf install epel-release
 sudo dnf install nodejs
 ```
+
 And now install Rails
 
 ```
