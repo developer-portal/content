@@ -17,7 +17,7 @@ The Apache HTTP server is in Fedora known as ```httpd``` package. You will proba
 sudo dnf install httpd
 ```
 
-If you would like to start Apache server at each boot, type:
+If you would like to start Apache server at each boot type:
 ```
 sudo systemctl enable httpd.service
 ```
