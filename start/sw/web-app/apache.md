@@ -36,11 +36,10 @@ If is everything alright, you will see Fedora Test Page:
 # How to run my own web presentation
 
 The root directory of your web server is now situated at ```/var/www/html/```. 
-```
-:warning: Owner of this directory is root user! 
-```
 
-For disabling web server to render Fedora Test Page, you have to commit out all lines in ```/etc/httpd/conf.d/welcome.conf```. After that, server will try to find page ```index.html``` in ```/var/www/html/``` directory.
+**WARNING: Owner of this directory is root user!** 
+
+For disabling web server to render Fedora Test Page, you have to comment out all lines in ```/etc/httpd/conf.d/welcome.conf```. After that, server will try to find page ```index.html``` in ```/var/www/html/``` directory.
 
 You can create in this directory new file ```index.html``` with your customized content like:
 
