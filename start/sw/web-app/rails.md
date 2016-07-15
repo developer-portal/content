@@ -1,7 +1,7 @@
 ---
 title: Ruby on Rails      
 subsection: web-app
-order: 5
+order: 6
 ---
 
 # Installing Ruby and Rails with rbenv
