@@ -29,6 +29,7 @@ sudo systemctl stop httpd
 #### Install MariaDB Relational Database Server
 ```bash
 sudo dnf install mariadb-server
+# Setup MariaDB to automatically start upon system boot
 sudo systemctl enable mariadb
 # Then to boot the server
 sudo systemctl start mariadb
@@ -88,7 +89,6 @@ DB_PASSWORD=Chur1
 
 #### Serve
 ```bash
-sudo systemctl start mariadb.service
 php artisan serve
 # Laravel development server started on http://localhost:PORT/
 ```
