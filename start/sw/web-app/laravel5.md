@@ -49,7 +49,7 @@ sudo dnf install php php-common php-cli php-pdo php-mbstring php-zip php-xml
 sudo systemctl restart httpd
 ```
 
-###### Install Composer
+#### Install Composer
 We will need composer to install laravel and it's dependancies
 ```bash
 curl -sS https://getcomposer.org/installer | php
@@ -58,7 +58,7 @@ chmod +x /usr/local/bin/composer
 composer -V
 ```
 
-###### Install laravel installer
+#### Install laravel installer
 ```bash
 composer global require "laravel/installer"
 # Place the ~/.config/composer/vendor/bin directory in your PATH so the laravel 
@@ -71,9 +71,7 @@ Now you can create a laravel project with the commands
 $ laravel new ProjectName
 ```
 
-#### Now setup and serve your laravel project 
-
-###### Setup
+#### Setup
 ```bash
 cd ProjectName
 cp .env.example .env
@@ -88,7 +86,7 @@ DB_USERNAME=Chur
 DB_PASSWORD=Chur1
 ```
 
-###### Serve
+#### Serve
 ```bash
 sudo systemctl start mariadb.service
 php artisan serve
