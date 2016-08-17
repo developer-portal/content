@@ -122,3 +122,18 @@ python manage.py runserver
 You will see message with information about your development server. When you insert URL into your browser, 
 you will see welcome page (default URL for development server is http://127.0.0.1:8000/).
 And you successfully started your first Django project.
+
+## Switching Virtualenvs
+
+You can use `virtualenvwrapper` after installing it with usual command
+```
+dnf install python-virtualenvwrapper
+```
+
+```
+mkvirtualenv env1
+mkvirtualenv env2
+workon env1
+workon env2
+```
+
