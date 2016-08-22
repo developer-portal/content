@@ -39,6 +39,9 @@ The beauty of CMake is that after you create a simple CMakeLists.txt file you on
 
 This command should be used in a directory where you want to have the Makefile for your project.
 It will create all necessary Makefiles and configuration files needed to compile your project.
+It is considered good practice to build outside of the source tree (i.e. do not execute the above command from within your source code directory).  This will help to keep your source code free from any build artifacts and it also makes it easier to clean up if things go wrong.  
+
+
 Than after using the command `make` your project is built and ready for use.
 This `cmake` command above is only a basic example. There are of course many more options that can be used with `cmake`.
 These can be found in the manual page:
