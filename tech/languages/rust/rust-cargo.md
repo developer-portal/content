@@ -6,17 +6,17 @@ order: 2
 
 # Installing Cargo
 Cargo is Rust's package manager. You can use it to download your project's dependencies
-and to compile your project. To install cargo, type:
+and to compile your project. To install Cargo, type:
 ```
 $ sudo dnf install cargo
 ```
 
-You can start a new project using Cargo by simply typing:
+You can start a new project using Cargo by typing:
 ```
 $ cargo new my_project --bin
 ```
-This will create a new directory with manifest (`Cargo.toml`), source code directory
-(`src`) and "Hello, World!" program in `src/main.rs`.
+This will create a new directory with manifest (`Cargo.toml`), a source code directory
+(`src`) and a "Hello, World!" program in `src/main.rs`.
 ```
 $ cd my_project/
 $ tree .
@@ -37,7 +37,7 @@ authors = ["Your Name <you@example.com>"]
 
 [dependencies]
 ```
-To run your new project, simply type:
+To run your new project, type:
 ```
 $ cargo run
    Compiling my_project v0.1.0 (file:///home/fedora/rust/my_project)
@@ -48,7 +48,7 @@ Hello, world!
 # crates.io repository
 Rust calls its compilation unit (either library or executable) a crate. Your project
 is such a crate and it can also depend on other crates specified in `Cargo.toml`. The
-default repository to look for dependencies is [crates.io](https://crates.io/), but you
-can also specify dependencies on some git repository.
+default repository to look for dependencies is [crates.io](https://crates.io/) but you
+can also specify dependencies on a git repository.
 
-**Note:** Cargo currently support only source dependencies.
+**Note:** Cargo currently supports only source dependencies.
