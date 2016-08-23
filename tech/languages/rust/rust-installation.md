@@ -9,14 +9,14 @@ description: Systems programming language that runs blazingly fast, prevents seg
 
 # Rust installation
 
-In order to install Rust compiler, type:
+In order to install the Rust compiler, type:
 ```
 $ sudo dnf install rust
 ```
-This will install compiler (`rustc`), standard library, gdb support and documentation generator (`rustdoc`).
+This will install the compiler (`rustc`), standard library, gdb support and a documentation generator (`rustdoc`).
 
-To compile a rust source code, simply type:
+To compile the Rust source code, type:
 ```
 $ rustc test.rs
 ```
-This will produce executable file named `test`.
+This will produce an executable file named `test`.
