@@ -71,14 +71,27 @@ It will return nothing.
 
 ## How to install Django
 
-Now if you installed virtualenv do not leave it, we will install Django now. If you installed virtualenv use this command 
-inside your working directory:
+Now if you installed `virtualenv` do not leave it, we will install Django now. If you installed `virtualenv` use this command 
+inside your working directory with activated `virtualenv`:
 
 ```
 pip install django
 ```
 
-If you did not use this command. 
+If you are following a book or a tutorial, you might want to specify the same exact version like this
+
+```
+pip install django==1.10
+```
+
+For Python 3:
+
+```
+pip3 install django==1.10
+```
+
+
+Of course you can use the version that is prepared by Fedora community by typing:
 
 For Python 2:
 
@@ -109,3 +122,18 @@ python manage.py runserver
 You will see message with information about your development server. When you insert URL into your browser, 
 you will see welcome page (default URL for development server is http://127.0.0.1:8000/).
 And you successfully started your first Django project.
+
+## Switching Virtualenvs
+
+You can use `virtualenvwrapper` after installing it with usual command
+```
+dnf install python-virtualenvwrapper
+```
+
+```
+mkvirtualenv env1
+mkvirtualenv env2
+workon env1
+workon env2
+```
+
