@@ -8,7 +8,7 @@ order: 2
 Cargo is Rust's package manager. You can use it to download your project's dependencies
 and to compile your project. To install cargo, type:
 ```
-$ sudo dnf install cargo # NOTE: so far, it's only available on jistone's copr
+$ sudo dnf install cargo
 ```
 
 You can start a new project using Cargo by simply typing:
