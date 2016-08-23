@@ -17,5 +17,5 @@ $ sudo dnf install nant
 [NUnit](http://nunit.org/) is very useful for test driven development. To install it, simply type:
 
 ```
-$ sudo dnf install nunit-gui
+$ sudo dnf install nunit nunit-gui
 ```
