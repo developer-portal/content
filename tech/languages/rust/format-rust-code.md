@@ -12,8 +12,7 @@ order: 3
 $ cargo install rustfmt
 ```
 
-This will install an executable into `~/.cargo/bin/`, in order to use it you need
-to add it into your `$PATH` variable. In case you are using Bash, follow these steps:
+This will install an executable into `~/.cargo/bin/`. In order to use it, add it into your `$PATH` variable. In case you are using Bash, follow these steps:
 
 ```
 $ echo 'export PATH=$PATH:$HOME/.cargo/bin' >> $HOME/.bashrc
