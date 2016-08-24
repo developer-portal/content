@@ -3,7 +3,7 @@ title: Python
 subsection: python
 section: tech-languages
 order: 1
-version: 2.7.10
+version: 2.7.12
 description: General-purpose, high-level programming language supporting multiple programming paradigms.
 ---
 
@@ -11,8 +11,8 @@ description: General-purpose, high-level programming language supporting multipl
 
 ## CPython
 
-Currently we have two releases; Python-2.7.10 and Python-3.4.2.
-In Fedora 23 Workstation, both Python 2 and Python 3 come preinstalled, but if for whatever reason you need to install Python 2, simply type:
+Currently we have two releases; Python-2.7.12 and Python-3.5.1.
+In Fedora 24 Workstation, both Python 2 and Python 3 come preinstalled, but if for whatever reason you need to install Python 2, simply type:
 
 ```
 $ sudo dnf install python2
