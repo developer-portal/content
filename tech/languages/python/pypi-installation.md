@@ -1,12 +1,12 @@
 ---
-title: Pypi
+title: PyPI
 subsection: python
 order: 2
 ---
 
 # Using pip
 
-If a Python module you need is not packaged for Fedora, you can use pip to install it from PyPI, but you must be a little careful. Installing modules with pip to system directories can lead to unstable system, so make sure you only use pip with the ```--user``` switch, which makes pip install modules to your home directory.
+If a Python module you need is not packaged for Fedora, you can use pip to install it from [PyPI](https://pypi.python.org/), but you must be a little careful. Installing modules with pip to system directories can lead to unstable system, so make sure you only use pip with the ```--user``` switch, which makes pip install modules to your home directory.
 
 Pip gets installed alongside with Python 2 and 3, so if, for example, you want to install bokeh (interactive plots in HTML for Python) from PyPI simply type:
 
