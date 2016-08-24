@@ -13,7 +13,7 @@ To install Django on Fedora:
 For Python 2:
 
 ```
-$ sudo dnf install python-django
+$ sudo dnf install python2-django
 ```
 
 For Python 3:
