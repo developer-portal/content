@@ -16,7 +16,7 @@ To install Sphinx on Fedora:
 For Python 2:
 
 ```
-$ sudo dnf install python-sphinx
+$ sudo dnf install python2-sphinx
 ```
 
 For Python 3:
