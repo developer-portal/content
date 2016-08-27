@@ -1,7 +1,7 @@
 ---
 title: Python Django      
 subsection: web-app
-order: 2
+order: 3
 ---
 
 # What's Django?
@@ -26,7 +26,7 @@ sudo dnf install python3-pip
 
 ## How to install virtualenv
 
-It's recommanded to keep your project inside virtual enviroment. But you can skip this step if you want. 
+It's recommended to keep your project inside virtual environment. But you can skip this step if you want. 
 Enter this command to your command line for installation:
 
 ```
@@ -40,14 +40,14 @@ sudo dnf install python3-virtualenv
 ```
 
 
-Get inside your working directory or create new where you want to store your virtual enviroment:
+Get inside your working directory or create new where you want to store your virtual environment:
 
 ```
 mkdir working-dir
 cd working-dir
 ```
 
-Now we will create virtual enviroment called venv inside this directory using following command:
+Now we will create virtual environment called venv inside this directory using following command:
 
 ```
 virtualenv venv
@@ -61,7 +61,7 @@ source bin/activate
 ```
 
 When it's activated we will see indicator of same name as our virtualenv. 
-Now we will check if we really have empty enviroment:
+Now we will check if we really have empty environment:
 
 ```
 pip freeze
