@@ -14,16 +14,8 @@ $ sudo dnf install nant
 
 # NUnit installation
 
-[NUnit](http://nunit.org/) is very useful for test driven development.
-
-To install it on Fedora 21 or Fedora 22, simply type:
+[NUnit](http://nunit.org/) is very useful for test driven development. To install it, simply type:
 
 ```
-$ sudo dnf install mono-nunit
-```
-
-To install it on Fedora 23 or higher, simply type:
-
-```
-$ sudo dnf install nunit
+$ sudo dnf install nunit nunit-gui
 ```
