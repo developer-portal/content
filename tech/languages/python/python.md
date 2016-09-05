@@ -25,7 +25,7 @@ If you want to **exit** Python, press `Ctrl` + `D`.
 
 To run a program written in Python type `python3`, the path and the name of the program. Like this:
 
-```python
+```bash
 $ python3 example.py
 ```
 
@@ -36,7 +36,7 @@ bpython is a fancy interface to the Python interpreter available in Fedora. It h
 
 Open the _Terminal_ (see above) and isntall _bpython_ for Python 3:
 
-```python
+```bash
 $ sudo dnf install python3-bpython
 ```
 
