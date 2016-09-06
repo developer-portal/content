@@ -44,30 +44,6 @@ $ python3 foo.py
 
 You should see that it is running on some address, in this case 127.0.0.1. Default port for Flask applications is 5000. Open it in web browser to see your application.
 
-## DevAssistant for Flask
-Fedora offers a tool called DevAssistant which will help you with creating of the new project. You can you GUI application or the command line interface.
-
-### DevAssistant GUI
-Open the _Software_ tool and search for _DevAssistant_, install it. Run a _DevAssistant_. In the _Create Project_ menu pick _Python_ and than Flask. Continue with _DevAssistant setup wizard_.
-
-### DevAssistant in the command line
-At first, you must install the _DevAssistant_:
-```bash
-$ sudo dnf install devassistant
-```
-
-Next, install an _Assistant_ for Python:
-```bash
-$ da pkg install python
-```
-
-And finally create a new Flask project:
-
-```bash
-$ da create python flask -n project_name
-```
-
 ### What next?
 
  * [Flask Documentation](http://flask.pocoo.org/docs/)
- * [DevAssistant Documentation](http://doc.devassistant.org/en/latest/user_documentation.html)

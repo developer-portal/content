@@ -32,37 +32,12 @@ $ cd mysite
 
 And run the server.
 ```bash
-$ python manage.py runserver
+$ python3 manage.py runserver
 ```
 
 Now that the server’s running, visit http://127.0.0.1:8000/ with your Web browser. You willl see a “Welcome to Django” page, in pleasant, light-blue pastel. It worked!
 
-## DevAssistant for Django
-Fedora offers a tool called DevAssistant which will help you with creating of the new project. You can you GUI application or the command line interface.
-
-### DevAssistant GUI
-Open the _Software_ tool and search for _DevAssistant_, install it. Run a _DevAssistant_. In the _Create Project_ menu pick _Python_ and than Django. Continue with _DevAssistant setup wizard_.
-
-### DevAssistant in the command line
-At first, you must install the _DevAssistant_:
-```bash
-$ sudo dnf install devassistant
-```
-
-Next, install an _Assistant_ for Python:
-```bash
-$ da pkg install python
-```
-
-And finally create a new Django project:
-
-```bash
-$ da create python django -n project_name
-```
-
-
 ### What next?
 
  * [Django Documentation](https://docs.djangoproject.com/)
- * [DevAssistant Documentation](http://doc.devassistant.org/en/latest/user_documentation.html)
  
