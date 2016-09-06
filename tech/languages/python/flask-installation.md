@@ -6,30 +6,22 @@ order: 4
 
 # Flask
 
-Flask is a web microframework for Python -- simpler than [Django](/tech/languages/python/django-installation.html), yet just as capable. Check out [the documentation](http://flask.pocoo.org/docs/0.10/) if you want to learn more.
-
+[Flask](http://flask.pocoo.org/) is a micro web framework for Python, based on the Werkzeug toolkit and Jinja2 template engine.
 
 ## Installation
+Let's install Flask. At first open the _Terminal_ (press `Alt` + `F1`, type _Terminal_ and click on the black squere icon or just press `Enter`). Second, type this command:
 
-To install Flask on Fedora:
-
-For Python 2:
-
-```
-$ sudo dnf install python-flask
-```
-
-For Python 3:
-
-```
+```bash
 $ sudo dnf install python3-flask
 ```
+
+That is all, you have sucessfully installed Flask!
 
 ## First application
 
 This is an example of how a minimal Flask application can look like.
 
-{% highlight python %}
+```python
 from flask import Flask
 app = Flask(__name__)
 
@@ -39,16 +31,19 @@ def hello_world():
 
 if __name__ == "__main__":
     app.run()
-{% endhighlight %}
+```
 
-
-## Running
+### Running
 
 Assuming that you have some Flask application called `foo.py`, you can run it like this.
 
-```
-$ python foo.py
+```bash
+$ python3 foo.py
  * Running on http://127.0.0.1:5000/
 ```
 
 You should see that it is running on some address, in this case 127.0.0.1. Default port for Flask applications is 5000. Open it in web browser to see your application.
+
+### What next?
+
+ * [Flask Documentation](http://flask.pocoo.org/docs/)
