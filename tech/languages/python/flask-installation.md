@@ -8,7 +8,7 @@ order: 4
 
 [Flask](http://flask.pocoo.org/) is a micro web framework for Python, based on the Werkzeug toolkit and Jinja2 template engine.
 
-## Install Flask
+## Installation
 Let's install Flask. At first open the _Terminal_ (press `Alt` + `F1`, type _Terminal_ and click on the black squere icon or just press `Enter`). Second, type this command:
 
 ```bash

@@ -3,7 +3,7 @@
 [Python](https://www.python.org/) is is a widely used interpreted, object-oriented, high-level programming language with dynamic semantics. It is simple and easy to learn.
 Python 3 is already preinstalled on Fedora. Let's use it!
 
-## Run Python
+## Running Python
 
 1. Open the _Terminal_ (press `Alt` + `F1`, type _Terminal_ and click on the black squere icon or just press `Enter`).
 2. To run Python 3 type `python3`. You should see something like this:

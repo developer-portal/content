@@ -7,7 +7,7 @@ order: 3
 # Django
 [Django](https://www.djangoproject.com/) is an open source web application framework written in Python, it encourages rapid development and clean, pragmatic design.
 
-## Install Django
+## Installation
 Let's install Django. At first open the _Terminal_ (press `Alt` + `F1`, type _Terminal_ and click on the black squere icon or just press `Enter`). Second, type this command,:
 
 ```bash
