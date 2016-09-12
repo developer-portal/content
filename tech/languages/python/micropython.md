@@ -64,8 +64,8 @@ And this is how *Mu* looks like. Simple, right?
 ## uFlash - CLI for flashing the micro:bit
 
 If you prefer to use your favorite text editor instead of *Mu*, *uFlash* is
- the right utility for you. *uFlash* is a simple command line tool (written in Python)
-for flashing your Python scripts to Micro:bit.
+the right utility for you. *uFlash* is a simple command line tool (written
+in Python) for flashing your Python scripts to Micro:bit.
 
 Installation is simple as before:
 
@@ -80,21 +80,25 @@ first parameter for `uflash`.
 $ uflash ./hello_world.py
 ```
 
-## Picocom - minimal terminal emulation program
+## Esptool - CLI for flashing boards with the ESP8266 chip
 
-A lot of microcontrollers (like those with the ESP8266 chip) provide a serial
-console for communication with the outer world. And Fedora provides a minimalistic
-and handy tool for connecting to it - `picocom`.
+If you want to control your device using MictoPython, first of all, you
+will need to write MicroPython firmware into the flash memory of your device.
 
-And guess what? Yes, installation is as simple as possible:
+You can download MicroPython firmware from [the download section of its web page](http://micropython.org/download/).
+Choose the latest one suitable for your device.
+
+`esptool` is handy CLI application which helps you to flash your device. Let's
+install it:
 
 ```
-$ sudo dnf install picocom
+$ sudo dnf install esptool
 ```
 
-For connection, you first need to know device name which you want to connect to.
-You can find it in the result of `dmesg` command. Use `dmesg` with `tail` to
-obtain only last ten lines of `dmesg` output:
+With firmware downloaded and `esptool` installed you need to know the last
+thing to connect and flash your device - device name. You can find it in
+the result of `dmesg` command. Use `dmesg` with `tail` to obtain only last
+ten lines of `dmesg` output:
 
 ```
 $ dmesg | tail
@@ -107,19 +111,95 @@ $ dmesg | tail
 [703177.062781] usb 1-1.1: ch341-uart converter now attached to **ttyUSB0**
 ```
 
-The name of your device starts with *tty*. Now you can connect to your device with
-picocom.
+The name of your device starts with *tty*.
 
-```
-$ sudo picocom -b 115200 /dev/ttyUSB0
-```
-
-`sudo` may be necessary here to gain privileges to access attached device and
-`-b` parameter sets baud-rate to 115200 bps which is actually connection speed.
-
-If you don't want to use `sudo` for `picocom`, use this command to add your
-regular user account to *dialout* group:
+Yes, you know the name of your device, but you also need rights to access it.
+You can use `sudo`, of course, before any `esptool` and `picocom` commands
+mentioned below, but preferred and more secure way is to add your regular
+user account to special system group *dialout*. Use this simple command
+to do it:
 
 ```
 $ sudo usermod -a -G dialout <username>
+```
+
+Is necessary to logout and login for this change to take effect.
+
+Now you can use `esptool` to flash your device. Is suggested to erase flash
+memory before writing new firmware. Let's do it.
+
+```
+$ esptool --port /dev/ttyUSB0 erase_flash
+esptool.py v1.1
+Connecting...
+Erasing flash (this may take a while)...
+```
+
+It is obvious that you need to change `ttyUSB0` to name of your device.
+
+And now you can write MicroPython firmware to empty flash memory.
+
+```
+$ esptool --port /dev/ttyUSB0 --baud 115200 write_flash --flash_size=8m 0 esp8266-20160909-v1.8.4.bin 
+esptool.py v1.1
+Connecting...
+Running Cesanta flasher stub...
+Flash params set to 0x0020
+Writing 565248 @ 0x0... 565248 (100 %)
+Wrote 565248 bytes at 0x0 in 49.0 seconds (92.3 kbit/s)...
+Leaving...
+```
+
+Maybe you will need to change device name as before and name of binary file with
+firmware, but other parameters as baud-rate (connection speed) should be ok
+in most cases.
+
+## Picocom - minimal terminal emulation program
+
+A lot of microcontrollers (like those with the ESP8266 chip) provide a serial
+console for communication with the outer world. And Fedora provides a
+minimalistic and handy tool for connecting to it - `picocom`.
+
+And guess what? Yes, installation is as simple as possible:
+
+```
+$ sudo dnf install picocom
+```
+
+Usage of `picocom` is simple as well:
+
+```
+$ picocom -b 115200 /dev/ttyUSB0
+picocom v1.7
+
+port is        : /dev/ttyUSB0
+flowcontrol    : none
+baudrate is    : 115200
+parity is      : none
+databits are   : 8
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+nolock is      : no
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv
+imap is        : 
+omap is        : 
+emap is        : crcrlf,delbs,
+
+Terminal ready
+
+>>>
+```
+
+`-b` parameter sets baud-rate to 115200 bps which is actually connection speed.
+
+Yes, the last line of output with `>>>` means that MicroPython on your device
+is ready to use. If you don't see the last line, press *Enter*.
+
+```
+>>> print('Let the connecting to IoT begins!')
+Let the connecting to IoT begins!
+>>>
 ```
