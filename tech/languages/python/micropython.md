@@ -196,7 +196,8 @@ Terminal ready
 `-b` parameter sets baud-rate to 115200 bps which is actually connection speed.
 
 Yes, the last line of output with `>>>` means that MicroPython on your device
-is ready to use. If you don't see the last line, press *Enter*.
+is ready to use. If you don't see the last line, press *Enter* on your
+keyboard. If you still don't see the prompt, press RESET on your device.
 
 ```
 >>> print('Let the connecting to IoT begins!')
