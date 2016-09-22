@@ -16,6 +16,9 @@ You can use MicroPython on various boards such as:
 * MicroPython pyboard ([store](https://micropython.org/store/#/store))
 * WiPy ([webpage](https://www.pycom.io/solutions/py-boards/wipy/))
 
+Each device mentioned above has its own way for controlling it and uploading
+content to it. In next chapters we describe some of them.
+
 ## MicroPython in Fedora
 
 If you just want to try MicroPython and learn the differences between it and
@@ -82,7 +85,7 @@ $ uflash ./hello_world.py
 
 ## Esptool - CLI for flashing boards with the ESP8266 chip
 
-If you want to control your device using MictoPython, first of all, you
+If you want to control your ESP8266 device using MicroPython, first of all, you
 will need to write MicroPython firmware into the flash memory of your device.
 
 You can download MicroPython firmware from [the download section of its web page](http://micropython.org/download/).
