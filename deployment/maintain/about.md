@@ -8,4 +8,4 @@ description: >
 
 # {{page.title}}
 
-{{page.description}}The pages in this ction are mainly used for maintaining packages and improving them.
+{{page.description}}The pages in this section are mainly used for maintaining packages and improving them.
