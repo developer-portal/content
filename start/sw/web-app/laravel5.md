@@ -7,7 +7,7 @@ order: 3
 ## Laravel 5
 > The PHP Framework For Web Artisans
 
-Laravel is a high-level PHP Web framework. We have to make sure all of these requirements are satisfied.
+Laravel is a high-level PHP Web framework. To install Laravel the following needs to be satisfied:
 
 1. PHP >= 5.5.9
 2. OpenSSL PHP Extension
@@ -28,10 +28,10 @@ $ sudo systemctl stop httpd
 ```
 
 #### Install MariaDB Relational Database Server
-Follow the MariaDB installation instructions [here](../../../tech/database/mariadb/about.html).
+Follow the MariaDB installation instructions [here](/tech/database/mariadb/about.html).
 
 #### Install PHP
-Follow the PHP installation instructions [here](../../../tech/languages/php/php-installation.html).
+Follow the PHP installation instructions [here](/tech/languages/php/php-installation.html).
 
 #### Install PHP Extensions
 
