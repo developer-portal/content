@@ -11,7 +11,6 @@ on multiple Python interpreters. On Fedora, that's easy: all you have to do is
 use `dnf` to install what you need. Currently Fedora has the following Pythons
 ready for you in the repositories:
 
- * CPython 3.6
  * CPython 3.5
  * CPython 3.4
  * CPython 3.3
