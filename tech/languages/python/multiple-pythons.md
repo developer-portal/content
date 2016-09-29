@@ -4,7 +4,7 @@ subsection: python
 order: 8
 ---
 
-# Multiple Python Interpreters
+# Multiple Python interpreters
 
 If you are working on a piece of Python software, you probably want to test it
 on multiple Python interpreters. On Fedora, that's easy: all you have to do is
@@ -58,7 +58,10 @@ you'll automatically get all the CPythons and PyPys:
 sudo dnf install tox
 ```
 
-If your are not yet familiar with tox, don't worry. This short example will show
+Note: This will only install the Python interpreters on Fedora 25 or newer,
+on older Fedoras, you need to install the packages specifically.
+
+If you are not yet familiar with tox, don't worry. This short example will show
 you how to start.
 
 Let's create a directory and a simple Python file in it that will say something nice:
@@ -161,7 +164,7 @@ For other Python versions, a tool called `virtualenv` can create virtual
 environments:
 
 ```
-$ dnf isntall python-virtualenv  # isntall the necessary tool
+$ dnf install python-virtualenv  # install the necessary tool
 $ virtualenv --python /usr/bin/python2.7 env  # create the virtualenv
 Running virtualenv with interpreter /usr/bin/python2.7
 New python executable in env/bin/python2.7
