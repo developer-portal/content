@@ -1,3 +1,12 @@
+---
+title: Python
+subsection: python
+section: tech-languages
+order: 1
+version: 2.7.12
+description: General-purpose, high-level programming language supporting multiple programming paradigms.
+---
+
 # Python in Fedora
 
 [Python](https://www.python.org/) is is a widely used interpreted, object-oriented, high-level programming language with dynamic semantics. It is simple and easy to learn.
