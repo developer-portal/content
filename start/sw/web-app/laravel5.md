@@ -43,7 +43,7 @@ $ sudo systemctl restart httpd
 ```
 
 #### Install Composer
-We will need composer to install laravel and it's dependancies
+We will need composer to install laravel and it's dependencies
 
 ```bash
 $ curl -sS https://getcomposer.org/installer | php
