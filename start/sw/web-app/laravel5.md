@@ -7,91 +7,86 @@ order: 4
 ## Laravel 5
 > The PHP Framework For Web Artisans
 
-Laravel is a high-level PHP Web framework 
+Laravel is a high-level PHP Web framework. To install Laravel the following needs to be satisfied:
 
+1. PHP >= 5.5.9
+2. OpenSSL PHP Extension
+3. PDO PHP Extension
+4. Mbstring PHP Extension
+5. Tokenizer PHP Extension
 
-First we need to install PHP5+, Composer and the laravel installer.
-[Laravel](https://laravel.com/)
-[Composer](https://getcomposer.org/)
+#### Install Apache Web Server
 
-
-#### Install MariaDB
 ```bash
-$ sudo dnf install mariadb-server
-# Then to boot the server 
-$ sudo systemctl start mariadb.service
+$ sudo dnf install httpd
+# Setup Apache to automatically start upon system boot
+$ sudo systemctl enable httpd.service
+# Then to boot the server
+$ sudo systemctl start httpd
 # And stop with
-$ sudo systemctl stop mariadb.service
+$ sudo systemctl stop httpd
 ```
+
+#### Install MariaDB Relational Database Server
+Follow the MariaDB installation instructions [here](/tech/database/mariadb/about.html).
+
 #### Install PHP
-And extras
+Follow the PHP installation instructions [here](/tech/languages/php/php-installation.html).
+
+#### Install PHP Extensions
+
 ```bash
-# Install php cli and needed extras
-$ sudo dnf install php-cli php-mcrypt-5.6.20 php-mysqlnd
+# Laravel required PHP extensions.
+$ sudo dnf install php php-common php-cli php-pdo php-mbstring php-zip php-xml
+# Restart Apache
+$ sudo systemctl restart httpd
 ```
-Now we will need composer to install laravel and it's dependancies 
+
+#### Install Composer
+We will need composer to install laravel and it's dependencies
+
 ```bash
-# Use PHP to read the file and create an executable for composer
-php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
-# now move the composer executable to make composer globally accessable 
+$ curl -sS https://getcomposer.org/installer | php
 $ sudo mv composer.phar /usr/local/bin/composer
-# You can now test it is working with 
-composer -V
+$ chmod +x /usr/local/bin/composer
+$ composer -V
 ```
----
-#### Create Laravel Project 
-There are to ways to create a laravel project, 
-Use Composer to install the laravel installer 
-or 
-Use Composer create-Project
 
-###### Install laravel installer
+#### Install laravel installer
+
 ```bash
-composer global require "laravel/installer"
+$ composer global require "laravel/installer"
+# Place the ~/.config/composer/vendor/bin directory in your PATH so the laravel 
+# executable can be located by your system.
+$ echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.bash_profile
 ```
-And the following line to ~/.bash_profile before "export Path"
-```php
-PATH=$PATH:$HOME/.composer/vendor/bin
-```
+
 Now you can create a laravel project with the commands 
+
 ```bash
-laravel new ProjectName
+$ laravel new ProjectName
 ```
 
-###### Create Project with composer
+#### Setup
+
 ```bash
-composer create-project --prefer-dist laravel/laravel ProjectName
-```
----
-
-
-
-#### Now setup and serve your laravel project 
-
-###### Setup
-```bash
-cd ProjectName
-cp .env.example .env
-gedit .env
+$ cd ProjectName
+$ cp .env.example .env
+$ nano .env
 ```
 
 Edit the .env file with DB_* lines with the correct info
+
 ```javascript
 DB_HOST=localhost
 DB_DATABASE=laravel_equals_winning
 DB_USERNAME=Chur
 DB_PASSWORD=Chur1
 ```
-###### Serve
+
+#### Serve
+
 ```bash
-$ sudo systemctl start mariadb.service
-php artisan serve
-# Laravel development server started on http://localhost:8000/
+$ php artisan serve
+# Laravel development server started on http://localhost:PORT/
 ```
-
-
-
-
-
