@@ -6,7 +6,7 @@ order: 9
 
 # Scientific Python Stack
 
-There is a lot of libraries for scientific computation and visualization
+There are lot of libraries for scientific computation and visualization
 available in Fedora. Well known and widely used is
 [SciPy Stack](v) which consists of
 
@@ -211,7 +211,7 @@ First install SymPy by running
 $ sudo dnf install python3-sympy
 ```
 
-and then your endeavor to the realm of CAS (Computer Algebra System) can begin:
+and then your journey to the realm of CAS (Computer Algebra System) can begin:
 
 ```python
 >>> import sympy
