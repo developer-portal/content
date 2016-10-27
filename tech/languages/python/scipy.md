@@ -29,8 +29,15 @@ available in Fedora. Well known and widely used is
 ## Numpy
 
 [NumPy](http://www.numpy.org/) is a high performance Python library providing
-fast multidimensional arrays featuring vector operations. What are vector
-operations? Those which are applied on multiple values at once, see:
+fast multidimensional arrays featuring vector operations.
+
+NumPy can be installed in Fedora simply by
+
+```bash
+$ sudo dnf install python3-numpy
+```
+
+What are vector operations? Those which are applied on multiple values at once, see:
 
 ```python
 >>> import numpy as np
@@ -84,12 +91,6 @@ array([[ 1.],
 array([[ 0.,  0.,  0.]])
 ```
 
-NumPy can be installed in Fedora simply by
-
-```bash
-$ sudo dnf install python3-numpy
-```
-
 ## SciPy
 
 [SciPy](http://scipy.org/) is a Python library providing routines for basic
@@ -113,12 +114,7 @@ To compute definite integral of *2x* from 0 to 1 (which equals 1) you can just:
 
 ## matplotlib
 
-[matplotlib](http://matplotlib.org/) is a graph plotting library producing publication-quality plots. See
-[showcases gallery](http://matplotlib.org/gallery.html), e.g.:
-
-![histogram subplot example](http://matplotlib.org/mpl_examples/pylab_examples/scatter_hist.png)
-
-![3dplot example](http://matplotlib.org/mpl_examples/mplot3d/contour3d_demo3.png)
+[matplotlib](http://matplotlib.org/) is a graph plotting library producing publication-quality plots.
 
 Installation is simple:
 
@@ -136,6 +132,12 @@ Test it by
 ```
 
 You should see plot already.
+
+See lot of other examples [showcases gallery](http://matplotlib.org/gallery.html), e.g.:
+
+![histogram subplot example](http://matplotlib.org/mpl_examples/pylab_examples/scatter_hist.png)
+
+![3dplot example](http://matplotlib.org/mpl_examples/mplot3d/contour3d_demo3.png)
 
 ## IPython
 
