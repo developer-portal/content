@@ -6,24 +6,24 @@ order: 9
 
 # Scientific Python Stack
 
-There are lot of libraries for scientific computation and visualization
-available in Fedora. Well known and widely used is
-[SciPy Stack](v) which consists of
+There are a lot of libraries for scientific computation and visualization
+available in Fedora. A well-known and widely used one is
+[SciPy Stack](v), which consists of:
 
 * [Python](https://docs.python.org/3/), a general purpose object-oriented
-  programming language,
+  programming language
 * [NumPy](https://docs.scipy.org/doc/numpy/), a Python library providing
-  fast multidimensional arrays with vector operations,
+  fast multidimensional arrays with vector operations
 * [SciPy](https://docs.scipy.org/doc/scipy/reference/), a Python library
-  providing computational routines for e.g. numerical integration, various
-  equation solvers and optimization.
+  providing computational routines, for example numerical integration, various
+  equation solvers and optimization
 * [matplotlib](http://matplotlib.org/), a powerful Python library providing
-  scientific visualization of publication quality,
-* [IPython](https://ipython.org/), an enhanced interactive Python interpreter,
+  scientific visualization of publication quality
+* [IPython](https://ipython.org/), an enhanced interactive Python interpreter
 * [pandas](http://pandas.pydata.org/), a Python library providing data type
-  for data series manipulation,
+  for data series manipulation
 * [SymPy](http://www.sympy.org/en/index.html), a Python library for computer algebra
-  support (i.e. symbolical computation) and
+  support (i.e. symbolical computation)
 * [nose](http://nose.readthedocs.io/en/latest/), a testing framework for Python.
 
 ## Numpy
@@ -31,13 +31,13 @@ available in Fedora. Well known and widely used is
 [NumPy](http://www.numpy.org/) is a high performance Python library providing
 fast multidimensional arrays featuring vector operations.
 
-NumPy can be installed in Fedora simply by
+NumPy can be installed in Fedora by typing:
 
 ```bash
 $ sudo dnf install python3-numpy
 ```
 
-What are vector operations? Those which are applied on multiple values at once, see:
+What are vector operations? The ones which are applied on multiple values at once:
 
 ```python
 >>> import numpy as np
@@ -96,15 +96,15 @@ array([[ 0.,  0.,  0.]])
 [SciPy](http://scipy.org/) is a Python library providing routines for basic
 and special mathematical functions, numerical integration, optimization,
 interpolation, Fourier transform, signal processing, routines for linear algebra,
-statistics and others. See [full SciPy reference](https://docs.scipy.org/doc/scipy/reference/).
+statistics and others. See a [full SciPy reference](https://docs.scipy.org/doc/scipy/reference/).
 
-Installation in Fedora is straightforward:
+To install it, type:
 
 ```bash
 $ sudo dnf install python3-scipy
 ```
 
-To compute definite integral of *2x* from 0 to 1 (which equals 1) you can just:
+To compute, for example, the definite integral of *2x* from 0 to 1 (which equals 1), type:
 
 ```python
 >>> import scipy.integrate
@@ -116,13 +116,13 @@ To compute definite integral of *2x* from 0 to 1 (which equals 1) you can just:
 
 [matplotlib](http://matplotlib.org/) is a graph plotting library producing publication-quality plots.
 
-Installation is simple:
+To install it, type:
 
 ```bash
 $ sudo dnf install python3-matplotlib
 ```
 
-Test it by
+Test it by typing:
 
 ```python
 >>> import matplotlib.pyplot as plt
@@ -131,9 +131,9 @@ Test it by
 >>> plt.title("Hello, matplotlib!")
 ```
 
-You should see plot already.
+You should see the plot already.
 
-See lot of other examples [showcases gallery](http://matplotlib.org/gallery.html), e.g.:
+See lots of other examples at a [showcases gallery](http://matplotlib.org/gallery.html):
 
 ![histogram subplot example](http://matplotlib.org/mpl_examples/pylab_examples/scatter_hist.png)
 
@@ -141,13 +141,13 @@ See lot of other examples [showcases gallery](http://matplotlib.org/gallery.html
 
 ## IPython
 
-[IPython](https://ipython.org/) is rich python interpreter aiming at high-quality user-experience
-for interactive computing and data visualization. Main features are
-tab completion, integration of commands for file-system access, object
-introspection and others. IPython provides kernel
-for [Jupyter project](http://jupyter.org/).
+[IPython](https://ipython.org/) is a rich Python interpreter aiming at high-quality user experience
+for interactive computing and data visualization. Its main features are
+a tab completion, integration of commands for filesystem access, object
+introspection and others. IPython provides the kernel
+for the [Jupyter project](http://jupyter.org/).
 
-Installing and running IPython is trivial:
+To install and run IPython, type:
 
 ```bash
 $ sudo dnf install python3-ipython
@@ -170,14 +170,14 @@ Hello, world!
 
 ## pandas
 
-[Pandas](http://pandas.pydata.org/) is a python library implementing
-data series data type and relevant routines:
+[Pandas](http://pandas.pydata.org/) is a Python library implementing
+data series, data type and relevant routines:
 
 ```bash
 $ sudo dnf install python3-pandas
 ```
 
-Let us load famous [Iris dataset](http://archive.ics.uci.edu/ml/datasets/Iris)
+Let us load famous [Iris dataset](http://archive.ics.uci.edu/ml/datasets/Iris),
 which is used a lot as an example in pattern recognition and machine learning
 literature.
 
@@ -198,14 +198,14 @@ print(my_first_pandas_DataFrame)
 print(my_first_pandas_DataFrame.max(0))
 ```
 
-See more on usage in [pandas tutorial here](http://pandas.pydata.org/pandas-docs/stable/tutorials.html).
+See more on its usage in a [pandas tutorial](http://pandas.pydata.org/pandas-docs/stable/tutorials.html).
 
 ## SymPy
 
 [SymPy](http://www.sympy.org/en/index.html) extends SciPy with symbolic computation
-capabilities i.e. manipulation with algebraic variables, symbols and precise values.
+capabilities, i.e. manipulation with algebraic variables, symbols and precise values.
 
-First install SymPy by running
+First, install SymPy by running:
 
 ```bash
 $ sudo dnf install python3-sympy
