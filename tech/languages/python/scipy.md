@@ -8,7 +8,7 @@ order: 9
 
 There are lot of libraries for scientific computation and visualization
 available in Fedora. Well known and widely used is
-[SciPy Stack](v) which consists of
+[SciPy Stack](https://scipy.org/) which consists of
 
 * [Python](https://docs.python.org/3/), a general purpose object-oriented
   programming language,
