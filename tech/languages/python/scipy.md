@@ -171,7 +171,7 @@ Hello, world!
 ## pandas
 
 [Pandas](http://pandas.pydata.org/) is a Python library implementing
-data series, data type and relevant routines:
+a data type to store data series and relevant routines:
 
 ```bash
 $ sudo dnf install python3-pandas
