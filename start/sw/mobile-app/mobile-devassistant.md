@@ -13,12 +13,6 @@ First of all install [DevAssistant](https://devassistant.org) project:
 $ sudo dnf install devassistant
 ```
 
-If you prefer GUI run:
-
-```
-$ sudo dnf install devassistant-gui
-```
-
 Install DAP plugin [Google Android studio](https://github.com/phracek/dap-google-android-studio) for DevAssistant:
 
 ```
