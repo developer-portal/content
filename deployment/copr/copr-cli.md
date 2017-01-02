@@ -15,7 +15,7 @@ Install the copr-cli package:
 $ sudo dnf install copr-cli
 ```
 
-Log into the Copr web interface and get your API token at the [Copr API Page](https://copr.fedoraproject.org/api/)
+Log into the Copr web interface and get your API token at the [Copr API Page](https://copr.fedorainfracloud.org/api/)
 
 3. Save the token to your system:
 
