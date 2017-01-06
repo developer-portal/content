@@ -16,6 +16,24 @@ The most popular build tools used by millions of Java developers are packaged in
 $ sudo dnf install maven
 ```
 
+You can get started with Maven by using [DevAssistant](/tools/devassistant/about.html) to create a simple project, simply type (after you have DevAssistant setup and installed):   
+
+
+```
+da --debug crt java maven -n Dev_Sample
+```
+
+The project that is created (Example: Dev_Sample), roughly follows the [Maven Project Structure](http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html) but does not contain all of the directories or files. Initially you should see 2 directories (`src` and `target`) when you explore the project directory. You will also notice that your project directory has a file, the [pom.xml](https://maven.apache.org/pom.html) in it, this is your Maven project file that defines your build, and how you will transition through the Maven build [lifecycles](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html). 
+
+The `target` directory is created as part of your initial project build, triggered by DevAssistant command above. This directory is where your compiled artifacts, or generated outputs (from builds) are stored. Its best to think of this directory as a temp space, used to store the outputs from a build. 
+
+- Note: if you run `git status` in the created `Dev_Sample` directory, you will see that the `target` directory is not part of your git repository. Its a best practice to not include this in your version control system, so its recommended that you create a [gitignore](https://git-scm.com/docs/gitignore) file, add this directory and anything under it as ignored files.
+
+The `src` directory, is the start of your source directory structure, and under this directory you will see typically see any number of [package directories](http://docs.oracle.com/javase/tutorial/java/package/managingfiles.html)(Example: main), and the template testing framework (using junit). 
+
+The sample application created, as part of the DevAssisttant project creation, creates a single application (jar) from the `main.java.org.devassistant.maven.Main` class. It also creates a single test (test if a boolean is true), that is run when a build happens. 
+
+
 ## Gradle installation
 
 [Gradle](https://gradle.org/) is another popular tool used not only for building Java projects. To install it, simply type:
