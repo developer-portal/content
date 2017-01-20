@@ -10,7 +10,7 @@ order: 2
 
 You can install it from [Android Studio on developer.android.com](https://developer.android.com/studio/index.html) and follow their instructions.
 
-## From [DevAssistant](https://devassistant.org) command line:
+## From [DevAssistant](https://devassistant.org) command line
 
 First of all install [DevAssistant](https://devassistant.org) project:
 
