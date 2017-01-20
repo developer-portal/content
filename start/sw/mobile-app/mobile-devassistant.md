@@ -21,7 +21,10 @@ $ sudo dnf install devassistant
 If you prefer GUI run:
 
 ```bash
-$ sudo dnf install devassistant-guiDevAssistant:
+$ sudo dnf install devassistant-gui
+```
+
+Install DAP plugin [Google Android studio](https://github.com/phracek/dap-google-android-studio) for DevAssistant:
 
 ```bash
 $ da pkg install android-studio
