@@ -1,7 +1,7 @@
 ---
 title: Synced folders with NFS
 subsection: vagrant
-order: 6
+order: 7
 ---
 
 # Synced folders with NFS
