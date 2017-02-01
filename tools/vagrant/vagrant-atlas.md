@@ -1,5 +1,5 @@
 ---
-title: Downloading Vagrant from Atlas using Vagrant
+title: Downloading Vagrant images from Atlas
 subsection: vagrant
 order: 6
 ---
