@@ -162,6 +162,7 @@ For more information visit:
 https://www.openshift.com/devpreview/index.html
 
 Once you sign up, you can interact with the cluster in the cloud using the same `oc` client tool we installed on the previous section.
+For more information, consult the [References](#references) below.
 
 ## References
 
@@ -170,3 +171,6 @@ Once you sign up, you can interact with the cluster in the cloud using the same 
     * [OpenShift Command Line Walkthrough](https://docs.openshift.org/latest/getting_started/developers_cli.html)
 * [Upstream GitHub repository](https://github.com/openshift/origin)
 * [`oc cluster` command documentation](https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md)
+* [OpenShift Online Documentation](https://docs.openshift.com/online/welcome/index.html)
+    * [OpenShift Online: Basic Walkthrough](https://docs.openshift.com/online/getting_started/basic_walkthrough.html)
+    * [OpenShift Online: Command Line Setup](https://docs.openshift.com/online/cli_reference/get_started_cli.html#basic-setup-and-login)
