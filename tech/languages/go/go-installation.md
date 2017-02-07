@@ -60,7 +60,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, world!")
+	fmt.Println("Hello, Fedora!")
 }
 ```
 
@@ -68,7 +68,7 @@ Save your changes and, still on the same directory (`$HOME/go/hello`), run:
 
 ```console
 $ go run hello.go
-Hello, world!
+Hello, Fedora!
 ```
 
 The command `go run` builds and runs a Go program, and is useful for quick experiments.
@@ -84,7 +84,7 @@ Without arguments, `go build` builds the package in the current directory, and i
 
 ```console
 $ ./hello
-Hello, world!
+Hello, Fedora!
 ```
 
 Yet another option is to use `go install`:
@@ -105,7 +105,7 @@ Because programs are installed in `$GOPATH/bin`, it is common to add that to the
 $ echo 'export PATH=$PATH:$GOPATH/bin' >> $HOME/.bashrc
 $ source $HOME/.bashrc
 $ hello
-Hello, world!
+Hello, Fedora!
 ```
 
 ## References
