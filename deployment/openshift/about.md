@@ -152,6 +152,8 @@ $ oc new-app https://github.com/openshift/ruby-hello-world
     Run 'oc status' to view your app.
 ```
 
+You can find more comprehensive walkthroughs in the official documentation under [References](#references).
+
 ## Online Developer Preview
 
 An Online offering of the new OpenShift platform based on Docker and Kubernetes is available as a Developer Preview.
@@ -164,5 +166,7 @@ Once you sign up, you can interact with the cluster in the cloud using the same 
 ## References
 
 * [Official Documentation](https://docs.openshift.org/latest/welcome/)
+    * [OpenShift Web Console Walkthrough](https://docs.openshift.org/latest/getting_started/developers_console.html)
+    * [OpenShift Command Line Walkthrough](https://docs.openshift.org/latest/getting_started/developers_cli.html)
 * [Upstream GitHub repository](https://github.com/openshift/origin)
 * [`oc cluster` command documentation](https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md)
