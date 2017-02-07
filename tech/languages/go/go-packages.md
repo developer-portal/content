@@ -1,7 +1,7 @@
 ---
 title: Go packages
 subsection: go
-order: 2
+order: 3
 ---
 
 # Go packages installation
