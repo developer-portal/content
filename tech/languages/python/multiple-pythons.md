@@ -11,6 +11,7 @@ on multiple Python interpreters. On Fedora, that's easy: all you have to do is
 use `dnf` to install what you need. Currently Fedora has the following Pythons
 ready for you in the repositories:
 
+ * CPython 3.6
  * CPython 3.5
  * CPython 3.4
  * CPython 3.3
@@ -27,6 +28,8 @@ You can install them like this:
 ```bash
 sudo dnf install python33  # to get CPython 3.3
 sudo dnf install python34  # to get CPython 3.4
+sudo dnf install python35  # to get CPython 3.5
+sudo dnf install python36  # to get CPython 3.6
 sudo dnf install python26  # to get CPython 2.6
 sudo dnf install pypy pypy3 jython python35  # to get more at once
 ```
@@ -76,7 +79,7 @@ directory:
 
 ```
 [tox]
-envlist = py27,py34,py35,pypy,pypy3
+envlist = py27,py35,py36,pypy,pypy3
 skipsdist = True
 [testenv]
 commands=python say.py
@@ -96,8 +99,8 @@ With `tox.ini`, just run tox in the same directory:
 $ tox
 [...]
 ERROR:   py27: commands failed
-  py34: commands succeeded
   py35: commands succeeded
+  py36: commands succeeded
 ERROR:   pypy: commands failed
   pypy3: commands succeeded
 ```
@@ -116,8 +119,8 @@ print('Fedora is the best OS for Python developers', end='\n\n')
 $ tox
 [...]
   py27: commands succeeded
-  py34: commands succeeded
   py35: commands succeeded
+  py36: commands succeeded
   pypy: commands succeeded
   pypy3: commands succeeded
   congratulations :)
