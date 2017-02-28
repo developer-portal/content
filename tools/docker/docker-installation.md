@@ -53,4 +53,4 @@ $ sudo groupadd docker && sudo gpasswd -a ${USER} docker && sudo systemctl resta
 $ newgrp docker
 ```
 
-You have to log out and log back in (or restart Docker daemon and use `newgrp` commnad as mentioned here) for these changes to take effect. Then you can verify if your changes were successful by running Docker without `sudo`.
+You have to log out and log back in (or restart Docker daemon and use `newgrp` command as mentioned here) for these changes to take effect. Then you can verify if your changes were successful by running Docker without `sudo`.
