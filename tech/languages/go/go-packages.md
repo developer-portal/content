@@ -1,23 +1,23 @@
 ---
 title: Go packages
 subsection: go
-order: 2
+order: 3
 ---
 
 # Go packages installation
 
 ## Go packages from upstream
 
-Upstream projects can be installed with `go get` command. Package names follows the import paths so to install `gorilla/context` from GitHub run:
+Upstream projects can be installed with `go get` command. Package names follows the import paths so to install `github.com/gorilla/context` from GitHub run:
 
 ```
 $ go get github.com/gorilla/context
 ```
 
-If the requested package comes with an executable binary, you should find it in `$GOPATH/bin` directory. To use it, you need to add this path to your `$PATH`:
+If the requested package comes with an executable binary, you will find it in `$GOPATH/bin`. If you have not added that to your `PATH` environment variable yet, you can do so with these commands:
 
 ```
-$ echo 'export PATH=$GOPATH/bin:$PATH' >> $HOME/.bashrc
+$ echo 'export PATH=$PATH:$GOPATH/bin' >> $HOME/.bashrc
 $ source $HOME/.bashrc
 ```
 
