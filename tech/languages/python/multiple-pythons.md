@@ -160,7 +160,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 (env)$ deactivate  # go back to "normal"
 ```
 
-### Python 2.x, 3.x, PyPys
+### Python 2.x, 3.x, PyPys, Jython
 
 For other Python versions, a tool called `virtualenv` can create virtual
 environments:
@@ -192,9 +192,6 @@ To learn more about virtualenvs, visit
 [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/dev/virtualenvs/).
 
 ### Others
-
-For Jython, the virtualenv and tox invocation is currently unfortunately broken;
-we are planning to fix it.
 
 MicroPython does not support virtual environments.
 It does have a rudimentary pip replacement called
