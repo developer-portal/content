@@ -32,7 +32,7 @@ a crash:
     kill -SIGSEGV $!
 
 When ABRT handles a crash you will get notified via desktop pop-up or console notification
-if `abrt-console-notification` package is installed. You can then investigate the
+if `abrt-desktop` or `abrt-console-notification` package is installed. You can then investigate the
 crash via `gnome-abrt` GUI application or use `abrt-cli` when working from console.
 
 It is always a good idea to test the ABRT functionality for applications
