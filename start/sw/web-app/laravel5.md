@@ -16,16 +16,7 @@ Laravel is a high-level PHP Web framework. To install Laravel the following need
 5. Tokenizer PHP Extension
 
 #### Install Apache Web Server
-
-```bash
-$ sudo dnf install httpd
-# Setup Apache to automatically start upon system boot
-$ sudo systemctl enable httpd.service
-# Then to boot the server
-$ sudo systemctl start httpd
-# And stop with
-$ sudo systemctl stop httpd
-```
+Follow the Apache installation instructions [here](/start/sw/web-app/apache.html).
 
 #### Install MariaDB Relational Database Server
 Follow the MariaDB installation instructions [here](/tech/database/mariadb/about.html).
