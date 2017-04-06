@@ -22,7 +22,7 @@ $ cd my_project
 Let's create a virtual environment called `project_venv` which will contain Python and pip which you can use to install Flask.
 
 ```bash
-$ pyvenv project_venv
+$ python3 -m venv project_venv
 ```
 
 If you want to work in the virtual environment, you have to activate it.
