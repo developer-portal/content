@@ -23,7 +23,7 @@ The best practise is using pip in the virtual environment. It will keep all modu
 Let's create a virtual environment called `project_venv` which will contain the main Python 3 version in Fedora and pip. If you need to use another version of Python or different interpreter such as PyPy, see [Multiple Interpreters section](https://developer.fedoraproject.org/tech/languages/python/multiple-pythons.html).
 
 ```bash
-$ pyvenv project_venv
+$ python3 -m venv project_venv
 ```
 
 If you want to work in the virtual environment, you have to activate it.
