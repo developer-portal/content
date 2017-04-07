@@ -8,7 +8,7 @@ order: 4
 
 Docker containers is a great concept to connect world of different distributions together. It is ideal tool to work with CentOS on Fedora, with Fedora on Red Hat Enterprise Linux or vise versa. That is the reason why we do not need to restrict our use cases on Fedora-based Docker containers only when we work on Fedora host machine, but we can use Docker containers based on CentOS or even Red Hat Enterprise Linux.
 
-It is necessary to realize that when working with Docker containers, content of the image matters and is very important to trust it. Container itself is protected by cgroups and SELinux, but it still shares the kernel, so malicious container may theoretically harm the host system as well. See more information about security at [Docker Security](https://docs.docker.com/articles/security/) and [Project Atomic article](http://www.projectatomic.io/docs/docker-and-selinux/). Long story short, you should never run random image container on your production host.
+It is necessary to realize that when working with Docker containers, content of the image matters and is very important to trust it. Container itself is protected by cgroups and SELinux, but it still shares the kernel, so malicious container may theoretically harm the host system as well. See more information about security at [Docker Security](https://docs.docker.com/engine/security/security/) and [Project Atomic article](http://www.projectatomic.io/docs/docker-and-selinux/). Long story short, you should never run random image container on your production host.
 
 ## Fedora images
 
@@ -37,7 +37,7 @@ $ sudo docker run fedora/mariadb
 fedora/mariadb
 ```
 
-The list of available Fedora Docker images is 
+The list of available Fedora Docker images is
 
 ## CentOS images
 
@@ -81,7 +81,7 @@ To download them just run `docker pull IMAGE_NAME`.
 | centos/nginx-16-centos7	      | Nginx 1.6 server and a reverse proxy server |
 | centos/nodejs-010-centos7	      | NodeJS 0.10 platform for building and running applications |
 | centos/passenger-40-centos7	  | Phusion Passenger® 4.0 web server and application server |
-| centos/perl-520-centos7	      | Perl 5.20 platform for building and running applications | 
+| centos/perl-520-centos7	      | Perl 5.20 platform for building and running applications |
 | centos/php-56-centos7	          | PHP 5.6 platform for building and running applications |
 | centos/python-27-centos7	      | Python 2.7 platform for building and running applications |
 | centos/python-34-centos7	      | Python 3.4 platform for building and running applications |

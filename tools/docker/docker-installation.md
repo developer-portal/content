@@ -34,7 +34,7 @@ To make Docker start when you boot your system, use the command:
 $ sudo systemctl enable docker
 ```
 
-For additional systemd configuration options for Docker, like adding an HTTP Proxy, refer to the Docker documentation [Systemd article](https://docs.docker.com/articles/systemd/).
+For additional systemd configuration options for Docker, like adding an HTTP Proxy, refer to the Docker documentation [Systemd article](https://docs.docker.com/engine/admin/systemd/).
 
 ## Why can’t I use docker command as a non `root` user, by default?
 
@@ -44,7 +44,7 @@ You can either [set up sudo](http://www.projectatomic.io/blog/2015/08/why-we-don
 
 Or you can create a Unix group called `docker` and add users to it. When the Docker daemon starts, it makes the ownership of the Unix socket read/writable by the `docker` group.
 
-**Warning:** The `docker` group is equivalent to the `root` user; For details on how this impacts security in your system, see [Docker Daemon Attack Surface](https://docs.Docker.com/articles/security/#Docker-daemon-attack-surface) for details.
+**Warning:** The `docker` group is equivalent to the `root` user; For details on how this impacts security in your system, see [Docker Daemon Attack Surface](https://docs.docker.com/engine/security/security/#docker-daemon-attack-surface) for details.
 
 To create the `docker` group and add your user:
 
