@@ -9,7 +9,7 @@ description: Platform for distributed applications.
 
 [Docker](https://www.docker.com) is a platform for developers and sysadmins to develop, ship, and run applications inside software containers. Docker lets you quickly assemble applications from components and eliminates the friction that can come when shipping code. Docker will also help you to get your code tested and deployed into production as fast as possible.
 
-See also [Frequently Asked Questions (FAQ)](http://docs.docker.com/misc/faq).
+See also [Frequently Asked Questions (FAQ)](https://docs.docker.com/engine/faq/).
 
 ## Getting started with Docker
 

@@ -10,7 +10,7 @@ The docker engine can be extensively configured.
 
 ## Basic configuration
 
-If you want to add any command line options (like `-D` for debugging) to docker daemon/service, do it in `/etc/sysconfig/docker`. Check [Configuring and running Docker on Fedora/RHEL/CentOS](http://docs.docker.com/articles/configuring/#configuring-docker-1) and [Control and configure Docker with systemd](http://docs.docker.com/articles/systemd) for basic instructions.
+If you want to add any command line options (like `-D` for debugging) to docker daemon/service, do it in `/etc/sysconfig/docker`. Check [Control and configure Docker with systemd](https://docs.docker.com/engine/admin/systemd/) for basic instructions.
 
 Other area you might tweak is [Network configuration](https://docs.docker.com/engine/userguide/networking).
 
