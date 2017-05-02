@@ -5,6 +5,11 @@ section: tools
 description: Set up your development environment, publish your code, and do many of the chores that somehow keep you from the important stuff — writing your software.
 ---
 
+## DevAssistant is obsolete, use it for reference only
+
+[https://github.com/devassistant/devassistant](https://github.com/devassistant/devassistant)
+
+
 # What is DevAssistant
 
 DevAssistant is a tool that helps you start with developing software — for every
@@ -20,8 +25,7 @@ line:
 gets you a fully functioning Maven-based Java application with dependencies,
 metadata, and a fresh GitHub repository with the code already uploaded. The
 same can be said about mostly every major language, because there is an
-assistant (a script) for that. Have a look at a few examples of how to run
-DevAssistant in the [tutorials](tutorials.html).
+assistant (a script) for that.
 
 You can run DevAssistant from the command line, or you can use the graphical
 user interface (GUI). We strongly recommend using the command line interface
@@ -56,12 +60,7 @@ command line. If you get something like this, you already have DevAssistant:
     packages.
     version  Print version
 
-If you do not see such a message, you can get DevAssistant from GNOME Software,
-or install it through DNF:
-
-    $ sudo dnf install devassistant
-
-If that is not possible for whatever reason, you may install DevAssistant from
+If you do not see such a message, you may install DevAssistant from
 [PyPI](https://pypi.python.org) using the command `pip3` from the package
 `python3-pip`:
 
@@ -119,8 +118,7 @@ along with the app:
     da tweak docker develop
 
 All you need is to point your browser to the address the assistant provided you
-with. If you want to go through a more detailed description of how to develop
-with DevAssistant, visit the [tutorials page](tutorials.html).
+with.
 
 If you can not find an assistant on the [DevAssistant Package
 Index](https://dapi.devassistant.org) for a workflow you use often, or there is
