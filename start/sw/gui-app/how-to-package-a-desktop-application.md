@@ -8,7 +8,7 @@
 Traditionally we have had little information about Linux applications before they have been installed. With the creation of a software center we require access to rich set of metadata about an application before it is deployed so it it can be displayed to the user and easily installed.
 This document is meant to be a guide for developers who wish to get their software appearing in the Software stores in Fedora Workstation and other distributions. Without the metadata described in this document your application is likely to go undiscovered by many or most linux users, but by reading this document you should be able to relatively quickly prepare you application.
 
-![GNOME Software](/home/cschalle/Pictures/steam-gnome-software.png  "Example of Steam listing in GNOME Software")
+![GNOME Software](steam-gnome-software.png  "Example of Steam listing in GNOME Software")
 
 ###Introduction
 
@@ -232,7 +232,7 @@ Copy that URL as you will need the information from it to create your .repo file
 So on top is your Repo shortname inside the brackets, then a name field with a more extensive name. For the baseurl paste the URL you copied earlier and remove the last bits until you are left with either the 'norach' directory or your platform directory for instance x86_64.
 
 Once you have that file completed put it into /etc/yum.repos.d on your computer and load up GNOME Software. Click on the 'Updates' button in GNOME Software and then on the refresh button in the top left corner to ensure your database is up to date. If everything works as expected you should then be able to do a search in GNOME software and find your new application showing up.
-![Example GNOME Software listing](/home/cschalle/Pictures/example-gnome-software-listing.png  "Example GNOME Software listing")
+![Example GNOME Software listing](example-gnome-software-listing.png  "Example GNOME Software listing")
 
 
 ###Flapak hosting and Metadata
