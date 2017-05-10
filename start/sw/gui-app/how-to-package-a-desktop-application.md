@@ -1,7 +1,6 @@
 #**Adding Applications to the GNOME Software Center**
 
-**Copyright 2016, Richard Hughes, Red Hat**
-** Copyright 2017, Christian F.K. Schaller, Red Hat**
+**Witten by Richard Hughes and Christian F.K. Schaller**
 
 ##Abstract
 
