@@ -1,10 +1,10 @@
 ---
-title: C#
+title: C# - Mono
 subsection: csharp
 section: tech-languages
 order: 4
 version: 7.8.4
-description: "C# - .NET Core and Mono"
+description: "C# programming language, .NET Core and Mono open source frameworks."
 ---
 
 # Mono installation
@@ -36,7 +36,7 @@ $ sudo dnf install nunit nunit-gui
 
 # Mono Documentation
 
-
+The information about installing mono and related details can be found at [mono-project.com/docs](http://www.mono-project.com/docs)
 
 # .NET Framework API Reference
 
