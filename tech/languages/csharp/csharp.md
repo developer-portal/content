@@ -37,15 +37,14 @@ MonoDevelop provides the best C# experience on Mono, the open-source multiplatfo
 $ sudo dnf install monodevelop
 ```
 
-## Eclipse with OmniSharp plugin //TODO
+## Eclipse with plugin //TODO
 
 _Mono only, with upcoming support for .NET Core as well_
 
-```
-$ sudo dnf install //TODO
-```
+You can get [Eclipse](http://www.eclipse.org) with [aCute plugin](https://github.com/mickaelistria/aCute), which relies on [OmniSharp](http://www.omnisharp.net) and [Language Server Protocol](https://github.com/Microsoft/language-server-protocol).
+
+[marketplace.eclipse.org](https://marketplace.eclipse.org/content/acute-c-edition-eclipse-ide-experimental)
 
 ## Summary
 
-What would we recommend? JetBrains Rider is the best C# IDE, however it is not open source. VS Code is great for .NET Core and MonoDevelop for Mono. Eclipse is work in progress, hopefull it will turn out well.
-
+What would we recommend? JetBrains Rider is the best C# IDE, however it is not open source. VS Code is great for .NET Core and MonoDevelop for Mono. Eclipse is work in progress, and supports only Mono for now.
