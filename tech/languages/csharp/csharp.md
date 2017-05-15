@@ -47,5 +47,5 @@ $ sudo dnf install //TODO
 
 ## Summary
 
-What would we recommend? JetBrains Rider is the best C# IDE, however it is not open source. VS Code is great for .NET Core and MonoDevelop for Mono. Eclips is work in progress, hopefull it will turn out well.
+What would we recommend? JetBrains Rider is the best C# IDE, however it is not open source. VS Code is great for .NET Core and MonoDevelop for Mono. Eclipse is work in progress, hopefull it will turn out well.
 
