@@ -11,9 +11,9 @@ description: "C# - .NET Core and Mono"
 
 There are multiple sources for .NET Core, please choose based on your Fedora version:
 
-* [Microsoft's 2.0 preview1](https://www.microsoft.com/net/core/preview#linuxfedora) (F25)
-* [Microsoft's 1.X packages](https://www.microsoft.com/net/download/linux) (F23 & 24)
-* [Fedora .NET SIG packages](https://copr.fedorainfracloud.org/coprs/nmilosev/dotnet-sig) (F25+)
+* [Microsoft's 2.0 preview1](https://www.microsoft.com/net/core/preview#linuxfedora) (F25 `.csproj`)
+* [Microsoft's 1.X packages](https://www.microsoft.com/net/download/linux) (F23 & 24 `.json`)
+* [Fedora .NET SIG packages](https://copr.fedorainfracloud.org/coprs/nmilosev/dotnet-sig) (F25+ `.json`)
 
 # API Reference
 
