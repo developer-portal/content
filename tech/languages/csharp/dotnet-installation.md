@@ -9,7 +9,9 @@ description: "C# - .NET Core and Mono"
 
 # .NET SDK installation
 
-There are multiple sources for .NET Core, please choose based on your Fedora version:
+.NET Core is still work in progress, and below download locations contain packages that are not entirely _free._ Please be patient, we should have reasonable packages within a few months.
+
+Choose based on your Fedora and SDK version:
 
 * [Microsoft's 2.0 preview1](https://www.microsoft.com/net/core/preview#linuxfedora) (F25 `.csproj`)
 * [Microsoft's 1.X packages](https://www.microsoft.com/net/download/linux) (F23 & 24 `.json`)
