@@ -1,5 +1,5 @@
 ---
-title: Mono SIG
+title: DotNet SIG
 subsection: csharp
 order: 3
 ---

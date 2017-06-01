@@ -1,10 +1,10 @@
 ---
-title: C#
+title: C# - IDEs
 subsection: csharp
 section: tech-languages
 order: 1
 version: 7.8.4
-description: "C# - .NET Core and Mono"
+description: "C# programming language, .NET Core and Mono open source frameworks."
 ---
 
 # C# IDE's in Fedora
@@ -13,7 +13,7 @@ description: "C# - .NET Core and Mono"
 
 _.NET Core Only_
 
-VS Code is plugin-based IDE that by itself won't just run C#. You have to install the C# plugin, and we recommend something something //TODO for NuGet package management.
+VS Code is plugin-based IDE that by itself won't just run C#. You have to install the C# plugin, and NuGet Package Manager.
 
 [code.visualstudio.com](https://code.visualstudio.com)
 
@@ -41,7 +41,7 @@ $ sudo dnf install monodevelop
 
 _Mono only, with upcoming support for .NET Core as well_
 
-You can get [Eclipse IDE](../../../tools/eclipse/about.html) with [aCute plugin](https://github.com/mickaelistria/aCute), which relies on [OmniSharp](http://www.omnisharp.net) and [Language Server Protocol](https://github.com/Microsoft/language-server-protocol). Although it's still experimental, this already provides nice edition features for C# in the Eclipse IDE.
+You can get [Eclipse IDE](/tools/eclipse/about.html) with [aCute plugin](https://github.com/mickaelistria/aCute), which relies on [OmniSharp](http://www.omnisharp.net) and [Language Server Protocol](https://github.com/Microsoft/language-server-protocol). Although it's still experimental, this already provides nice edition features for C# in the Eclipse IDE.
 
 ```
 $ sudo dnf install eclipse eclipse-mpc

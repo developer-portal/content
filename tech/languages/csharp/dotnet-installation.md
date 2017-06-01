@@ -1,10 +1,10 @@
 ---
-title: C#
+title: C# - .NET Core
 subsection: csharp
 section: tech-languages
 order: 2
 version: 7.8.4
-description: "C# - .NET Core and Mono"
+description: "C# programming language, .NET Core and Mono open source frameworks."
 ---
 
 # .NET SDK installation
