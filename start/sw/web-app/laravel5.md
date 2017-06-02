@@ -1,5 +1,5 @@
 ---
-title: PHP Laravel 5      
+title: PHP Laravel 5
 subsection: web-app
 order: 4
 ---
@@ -7,13 +7,7 @@ order: 4
 ## Laravel 5
 > The PHP Framework For Web Artisans
 
-Laravel is a high-level PHP Web framework. To install Laravel the following needs to be satisfied:
-
-1. PHP >= 5.5.9
-2. OpenSSL PHP Extension
-3. PDO PHP Extension
-4. Mbstring PHP Extension
-5. Tokenizer PHP Extension
+Laravel is a high-level PHP Web framework.
 
 #### Install Apache Web Server
 Follow the Apache installation instructions [here](/start/sw/web-app/apache.html).
