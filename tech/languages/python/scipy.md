@@ -26,7 +26,7 @@ available in Fedora. Well known and widely used is
   support (i.e. symbolical computation)
 * [nose](http://nose.readthedocs.io/en/latest/), a testing framework for Python.
 
-## Numpy
+## NumPy
 
 [NumPy](http://www.numpy.org/) is a high performance Python library providing
 fast multidimensional arrays featuring vector operations.
