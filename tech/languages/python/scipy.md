@@ -24,7 +24,9 @@ available in Fedora. Well known and widely used is
   for data series manipulation
 * [SymPy](http://www.sympy.org/en/index.html), a Python library for computer algebra
   support (i.e. symbolical computation)
-* [nose](http://nose.readthedocs.io/en/latest/), a testing framework for Python.
+* [nose](http://nose.readthedocs.io/en/latest/), a testing framework for Python
+* [Jupyter Notebook](https://jupyter.org/), a web app that allows you to create
+  and share live code, equations, visualizations and explanatory text
 
 ## NumPy
 
@@ -227,10 +229,33 @@ oo
 -exp(-x)
 ```
 
+## Jupyter Notebook
+
+Run and share live code via the browser; uses include: data cleaning and
+transformation, numerical simulation, statistical modeling, machine learning.
+
+First install Jupyter Notebook:
+
+```bash
+$ sudo dnf install notebook
+```
+
+To start a notebook server run:
+
+```bash
+$ jupyter notebook
+```
+
+Next select the dropdown _New_ then _Python 3_ to create a new notebook.
+
+![notebook example](https://jupyter.org/assets/jupyterpreview.png)
+
+NumPy, Pandas, SciPy and IPython are included with the install of Jupyter Notebook.
+
+
 ## What next?
 
  * [Numpy homepage](http://www.numpy.org/)
  * [Numpy tutorial](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
  * [SciPy stack documentation](http://scipy.org/docs.html)
  * [matplotlib examples gallery](http://matplotlib.org/gallery.html)
-
