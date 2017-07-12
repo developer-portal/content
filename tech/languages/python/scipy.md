@@ -24,7 +24,6 @@ available in Fedora. Well known and widely used is
   for data series manipulation
 * [SymPy](http://www.sympy.org/en/index.html), a Python library for computer algebra
   support (i.e. symbolical computation)
-* [nose](http://nose.readthedocs.io/en/latest/), a testing framework for Python
 * [Jupyter Notebook](https://jupyter.org/), a web app that allows you to create
   and share live code, equations, visualizations and explanatory text
 
