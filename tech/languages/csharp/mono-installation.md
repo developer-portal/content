@@ -1,10 +1,7 @@
 ---
 title: C# - Mono
 subsection: csharp
-section: tech-languages
 order: 4
-version: 7.8.4
-description: "C# programming language, .NET Core and Mono open source frameworks."
 ---
 
 # Mono installation
