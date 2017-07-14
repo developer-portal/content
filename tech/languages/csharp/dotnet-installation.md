@@ -1,10 +1,7 @@
 ---
 title: C# - .NET Core
 subsection: csharp
-section: tech-languages
-order: 2
-version: 7.8.4
-description: "C# programming language, .NET Core and Mono open source frameworks."
+order: 3
 ---
 
 # .NET SDK installation
@@ -15,6 +12,10 @@ Choose based on your Fedora and SDK version:
 
 * [Microsoft's 2.0 preview2](https://www.microsoft.com/net/core/preview#linuxfedora) (F25 `.csproj`)
 * [Fedora .NET SIG packages](https://copr.fedorainfracloud.org/coprs/nmilosev/dotnet-sig) (F25+ 1.1 `.json`)
+
+**For Fedora 26 and later versions** you will also need to install one more dependency, which is not documented on Microsoft's website.
+
+`# dnf install compat-openssl10`
 
 # API Reference
 
