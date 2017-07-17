@@ -1,5 +1,5 @@
 ---
-title: C# - IDEs
+title: IDEs
 subsection: csharp
 order: 2
 ---

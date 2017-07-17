@@ -1,5 +1,5 @@
 ---
-title: C# - .NET Core
+title: .NET Core
 subsection: csharp
 order: 3
 ---
@@ -15,9 +15,9 @@ Choose based on your Fedora and SDK version:
 
 **For Fedora 26 and later versions** you will also need to install one more dependency, which is not documented on Microsoft's website.
 
-`# dnf install compat-openssl10`
+`$ sudo dnf install compat-openssl10`
 
-# API Reference
+## API Reference
 
 You can find .NET Core API documentation at [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/api/index?view=netcore-2.0)
 

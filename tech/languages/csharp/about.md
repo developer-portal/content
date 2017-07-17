@@ -4,7 +4,7 @@ subsection: csharp
 section: tech-languages
 order: 1
 version: 7.8.4
-description: "C# programming language, .NET Core and Mono open source frameworks."
+description: ".NET Core and Mono open source frameworks, and available IDEs."
 ---
 
 # C# on Fedora
