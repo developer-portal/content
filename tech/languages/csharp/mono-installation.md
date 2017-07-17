@@ -1,5 +1,5 @@
 ---
-title: C# - Mono
+title: Mono
 subsection: csharp
 order: 4
 ---
@@ -15,7 +15,7 @@ $ sudo dnf install mono-devel
 This command will install Mono -- the runtime environment and associated development tools.
 
 
-# NAnt installation
+## NAnt installation
 
 The most popular build tool for Mono is [NAnt](http://nant.sourceforge.net/). To install it, simply type:
 
@@ -23,7 +23,7 @@ The most popular build tool for Mono is [NAnt](http://nant.sourceforge.net/). To
 $ sudo dnf install nant
 ```
 
-# NUnit installation
+## NUnit installation
 
 [NUnit](http://nunit.org/) is very useful for test driven development. To install it, simply type:
 
@@ -31,11 +31,11 @@ $ sudo dnf install nant
 $ sudo dnf install nunit nunit-gui
 ```
 
-# Mono Documentation
+## Mono Documentation
 
 The information about installing mono and related details can be found at [mono-project.com/docs](http://www.mono-project.com/docs)
 
-# .NET Framework API Reference
+## .NET Framework API Reference
 
 You can find .NET Framewrok API documentation for versions 4.5 and higher at [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/api/index?view=netframework-4.5), and for the older versions at [msdn.microsoft.com](https://msdn.microsoft.com/en-us/library/w0x726c2%28v=vs.90%29.aspx)
 
