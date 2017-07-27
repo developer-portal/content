@@ -4,18 +4,29 @@ subsection: csharp
 order: 3
 ---
 
-# .NET SDK installation
+# .NET Core
 
-.NET Core is still work in progress, and below download locations contain packages that are not entirely _free._ Please be patient, we should have reasonable packages within a few months.
+## Fedora .NET SIG repository
 
-Choose based on your Fedora and SDK version:
+.NET Core is still work in progress. The download location below contains packages that do not meet the official Fedora requirements yet (such as containing prebuilt binaries or bundled dependencies.) Please be patient, we should have reasonable packages within a few months.
 
-* [Microsoft's 2.0 preview2](https://www.microsoft.com/net/core/preview#linuxfedora) (F25 `.csproj`)
-* [Fedora .NET SIG packages](https://copr.fedorainfracloud.org/coprs/nmilosev/dotnet-sig) (F25+ 1.1 `.json`)
+[Fedora .NET SIG copr](https://copr.fedorainfracloud.org/coprs/g/dotnet-sig/dotnet)
 
-**For Fedora 26 and later versions** you will also need to install one more dependency, which is not documented on Microsoft's website.
+To enable the .NET SIG's copr repository:
 
-`$ sudo dnf install compat-openssl10`
+`$ sudo dnf copr enable @dotnet-sig/dotnet`
+
+## .NET Core SDK
+
+.NET Core SDK will enable building and publishing C# source code.
+
+`$ sudo dnf install dotnet-sdk-2.0`
+
+## .NET Core Runtime only
+
+You can install runtime only, if you are just deploying already prebuilt application.
+
+`$ sudo dnf install dotnet-runtime-2.0`
 
 ## API Reference
 
