@@ -66,7 +66,7 @@ Mongotron is a a Mongo DB GUI which uses Electron and AngularJS
 It's easy install and run:
 
 ```
-$ git clone git@github.com:officert/mongotron.git
+$ git clone https://github.com/officert/mongotron.git 
 $ cd mongotron/
 $ npm install
 $ npm start
