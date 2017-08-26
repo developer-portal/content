@@ -28,7 +28,7 @@ func main() {
 }
 ```
 
-Save your changes and, still on the same directory (`$HOME/go/hello`), run:
+Save your changes and, still on the same directory (`$HOME/go/src/hello`), run:
 
 ```console
 $ go run hello.go
