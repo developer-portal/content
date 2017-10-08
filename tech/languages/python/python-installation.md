@@ -32,7 +32,7 @@ print('Hello World!')
 
 If you want to **exit** Python, press `Ctrl` + `D`.
 
-To run a program written in Python type `python3`, the path and the name of the program. Like this:
+To run a program written in Python, type `python3` followed by the path and name of the program. Like this:
 
 ```bash
 $ python3 example.py
@@ -40,9 +40,9 @@ $ python3 example.py
 
 ## Using virtualenv
 
-When you work at some project it is good to keep it inside a virtual environment. It will keep the dependencies you need at one place and you no dot have to worry about different projects which needs different version of the same module.
+When you work on a project, it is good to keep it inside a virtual environment. It will keep the dependencies you need in one place and you do not have to worry about different projects which need different versions of the same module.
 
-Let's create a virtual environment called `project_venv` which will contain Python and pip which you can use to install project's dependencies.
+Let's create a virtual environment called `project_venv` which will contain Python and pip. You can use pip to install a project's dependencies.
 
 ```bash
 $ python3 -m venv project_venv
@@ -54,7 +54,7 @@ If you want to work in the virtual environment, you have to activate it.
 $ source project_venv/bin/activate
 ```
 
-When the virtual environment is activated (you can see it's name in brackets at the beginning of your prompt), you can install modules via `pip install`.
+When the virtual environment is activated (you can see its name in brackets at the beginning of your prompt), you can install modules via `pip install`.
 
 ```bash
 (project_venv) $ pip install name_of_module
