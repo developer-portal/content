@@ -4,9 +4,13 @@ subsection: csharp
 order: 4
 ---
 
-# Mono installation
+# Mono
 
-Fedora comes with [Mono](http://www.mono-project.com/) -- a free and open source implementation of the .NET Framework. To install it, simply type:
+Fedora comes with [Mono](http://www.mono-project.com/) -- a free and open source implementation of the .NET Framework
+
+## Mono installation
+
+To install Mono, simply type:
 
 ```
 $ sudo dnf install mono-devel
@@ -31,7 +35,7 @@ $ sudo dnf install nant
 $ sudo dnf install nunit nunit-gui
 ```
 
-## Mono Documentation
+## Documentation
 
 The information about installing mono and related details can be found at [mono-project.com/docs](http://www.mono-project.com/docs)
 
