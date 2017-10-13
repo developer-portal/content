@@ -10,7 +10,7 @@ order: 2
 
 _.NET Core Only_
 
-VS Code is plugin-based IDE that by itself won't just run C#. You have to install the C# plugin, and NuGet Package Manager.
+Visual Studio Code (aka VS Code) is plugin-based IDE that by itself won't just run C#. You have to install the C# plugin, and NuGet Package Manager.
 
 [code.visualstudio.com](https://code.visualstudio.com)
 
@@ -48,4 +48,3 @@ $ sudo dnf install monodevelop
 ## Summary
 
 What would we recommend? JetBrains Rider is the best C# IDE, however it is not open source. VS Code is great for .NET Core and MonoDevelop for Mono. C# in Eclipse IDE is still young and not very friendly to former Windows developer, but it can be useful if you're already an Eclipse IDE user.
-
