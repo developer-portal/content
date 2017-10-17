@@ -41,5 +41,5 @@ The information about installing mono and related details can be found at [mono-
 
 ## .NET Framework API Reference
 
-You can find .NET Framewrok API documentation for versions 4.5 and higher at [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/api/index?view=netframework-4.5), and for the older versions at [msdn.microsoft.com](https://msdn.microsoft.com/en-us/library/w0x726c2%28v=vs.90%29.aspx)
+You can find .NET Framework API documentation for versions 4.5 and higher at [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/api/index?view=netframework-4.5), and for the older versions at [msdn.microsoft.com](https://msdn.microsoft.com/en-us/library/w0x726c2%28v=vs.90%29.aspx)
 
