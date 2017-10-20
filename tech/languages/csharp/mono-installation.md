@@ -37,9 +37,10 @@ $ sudo dnf install nunit nunit-gui
 
 ## Documentation
 
-The information about installing mono and related details can be found at [mono-project.com/docs](http://www.mono-project.com/docs)
+The information about installing Mono and related details can be found at [mono-project.com/docs](http://www.mono-project.com/docs)
 
-## .NET Framework API Reference
+## API Reference
 
-You can find .NET Framework API documentation for versions 4.5 and higher at [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/api/index?view=netframework-4.5), and for the older versions at [msdn.microsoft.com](https://msdn.microsoft.com/en-us/library/w0x726c2%28v=vs.90%29.aspx)
-
+The documentation by Microsoft for the .NET Framework API generally applies to Mono as well, with minor differences.
+You can find the .NET Framework API documentation for versions 4.5 and higher at [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/api/index?view=netframework-4.5).
+In the Fedora packages for Mono, we don't support earlier versions of the .NET Framework API.
