@@ -12,7 +12,7 @@ packages with automatic build of dependencies. It enables standard IDE features 
 To install Leksah run command:
 
 ```
-$ sudo dnf install ghc cabal
+$ sudo dnf install ghc cabal-install
 ```
 
 or install Haskell Platform by command:
