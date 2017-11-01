@@ -16,4 +16,4 @@ Other area you might tweak is [Network configuration](https://docs.docker.com/en
 
 If you want to change setting of storage that docker engine uses, check [docker-storage-setup](http://www.projectatomic.io/docs/docker-storage-recommendation) script.
 
-If you want to use your own registry, check [Docker Registry](http://docs.docker.com/registry). In that case you'll probably want to add `--add-registry` and/or `--insecure-registry` into `/etc/sysconfig/docker`.
+If you want to use your own registry, check [Docker Registry](http://docs.docker.com/registry). In that case you'll probably want to add `--add-registry` and/or `--insecure-registry` into `/etc/containers/registries.conf`.
