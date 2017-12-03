@@ -11,6 +11,7 @@ on multiple Python interpreters. On Fedora, that's easy: all you have to do is
 use `dnf` to install what you need. Currently Fedora has the following Pythons
 ready for you in the repositories:
 
+ * CPython 3.7 (development version)
  * CPython 3.6
  * CPython 3.5
  * CPython 3.4
@@ -26,10 +27,10 @@ Quite a nest, isn't it?
 You can install them like this:
 
 ```bash
-sudo dnf install python33  # to get CPython 3.3
 sudo dnf install python34  # to get CPython 3.4
 sudo dnf install python35  # to get CPython 3.5
 sudo dnf install python36  # to get CPython 3.6
+sudo dnf install python37  # to get CPython 3.7
 sudo dnf install python26  # to get CPython 2.6
 sudo dnf install pypy pypy3 jython python35  # to get more at once
 ```
@@ -49,19 +50,18 @@ Note that most of the CPython versions, other than those provided by the
 `python2` and `python3` packages, are only provided for developer's convenience
 so you can run your test suites. Critical security bugs might not be always
 fixed and those interprets are not intended for production.
+Especially the development version might be quite unstable.
 
 ## Getting it and running it all with tox
 
 [Tox](https://tox.readthedocs.io/) is tool that helps you test your Python code
 on multiple Pythons. If you install it on Fedora via the dnf package manager,
-you'll automatically get all the CPythons and PyPys:
+you'll automatically get all the CPythons (except the development version)
+and PyPys:
 
 ```bash
 sudo dnf install tox
 ```
-
-Note: This will only install the Python interpreters on Fedora 25 or newer,
-on older Fedoras, you need to install the packages specifically.
 
 If you are not yet familiar with tox, don't worry. This short example will show
 you how to start.
@@ -185,8 +185,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ```
 
 If you don't wish to use Python 2 at all, you might install `python3-virtualenv`
-in the first step and than use `virtualenv-3.X` command instead (where X
-changes depending on your Fedora version).
+in the first step and than use `virtualenv-3` command instead  of `virtualenv`.
 
 To learn more about virtualenvs, visit
 [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/dev/virtualenvs/).
