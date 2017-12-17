@@ -50,12 +50,13 @@ Import the above disk image into libvirt:
     $ virt-install \
        --name f27vm1 --ram 2048 \
        --disk path=fedora-27.img,format=raw \
-       --os-variant fedora26 \
-       --import \
+       --os-variant fedora27 \
+       --import
 
 Note: The `--os-variant` doesn't _strictly_ have to be F27; the nearest
 possible available Fedora variant is fine.  To find the list of variants
 for your current Fedora release, run: `osinfo-query os | grep fedora`.
+>>>>>>> tools: virt-builder: Update the documentation
 
 ## Examples to create custom virtual machines
 
@@ -71,11 +72,11 @@ Import the disk image into libvirt, and provide it 4GB of memory:
 
     $ virt-install --name f27vm2 --ram 4096 \
         --disk path=f27vm2.qcow2,format=qcow2,cache=writeback \
-        --nographics --os-variant fedora26 --import
+        --nographics --os-variant fedora27 --import
 
 ### Create a rawhide VM disk image
 
-This creates a rawhide disk :
+This creates a rawhide disk image:
 
     $ virt-builder fedora-27 \
         --install fedora-repos-rawhide \
