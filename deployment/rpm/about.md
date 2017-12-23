@@ -23,10 +23,10 @@ Biggest advantages of packaging your application is:
 Run:
 
 ```bash
-$ sudo dnf install fedora-packager rpmdevtools
+$ sudo dnf install fedora-packager rpmdevtools gcc
 $ rpmdev-setuptree
 $ cd ~/rpmbuild/SOURCES
-$ wget http://ftp.gnu.org/gnu/hello/hello-2.8.tar.gz
+$ wget http://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz
 $ cd ~/rpmbuild/SPECS
 $ rpmdev-newspec --macros hello.spec
 ```
@@ -37,12 +37,12 @@ Now you can open hello.spec file and alter it. Put there this content:
 
 ```
 Name:     hello
-Version:  2.8
+Version:  2.10
 Release:  1%{?dist}
 Summary:  The "Hello World" program from GNU
 License:  GPLv3+
 URL:      http://ftp.gnu.org/gnu/hello
-Source0:  http://ftp.gnu.org/gnu/hello/hello-2.8.tar.gz
+Source0: https://ftp.gnu.org/gnu/hello/hello-%{version}.tar.gz
 
 BuildRequires: gettext
 
@@ -58,7 +58,7 @@ project, including configuration, build, internationalization, help files, etc.
 
 %build
 %configure
-make %{?_smp_mflags}
+%make_build
 
 %install
 %make_install
@@ -92,7 +92,7 @@ Once you are done, you can run:
 $ rpmbuild -ba hello.spec
 ```
 
-Your package should be ready at `~/rpmbuild/RPMS/x86_64/hello-2.8-1.x86_64.rpm`.
+Your package should be ready at `~/rpmbuild/RPMS/x86_64/hello-2.10-1.fc27.x86_64.rpm`.
 
 This example is taken from [How to create a GNU Hello RPM package](https://fedoraproject.org/wiki/How_to_create_a_GNU_Hello_RPM_package). You can follow it there.
 
@@ -128,7 +128,7 @@ $ rpmbuild -bs hello.spec
 Then you can run:
 
 ```bash
-$ mock -r epel-7-i386.cfg hello.src.rpm
+$ mock -r /etc/mock/epel-6-i386.cfg ~/rpmbuild/SRPMS/hello-2.10-1.fc27.src.rpm
 ```
 
 This creates CentOS/RHEL package for i386 architecture even when your workstation architecture is x86_64 and your workstation is e.g. Fedora. List of available configurations can be found at `/etc/mock/` directory.
