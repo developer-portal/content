@@ -10,7 +10,7 @@ Django is a high-level Python Web framework that encourages rapid development an
 Django is one of the most popular Python Web Frameworks. It has very useful web page. Visit it by clicking on [this link](https://www.djangoproject.com/). 
 Because you will need to work with Python packages, write this command to your command line.
 
-For Python:
+For Python 2:
 
 ```
 sudo dnf install python-pip
@@ -29,11 +29,13 @@ sudo dnf install python3-pip
 It's recommended to keep your project inside virtual environment. But you can skip this step if you want. 
 Enter this command to your command line for installation:
 
+For Python 2:
+
 ```
 sudo dnf install python-virtualenv
 ```
 
-or installation for Python3:
+or installation for Python 3:
 
 ```
 sudo dnf install python3-virtualenv
@@ -74,6 +76,8 @@ It will return nothing.
 Now if you installed `virtualenv` do not leave it, we will install Django now. If you installed `virtualenv` use this command 
 inside your working directory with activated `virtualenv`:
 
+For Python 2:
+
 ```
 pip install django
 ```
@@ -84,7 +88,7 @@ If you are following a book or a tutorial, you might want to specify the same ex
 pip install django==1.10
 ```
 
-For Python 3:
+or Python 3:
 
 ```
 pip3 install django==1.10
@@ -126,8 +130,17 @@ And you successfully started your first Django project.
 ## Switching Virtualenvs
 
 You can use `virtualenvwrapper` after installing it with usual command
+
+For Python 2:
+
 ```
-dnf install python-virtualenvwrapper
+sudo dnf install python-virtualenvwrapper
+```
+
+or Python 3:
+
+```
+sudo dnf install python3-virtualenvwrapper
 ```
 
 ```
