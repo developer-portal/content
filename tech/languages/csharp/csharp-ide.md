@@ -6,45 +6,43 @@ order: 2
 
 # C# IDEs in Fedora
 
-## JetBrains Rider
+| IDE | License | .NET Core | Mono | Debugger | Packaged in Fedora | Alternative download |
+|---|---|---|---|---|---|---|
+| [Eclipse](/tools/eclipse/about.html) with [aCute plugin](https://marketplace.eclipse.org/content/acute-c-edition-eclipse-ide-experimental) | [EPL](http://www.eclipse.org/legal/epl-2.0/) | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  |
+| [Monodevelop](http://www.monodevelop.com/) | [LGPLv2](http://www.gnu.org/licenses/lgpl-2.1.html) |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | [flatpak](https://download.mono-project.com/repo/monodevelop.flatpakref)<sup>1</sup> |
+| [JetBrains Rider](http://jetbrains.com/rider) | [Proprietary](https://www.jetbrains.com/store/license.html), free for [Education and OpenSource](https://www.jetbrains.com/store/#edition=discounts) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | tarball |
+| [Visual Studio Code](https://code.visualstudio.com) with [C# plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) | Binary is [Proprietary](https://code.visualstudio.com/License/) Source Code is [MIT](https://github.com/Microsoft/vscode/blob/master/LICENSE.txt) | :heavy_check_mark: |  | :heavy_check_mark: |  | [flatpak](https://flathub.org/repo/appstream/com.visualstudio.code.flatpakref)<sup>1</sup>, copr & rpm |
 
-_.NET Core and Mono_
+_1. Download and install using direct link to [Flatpak](/deployment/Flatpak/about.html)_
 
-JetBrains Rider is full featured IDE for all things C#, and even F# on .NET Core. If you are familiar with other JetBrains products, such as the IntelliJ or Resharper, you might like this one as well.
+## Installing Eclipse
 
-[jetbrains.com/rider](http://jetbrains.com/rider)
-
-## Visual Studio Code
-
-_.NET Core Only_
-
-Visual Studio Code (aka VS Code) is plugin-based IDE that by itself won't just run C#. You have to install the C# plugin, and NuGet Package Manager.
-
-Download the Visual Studio Code at [code.visualstudio.com](https://code.visualstudio.com) and the C# Extension at [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
-
-## Eclipse
-
-_.NET Core and Mono_
-
-You can use the [aCute plugin](https://marketplace.eclipse.org/content/acute-c-edition-eclipse-ide-experimental) on top of the established and popular [Eclipse IDE](/tools/eclipse/about.html). This C# extension for Eclipse IDE relies on [OmniSharp](http://www.omnisharp.net) and [Language Server Protocol](https://github.com/Microsoft/language-server-protocol). It comes with complete edition features for C# in the Eclipse IDE, relying on the Eclipse IDE provides all typical features of a good IDE (Polyglot development, SCM, deployment...) and give access to a rich ecosystem of extensions for about all existing technologies.
-
+First install Eclipse and Eclipse Marketplace
 ```
 $ sudo dnf install eclipse eclipse-mpc
 ```
-then install the aCute extension from [Eclipse Marketplace](https://marketplace.eclipse.org/content/acute-c-edition-eclipse-ide-experimental)
+then install the aCute extension from the [Marketplace](https://marketplace.eclipse.org/content/acute-c-edition-eclipse-ide-experimental)
 
-## MonoDevelop
-
-_Mono only_
-
-MonoDevelop provides the best C# experience on Mono, the open-source multiplatform implementation of the .NET Framework.
-
-[monodevelop.com](http://www.monodevelop.com)
+## Installing MonoDevelop
 
 ```
 $ sudo dnf install monodevelop
 ```
 
+## Installing JetBrains Rider
+
+* Apply for a [license for Open Source projects or students](https://www.jetbrains.com/store/?fromMenu#edition=discounts) and [download Rider](http://jetbrains.com/rider)
+* Or download the [Early Access](https://www.jetbrains.com/rider/eap) version
+
+## Installing Visual Studio Code
+
+Download [Visual Studio Code](https://code.visualstudio.com) and the C# Extension from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+
+
 ## Summary
 
-What would we recommend? JetBrains Rider is the best C# IDE, however it is not open source. VS Code is great for .NET Core and MonoDevelop for Mono. C# in Eclipse IDE is still young and not very friendly to former Windows developer, but it can be useful if you're already an Eclipse IDE user.
+JetBrains Rider is the most complete C# IDE, however it is not open source.
+
+VS Code and MonoDevelop work well for .NET Core and for Mono, respectively.
+
+C# via Eclipse is still young and not very friendly for the former Windows developer, but it can be useful if you're already an Eclipse IDE user.
