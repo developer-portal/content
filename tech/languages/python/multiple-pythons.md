@@ -26,17 +26,17 @@ ready for you in the repositories:
 Quite a nest, isn't it?
 You can install them like this:
 
-```bash
-sudo dnf install python37  # to get CPython 3.7
-sudo dnf install python34  # to get CPython 3.4
-sudo dnf install python26  # to get CPython 2.6
-sudo dnf install pypy pypy3 jython python35  # to get more at once
+```console
+$ sudo dnf install python37  # to get CPython 3.7
+$ sudo dnf install python34  # to get CPython 3.4
+$ sudo dnf install python26  # to get CPython 2.6
+$ sudo dnf install pypy pypy3 jython python35  # to get more at once
 ```
 
 After that, you can run an interactive console or your script with, let's say,
 CPython 3.4:
 
-```
+```console
 $ python3.4
 Python 3.4.3 (default, Jul 11 2016, 11:30:44) 
 [GCC 5.3.1 20160406 (Red Hat 5.3.1-6)] on linux
@@ -56,8 +56,8 @@ on multiple Pythons. If you install it on Fedora via the dnf package manager,
 you'll automatically get all the CPythons (except the development version)
 and PyPys:
 
-```bash
-sudo dnf install tox
+```console
+$ sudo dnf install tox
 ```
 
 If you are not yet familiar with tox, don't worry. This short example will show
@@ -92,7 +92,7 @@ similar.
 
 With `tox.ini`, just run tox in the same directory:
 
-```
+``` console
 $ tox
 [...]
 ERROR:   py27: commands failed
@@ -112,7 +112,7 @@ from __future__ import print_function
 print('Fedora is the best OS for Python developers', end='\n\n')
 ```
 
-```
+```console
 $ tox
 [...]
   py27: commands succeeded
@@ -143,7 +143,7 @@ named `env` and install some package into it.
 Recent versions of Python include the `venv` module, which can create virtual
 environments.
 
-```
+```console
 $ python3.5 -m venv env  # create the virtualenv
 $ . env/bin/activate  # activate it
 (env)$ python -m pip install requests  # install a package with pip
@@ -162,7 +162,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 For other Python versions, a tool called `virtualenv` can create virtual
 environments:
 
-```
+```console
 $ dnf install python-virtualenv  # install the necessary tool
 $ virtualenv --python /usr/bin/python2.7 env  # create the virtualenv
 Running virtualenv with interpreter /usr/bin/python2.7
@@ -194,7 +194,7 @@ It does have a rudimentary pip replacement called
 [upip](https://pypi.python.org/pypi/micropython-upip/), which you can use to
 install packages that support MicroPython. Run it to find out more:
 
-```
-micropython -m upip
+```console
+$ micropython -m upip
 ```
 
