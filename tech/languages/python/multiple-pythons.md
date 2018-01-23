@@ -27,10 +27,8 @@ Quite a nest, isn't it?
 You can install them like this:
 
 ```bash
-sudo dnf install python34  # to get CPython 3.4
-sudo dnf install python35  # to get CPython 3.5
-sudo dnf install python36  # to get CPython 3.6
 sudo dnf install python37  # to get CPython 3.7
+sudo dnf install python34  # to get CPython 3.4
 sudo dnf install python26  # to get CPython 2.6
 sudo dnf install pypy pypy3 jython python35  # to get more at once
 ```
