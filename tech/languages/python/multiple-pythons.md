@@ -46,11 +46,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-Note that most of the CPython versions, other than those provided by the
-`python2` and `python3` packages, are only provided for developer's convenience
-so you can run your test suites. Critical security bugs might not be always
-fixed and those interprets are not intended for production.
-Especially the development version might be quite unstable.
+**Warning:** For production purposes you should use `python3` or `python2`
+packages only. Other CPython versions might be **unstable** or even **dangerous**
+(either because they are extremely old or quite the contrary alpha/beta quality)
+and are intended solely for development.
 
 ## Getting it and running it all with tox
 
