@@ -8,10 +8,10 @@ order: 2
 
 | IDE | License | .NET Core | Mono | Debugger | Packaged in Fedora | Alternative download |
 |---|---|---|---|---|---|---|
-| [Eclipse](/tools/eclipse/about.html) with [aCute plugin](https://marketplace.eclipse.org/content/acute-c-edition-eclipse-ide-experimental) | [EPL](http://www.eclipse.org/legal/epl-2.0/) | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |  |
-| [Monodevelop](http://www.monodevelop.com/) | [LGPLv2](http://www.gnu.org/licenses/lgpl-2.1.html) |  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | [flatpak](https://download.mono-project.com/repo/monodevelop.flatpakref)<sup>1</sup> |
-| [JetBrains Rider](http://jetbrains.com/rider) | [Proprietary](https://www.jetbrains.com/store/license.html), free for [Education and OpenSource](https://www.jetbrains.com/store/#edition=discounts) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | tarball |
-| [Visual Studio Code](https://code.visualstudio.com) with [C# plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) | Binary is [Proprietary](https://code.visualstudio.com/License/) Source Code is [MIT](https://github.com/Microsoft/vscode/blob/master/LICENSE.txt) | :heavy_check_mark: |  | :heavy_check_mark: |  | [flatpak](https://flathub.org/repo/appstream/com.visualstudio.code.flatpakref)<sup>1</sup>, copr & rpm |
+| [Eclipse](/tools/eclipse/about.html) with [aCute plugin](https://marketplace.eclipse.org/content/acute-c-edition-eclipse-ide-experimental) | [EPL](http://www.eclipse.org/legal/epl-2.0/) | &#x2714; | &#x2714; |  | &#x2714; |  |
+| [Monodevelop](http://www.monodevelop.com/) | [LGPLv2](http://www.gnu.org/licenses/lgpl-2.1.html) |  | &#x2714; | &#x2714; | &#x2714; | [flatpak](https://download.mono-project.com/repo/monodevelop.flatpakref)<sup>1</sup> |
+| [JetBrains Rider](http://jetbrains.com/rider) | [Proprietary](https://www.jetbrains.com/store/license.html), free for [Education and OpenSource](https://www.jetbrains.com/store/#edition=discounts) | &#x2714; | &#x2714; | &#x2714; |  | tarball |
+| [Visual Studio Code](https://code.visualstudio.com) with [C# plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) | Binary is [Proprietary](https://code.visualstudio.com/License/) Source Code is [MIT](https://github.com/Microsoft/vscode/blob/master/LICENSE.txt) | &#x2714; |  | &#x2714; |  | [flatpak](https://flathub.org/repo/appstream/com.visualstudio.code.flatpakref)<sup>1</sup>, copr & rpm |
 
 _1. Download and install using direct link to [Flatpak](/deployment/Flatpak/about.html)_
 
