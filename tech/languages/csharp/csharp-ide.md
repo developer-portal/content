@@ -6,6 +6,7 @@ order: 2
 
 # C# IDEs in Fedora
 
+{: .centered .striped .highlight}
 | IDE | License | .NET Core | Mono | Debugger | Packaged in Fedora | Alternative download |
 |---|---|---|---|---|---|---|
 | [Eclipse](/tools/eclipse/about.html) with [aCute plugin](https://marketplace.eclipse.org/content/acute-c-edition-eclipse-ide-experimental) | [EPL](http://www.eclipse.org/legal/epl-2.0/) | &#x2714; | &#x2714; |  | &#x2714; |  |
