@@ -160,7 +160,7 @@ You can find more comprehensive walkthroughs in the official documentation under
 An Online offering of the new OpenShift platform based on Docker and Kubernetes is available as a Developer Preview.
 For more information visit:
 
-https://www.openshift.com/devpreview/index.html
+[Online Developer Preview](https://www.openshift.com/devpreview/index.html)
 
 Once you sign up, you can interact with the cluster in the cloud using the same `oc` client tool we installed on the previous section.
 For more information, consult the [References](#references) below.
