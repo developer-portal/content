@@ -2,15 +2,16 @@
 title: Flatpak Usage
 subsection: flatpak
 section: deployment
+order: 4
 ---
 
 # {{page.title}}
 
 ## Installing Flatpak Applications
 
-### Setting up the Flathub repository: 
+##Setting up the Flathub repository:
 
-A team of Flatpak developers have started a project known as [Flathub](https://flathub.org). Flathub aims to provide a centralized repository for making Flatpak applications available to users. Flathub covers more than the GNOME application suite, and is regularly adding new applications.
+Flathub is a a growing collection of apps which can be easily installed on any Linux distribution. Once setup, you can browse and install from an app center, like GNOME Software or KDE Discover. Alternatively, you can browse and install apps from the website or using the command line.
 
 To add the Flathub repository, open the Terminal, and run:
 
@@ -20,7 +21,7 @@ $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.fl
 
 
 
-### Installing Applications (GNOME Software): 
+##Installing Flatpaks On Gnome (GNOME Software):
 
 GNOME Software already supports Flatpak repositories, so applications can be installed directly from GNOME Software.
 
@@ -32,7 +33,17 @@ After that, the application can be launched as usual.
 
 
 
-### Installing Applications (Command Line):
+## Installing Flatpaks On KDE (KDE Discover):
+
+Starting in Discover 5.12, Discover now supports Flatpak repositories, so you can directly install flatpak applications from it.
+
+Simply open Discover and browse or search through the app lists as normal. Similar to Gnome Software, applications that are available as flatpaks will list "Flatpak" as it's source.
+
+Upon installations, applications can be launched as usual.
+
+
+
+##Installing Applications (Command Line):
 
 The `flatpak` command also lists and installs apps and runtimes. To list all apps available in a specific repository, run the `remote-ls` command:
 
@@ -56,7 +67,4 @@ $ flatpak run org.gnome.Polari
 
 ## Further Reading
 
-* [FedoraMagazine - Getting Started with Flatpak](https://fedoramagazine.org/getting-started-flatpak/)
-* [A Flatpak Hello World](http://flatpak.org/hello-world.html)
 * [Flathub Applications](https://flathub.org/apps.html)
-
