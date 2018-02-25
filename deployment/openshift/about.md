@@ -63,10 +63,11 @@ $ oc cluster up
 If you are running a default installation of Docker, you will run into the error above.
 That is okay. We will follow the suggestion on screen. The good news is that `oc cluster up` downloaded the Docker image for running OpenShift Origin, so next time we run it, we already have the images offline.
 
-To change the Docker configuration permanently, edit (as the `root` user) the file `/etc/sysconfig/docker` and add/uncomment the following line:
+To change the Docker configuration permanently, edit (as the `root` user) the file `/etc/containers/registries.conf` and add `172.30.0.0/16` to the list of `registries` under `[registries.insecure]` category. For example:
 
 ```
-INSECURE_REGISTRY='--insecure-registry 172.30.0.0/16'
+[registries.insecure]
+registries = ['172.30.0.0/16']
 ```
 
 Then, restart the Docker daemon:
