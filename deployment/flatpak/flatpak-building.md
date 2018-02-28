@@ -1,7 +1,6 @@
 ---
 title: Packaging with Flatpak
 subsection: flatpak
-section: deployment
 order: 3
 ---
 

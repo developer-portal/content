@@ -1,7 +1,6 @@
 ---
 title: Flatpak Usage
 subsection: flatpak
-section: deployment
 order: 4
 ---
 

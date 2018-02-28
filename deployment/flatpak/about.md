@@ -1,5 +1,5 @@
 ---
-title: About Flatpak
+title: Flatpak
 subsection: flatpak
 section: deployment
 order: 1
