@@ -8,7 +8,7 @@ order: 4
 
 ## Installing Flatpak Applications
 
-##Setting up the Flathub repository:
+## Setting up the Flathub repository:
 
 Flathub is a a growing collection of apps which can be easily installed on any Linux distribution. Once setup, you can browse and install from an app center, like GNOME Software or KDE Discover. Alternatively, you can browse and install apps from the website or using the command line.
 
@@ -20,7 +20,7 @@ $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.fl
 
 
 
-##Installing Flatpaks On Gnome (GNOME Software):
+## Installing Flatpaks On Gnome (GNOME Software):
 
 GNOME Software already supports Flatpak repositories, so applications can be installed directly from GNOME Software.
 
@@ -42,7 +42,7 @@ Upon installations, applications can be launched as usual.
 
 
 
-##Installing Applications (Command Line):
+## Installing Applications (Command Line):
 
 The `flatpak` command also lists and installs apps and runtimes. To list all apps available in a specific repository, run the `remote-ls` command:
 
