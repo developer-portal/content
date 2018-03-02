@@ -38,13 +38,13 @@ There are curently two ways of getting your SRPM(s) into Copr:
 A. Building from URL:
 
 ```
-$ copr-cli build test-project-2 http://www.example.com/package-1.6-1.fc22.src.rpm
+$ copr-cli build test-project http://www.example.com/package-1.6-1.fc22.src.rpm
 ```
 
 B. Uploading them into Copr directly:  
 
 ```
-$ copr-cli build test-project-2 ~/packages/package-1.6-1.fc22.src.rpm
+$ copr-cli build test-project ~/packages/package-1.6-1.fc22.src.rpm
 ```
 
 The command line tool will now monitor your build and keeps you updated about any changes and results. You can safely interrupt it with `ctrl+c` at any time. The build will continue running.
