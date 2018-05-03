@@ -21,7 +21,7 @@ rows and columns. The Cassandra Query Language (CQL) is a close relative of SQL.
 
 ## Quick start
 
-Cassandra installation and service initalization on Fedora box:
+Cassandra installation and service initialization on Fedora box:
 
 ```bash
 $ sudo dnf install cassandra cassandra-server   # install client/server
@@ -203,7 +203,7 @@ $ sudo rm -rf /var/lib/cassandra/data/system/*
 
 ### Configuring the cluster
 
-The Cassandra main configuration file ```/etc/cassandra/cassandra.yaml``` needs to be edit to setup the
+The Cassandra main configuration file ```/etc/cassandra/cassandra.yaml``` needs to be edited to setup the
 cluster. The parameters that need to be modified are:
 
 - ```cluster_name```: Name of your cluster.
