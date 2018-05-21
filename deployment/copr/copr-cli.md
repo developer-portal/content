@@ -25,10 +25,10 @@ $ vim ~/.config/copr
 
 ## Creating a new project
 
-To create a new project called `test-project`, which would provide packages for Fedora 22, type:
+To create a new project called `test-project`, which would provide packages for Fedora {{page.fedora_release}}, type:
 
 ```
-$ copr-cli create --chroot fedora-22-i386 --chroot fedora-22-x86_64 test-project
+$ copr-cli create --chroot fedora-{{page.fedora_release}}-i386 --chroot fedora-{{page.fedora_release}}-x86_64 test-project
 ```
 
 ## Submitting a build
@@ -38,13 +38,13 @@ There are curently two ways of getting your SRPM(s) into Copr:
 A. Building from URL:
 
 ```
-$ copr-cli build test-project http://www.example.com/package-1.6-1.fc22.src.rpm
+$ copr-cli build test-project-2 http://www.example.com/package-1.6-1.fc{{page.fedora_release}}.src.rpm
 ```
 
 B. Uploading them into Copr directly:  
 
 ```
-$ copr-cli build test-project ~/packages/package-1.6-1.fc22.src.rpm
+$ copr-cli build test-project-2 ~/packages/package-1.6-1.fc{{page.fedora_release}}.src.rpm
 ```
 
 The command line tool will now monitor your build and keeps you updated about any changes and results. You can safely interrupt it with `ctrl+c` at any time. The build will continue running.
@@ -69,4 +69,13 @@ And install the package:
 
 ```
 $ sudo dnf install package
+```
+
+To uninstall your package:
+```
+$ sudo dnf remove package
+```
+And to disable your repository:
+```
+$ sudo dnf copr disable your_name/test-project
 ```
