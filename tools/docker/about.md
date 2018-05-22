@@ -1,5 +1,5 @@
 ---
-title: Docker in Fedora
+title: Docker
 subsection: docker
 section: tools
 description: Platform for distributed applications.
