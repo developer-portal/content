@@ -6,16 +6,16 @@ order: 6
 
 # Downloading Vagrant images from Atlas
 
-HashiCorp hosts an [index](https://atlas.hashicorp.com/boxes/search)
+HashiCorp hosts an [index](https://app.vagrantup.com/boxes/search)
 of images that you can use with Vagrant. To download an image using 
 Vagrant you need to know the organization name as well as the individual
-image name. In the case of Fedora we have the [Fedora](https://atlas.hashicorp.com/fedora/)
+image name. In the case of Fedora we have the [Fedora](https://app.vagrantup.com/fedora/)
 organization and under that we have different boxes that can be used.
-An example of one of those is the `fedora/25-cloud-base` Vagrant box.
+An example of one of those is the `fedora/{{page.fedora_release}}-cloud-base` Vagrant box.
 You can download this box with the following command:
 
 ```
-$ vagrant box add fedora/25-cloud-base
+$ vagrant box add fedora/{{page.fedora_release}}-cloud-base
 ```
 
 This will ask you which provider you want to download the Vagrant box
@@ -25,7 +25,7 @@ those virtual machine technologies you are using.
 After downloading this image you can then start up a machine with:
 
 ```
-$ vagrant init fedora/25-cloud-base && vagrant up
+$ vagrant init fedora/{{page.fedora_release}}-cloud-base && vagrant up
 ```
 
 *NOTE* you can skip the `vagrant box add` command if you want to. The
@@ -38,5 +38,5 @@ If you want to update the Vagrant box image at a later time you can do
 so by issuing the following command:
 
 ```
-vagrant box update --box fedora/25-cloud-base
+vagrant box update --box fedora/{{page.fedora_release}}-cloud-base
 ```
