@@ -28,8 +28,7 @@ same can be said about mostly every major language, because there is an
 assistant (a script) for that.
 
 You can run DevAssistant from the command line, or you can use the graphical
-user interface (GUI). We strongly recommend using the command line interface
-for reasons described in the [notes](notes.html).
+user interface (GUI). We strongly recommend using the command line interface.
 
 ## Installing DevAssistant on Fedora
 
