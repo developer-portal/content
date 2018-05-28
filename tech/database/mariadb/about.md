@@ -128,7 +128,7 @@ In order to run MariaDB in production development, you should pay extra attentio
 
  * use `mysql_secure_installation` as mentioned above
  * do not accept connections from all addresses unless absolutely necessary
- * `Always use a strong passwordd`
+ * **Always use a strong password**
  * Limit user permissions to those necessary for the application to run
 
 By default, MariaDB cannot be accessed from another computer. In order to allow access from another computer, we need to do the following things.

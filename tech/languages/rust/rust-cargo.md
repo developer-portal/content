@@ -27,6 +27,7 @@ $ tree .
 
 1 directory, 2 files
 ```
+
 The manifest is written in [TOML language](https://github.com/toml-lang/toml) and
 looks like this:
 ```toml
@@ -37,6 +38,7 @@ authors = ["Your Name <you@example.com>"]
 
 [dependencies]
 ```
+
 To run your new project, type:
 ```
 $ cargo run
