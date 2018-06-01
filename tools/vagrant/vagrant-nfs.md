@@ -19,10 +19,10 @@ $ sudo dnf install nfs-utils && sudo systemctl enable nfs-server
 Afterwards enable `nfs`, `rpc-bind` and `mountd` services for `firewalld`:
 
 ```
-$ sudo firewall-cmd --permanent --add-service=nfs &&
-  sudo firewall-cmd --permanent --add-service=rpc-bind &&
-  sudo firewall-cmd --permanent --add-service=mountd &&
-  sudo firewall-cmd --reload
+$ sudo firewall-cmd --permanent --add-service=nfs \
+    && sudo firewall-cmd --permanent --add-service=rpc-bind \
+    && sudo firewall-cmd --permanent --add-service=mountd \
+    && sudo firewall-cmd --reload
 ```
 
 You need these services added for the zone you will run your virtual bridge
