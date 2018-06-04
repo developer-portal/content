@@ -53,10 +53,10 @@ $ sudo dnf install libreoffice-base mariadb-java-client
 For connecting to the MariaDB server using ODBC, install `unixODBC` and `mariadb-connector-odbc` packages:
 
 ```
-$ sudo dnf install unixODBC mariadb-connector-odbc
+$ sudo dnf install mariadb-connector-odbc
 ```
 
-## <a name="basic-tutorial-for-mariadb-in-fedora"></a>Basic tutorial for MariaDB in Fedora
+## Basic tutorial for MariaDB in Fedora
 
 MariaDB runs on port 3306 by default and creates a local unix socket at `/var/lib/mysql/mysql.sock`. By default, data is stored in the `/var/lib/mysql` directory and logs are located under `/var/log/mariadb/`. In order to change these directories, pay attention to use correct SELinux context and owner.
 
