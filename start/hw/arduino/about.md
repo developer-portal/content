@@ -29,6 +29,7 @@ To install Arduino IDE on Fedora, just run:
 
 Now you are all set to start developing you project using Arduino IDE on Fedora. Just start it from your desktop environment applications menu or run the <code>arduino</code> command from the command line. For more information on how to use the Arduino IDE, please refer to the [documentation](https://www.arduino.cc/en/Guide/Environment).
 
+<!--
 ## Ino
 
 In contrast to Arduino IDE, the Ino tool is only command line oriented. It is ideal if you want to develop the project source using your favorite text editor and do all the tasks from the command line. You can even script some of the tasks and run those as part of the CI if you want.
@@ -44,6 +45,7 @@ You can use the <code>ino init</code> command for setting up the project directo
 To list all supported boards use <code>ino list-models</code> command. To build the binary firmware use <code>ino build</code> with appropriate parameters. For uploading the compiled sketch use <code>ino upload</code> command and to communicate with your board using serial console use <code>ino serial</code> command.
 
 For more information about the project and supported options, please refer to the [documentation](http://inotool.org/) or use the <code>-h</code> option after the specific command.
+-->
 
 <!--
 ## Platform IO
