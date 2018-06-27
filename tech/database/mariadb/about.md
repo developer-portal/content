@@ -17,7 +17,7 @@ Generally, most of the [documentation for MySQL](http://dev.mysql.com/doc/) is v
 ## What versions do we have in Fedora
 
 Fedora usually ships only the most recent stable version of MariaDB.
-More, unsupproted, versions can be found in the maintainer's [COPR repositories](https://copr.fedorainfracloud.org/coprs/mschorm/).
+You can find various (unsupported) versions in the maintainer's [COPR repositories](https://copr.fedorainfracloud.org/coprs/mschorm/).
 Learn more about this version at [upstream documentation](https://mariadb.com/kb/en/library/library-mariadb-releases/). The package is called `mariadb` (client tools) and `mariadb-server` (server daemon).
 
 You can get an older version either by installing [Software Collection package of MariaDB 5.5](https://www.softwarecollections.org/en/scls/rhscl/mariadb55/) or by downloading [packages provided by upstream](https://downloads.mariadb.org/).
