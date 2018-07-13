@@ -84,5 +84,5 @@ Example of patching new sources and starting scratch builds with fedpkg.
 * **BASH**
 
    ```sh
-   rebase-helper --non-interactive --builds-nowait --fedpkg-build-tasks old_id,new_id
+   rebase-helper --non-interactive --builds-nowait --buildtool fedpkg --build-tasks old_id,new_id
    ```
