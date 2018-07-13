@@ -59,7 +59,7 @@ Example of patching new sources and starting scratch builds with fedpkg.
 
    ```python3
    from rebasehelper.application import Application
-   cli = CLI(['--non-interactive', '--builds-nowait', '-buildtool', 'fedpkg', upstream_version])
+   cli = CLI(['--non-interactive', '--builds-nowait', '--buildtool', 'fedpkg', 'upstream_version'])
    rh = Application(cli)
    rh.set_upstream_monitoring() # Switch rebase-helper to upstream release monitoring mode.
    rh.run()
@@ -68,7 +68,7 @@ Example of patching new sources and starting scratch builds with fedpkg.
 * **BASH**
 
    ```sh
-   rebase-helper --non-interactive --builds-nowait --buildtool fedpkg <upstream_version>
+   rebase-helper --non-interactive --builds-nowait --buildtool fedpkg upstream_version
    ```
 
 ### Download logs and RPMs and compare with tools like ``abipkgdiff``
@@ -76,7 +76,7 @@ Example of patching new sources and starting scratch builds with fedpkg.
 * **Python API**
 
    ```python3
-   cli = CLI(['--non-interactive', '--builds-nowait', '--fedpkg-build-tasks' old_id,new-id])
+   cli = CLI(['--non-interactive', '--builds-nowait', '--buildtool', 'fedpkg', '--build-tasks', 'old_id,new_id'])
    rh.run() # Downloads RPMs, logs and runs checkers and provides logs.
    rh.get_rebasehelper_data() # Get all information about the results
    ```
@@ -84,5 +84,5 @@ Example of patching new sources and starting scratch builds with fedpkg.
 * **BASH**
 
    ```sh
-   rebase-helper --non-interactive --builds-nowait --fedpkg-build-tasks old_id,new-id
+   rebase-helper --non-interactive --builds-nowait --fedpkg-build-tasks old_id,new_id
    ```
