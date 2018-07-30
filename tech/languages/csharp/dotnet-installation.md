@@ -19,15 +19,18 @@ $ sudo dnf copr enable @dotnet-sig/dotnet
 
 .NET Core SDK will enable building and publishing C# source code.
 ```
-$ sudo dnf install dotnet-sdk-2.0
+$ sudo dnf install dotnet-sdk-2.1
 ```
 
 ### .NET Core Runtime only
 
 You can install runtime only, if you are just deploying already prebuilt application.
 ```
-$ sudo dnf install dotnet-runtime-2.0
+$ sudo dnf install dotnet-runtime-2.1
 ```
+
+## Create your app
+You can create your first console app following instructions in [this official guide](https://www.microsoft.com/net/learn/get-started-with-dotnet-tutorial#create).
 
 ## Microsoft .NET Core packages
 
