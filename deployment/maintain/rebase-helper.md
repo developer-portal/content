@@ -12,7 +12,7 @@ It automates a lot of manual tasks the package maintainer usually does, when a n
 Begin installation on Fedora using the ``dnf`` command:
 
 ```sh
-sudo dnf install -y rebase-helper
+sudo dnf install rebase-helper
 ```
 
 It requires several other programs like ``abipkgdiff``, ``rpmdiff``, ``mock``, ``fedpkg``, ``meld``, etc.
