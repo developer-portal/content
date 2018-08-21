@@ -1,13 +1,10 @@
 ---
 title: Rebase helper
 subsection: maintain
-section: deployment
 order: 2
-description: >
-  Helps automate the process of updating a package to the latest upstream version
 ---
 
-# {{page.title}}
+# Rebase-helper
 Rebase-helper is a tool which helps package maintainers with updating package to the latest upstream version.
 It automates a lot of manual tasks the package maintainer usually does, when a new upstream version of a package is released.
 

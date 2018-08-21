@@ -1,13 +1,10 @@
 ---
 title: Rebase helper integration
 subsection: maintain
-section: deployment
 order: 3
-description: >
-  Integrating rebase-helper with an upstream monitoring service
 ---
 
-# {{page.description}}
+# Integrating rebase-helper with an upstream monitoring service
 
 This chapter demonstrates how to include rebase-helper in your upstream monitoring service. 
 If you would like to integrate rebase-helper into your upstream monitoring services, this chapter is for you.
