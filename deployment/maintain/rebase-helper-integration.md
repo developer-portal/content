@@ -15,37 +15,37 @@ Rebase-helper provides an API which you can use either directly from Python, or 
 
 ## Patch new upstream version and start scratch builds
 Example of patching new sources and starting scratch builds with fedpkg.
- This returns task_ids. The bash equivalents are included for comparison:
+This returns task_ids. The bash equivalents are included for comparison:
  
-* **Python API**
+### Python API
 
-   ```python3
-   from rebasehelper.application import Application
-   cli = CLI(['--non-interactive', '--builds-nowait', '--buildtool', 'fedpkg', 'upstream_version'])
-   rh = Application(cli)
-   rh.set_upstream_monitoring() # Switch rebase-helper to upstream release monitoring mode.
-   rh.run()
-   ```
+```python3
+from rebasehelper.application import Application
+cli = CLI(['--non-interactive', '--builds-nowait', '--buildtool', 'fedpkg', 'upstream_version'])
+rh = Application(cli)
+rh.set_upstream_monitoring() # Switch rebase-helper to upstream release monitoring mode.
+rh.run()
+```
 
-* **BASH**
+### BASH
 
-   ```sh
-   $ rebase-helper --non-interactive --builds-nowait --buildtool fedpkg upstream_version
-   ```
+```sh
+$ rebase-helper --non-interactive --builds-nowait --buildtool fedpkg upstream_version
+```
 
 ## Download logs and RPMs and compare with tools like ``abipkgdiff``
 
-* **Python API**
+### Python API
 
-   ```python3
-   cli = CLI(['--non-interactive', '--builds-nowait', '--buildtool', 'fedpkg', '--build-tasks', 'old_id,new_id'])
-   rh.run() # Downloads RPMs, logs and runs checkers and provides logs.
-   rh.get_rebasehelper_data() # Get all information about the results
-   ```
+```python3
+cli = CLI(['--non-interactive', '--builds-nowait', '--buildtool', 'fedpkg', '--build-tasks', 'old_id,new_id'])
+rh.run() # Downloads RPMs, logs and runs checkers and provides logs.
+rh.get_rebasehelper_data() # Get all information about the results
+```
 
-* **BASH**
+### BASH
 
-   ```sh
-   $ rebase-helper --non-interactive --builds-nowait --buildtool fedpkg --build-tasks old_id,new_id
-   ```
+```sh
+$ rebase-helper --non-interactive --builds-nowait --buildtool fedpkg --build-tasks old_id,new_id
+```
 
