@@ -27,7 +27,7 @@ rh.run()
 ### BASH
 
 ```sh
-$ rebase-helper --non-interactive --builds-nowait --buildtool fedpkg upstream_version
+rebase-helper --non-interactive --builds-nowait --buildtool fedpkg upstream_version
 ```
 
 ## Download logs and RPMs and compare with tools like ``abipkgdiff``
@@ -43,6 +43,6 @@ rh.get_rebasehelper_data() # Get all information about the results
 ### BASH
 
 ```sh
-$ rebase-helper --non-interactive --builds-nowait --buildtool fedpkg --build-tasks old_id,new_id
+rebase-helper --non-interactive --builds-nowait --buildtool fedpkg --build-tasks old_id,new_id
 ```
 
