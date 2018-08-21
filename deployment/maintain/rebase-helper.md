@@ -12,7 +12,7 @@ It automates a lot of manual tasks the package maintainer usually does, when a n
 Begin installation on Fedora using the ``dnf`` command:
 
 ```sh
-sudo dnf install rebase-helper
+$ sudo dnf install rebase-helper
 ```
 
 It requires several other programs like ``abipkgdiff``, ``rpmdiff``, ``mock``, ``fedpkg``, ``meld``, etc.
@@ -35,10 +35,10 @@ Let's say we want to rebase a package foobar from ``foobar-1.2.0`` to ``foobar-1
 
 ```sh
 # Change to the location of foobar.spec and other package components (cloned dist-git dir), e.g.
-cd $HOME/rpmbuild/REPOS/foobar
+$ cd $HOME/rpmbuild/REPOS/foobar
 
 # Update to the selected upstream version
-rebase-helper 1.2.1
+$ rebase-helper 1.2.1
 ```
 
 If you do not want to be bothered, add the ``--non-interactive`` option to rebase-helper's command line 
@@ -68,7 +68,7 @@ Example of patching new sources and starting scratch builds with fedpkg.
 * **BASH**
 
    ```sh
-   rebase-helper --non-interactive --builds-nowait --buildtool fedpkg upstream_version
+   $ rebase-helper --non-interactive --builds-nowait --buildtool fedpkg upstream_version
    ```
 
 ### Download logs and RPMs and compare with tools like ``abipkgdiff``
@@ -84,5 +84,5 @@ Example of patching new sources and starting scratch builds with fedpkg.
 * **BASH**
 
    ```sh
-   rebase-helper --non-interactive --builds-nowait --buildtool fedpkg --build-tasks old_id,new_id
+   $ rebase-helper --non-interactive --builds-nowait --buildtool fedpkg --build-tasks old_id,new_id
    ```
