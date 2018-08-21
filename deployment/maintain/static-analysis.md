@@ -1,7 +1,8 @@
 ---
 title: Static Analysis
 subsection: maintain
-order: 3
+section: deployment
+order: 4
 ---
 
 # Static Analysis
