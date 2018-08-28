@@ -3,20 +3,16 @@ title: Rust
 subsection: rust
 section: tech-languages
 order: 1
-version: 1.10.0
+version: 1.28
 description: Systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.
 ---
 
 # Rust installation
 
-In order to install the Rust compiler, type:
+In order to get started with Rust programming, type:
 ```
-$ sudo dnf install rust
+$ sudo dnf install rust cargo
 ```
-This will install the compiler (`rustc`), standard library, gdb support and a documentation generator (`rustdoc`).
+This will install the compiler (`rustc`), standard library, gdb support, documentation generator (`rustdoc`) and the package manager (`cargo`).
 
-To compile the Rust source code, type:
-```
-$ rustc test.rs
-```
-This will produce an executable file named `test`.
+Continue to the next section where project cration is discussed.
