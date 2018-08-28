@@ -17,6 +17,7 @@ $ sudo dnf copr enable @dotnet-sig/dotnet
 
 ### .NET Core SDK
 
+
 .NET Core SDK enables building and publishing of C# source code.
 
 To install the latest SDK version:
@@ -36,6 +37,9 @@ To install runtime only, for example to merely deploy already prebuilt applicati
 ```
 $ sudo dnf install dotnet-runtime-x.y
 ```
+
+## Create your app
+You can create your first console app following instructions in [this official guide](https://www.microsoft.com/net/learn/get-started-with-dotnet-tutorial#create).
 
 ## References
 
