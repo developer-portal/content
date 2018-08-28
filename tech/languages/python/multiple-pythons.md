@@ -11,7 +11,7 @@ on multiple Python interpreters. On Fedora, that's easy: all you have to do is
 use `dnf` to install what you need. Currently Fedora has the following Pythons
 ready for you in the repositories:
 
- * CPython 3.7 (development version)
+ * CPython 3.7
  * CPython 3.6
  * CPython 3.5
  * CPython 3.4
@@ -162,7 +162,7 @@ For other Python versions, a tool called `virtualenv` can create virtual
 environments:
 
 ```console
-$ dnf install python-virtualenv  # install the necessary tool
+$ dnf install /usr/bin/virtualenv  # install the necessary tool
 $ virtualenv --python /usr/bin/python2.7 env  # create the virtualenv
 Running virtualenv with interpreter /usr/bin/python2.7
 New python executable in env/bin/python2.7
@@ -179,9 +179,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> ...
 (env)$ deactivate  # go back to "normal"
 ```
-
-If you don't wish to use Python 2 at all, you might install `python3-virtualenv`
-in the first step and than use `virtualenv-3` command instead  of `virtualenv`.
 
 To learn more about virtualenvs, visit
 [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/dev/virtualenvs/).
