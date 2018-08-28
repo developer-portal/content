@@ -11,10 +11,10 @@ on multiple Python interpreters. On Fedora, that's easy: all you have to do is
 use `dnf` to install what you need. Currently Fedora has the following Pythons
 ready for you in the repositories:
 
+ * CPython 3.7
  * CPython 3.6
  * CPython 3.5
  * CPython 3.4
- * CPython 3.3
  * CPython 2.7
  * CPython 2.6
  * PyPy
@@ -25,19 +25,17 @@ ready for you in the repositories:
 Quite a nest, isn't it?
 You can install them like this:
 
-```bash
-sudo dnf install python33  # to get CPython 3.3
-sudo dnf install python34  # to get CPython 3.4
-sudo dnf install python35  # to get CPython 3.5
-sudo dnf install python36  # to get CPython 3.6
-sudo dnf install python26  # to get CPython 2.6
-sudo dnf install pypy pypy3 jython python35  # to get more at once
+```console
+$ sudo dnf install python37  # to get CPython 3.7
+$ sudo dnf install python34  # to get CPython 3.4
+$ sudo dnf install python26  # to get CPython 2.6
+$ sudo dnf install pypy pypy3 jython python35  # to get more at once
 ```
 
 After that, you can run an interactive console or your script with, let's say,
 CPython 3.4:
 
-```
+```console
 $ python3.4
 Python 3.4.3 (default, Jul 11 2016, 11:30:44) 
 [GCC 5.3.1 20160406 (Red Hat 5.3.1-6)] on linux
@@ -45,23 +43,21 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-Note that most of the CPython versions, other than those provided by the
-`python2` and `python3` packages, are only provided for developer's convenience
-so you can run your test suites. Critical security bugs might not be always
-fixed and those interprets are not intended for production.
+**Warning:** For production purposes you should use `python3` or `python2`
+packages only. Other CPython versions might be **unstable** or even **dangerous**
+(either because they are extremely old or quite the contrary alpha/beta quality)
+and are intended solely for development.
 
 ## Getting it and running it all with tox
 
 [Tox](https://tox.readthedocs.io/) is tool that helps you test your Python code
 on multiple Pythons. If you install it on Fedora via the dnf package manager,
-you'll automatically get all the CPythons and PyPys:
+you'll automatically get all the CPythons (except the development version)
+and PyPys:
 
-```bash
-sudo dnf install tox
+```console
+$ sudo dnf install tox
 ```
-
-Note: This will only install the Python interpreters on Fedora 25 or newer,
-on older Fedoras, you need to install the packages specifically.
 
 If you are not yet familiar with tox, don't worry. This short example will show
 you how to start.
@@ -95,7 +91,7 @@ similar.
 
 With `tox.ini`, just run tox in the same directory:
 
-```
+``` console
 $ tox
 [...]
 ERROR:   py27: commands failed
@@ -115,7 +111,7 @@ from __future__ import print_function
 print('Fedora is the best OS for Python developers', end='\n\n')
 ```
 
-```
+```console
 $ tox
 [...]
   py27: commands succeeded
@@ -146,7 +142,7 @@ named `env` and install some package into it.
 Recent versions of Python include the `venv` module, which can create virtual
 environments.
 
-```
+```console
 $ python3.5 -m venv env  # create the virtualenv
 $ . env/bin/activate  # activate it
 (env)$ python -m pip install requests  # install a package with pip
@@ -165,8 +161,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 For other Python versions, a tool called `virtualenv` can create virtual
 environments:
 
-```
-$ dnf install python-virtualenv  # install the necessary tool
+```console
+$ dnf install /usr/bin/virtualenv  # install the necessary tool
 $ virtualenv --python /usr/bin/python2.7 env  # create the virtualenv
 Running virtualenv with interpreter /usr/bin/python2.7
 New python executable in env/bin/python2.7
@@ -184,10 +180,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 (env)$ deactivate  # go back to "normal"
 ```
 
-If you don't wish to use Python 2 at all, you might install `python3-virtualenv`
-in the first step and than use `virtualenv-3.X` command instead (where X
-changes depending on your Fedora version).
-
 To learn more about virtualenvs, visit
 [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/dev/virtualenvs/).
 
@@ -198,7 +190,7 @@ It does have a rudimentary pip replacement called
 [upip](https://pypi.python.org/pypi/micropython-upip/), which you can use to
 install packages that support MicroPython. Run it to find out more:
 
-```
-micropython -m upip
+```console
+$ micropython -m upip
 ```
 

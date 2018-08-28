@@ -8,27 +8,41 @@ order: 3
 
 ## Fedora .NET SIG repository
 
-.NET Core is still work in progress. The download location below contains packages that do not meet the official Fedora requirements yet (such as containing prebuilt binaries or bundled dependencies.) Please be patient, we should have reasonable packages within a few months.
-
-[Fedora .NET SIG copr](https://copr.fedorainfracloud.org/coprs/g/dotnet-sig/dotnet)
+.NET Core is still work in progress. The download location below contains packages that do not meet the official Fedora requirements yet (such as using prebuilt tools to build the source) but are _free_.
 
 To enable the .NET SIG's copr repository:
+```
+$ sudo dnf copr enable @dotnet-sig/dotnet
+```
 
-`$ sudo dnf copr enable @dotnet-sig/dotnet`
+### .NET Core SDK
 
-## .NET Core SDK
 
-.NET Core SDK will enable building and publishing C# source code.
+.NET Core SDK enables building and publishing of C# source code.
 
-`$ sudo dnf install dotnet-sdk-2.0`
+To install the latest SDK version:
 
-## .NET Core Runtime only
+```
+$ sudo dnf install dotnet
+```
 
-You can install runtime only, if you are just deploying already prebuilt application.
+To install the latest SDK for a specific .NET Core Runtime, where the _x_ stands for major, _y_ for minor version of the runtime:
+```
+$ sudo dnf install dotnet-sdk-x.y
+```
 
-`$ sudo dnf install dotnet-runtime-2.0`
+### .NET Core Runtime only
 
-## API Reference
+To install runtime only, for example to merely deploy already prebuilt applications, where _x_ stands for major and _y_ stands for minor version:
+```
+$ sudo dnf install dotnet-runtime-x.y
+```
 
-You can find .NET Core API documentation at [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/api/index?view=netcore-2.0)
+## Create your app
+You can create your first console app following instructions in [this official guide](https://www.microsoft.com/net/learn/get-started-with-dotnet-tutorial#create).
+
+## References
+
+* [Fedora .NET SIG copr](https://copr.fedorainfracloud.org/coprs/g/dotnet-sig/dotnet)
+* [.NET Core API documentation](https://docs.microsoft.com/en-us/dotnet/api/index?view=netcore-2.0)
 

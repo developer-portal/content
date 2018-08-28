@@ -6,14 +6,9 @@ order: 2
 
 # Installing Cargo
 Cargo is Rust's package manager. You can use it to download your project's dependencies
-and to compile your project. To install Cargo, type:
+and to compile your project. You can start a new project using Cargo by typing:
 ```
-$ sudo dnf install cargo
-```
-
-You can start a new project using Cargo by typing:
-```
-$ cargo new my_project --bin
+$ cargo new my_project
 ```
 This will create a new directory with manifest (`Cargo.toml`), a source code directory
 (`src`) and a "Hello, World!" program in `src/main.rs`.
@@ -27,6 +22,7 @@ $ tree .
 
 1 directory, 2 files
 ```
+
 The manifest is written in [TOML language](https://github.com/toml-lang/toml) and
 looks like this:
 ```toml
@@ -37,6 +33,7 @@ authors = ["Your Name <you@example.com>"]
 
 [dependencies]
 ```
+
 To run your new project, type:
 ```
 $ cargo run

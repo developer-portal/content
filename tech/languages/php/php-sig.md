@@ -1,7 +1,7 @@
 ---
 title: PHP SIG
 subsection: php
-order: 6
+order: 4
 ---
 
 # PHP Special Interest Group
