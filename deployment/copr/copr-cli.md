@@ -38,7 +38,7 @@ There are curently two ways of getting your SRPM(s) into Copr:
 A. Building from URL:
 
 ```
-$ copr-cli build test-project-2 http://www.example.com/package-1.6-1.fc{{page.fedora_release}}.src.rpm
+$ copr-cli build test-project http://www.example.com/package-1.6-1.fc{{page.fedora_release}}.src.rpm
 ```
 
 B. Uploading them into Copr directly:
