@@ -52,7 +52,7 @@ and are intended solely for development.
 
 [Tox](https://tox.readthedocs.io/) is tool that helps you test your Python code
 on multiple Pythons. If you install it on Fedora via the dnf package manager,
-you'll automatically get all the CPythons (except the development version)
+you'll automatically get all the CPythons (except Python 2.6)
 and PyPys:
 
 ```console
@@ -124,6 +124,10 @@ $ tox
 
 If you want to use tox for your projects, you can learn more at
 [the documentation](https://tox.readthedocs.io/).
+
+**Warning:** Tox version 3 and greater does not support Python 2.6.
+If you really need tox with Python 2.6, we recommend creating a virtual
+environment with `python3` (see bellow) and installing `tox<3` in it.
 
 ## Creating virtualenvs and installing packages
 
