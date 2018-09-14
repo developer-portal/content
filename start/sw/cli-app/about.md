@@ -200,5 +200,11 @@ To install it into /usr/local use sudo and change the DESTDIR
 
 ```sudo make install DESTDIR=/usr/local```
 
+#### Source Code
+
+Source code for example
+
+```git clone https://github.com/xbcsmith/cli-app```
+
 
 
