@@ -27,7 +27,7 @@ kvm_intel             167936  3
 kvm                   499712  1 kvm_intel
 ```
 
-If you do not have KVM capabilities, you will need to use `qemu` driver within your Vagrantfile as follows:
+If you do not have KVM capabilities, you will need to use `qemu` driver within your Vagrantfile. Note the `qemu` driver may severely impact performance of your Vagrant virtual machine.
 
 ```
 Vagrant.configure("2") do |config|
@@ -39,7 +39,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-Read more on the `vagrant-libvirt` configuration in the [upstream documentation](https://github.com/pradels/vagrant-libvirt).
+Read more on the `vagrant-libvirt` configuration in the [upstream documentation](https://github.com/vagrant-libvirt/vagrant-libvirt).
 
 ## Using libvirt from Vagrant without password prompts
 
