@@ -16,10 +16,10 @@ ready for you in the repositories:
  * CPython 3.5
  * CPython 3.4
  * CPython 2.7
- * CPython 2.6
+ * CPython 2.6\*
  * PyPy
  * PyPy 3
- * Jython
+ * Jython\*
  * MicroPython
 
 Quite a nest, isn't it?
@@ -47,6 +47,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 packages only. Other CPython versions might be **unstable** or even **dangerous**
 (either because they are extremely old or quite the contrary alpha/beta quality)
 and are intended solely for development.
+
+**\*** Interpreters marked with \* do not work with Fedora packaged Tox and
+virtualenv, because they are extremely old.
+If you really need to use them with tox or virtualenv, see the [bottom section
+of this page](#python-26-jython).
 
 ## Getting it and running it all with tox
 
@@ -125,10 +130,6 @@ $ tox
 If you want to use tox for your projects, you can learn more at
 [the documentation](https://tox.readthedocs.io/).
 
-**Warning:** Tox version 3 and greater does not support Python 2.6.
-If you really need tox with Python 2.6, we recommend creating a virtual
-environment with `python3` (see bellow) and installing `tox<3` in it.
-
 ## Creating virtualenvs and installing packages
 
 Fedora only packages Python modules for current versions of `python2`
@@ -141,9 +142,9 @@ Packages installed in a virtualenv are only available once the virtualenv
 is activated. Here you can see two demos that create virtualenv in a folder
 named `env` and install some package into it.
 
-### Python 3.4+ only
+### Python 3 (including PyPy 3)
 
-Recent versions of Python include the `venv` module, which can create virtual
+Recent versions of Python 3 include the `venv` module, which can create virtual
 environments.
 
 ```console
@@ -160,7 +161,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 (env)$ deactivate  # go back to "normal"
 ```
 
-### Python 2.x, 3.x, PyPys, Jython
+### Python 2.7, PyPy 2
 
 For other Python versions, a tool called `virtualenv` can create virtual
 environments:
@@ -186,6 +187,58 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 To learn more about virtualenvs, visit
 [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/dev/virtualenvs/).
+
+### Python 2.6, Jython
+
+The versions of virtualenv and tox packaged in Fedora do not support Python 2.6
+and Jython, because they are extremely old. However, there is a trick on how to
+use older virtualenv/tox if you really need to support such old interpreters.
+
+First create a virtual environment with a newer Python, preferably `python3`:
+
+```console
+$ python3 -m venv py3env
+$ . py3env/bin/activate  # activate it
+```
+
+And install old virtualenv and/or tox into it:
+
+```console
+(py3env)$ python -m pip install 'tox<3' 'virtualenv<16'
+```
+
+You can create a Python 2.6 virtualenv:
+
+```console
+(py3env)$ python -m virtualenv --python /usr/bin/python2.6 py26env
+```
+
+Or a Jython virtualenv:
+
+
+```console
+(py3env)$ python -m virtualenv --python /usr/bin/jython jyenv
+```
+
+To activate it, you don't need to activate the Python 3 virtual environment,
+that is only needed to create it.
+
+```console
+$ . py26env/bin/activate
+(py26env)$ python --version
+Python 2.6.9
+(py26env)$ deactivate
+```
+
+```console
+$ . jyenv/bin/activate
+(jyenv)$ python --version
+Jython 2.7.1
+(jyenv)$ deactivate
+```
+
+Similarly, when the Python 3 virtual environment is activated, you can use tox
+2 with `python -m tox` or `tox` and use the `py26` or `jython` environment.
 
 ### Others
 
