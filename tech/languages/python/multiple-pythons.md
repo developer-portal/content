@@ -20,7 +20,7 @@ ready for you in the repositories:
  * PyPy
  * PyPy 3
  * Jython\*
- * MicroPython
+ * MicroPython\*
 
 Quite a nest, isn't it?
 You can install them like this:
@@ -43,22 +43,21 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-**Warning:** For production purposes you should use `python3` or `python2`
+**Warning:** For production purposes you should use the `python3` or `python2`
 packages only. Other CPython versions might be **unstable** or even **dangerous**
 (either because they are extremely old or quite the contrary alpha/beta quality)
 and are intended solely for development.
 
-**\*** Interpreters marked with \* do not work with Fedora packaged Tox and
-virtualenv, because they are extremely old.
-If you really need to use them with tox or virtualenv, see the [bottom section
-of this page](#python-26-jython).
+**\*** Interpreters marked with \* do not work with Tox and virtualenv
+packaged in Fedora.
+For using tox, virtualenv or pip with these interpreters, see the bottom
+sections of this page.
 
 ## Getting it and running it all with tox
 
 [Tox](https://tox.readthedocs.io/) is tool that helps you test your Python code
 on multiple Pythons. If you install it on Fedora via the dnf package manager,
-you'll automatically get all the CPythons (except Python 2.6)
-and PyPys:
+you'll automatically get all supported CPythons and PyPys:
 
 ```console
 $ sudo dnf install tox
@@ -88,7 +87,7 @@ commands=python say.py
 
 The `envlist` directive defines the list of Pythons to test on.
 Normally, tox assumes you are testing a project with its own `setup.py`. For
-the simlicity of this demo, we are not using it, and we need to tell this to
+the simplicity of this demo, we are not using it, and we need to tell this to
 tox via the `skipsdist` option.
 Finally the `commands` in `[testenv]` section tells tox what commands to run
 for the test, normally that would be `python setup.py test`, `py.test` or
@@ -190,38 +189,42 @@ To learn more about virtualenvs, visit
 
 ### Python 2.6, Jython
 
-The versions of virtualenv and tox packaged in Fedora do not support Python 2.6
-and Jython, because they are extremely old. However, there is a trick on how to
-use older virtualenv/tox if you really need to support such old interpreters.
+The versions of virtualenv and tox packages in Fedora do not support the
+following interpreters:
+* Python 2.6
+* Jython
 
-First create a virtual environment with a newer Python, preferably `python3`:
+If you really need to support such old interpreters, you will need to install
+and use older virtualenv/tox from PyPI.
+
+First, create a virtual environment with a newer Python, preferably `python3`:
 
 ```console
 $ python3 -m venv py3env
 $ . py3env/bin/activate  # activate it
 ```
 
-And install old virtualenv and/or tox into it:
+Then, install older packages (virtualenv 15 and tox 2) into it:
 
 ```console
-(py3env)$ python -m pip install 'tox<3' 'virtualenv<16'
+(py3env)$ python -m pip install 'virtualenv<16' 'tox<3'
 ```
 
-You can create a Python 2.6 virtualenv:
+Now, whenever the Python 3 virtual environment is activated, you can invoke
+tox 2 using the `tox` command.
+Include `py26` and/or `jython` in the `envlist` section in `tox.ini` to test
+on the old interpreters.
+
+You can also use the older virtualenv to create environments for
+Python 2.6 or Jython:
 
 ```console
 (py3env)$ python -m virtualenv --python /usr/bin/python2.6 py26env
-```
-
-Or a Jython virtualenv:
-
-
-```console
 (py3env)$ python -m virtualenv --python /usr/bin/jython jyenv
 ```
 
-To activate it, you don't need to activate the Python 3 virtual environment,
-that is only needed to create it.
+To activate these, you don't need the `py3env` activated.
+That is only needed to create them.
 
 ```console
 $ . py26env/bin/activate
@@ -237,10 +240,7 @@ Jython 2.7.1
 (jyenv)$ deactivate
 ```
 
-Similarly, when the Python 3 virtual environment is activated, you can use tox
-2 with `python -m tox` or `tox` and use the `py26` or `jython` environment.
-
-### Others
+### MicroPython
 
 MicroPython does not support virtual environments.
 It does have a rudimentary pip replacement called
