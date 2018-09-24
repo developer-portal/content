@@ -16,11 +16,11 @@ ready for you in the repositories:
  * CPython 3.5
  * CPython 3.4
  * CPython 2.7
- * CPython 2.6
+ * CPython 2.6\*
  * PyPy
  * PyPy 3
- * Jython
- * MicroPython
+ * Jython\*
+ * MicroPython\*
 
 Quite a nest, isn't it?
 You can install them like this:
@@ -43,17 +43,21 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-**Warning:** For production purposes you should use `python3` or `python2`
+**Warning:** For production purposes you should use the `python3` or `python2`
 packages only. Other CPython versions might be **unstable** or even **dangerous**
 (either because they are extremely old or quite the contrary alpha/beta quality)
 and are intended solely for development.
+
+**\*** Interpreters marked with \* do not work with Tox and virtualenv
+packaged in Fedora.
+For using tox, virtualenv or pip with these interpreters, see the bottom
+sections of this page.
 
 ## Getting it and running it all with tox
 
 [Tox](https://tox.readthedocs.io/) is tool that helps you test your Python code
 on multiple Pythons. If you install it on Fedora via the dnf package manager,
-you'll automatically get all the CPythons (except Python 2.6)
-and PyPys:
+you'll automatically get all supported CPythons and PyPys:
 
 ```console
 $ sudo dnf install tox
@@ -83,7 +87,7 @@ commands=python say.py
 
 The `envlist` directive defines the list of Pythons to test on.
 Normally, tox assumes you are testing a project with its own `setup.py`. For
-the simlicity of this demo, we are not using it, and we need to tell this to
+the simplicity of this demo, we are not using it, and we need to tell this to
 tox via the `skipsdist` option.
 Finally the `commands` in `[testenv]` section tells tox what commands to run
 for the test, normally that would be `python setup.py test`, `py.test` or
@@ -125,10 +129,6 @@ $ tox
 If you want to use tox for your projects, you can learn more at
 [the documentation](https://tox.readthedocs.io/).
 
-**Warning:** Tox version 3 and greater does not support Python 2.6.
-If you really need tox with Python 2.6, we recommend creating a virtual
-environment with `python3` (see bellow) and installing `tox<3` in it.
-
 ## Creating virtualenvs and installing packages
 
 Fedora only packages Python modules for current versions of `python2`
@@ -141,9 +141,9 @@ Packages installed in a virtualenv are only available once the virtualenv
 is activated. Here you can see two demos that create virtualenv in a folder
 named `env` and install some package into it.
 
-### Python 3.4+ only
+### Python 3 (including PyPy 3)
 
-Recent versions of Python include the `venv` module, which can create virtual
+Recent versions of Python 3 include the `venv` module, which can create virtual
 environments.
 
 ```console
@@ -160,7 +160,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 (env)$ deactivate  # go back to "normal"
 ```
 
-### Python 2.x, 3.x, PyPys, Jython
+### Python 2.7, PyPy 2
 
 For other Python versions, a tool called `virtualenv` can create virtual
 environments:
@@ -187,7 +187,60 @@ Type "help", "copyright", "credits" or "license" for more information.
 To learn more about virtualenvs, visit
 [The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/dev/virtualenvs/).
 
-### Others
+### Python 2.6, Jython
+
+The versions of virtualenv and tox packages in Fedora do not support the
+following interpreters:
+* Python 2.6
+* Jython
+
+If you really need to support such old interpreters, you will need to install
+and use older virtualenv/tox from PyPI.
+
+First, create a virtual environment with a newer Python, preferably `python3`:
+
+```console
+$ python3 -m venv py3env
+$ . py3env/bin/activate  # activate it
+```
+
+Then, install older packages (virtualenv 15 and tox 2) into it:
+
+```console
+(py3env)$ python -m pip install 'virtualenv<16' 'tox<3'
+```
+
+Now, whenever the Python 3 virtual environment is activated, you can invoke
+tox 2 using the `tox` command.
+Include `py26` and/or `jython` in the `envlist` section in `tox.ini` to test
+on the old interpreters.
+
+You can also use the older virtualenv to create environments for
+Python 2.6 or Jython:
+
+```console
+(py3env)$ python -m virtualenv --python /usr/bin/python2.6 py26env
+(py3env)$ python -m virtualenv --python /usr/bin/jython jyenv
+```
+
+To activate these, you don't need the `py3env` activated.
+That is only needed to create them.
+
+```console
+$ . py26env/bin/activate
+(py26env)$ python --version
+Python 2.6.9
+(py26env)$ deactivate
+```
+
+```console
+$ . jyenv/bin/activate
+(jyenv)$ python --version
+Jython 2.7.1
+(jyenv)$ deactivate
+```
+
+### MicroPython
 
 MicroPython does not support virtual environments.
 It does have a rudimentary pip replacement called
