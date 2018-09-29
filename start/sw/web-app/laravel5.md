@@ -9,41 +9,49 @@ order: 4
 
 Laravel is a high-level PHP Web framework.
 
-#### Install Apache Web Server
-Follow the Apache installation instructions [here](/start/sw/web-app/apache.html).
+#### Install Nginx Web Server
+Follow the nginx installation instructions [here](/start/sw/web-app/nginx.html).
+
 
 #### Install MariaDB Relational Database Server
 Follow the MariaDB installation instructions [here](/tech/database/mariadb/about.html).
 
-#### Install PHP
-Follow the PHP installation instructions [here](/tech/languages/php/php-installation.html).
-
-#### Install PHP Extensions
-
+Or you can install by : 
 ```bash
-# Laravel required PHP extensions.
-$ sudo dnf install php php-common php-cli php-pdo php-mbstring php-zip php-xml
-# Restart Apache
-$ sudo systemctl restart httpd
+# install MariaDB
+$ dnf install mariadb-server mariadb
+# start MariaDB
+$ systemctl enable --now mysql
+# initialize MariaDB
+$ sudo mysql_secure_installation
 ```
 
-#### Install Composer
-We will need composer to install laravel and it's dependencies
+#### Install PHP and all its dependencies
+Follow the PHP installation instructions [here](/tech/languages/php/php-installation.html).
+
+##### Fedora 28 uses 7.2 by default
+```bash
+# It will install all required extensions, perk of Fedora
+$ sudo dnf install composer
+```
+
+#### Install Valet Linux
+We will need to set it up for easier development
 
 ```bash
-$ curl -sS https://getcomposer.org/installer | php
-$ sudo mv composer.phar /usr/local/bin/composer
-$ chmod +x /usr/local/bin/composer
-$ composer -V
+# Place the ~/.config/composer/vendor/bin directory in your PATH so the composer 
+# global executable can be located by your system.
+$ echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.bashrc
+# Install valet 
+$ composer global require cpriego/valet-linux
+# Initialize valet
+$ valet install
 ```
 
 #### Install laravel installer
 
 ```bash
 $ composer global require "laravel/installer"
-# Place the ~/.config/composer/vendor/bin directory in your PATH so the laravel 
-# executable can be located by your system.
-$ echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.bashrc
 ```
 
 Restart Terminal. Now you can create a laravel project with the commands 
@@ -57,7 +65,7 @@ $ laravel new ProjectName
 ```bash
 $ cd ProjectName
 $ cp .env.example .env
-$ nano .env
+$ gedit .env
 ```
 
 Edit the .env file with DB_* lines with the correct info
@@ -71,7 +79,28 @@ DB_PASSWORD=Chur1
 
 #### Serve
 
+###### Do not run valet in sudo
 ```bash
 $ php artisan serve
 # Laravel development server started on http://localhost:PORT/
+
+# or use valet
+$ valet park
+$ valet link DOMAIN
+
+# Now visit http://DOMAIN.test/
 ```
+
+###### if ssl is desired
+
+```bash
+$ valet secure
+# Now visit https://DOMAIN.test/
+
+```
+
+###### if need a callback URL/share work
+```bash
+$ valet share
+```
+
