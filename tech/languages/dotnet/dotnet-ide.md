@@ -1,10 +1,10 @@
 ---
 title: IDEs
-subsection: csharp
-order: 2
+subsection: dotnet
+order: 3
 ---
 
-# C# IDEs in Fedora
+# .NET IDEs in Fedora
 
 {: .centered .striped .highlight}
 | IDE | License | .NET Core | Mono | Debugger | Packaged in Fedora | Alternative download |

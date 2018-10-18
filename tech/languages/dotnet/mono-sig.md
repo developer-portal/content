@@ -1,7 +1,7 @@
 ---
 title: Mono SIG
-subsection: csharp
-order: 6
+subsection: dotnet
+order: 5
 ---
 
 # Mono SIG
