@@ -1,5 +1,5 @@
 ---
-title: Install .NET Core
+title: .NET Core
 subsection: dotnet
 section: tech-languages
 order: 1

@@ -1,5 +1,5 @@
 ---
-title: Install Mono
+title: Mono
 subsection: dotnet
 order: 2
 ---
