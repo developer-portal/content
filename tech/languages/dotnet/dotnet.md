@@ -1,13 +1,11 @@
 ---
-title: .NET Core
+title: C#, F#, VB.NET
 subsection: dotnet
 section: tech-languages
-order: 1
+order: 2
 version: 7.8.4
 description: ".NET Core and Mono open source frameworks, and available IDEs."
 ---
-
-[.NET Core](https://docs.microsoft.com/en-us/dotnet/core/) is a general-purpose, modular, cross-platform and open-source development Platform.
 
 ## .NET Core Installation
 

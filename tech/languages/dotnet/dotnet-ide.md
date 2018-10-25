@@ -1,7 +1,7 @@
 ---
 title: IDEs
 subsection: dotnet
-order: 3
+order: 4
 ---
 
 # .NET IDEs in Fedora

@@ -1,10 +1,8 @@
 ---
 title: Mono
 subsection: dotnet
-order: 2
+order: 3
 ---
-
-[Mono](http://www.mono-project.com/) is a free and open source implementation of the .NET Framework.
 
 ## Mono installation
 

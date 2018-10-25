@@ -1,7 +1,7 @@
 ---
 title: DotNet SIG
 subsection: dotnet
-order: 4
+order: 5
 ---
 
 # DotNet SIG
