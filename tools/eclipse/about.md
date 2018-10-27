@@ -5,11 +5,11 @@ section: tools
 description: Full featured development environment for various programming languages integrating with plethora of different tools to make development process as integrated as possible
 ---
 
-# What is Eclipse
+# What is Eclipseasdfasdfasfdasd
 
-[Eclipse](https://www.eclipse.org/ide/) is a full featured, multi language IDE aiding developers in every step of software development lifecycle. Starting new project, working on established project with complex structure, monitoring and performance optimizing application, writing documentation, interacting with issue tracking systems or CI all from inside Eclipse IDE.
+[Eclipse](https://www.eclipse.org/ide/) is a full featured, multi language IDE aiding developers in every step of software development lifecycle. Starting new project, working on established project with complex structure, monitoring and performance optimizing application, writing documentation, interacting with issue t
 
-## Installing Eclipse on Fedora
+## Installing
 
 On Fedora install the eclipse package:
 

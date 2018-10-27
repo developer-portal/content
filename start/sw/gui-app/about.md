@@ -1,7 +1,7 @@
 ---
 label: need-help
 
-title: Desktop GUI Application
+title: Deskx
 subsection: gui-app
 section: start-sw
 description: 
