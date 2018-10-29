@@ -19,11 +19,22 @@ $ sudo dnf install nodejs
 
 This will install V8 Javascript Engine, Node.js runtime and npm package manager and their dependencies. Versions present in repositories are usually current or to-be (in Rawhide) Node.js LTS releases, including npm and V8 engine that come with them.
 
-You can check the available versions with:
+### Alternative versions
+
+There are alternative versions available as [Fedora Modules](https://docs.fedoraproject.org/en-US/modularity/using-modules/). 
+
+**Note:** Modules are available for all editions from Fedora 29, and on the Server Edition from Fedora 28.
+
+To list all available versions, run:
 
 ```
-$ dnf info nodejs
-$ dnf info nodejs --enablerepo rawhide
+$ dnf module list
+```
+
+And to install an alternative version, run a command similar to this:
+
+```
+$ sudo dnf module install nodejs:8
 ```
 
 ## Yarn
