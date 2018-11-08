@@ -29,6 +29,12 @@ To install runtime only, for example to merely deploy already prebuilt applicati
 $ sudo dnf install dotnet-runtime-x.y
 ```
 
+Preview packages can be installed after enabling the preview copr repository:
+```
+$ sudo dnf copr enable @dotnet-sig/dotnet-preview
+$ sudo dnf install dotnet-sdk-x.y
+```
+
 ## Getting Started
 
 You can create your first console app following instructions in [this official guide](https://www.microsoft.com/net/learn/get-started-with-dotnet-tutorial#create).
