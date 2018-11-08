@@ -1,5 +1,5 @@
 ---
-title: C#, F#, VB.NET
+title: .NET
 subsection: dotnet
 section: tech-languages
 order: 2
