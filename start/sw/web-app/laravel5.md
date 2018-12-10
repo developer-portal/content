@@ -29,14 +29,16 @@ $ sudo mysql_secure_installation
 #### Install PHP and all its dependencies
 Follow the PHP installation instructions [here](/tech/languages/php/php-installation.html).
 
-##### Fedora 28 uses 7.2 by default
 ```bash
 # It will install all required extensions, perk of Fedora
 $ sudo dnf install composer
 ```
 
 #### Install Valet Linux
-We will need to set it up for easier development
+We will need to set it up for easier development. Valet is original designed for MacOS by the Laravel Team; Valet Linux is a port to that. It setups up the neccesary environments for PHP Development, including a test domain. Please do not run valet as root. 
+For More Information, you can check them out here: 
+https://cpriego.github.io/valet-linux/ 
+https://laravel.com/docs/5.7/valet
 
 ```bash
 # Place the ~/.config/composer/vendor/bin directory in your PATH so the composer 
@@ -65,7 +67,7 @@ $ laravel new ProjectName
 ```bash
 $ cd ProjectName
 $ cp .env.example .env
-$ gedit .env
+$ gedit .env #or nano,vim,emacs
 ```
 
 Edit the .env file with DB_* lines with the correct info
