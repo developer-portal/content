@@ -20,16 +20,6 @@ Laravel Valet and Laravel recommends using Nginx. Follow the nginx installation 
 #### Install MariaDB Relational Database Server (Or other database you prefer)
 Follow the MariaDB installation instructions [here](/tech/database/mariadb/about.html).
 
-Or you can install by : 
-```bash
-# install MariaDB
-$ dnf install mariadb-server mariadb
-# start MariaDB
-$ systemctl enable --now mysql
-# initialize MariaDB
-$ sudo mysql_secure_installation
-```
-
 #### Setup environment for PHP development
 Follow the PHP installation instructions [here](/tech/languages/php/php-installation.html).
 
