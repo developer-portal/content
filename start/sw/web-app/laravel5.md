@@ -44,7 +44,7 @@ We will need to set it up for easier development. Valet is original designed for
 For More Information, you can check them out here: 
 [Valet Linux](https://cpriego.github.io/valet-linux/)  and  [Laravel Valet](https://laravel.com/docs/5.7/valet)
 
-You can also setup Laravel using [Vagrant](http://developer.fedorainfracloud.org/tools/vagrant/about.html), [Docker](http://developer.fedorainfracloud.org/tools/docker/about.html).
+You can also setup Laravel using [Vagrant](/tools/vagrant/about.html), [Docker](/tools/docker/about.html).
 
 ```bash
 # Place the ~/.config/composer/vendor/bin directory in your PATH so the composer 
@@ -71,7 +71,8 @@ $ laravel new ProjectName
 ```bash
 $ cd ProjectName
 $ cp .env.example .env
-$ gedit .env #Editing your environment file
+#Editing your environment file
+$ gedit .env 
 ```
 
 Edit the .env file with DB_* lines with the correct info
