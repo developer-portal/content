@@ -4,12 +4,11 @@ subsection: dotnet
 section: tech-languages
 order: 2
 version: 7.8.4
-description: ".NET Core and Mono open source frameworks, and available IDEs."
 ---
 
 ## .NET Core Installation
 
-Enable the .NET SIG's [copr](http://developer.fedorainfracloud.org/deployment/copr/about.html) repository:
+Enable the .NET SIG's [copr repository](/deployment/copr/about.html) repository:
 ```
 $ sudo dnf copr enable @dotnet-sig/dotnet
 ```
@@ -30,7 +29,7 @@ To install runtime only, for example to merely deploy already prebuilt applicati
 $ sudo dnf install dotnet-runtime-x.y
 ```
 
-Preview packages can be installed after enabling the preview [copr](http://developer.fedorainfracloud.org/deployment/copr/about.html) repository:
+Preview packages can be installed after enabling the preview [copr repository](/deployment/copr/about.html) repository:
 ```
 $ sudo dnf copr enable @dotnet-sig/dotnet-preview
 $ sudo dnf install dotnet-sdk-x.y

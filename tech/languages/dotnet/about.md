@@ -13,10 +13,10 @@ description: ".NET Core and Mono are open-source .NET platforms. .NET applicatio
 
 [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/) is a general-purpose, modular, cross-platform and open-source development Platform.
 
-To install .NET Core, add the .NET SIG's [copr](http://developer.fedorainfracloud.org/deployment/copr/about.html) repository and install the `dotnet` package.
+To install .NET Core, add the .NET SIG's [copr repository](/deployment/copr/about.html) repository and install the `dotnet` package.
 
 ```
-$ sudo dnf copr enable -y @dotnet-sig/dotnet
+$ sudo dnf copr enable @dotnet-sig/dotnet
 $ sudo dnf install dotnet
 ```
 
