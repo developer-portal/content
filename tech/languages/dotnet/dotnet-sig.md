@@ -1,6 +1,6 @@
 ---
 title: DotNet SIG
-subsection: csharp
+subsection: dotnet
 order: 5
 ---
 

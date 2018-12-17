@@ -1,12 +1,8 @@
 ---
 title: Mono
-subsection: csharp
-order: 4
+subsection: dotnet
+order: 3
 ---
-
-# Mono
-
-Fedora comes with [Mono](http://www.mono-project.com/) -- a free and open source implementation of the .NET Framework
 
 ## Mono installation
 

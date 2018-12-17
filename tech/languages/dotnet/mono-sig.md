@@ -1,6 +1,6 @@
 ---
 title: Mono SIG
-subsection: csharp
+subsection: dotnet
 order: 6
 ---
 
