@@ -1,7 +1,6 @@
 ---
 title: .NET
 subsection: dotnet
-section: tech-languages
 order: 2
 version: 7.8.4
 ---
