@@ -1,10 +1,11 @@
 ---
-title: .NET
+title: .NET Platforms
 subsection: dotnet
 section: tech-languages
 order: 1
 version: 7.8.4
 description: ".NET Core and Mono are open-source .NET platforms. .NET applications are developed using the C#, F# and VB.NET programming languages."
+permalink: /tech/languages/csharp/dotnet-installation.html
 ---
 
 .NET Core and Mono are available on Fedora. .NET applications are developed using the C#, F# and VB.NET programming languages.
@@ -20,7 +21,7 @@ $ sudo dnf copr enable @dotnet-sig/dotnet
 $ sudo dnf install dotnet
 ```
 
-See the [.NET Core](dotnet.html) page for more information.
+See the [.NET Core](dotnetcore.html) page for more information.
 
 ## Mono
 
