@@ -1,5 +1,5 @@
 ---
-title: .NET
+title: .NET Core
 subsection: dotnet
 order: 2
 version: 7.8.4
