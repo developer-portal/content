@@ -43,3 +43,15 @@ You can start PHP development server by typing this in your project's root:
 $ sudo php --server localhost:8080 --docroot  .
 ```
 Server will be accessible on `http://localhost:8080/`.
+
+
+## Running your PHP Applications in Docker
+
+After installing docker on your machine, you can start a web server with one command. The following will download a fully functional Apache installation with the latest PHP version, map `/path/to/your/php/files` to the document root, which you can view at `http://localhost:8080`
+
+```
+$ docker run -d --name my-php-webserver -p 8080:80 -v /path/to/your/php/files:/var/www/html/ php:apache
+
+```
+
+This will initialize and launch your container. `-d` makes it runs in the background. To stop and start it, simply run `docker stop my-php-webserver` and `docker start my-php-webserver` (the other parameters are not needed again)
