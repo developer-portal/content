@@ -41,7 +41,7 @@ You will see that the manual page is identical with the one shown for GCC.
 ## To install complete C/C++ development environment:
 
 ```
-$ sudo dnf groupinstall "C Development Tools and Libraries" "Development Tools"
+# sudo dnf groupinstall "C Development Tools and Libraries" "Development Tools"
 ```
 
 ## CLANG installation
