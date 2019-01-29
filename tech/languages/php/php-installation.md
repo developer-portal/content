@@ -47,6 +47,8 @@ Server will be accessible on `http://localhost:8080/`.
 
 ## Running your PHP Applications in Docker
 
+To install docker in your system, see [docker installation guide](https://developer.fedoraproject.org/tools/docker/about.html) for more details.
+
 After installing docker on your machine, you can start a web server with one command. The following will download a fully functional Apache installation with the latest PHP version, map `/path/to/your/php/files` to the document root, which you can view at `http://localhost:8080`
 
 ```
