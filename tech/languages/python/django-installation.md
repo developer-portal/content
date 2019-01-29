@@ -72,13 +72,13 @@ When you finish your work, just deactivate the virtual environment.
 Create a new project folder and open it.
 
 ```
-$ mdkir django_pipenv
-$ cd django_pipenv
+$ mdkir my_project
+$ cd my_project
 ```
 then 
 
 ```
-pipenv install django
+$ pipenv install django
 ```
 
 It will automatically create a virtual environment for the project. It will also create a `Pipfile` and a `Pipfile.lock` and will install `django` latest version with required dependencies.
@@ -92,7 +92,7 @@ $ pipenv shell
 #### Check the requirements or installed packages
 
 ```
-(django_pipenv) $ pipenv lock -r 
+(my_project) $ pipenv lock -r
 ```
 
 That's all, you have sucessfully installed Django in the virtual environment using `pipenv`. Now you can start working on your project as described in the above example.
@@ -100,7 +100,13 @@ That's all, you have sucessfully installed Django in the virtual environment usi
 #### When you finish your work, just `deactivate` the virtual environment.
 
 ```
-(django_pipenv) $ exit
+(my_project) $ exit
+```
+
+#### Run command in Pipenv environment without activating pipenv environment
+
+```
+$ pipenv run python
 ```
 
 ### WHEN PROJECT IS REAY TO MOVE TO PRODUCTION:
