@@ -20,7 +20,7 @@ $ sudo dnf copr enable @dotnet-sig/dotnet
 $ sudo dnf install dotnet
 ```
 
-See the [.NET Core](dotnet.md) page for more information.
+See the [.NET Core](dotnet.html) page for more information.
 
 ## Mono
 
@@ -32,4 +32,4 @@ To install Mono, simply type:
 $ sudo dnf install mono-devel
 ```
 
-See the [Mono](mono.md) page for more information.
+See the [Mono](mono.html) page for more information.
