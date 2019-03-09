@@ -25,10 +25,10 @@ $ sudo dnf install sqlite-devel sqlite-tcl sqlite-jdbc
 
 The `sqlite` client shipped with the basic database engine is command line (CLI)
 based. If you prefer an application with graphical user interface (GUI), install
-the `sqliteman` package:
+the `sqlitebrowser` package:
 
 ```
-$ sudo dnf install sqliteman
+$ sudo dnf install sqlitebrowser
 ```
 
 ## Working with SQLite
@@ -44,13 +44,13 @@ $ sqlite3 hello-world.db
 After executing this command, you will be greeted with a SQLite prompt and can
 now insert the SQL commands to execute.
 
-If you prefer using GUI, the [Sqliteman][sqliteman] application enables you to
+If you prefer using GUI, the [Sqlitebrowser][sqlitebrowser] application enables you to
 construct your SQL queries using visual tool.
 
 If you are new to SQL databases and would like to learn more, you can visit a
 [W3CSchools SQL tutorial][sql-tut], which should give you a nice head start.
 
-[sqliteman]: http://sqliteman.yarpen.cz/ "Sqliteman home page"
+[sqlitebrowser]: https://sqlitebrowser.org/ "Sqlitebrowser home page"
 [sql-tut]:   http://www.w3schools.com/sql/default.asp "W3CSchools SQL Tutorial"
 
 ## Getting help with SQLite
