@@ -29,6 +29,7 @@ To install stack on Fedora, run:
 
 ```
 $ sudo dnf copr enable petersen/stack
+$ sudo dnf install stack
 $ stack upgrade
 ```
 
