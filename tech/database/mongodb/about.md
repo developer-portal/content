@@ -59,7 +59,7 @@ MongoDB shell version: 4.0.0
 connecting to: test
 ```
 
-## MongoDB GUI 
+## MongoDB GUI (Project is not updated since 2016 year!) 
 
 Mongotron is a a Mongo DB GUI which uses Electron and AngularJS
 
