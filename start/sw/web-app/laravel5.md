@@ -29,6 +29,13 @@ OR, you can rip the benefit of using Fedora, and install composer directly inste
 $ sudo dnf install composer
 ```
 
+[Apache](/start/sw/web-app/apache.html) also needs the `php` package to work correctly.
+```bash
+# If you are using Apache as your http server:
+$ sudo dnf install php
+$ sudo systemctl restart httpd
+```
+
 #### Install Valet Linux
 We will need to set it up for easier development. Valet is original designed for MacOS by the Laravel Team; Valet Linux is a port to that. It setups up the neccesary environments for PHP Development, including a test domain. Please do not run valet as root. 
 For More Information, you can check them out here: 
