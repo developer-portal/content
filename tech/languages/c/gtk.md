@@ -11,7 +11,7 @@ Gtk+ is a cross-plataform GUI toolkit created for the development of the GIMP pr
 For C programming with Gtk+ you need to install the development version of the important GNOME libraries. Those contain the header files and additional linker information:
 
 ```
-sudo dnf install gtk3-devel gstreamer-devel clutter-devel webkitgtk3-devel libgda-devel gobject-introspection-devel
+sudo dnf install gtk3-devel gstreamer-devel clutter-devel webkit2gtk3-devel libgda-devel gobject-introspection-devel
 ```
 
 In addition, you will want to install the documentation packages of this libraries so you can view them in the API browser (devhelp):
@@ -55,6 +55,12 @@ In the program above we initially included gtk/gtk.h, which declares all the gtk
 
 ```c
 #include <gtk/gtk.h>
+```
+
+or
+
+```c
+#include <gtk-3.0/gtk/gtk.h>
 ```
 
 After the declaration of the window object variable, we call the gtk_init method which initializes the library and its internal procedures.
