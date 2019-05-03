@@ -10,7 +10,8 @@ If you are working on a piece of Python software, you probably want to test it
 on multiple Python interpreters. On Fedora, that's easy: all you have to do is
 use `dnf` to install what you need. Currently Fedora has the following Pythons
 ready for you in the repositories:
-
+ 
+ * CPython 3.8
  * CPython 3.7
  * CPython 3.6
  * CPython 3.5
@@ -26,6 +27,7 @@ Quite a nest, isn't it?
 You can install them like this:
 
 ```console
+$ sudo dnf install python38  # to get CPython 3.8
 $ sudo dnf install python37  # to get CPython 3.7
 $ sudo dnf install python34  # to get CPython 3.4
 $ sudo dnf install python26  # to get CPython 2.6
