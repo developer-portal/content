@@ -41,10 +41,31 @@ end
 
 Read more on the `vagrant-libvirt` configuration in the [upstream documentation](https://github.com/vagrant-libvirt/vagrant-libvirt).
 
-## Using libvirt from Vagrant without password prompts
+## QEMU session or system connection
 
+The vagrant-libvirt plugin, as packaged for Fedora, has enabled the QEMU session connection instead of the system connection.
+This means that you don't have to type your administrator password at all, but it comes with some limitations.
+For example, you won't be able to use the private network options, like specifying the private IP address that you want a virtual machine to use.
 
-Using `libvirt` provider requires you to type your administrator password every time you create,
+If you want to switch to the system connection instead, use the following configurations:
+
+```
+Vagrant.configure("2") do |config|
+...
+  config.vm.provider :libvirt do |libvirt|
+    # Use QEMU system instead of session connection
+    libvirt.qemu_use_session = false
+  end
+...
+end
+```
+
+Note that this will require the administrator password to run your vagrant boxes.
+For more information on this, see the [upstream documentation](https://github.com/vagrant-libvirt/vagrant-libvirt#qemu-session-support)
+
+## Using QEMU system connection without password prompts
+
+Using the `libvirt` provider with QEMU system connection requires you to type your administrator password every time you create,
 start, halt or destroy your domains. Fortunately you can avoid this by adding yourself to the `libvirt` group:
 
 ```
