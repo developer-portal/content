@@ -196,8 +196,19 @@ following interpreters:
 * Python 2.6
 * Jython
 
-If you really need to support such old interpreters, you will need to install
+If you really need to support such old interpreters, you will need to work around some issues or install
 and use older virtualenv/tox from PyPI.
+
+A workaround for Python 2.6 is to chnage the `install` and the `list_dependencies` commands with a `tox.ini` configuration like:
+
+```
+[testenv:py26]
+install_command = pip install {opts} {packages}
+list_dependencies_command = pip freeze
+basepython = python2.6
+```
+
+A more generic approach is to install an older version of tox that still supports these python versions:
 
 First, create a virtual environment with a newer Python, preferably `python3`:
 
