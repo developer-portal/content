@@ -1,7 +1,6 @@
 ---
 title: Sphinx
-subsection: python
-order: 6
+subsection: documentation
 ---
 
 {% include_relative sphinx_content.md %}

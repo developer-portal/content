@@ -1,0 +1,1 @@
+/home/jkadlcik/git/fedora-developer-portal/website/content/tech/languages/python/sphinx_content.md
