@@ -37,6 +37,13 @@ To view all the options that G++ can use, visit the manual page by typing:
 
 You will see that the manual page is identical with the one shown for GCC.
 
+
+## To install complete C/C++ development environment:
+
+```
+# sudo dnf groupinstall "C Development Tools and Libraries" "Development Tools"
+```
+
 ## CLANG installation
 
 Clang works both for C++ and C and the installation is the same as for C:

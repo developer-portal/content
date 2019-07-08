@@ -218,3 +218,19 @@ $ dnf install mariadb-oqgraph-engine
 In Fedora, MariaDB server is available also as a dynamic library, that can be handy in some applications. This library (`libmysqld.so`) is available in the package `mariadb-embedded` and header files for building an application against this library are available in the package `mariadb-embedded-devel`.
 
 However the use of the embedded library is discouraged. MySQL 8 dropped the embedded library and I expect MariaDB to go in the same direction.
+
+# Troubleshooting:
+* Fix Access denied for user 'root'@'localhost' for phpMyAdmin
+
+(Mysql tries to authenticate root using plugin, not password. You need to disable plugin usage for root)
+
+```
+$ sudo mysql -u root -p
+```
+
+```
+[mysql]> use mysql;
+[mysql]> update user set plugin='' where User='root';
+[mysql]> flush privileges;
+[mysql]> \q
+```
