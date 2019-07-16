@@ -59,15 +59,6 @@ MongoDB shell version: 4.0.0
 connecting to: test
 ```
 
-## MongoDB GUI (Project is not updated since 2016 year!) 
+## MongoDB GUI (not tested)
 
-Mongotron is a a Mongo DB GUI which uses Electron and AngularJS
-
-It's easy install and run:
-
-```
-$ git clone git@github.com:officert/mongotron.git
-$ cd mongotron/
-$ npm install
-$ npm start
-```
+[MongoDB Admin](https://github.com/hatamiarash7/MongoDB_Admin/wiki/1.-Getting-Start) is a Cross Platform GUI.
