@@ -16,7 +16,7 @@ This guide will help you setup your local development environment for Laravel, a
 #### Install Nginx Web Server
 Laravel Valet and Laravel recommends using Nginx. Follow the nginx installation instructions [here](/start/sw/web-app/nginx.html).
 
-You can also choose [Apache](/start/sw/web-app/apache.html) as the web server. But it requires an additonal package, `php`, to serve PHP contents properly. After installing the package, Apache needs to be restarted to take effect.
+You can also choose [Apache](/start/sw/web-app/apache.html) as the web server.
 
 #### Install MariaDB Relational Database Server (Or other database you prefer)
 Follow the MariaDB installation instructions [here](/tech/database/mariadb/about.html).
@@ -29,6 +29,8 @@ OR, you can rip the benefit of using Fedora, and install composer directly inste
 # It will install all required extensions, perk of Fedora
 $ sudo dnf install composer
 ```
+
+Your web server needs to be restarted after installing PHP package.
 
 #### Install Valet Linux
 We will need to set it up for easier development. Valet is original designed for MacOS by the Laravel Team; Valet Linux is a port to that. It setups up the neccesary environments for PHP Development, including a test domain. Please do not run valet as root. 
