@@ -13,8 +13,9 @@ MongoDB is a free and open source database and uses a document-oriented data mod
 ## Installation 
 
 ```
-# dnf install mongodb mongodb-server
-# service mongod start
+# dnf install -y mongodb-org
+# systemctl enable mongod.service
+# systemctl start mongod.service
 ```
 
 ## How to install a specific version 
@@ -48,12 +49,24 @@ Now you can install with dnf
 $ sudo dnf install -y mongodb-org
 ```
 
-## Run mongoDB 
+## Enable mongoDB services 
 
 Start mongoDB service and after run mongoshell to test connection  
 
 ```
-$ sudo service mongod start
+$ sudo systemctl enable mongod.service
+$ sudo systemctl start mongod.service
+```
+
+## Check mongoDB current status
+
+```
+$ sudo systemctl status mongod.service
+```
+
+## Run mongodb
+
+```
 $ mongo
 MongoDB shell version: 4.0.0
 connecting to: test
