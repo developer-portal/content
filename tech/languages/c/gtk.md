@@ -6,7 +6,7 @@ order: 7
 
 # Gtk+
 
-Gtk+ is a cross-plataform GUI toolkit created for the development of the GIMP project. Offering a complete set of widgets, Gtk+ is suitable for projects ranging from small one-off tools to complete applications suites.
+Gtk+ is a cross-platform GUI toolkit created for the development of the GIMP project. Offering a complete set of widgets, Gtk+ is suitable for projects ranging from small one-off tools to complete applications suites.
 
 For C programming with Gtk+ you need to install the development version of the important GNOME libraries. Those contain the header files and additional linker information:
 
