@@ -115,8 +115,8 @@ Other documentation available on-line:
 
 ## Graphical DB management tools
 
-* [pgadmin3](https://admin.fedoraproject.org/pkgdb/packages/pgadmin3)
-* [phpPgAdmin](https://admin.fedoraproject.org/pkgdb/packages/phpPgAdmin)
+* [pgadmin3](https://src.fedoraproject.org/rpms/pgadmin3)
+* [phpPgAdmin](https://src.fedoraproject.org/rpms/phpPgAdmin)
 
 ## Extensions/Tools available in (Fedora/RHEL/EPEL packages)
 
@@ -124,10 +124,10 @@ Other documentation available on-line:
   `rpm -ql postgresql-contrib | grep so$`), postgresql-plperl,
   postgresql-plpython, postgresql-plpython3, postgresql-pltcl (language bindings
   extending SQL syntax)
-* [postgis](https://admin.fedoraproject.org/pkgdb/packages/postgis)
-* [postgresql-pgpool-II](https://admin.fedoraproject.org/pkgdb/packages/postgresql-pgpool-II)
-* [pg-semver](https://admin.fedoraproject.org/pkgdb/packages/pg-semver)
-* [postgresql-ip4r](https://admin.fedoraproject.org/pkgdb/packages/postgresql-ip4r)
+* [postgis](https://src.fedoraproject.org/rpms/postgis)
+* [postgresql-pgpool-II](https://src.fedoraproject.org/rpms/postgresql-pgpool-II)
+* [pg-semver](https://src.fedoraproject.org/rpms/pg-semver)
+* [postgresql-ip4r](https://src.fedoraproject.org/rpms/postgresql-ip4r)
 
 ### How to use extensions:
 
