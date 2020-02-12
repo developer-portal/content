@@ -19,7 +19,8 @@ $ sudo dnf install nfs-utils && sudo systemctl enable nfs-server
 Afterwards enable `nfs`, `rpc-bind` and `mountd` services for `firewalld`:
 
 ```
-$ sudo firewall-cmd --permanent --add-service=nfs \
+$ sudo firewall-cmd --permanent --add-service=nfs3 \
+    && sudo firewall-cmd --permanent --add-service=nfs \
     && sudo firewall-cmd --permanent --add-service=rpc-bind \
     && sudo firewall-cmd --permanent --add-service=mountd \
     && sudo firewall-cmd --reload
