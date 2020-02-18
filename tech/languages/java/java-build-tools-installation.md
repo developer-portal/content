@@ -21,6 +21,7 @@ $ sudo dnf install maven
 [Gradle](https://gradle.org/) is another popular tool used not only for building Java projects. To install it, simply type:
 
 ```
+# only works up to fedora 30
 $ sudo dnf install gradle
 ```
 
