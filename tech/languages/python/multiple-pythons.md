@@ -11,6 +11,7 @@ on multiple Python interpreters. On Fedora, that's easy: all you have to do is
 use `dnf` to install what you need. Currently Fedora has the following Pythons
 ready for you in the repositories:
  
+ * CPython 3.9
  * CPython 3.8
  * CPython 3.7
  * CPython 3.6
@@ -27,6 +28,7 @@ Quite a nest, isn't it?
 You can install them like this:
 
 ```console
+$ sudo dnf install python39  # to get CPython 3.9
 $ sudo dnf install python38  # to get CPython 3.8
 $ sudo dnf install python37  # to get CPython 3.7
 $ sudo dnf install python34  # to get CPython 3.4
