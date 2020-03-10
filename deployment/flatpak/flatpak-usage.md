@@ -18,7 +18,11 @@ To add the Flathub repository, open the Terminal, and run:
 $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
+To add the Fedora Flatpaks repository (built in Fedora), run:
 
+```
+$ flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
+```
 
 ## Installing Flatpaks On Gnome (GNOME Software):
 
@@ -67,3 +71,4 @@ $ flatpak run org.gnome.Polari
 ## Further Reading
 
 * [Flathub Applications](https://flathub.org/apps.html)
+* [Fedora Flatpaks](https://docs.fedoraproject.org/en-US/flatpak/tutorial/)
