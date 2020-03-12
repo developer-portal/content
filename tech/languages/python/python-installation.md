@@ -9,7 +9,7 @@ description: General-purpose, high-level programming language supporting multipl
 
 # Python in Fedora
 
-[Python](https://www.python.org/) is is a widely used, interpreted, object-oriented, high-level programming language with dynamic semantics. It is simple and easy to learn.
+[Python](https://www.python.org/) is a widely used, interpreted, object-oriented, high-level programming language with dynamic semantics. It is simple and easy to learn.
 Python 3 is already pre-installed on Fedora. Let's use it!
 
 ## Running Python
