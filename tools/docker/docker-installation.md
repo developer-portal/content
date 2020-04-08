@@ -10,7 +10,7 @@ order: 1
 
 On Fedora 30 and above install the `docker-ce` package using the Docker repository:
 
-> for older versions of Fedora see: [docker-installation-fedora-22-29](./docker-installation.html)
+> for older versions of Fedora see: [docker-installation-fedora-22-29](./docker-installation-fedora-22-29.html)
 
 To install the dnf-plugins-core package (which provides the commands to manage your DNF repositories) and set up the stable repository.
 
