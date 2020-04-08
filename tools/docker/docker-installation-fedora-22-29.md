@@ -8,33 +8,11 @@ order: 1
 
 ## Installation
 
-On Fedora 30 and above install the `docker-ce` package:
-
-> for older versions of Fedora see: [docker-installation-fedora-22-29](./docker-installation.md)
+On Fedora 22 and above install the `docker` package:
 
 ```
-$ sudo dnf -y install dnf-plugins-core
-
-$ sudo dnf config-manager \
-    --add-repo \
-    https://download.docker.com/linux/fedora/docker-ce.repo
+$ sudo dnf install docker
 ```
-
-Install the docker engine 
-
-> to install other version (i.e. nightly versions) see the [Docker documentation](https://docs.docker.com/engine/install/fedora/)
-
-```
-$ sudo dnf install docker-ce docker-ce-cli containerd.io
-```
-
-> Fedora 31 and higher must enable the backward compatability for Cgroups
->
-> ```
-> sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
-> ```
-> You **must** reboot after running the command for the changes to take effect
-
 
 To start the Docker service use:
 
