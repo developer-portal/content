@@ -8,7 +8,7 @@ order: 1
 
 ## Installation
 
-On Fedora 22 and above install the `docker` package:
+Install the `docker` package:
 
 ```
 $ sudo dnf install docker
