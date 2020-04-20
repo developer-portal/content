@@ -31,8 +31,6 @@ To install the docker engine
 $ sudo dnf install docker-ce docker-ce-cli containerd.io
 ```
 
-> to install other version (i.e. nightly versions) see the [Docker documentation](https://docs.docker.com/engine/install/fedora/)
-
 Afterwards you need to enable the backward compatability for Cgroups
 >
 > ```
