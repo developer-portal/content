@@ -10,8 +10,6 @@ order: 1
 
 Install the `docker-ce` package using the Docker repository:
 
-> for older versions of Fedora see: [docker-installation-fedora-22-29](./docker-installation-fedora-22-29.html)
-
 To install the dnf-plugins-core package (which provides the commands to manage your DNF repositories) and set up the stable repository.
 
 ```
@@ -32,11 +30,12 @@ $ sudo dnf install docker-ce docker-ce-cli containerd.io
 ```
 
 Afterwards you need to enable the backward compatability for Cgroups
->
-> ```
-> sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
-> ```
-> You **must** reboot after running the command for the changes to take effect
+
+```
+sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
+```
+
+> Note: You must reboot after running the command for the changes to take effect
 
 
 To start the Docker service use:
