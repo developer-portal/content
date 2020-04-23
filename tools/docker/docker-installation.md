@@ -15,6 +15,7 @@ To install the dnf-plugins-core package (which provides the commands to manage y
 ```console
 $ sudo dnf install dnf-plugins-core
 ```
+
 To add the `docker-ce` repository
 
 ```
