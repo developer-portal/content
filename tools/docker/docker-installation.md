@@ -18,10 +18,8 @@ $ sudo dnf install dnf-plugins-core
 
 To add the `docker-ce` repository
 
-```
-$ sudo dnf config-manager \
-    --add-repo \
-    https://download.docker.com/linux/fedora/docker-ce.repo
+```console
+$ sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 ```
 
 To install the docker engine 
