@@ -7,7 +7,7 @@ order: 4
 # Learning resources
 
 There is an official book describing the Rust programming language in detail.
-[doc.rust-lang.org/book/2018-edition](https://doc.rust-lang.org/book/2018-edition/index.html)
+[doc.rust-lang.org/book/](https://doc.rust-lang.org/book/index.html)
 
 More examples of the concepts discussed in the book are available in this collection:
 [doc.rust-lang.org/rust-by-example](https://doc.rust-lang.org/rust-by-example/)
@@ -23,6 +23,9 @@ Finally, you can find community pages with a list of resources such as this one:
 
 Standard library documentation:
 [doc.rust-lang.org/std](https://doc.rust-lang.org/std/)
+
+The Cargo book:
+[doc.rust-lang.org/cargo](https://doc.rust-lang.org/cargo/)
 
 Documentation for crates available at [crates.io](https://crates.io/):
 [docs.rs](https://docs.rs/)
