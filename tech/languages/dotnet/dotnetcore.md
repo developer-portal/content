@@ -36,4 +36,4 @@ $ sudo dnf install dotnet-sdk-x.y
 
 ## Getting Started
 
-You can create your first console app following instructions in [this official guide](https://www.microsoft.com/net/learn/get-started-with-dotnet-tutorial#create).
+You can create your first console app following instructions in [this official guide](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/create).
