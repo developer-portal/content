@@ -39,6 +39,7 @@ $ sudo dnf install monodevelop
 
 Download [Visual Studio Code](https://code.visualstudio.com) and the C# Extension from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 
+Alternatively use the [VSCodium](https://vscodium.com/) for Free/Libre Open Source Software Binaries of VSCode.
 
 ## Summary
 
