@@ -16,14 +16,6 @@ The most popular build tools used by millions of Java developers are packaged in
 $ sudo dnf install maven
 ```
 
-## Gradle installation
-
-[Gradle](https://gradle.org/) is another popular tool used not only for building Java projects. To install it, simply type:
-
-```
-$ sudo dnf install gradle
-```
-
 ## Ant+Ivy installation
 
 Last but not least, still quite popular duo [Ant+Ivy](http://ant.apache.org/ivy/) can be installed simply by typing:
