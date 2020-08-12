@@ -11,13 +11,13 @@ Gtk+ is a cross-platform GUI toolkit created for the development of the GIMP pro
 For C programming with Gtk+ you need to install the development version of the important GNOME libraries. Those contain the header files and additional linker information:
 
 ```
-sudo dnf install gtk3-devel gstreamer-devel clutter-devel webkit2gtk3-devel libgda-devel gobject-introspection-devel
+sudo dnf install gtk3-devel gstreamer1-devel clutter-devel webkit2gtk3-devel libgda-devel gobject-introspection-devel
 ```
 
 In addition, you will want to install the documentation packages of this libraries so you can view them in the API browser (devhelp):
 
 ```
-sudo dnf install devhelp gtk3-devel-docs gstreamer-devel-docs clutter-doc
+sudo dnf install devhelp gtk3-devel-docs gstreamer1-devel-docs clutter-doc
 ```
 
 ## Getting started
