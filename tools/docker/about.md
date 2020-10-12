@@ -28,3 +28,14 @@ For instructions how to configure the Docker engine see [configuring Docker](/to
 ## Featured images
 
 Find out about [released images](/tools/docker/docker-images.html).
+
+## Alternatives
+
+### Podman
+Podman is a daemonless container engine for developing, managing, and running OCI Containers. Usage is mostly same as with docker.
+
+You can install it with the following command:
+```console
+$ sudo dnf install podman
+```  
+ 

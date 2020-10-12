@@ -8,21 +8,44 @@ order: 1
 
 ## Installation
 
-On Fedora 22 and above install the `docker` package:
+Install the `docker-ce` package using the Docker repository:
 
+To install the dnf-plugins-core package (which provides the commands to manage your DNF repositories) and set up the stable repository.
+
+```console
+$ sudo dnf install dnf-plugins-core
 ```
-$ sudo dnf install docker
+
+To add the `docker-ce` repository
+
+```console
+$ sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 ```
+
+To install the docker engine. The Docker daemon relies on a OCI compliant runtime (invoked via the containerd daemon) as its interface to the Linux kernel namespaces, cgroups, and SELinux.
+
+```console
+$ sudo dnf install docker-ce docker-ce-cli containerd.io
+```
+
+Afterwards you need to enable the backward compatability for Cgroups. Docker Engine on Linux relies on control groups (cgroups). A cgroup limits an application to a specific set of resources. Control groups allow Docker Engine to share available hardware resources to containers and optionally enforce limits and constraints.
+
+```console
+$ sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
+```
+
+You must reboot after running the command for the changes to take effect
+
 
 To start the Docker service use:
 
-```
+```console
 $ sudo systemctl start docker
 ```
 
 Now you can verify that Docker was correctly installed and is running by running the Docker hello-world image.
 
-```
+```console
 $ sudo docker run hello-world
 ```
 
@@ -30,7 +53,7 @@ $ sudo docker run hello-world
 
 To make Docker start when you boot your system, use the command:
 
-```
+```console
 $ sudo systemctl enable docker
 ```
 
@@ -48,7 +71,7 @@ Or you can create a Unix group called `docker` and add users to it. When the Doc
 
 To create the `docker` group and add your user:
 
-```
+```console
 $ sudo groupadd docker && sudo gpasswd -a ${USER} docker && sudo systemctl restart docker
 $ newgrp docker
 ```
