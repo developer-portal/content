@@ -1,7 +1,7 @@
 ---
 title: PyGObject
 subsection: python
-order: 6
+order: 8
 ---
 
 # PyGObject (PyGI)
@@ -26,7 +26,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 ```
 
-In the beginning, we have to import the Gtk module to be able to access GTK+’s classes and functions. Since a user’s system can have multiple versions of GTK+ installed at the same, we want to make sure that we when we import Gtk that it referrs to GTK+ 3 and not any other version of the library, which is the purpose of statement gi.require_version('Gtk', '3.0').
+In the beginning, we have to import the Gtk module to be able to access GTK+’s classes and functions. Since a user’s system can have multiple versions of GTK+ installed at the same, we want to make sure that we when we import Gtk that it refers to GTK+ 3 and not any other version of the library, which is the purpose of statement gi.require_version('Gtk', '3.0').
 
 ```
 win = Gtk.Window()
@@ -57,7 +57,7 @@ Gtk.main()
 
 Finally, we start the GTK+ processing loop which we quit when the window is closed.
 
-To run the program, open a terminal, change to the directory of the file, and enter:
+To run the program, save the file as `hello.py`, then open a terminal, change to the directory of the file, and enter:
 
 ```
 $ python hello.py

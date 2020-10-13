@@ -1,7 +1,7 @@
 ---
 title: Scientific Python Stack
 subsection: python
-order: 9
+order: 10
 ---
 
 # Scientific Python Stack

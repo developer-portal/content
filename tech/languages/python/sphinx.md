@@ -1,7 +1,7 @@
 ---
 title: Sphinx
 subsection: python
-order: 6
+order: 9
 ---
 
 # Sphinx
@@ -11,15 +11,7 @@ order: 6
 
 ## Installation
 
-To install Sphinx on Fedora:
-
-For Python 2:
-
-```
-$ sudo dnf install python2-sphinx
-```
-
-For Python 3:
+To install Sphinx on Fedora, run:
 
 ```
 $ sudo dnf install python3-sphinx
@@ -31,12 +23,13 @@ $ sudo dnf install python3-sphinx
 Navigate your terminal into project directory and run:
 
 ```
-sphinx-quickstart
+$ sphinx-quickstart
 ```
 
 to initialize your documentation. You will be asked to choose the documentation directory, set the project name and provide some other basic information about it. Next, you will be asked which extensions you want to enable. Be sure to answer "yes" on creating Makefile for your documentation.
 
-It may happen that will miss-type some answer or you just change your mind about it. You can of course alter them whenever you want, just by editing `conf.py` file.
+It may happen that will mis-type some answer or you just change your mind about it.
+You can alter the configuration whenever you want by editing `conf.py` file.
 
 
 ## Writing your first text
@@ -49,7 +42,9 @@ Introduction
 Here goes some introduction to your project and it is all written in rst format.
 ```
 
-Now you have to open your master document, which is by default called `index.rst`. It's function is to serve welcome page and provide a table of contents for the documentation. Therefore you should add link to `introduction.rst` here:
+Now you have to open your master document, which is by default called `index.rst`.
+Its serves as a welcome page and provides a table of contents for the documentation.
+Therefore you should add link to `introduction.rst` here:
 
 ```
 .. toctree::
@@ -57,9 +52,11 @@ Now you have to open your master document, which is by default called `index.rst
 ```
 
 ## See the results
+
 Sphinx can process your content to the various output formats. Run `make help` to see all the possibilities. It should look like this:
 
 ```
+$ make help
 Please use `make <target>' where <target> is one of
   html       to make standalone HTML files
   dirhtml    to make HTML files named index.html in directories
@@ -69,7 +66,7 @@ Please use `make <target>' where <target> is one of
   ...
 ```
 
-You will probably want to use `html` for local testing purposes and `dirhtml` for deploying. You are able to test it by hitting `make html` to the command line. If Sphinx tells you that "Build finished. The HTML pages are in \_build/html", you have done it right and there is one last thing to do. Open the web browser in the current working directory (if you are not sure which one it is, just run `pwd` to make sure), navigate to the build directory that Sphinx told you (i.e. `_build/html`) and open `index.html`. I would like to introduce you to your new documentation.
+You will probably want to use `html` for local testing purposes and `dirhtml` for deploying. You are able to test it by hitting `make html` to the command line. If Sphinx tells you that "Build finished. The HTML pages are in \_build/html", all is well. Open the web browser in the current working directory (if you are not sure which one it is, just run `pwd` to make sure), navigate to the build directory that Sphinx told you (i.e. `_build/html`) and open `index.html` -- your new documentation.
 
 
 ## What next
