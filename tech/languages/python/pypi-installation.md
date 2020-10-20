@@ -6,11 +6,11 @@ order: 2
 
 # Using pip
 
-If a Python module you need is not packaged for Fedora,
+If a Python package you need is not packaged for Fedora,
 or if you need it in an isolated environment,
 you can use `pip` to install it from the [Python Package Index (PyPI)](https://pypi.python.org/).
 
-Note that software on PyPI is not part of Fedora, and has different standards of quality and security: essentially, anyone can upload code there.
+Note that software on PyPI is not part of Fedora, and has different standards of quality, security and licensing: essentially, anyone can upload code there.
 Only install software you trust, and always double-check `install` commands for typos in package names.
 
 You can either install such modules to a *virtual environment*, or to your home directory with the `--user` user switch. See below for both options.

@@ -15,13 +15,14 @@ Fedora includes all Python versions which are [supported upstream](https://devgu
 At the time of this writing, Fedora has the following Pythons
 ready for you in the repositories:
  
+ * CPython 3.10
  * CPython 3.9
  * CPython 3.8
  * CPython 3.7
  * CPython 3.6
  * CPython 3.5
  * CPython 2.7
- * PyPy
+ * PyPy 2
  * PyPy 3
  * Jython\*
  * MicroPython\*
@@ -35,7 +36,7 @@ $ sudo dnf install python3.8  # to get CPython 3.8
 $ sudo dnf install python3.7  # to get CPython 3.7
 $ sudo dnf install python3.6  # to get CPython 3.7
 $ sudo dnf install python2.7  # to get CPython 2.7
-$ sudo dnf install pypy pypy3 jython python3.5  # to get more at once
+$ sudo dnf install pypy2 pypy3 jython python3.5  # to get more at once
 ```
 
 After that, you can run an interactive console or your script with, let's say,
@@ -97,7 +98,7 @@ the simplicity of this demo, we are not using it, and we need to tell this to
 tox via the `skipsdist` option.
 Finally the `commands` in the `[testenv]` section tells tox what commands to run
 for the test.
-Normally, that would be `python setup.py test`, `py.test` or similar.
+Normally, that would be `python setup.py test`, `pytest` or similar.
 
 With `tox.ini` in place, run `tox` in the same directory:
 
@@ -139,7 +140,7 @@ If you want to use tox for your projects, you can learn more at
 
 ## Creating virtual environments and installing packages
 
-Fedora only packages Python modules for current versions of `python3`.
+Fedora only packages Python modules for one current version of `python3`.
 For all other interpreters, you will need to install packages
 from [PyPI](https://pypi.python.org/pypi), the Python Package Index.
 
@@ -260,4 +261,3 @@ install packages that support MicroPython. Run it to find out more:
 ```console
 $ micropython -m upip
 ```
-
