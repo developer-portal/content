@@ -1,7 +1,7 @@
 ---
 title: Python SIG
 subsection: python
-order: 5
+order: 7
 ---
 
 # Python Special Interest Group
