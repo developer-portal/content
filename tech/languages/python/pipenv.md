@@ -18,7 +18,8 @@ Here we will see
 
 - How to install `pipenv` on fedora?
 - How to create a virtual environment with `python3`?
-- How to install python packages in that virtual environment?
+- How to install python packages in the virtual environment?
+- How to use the virtual environment?
 - How to remove this virtual environment?
 
 ## Installation
@@ -114,6 +115,8 @@ Commands:
   update     Runs lock, then sync.
 ```
 
+### Creating a virtual environment.
+
 To create a new virtualenv with a `python3` interpreter.
 
 ```
@@ -136,7 +139,6 @@ Creating a Pipfile for this project…
 
 It will create a file called `Pipfile` in your current directory.
 
-
 You can get the project location using
 
 ```
@@ -158,7 +160,10 @@ $ pipenv --py
 /home/fedorauser/.local/share/virtualenvs/pipenv-dir-O2-8SZy2/bin/python
 ```
 
+### Installing packages
+
 Now that we have the virtualenv created, let's install some packages.
+It can be done with `pipenv install`.
 
 ```
 $ pipenv install
@@ -170,7 +175,7 @@ Alternatively, run a command inside the virtualenv with pipenv run.
 
 This will install packages listed in the `Pipfile`.
 
-Alternatively you can install packages using the `pipenv` command itlsf.
+Alternatively you can install packages using the `pipenv` command itself.
 In order to do that you have to run `pipenv install <package-name>`.
 For example let's install [requests](https://requests.readthedocs.io/en/master/) package.
 
@@ -190,25 +195,6 @@ Installing dependencies from Pipfile.lock (fbd99e)…
   🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 0/0 — 00:00:00
 To activate this project's virtualenv, run pipenv shell.
 Alternatively, run a command inside the virtualenv with pipenv run.
-```
-
-Now that you have installed `requests.` in the current environment, it is
-`pipenv` has added it to your `Pipfile`.
-
-```
-$ cat Pipfile
-[[source]]
-name = "pypi"
-url = "https://pypi.org/simple"
-verify_ssl = true
-
-[dev-packages]
-
-[packages]
-requests = "*"
-
-[requires]
-python_version = "3.8"
 ```
 
 You can also install the packages for specific environment also.
@@ -238,6 +224,9 @@ To activate this project's virtualenv, run pipenv shell.
 Alternatively, run a command inside the virtualenv with pipenv run.
 ```
 
+Now that you have installed `requests`, and `black` in the current environment,
+`pipenv` has added those to your `Pipfile`.
+
 If you caeck the contents of `Pipfile` it will be something like
 
 ```
@@ -256,6 +245,8 @@ requests = "*"
 [requires]
 python_version = "3.8"
 ```
+
+### Using the virtual environment
 
 Till now we have created a virtualenv and installed some packages.
 Now let's use it. Let's write a simple python program for it.
@@ -301,59 +292,36 @@ pipenv
 
 # Create a new project using Python 3:
 pipenv --three
-
-# Install a package:
-pipenv install package_name
-
-# Install all the dependencies for a project:
-pipenv install
-
-# Install all the dependencies for a project (including dev packages):
-pipenv install --dev
-
-# Uninstall a package:
-pipenv uninstall package_name
-
-# Start a shell within the created virtual environment:
-pipenv shell
-
-# Generate a `requirements.txt` (list of dependencies) for a project:
-pipenv lock --requirements
+......
 ```
 
 You can also run it directly using `pipenv run` without activating the
 shell.
 
-```$ pipenv run python http-request.py http://cheat.sh/pipenv
-# pipenv
-# Simple and unified Python development workflow.
-# Manages packages and the virtual environment for a project.
-# More information: <https://pypi.org/project/pipenv>.
+```
+$ pipenv run python http-request.py http://cheat.sh/pipenv
+......
+```
 
-# Create a new project:
-pipenv
+### Generating dependency list for the project
 
-# Create a new project using Python 3:
-pipenv --three
+To Generate a `requirements.txt` (list of dependencies) for the project
 
-# Install a package:
-pipenv install package_name
-
-# Install all the dependencies for a project:
-pipenv install
-
-# Install all the dependencies for a project (including dev packages):
-pipenv install --dev
-
-# Uninstall a package:
-pipenv uninstall package_name
-
-# Start a shell within the created virtual environment:
-pipenv shell
-
-# Generate a `requirements.txt` (list of dependencies) for a project:
+```
 pipenv lock --requirements
 ```
+
+### Deactivating the virtual environment
+
+To deactivate the virtual environment the command is `deactivate` or
+you can just `exit` both of them work just fine.
+
+```
+(pipenv-dir) $ deactivate
+$
+```
+
+### Removing the virtual environment.
 
 Finally, if you want to delete this virtual environment, you can do it
 with
