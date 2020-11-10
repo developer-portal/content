@@ -6,13 +6,15 @@ order: 11
 
 # Pipenv
 
-Pipenv is a tool that aims to bring the best of all packaging worlds (bundler,
-composer, npm, cargo, yarn, etc.) to the Python world.
+As the official documentation of `pipenv` says.
 
-It automatically creates and manages a virtualenv for your projects, as well as
-adds/removes packages from your Pipfile as you install/uninstall packages. It
-also generates the ever-important Pipfile.lock, which is used to produce
-deterministic builds.
+    Pipenv is a tool that aims to bring the best of all packaging worlds (bundler,
+    composer, npm, cargo, yarn, etc.) to the Python world.
+
+    It automatically creates and manages a virtualenv for your projects, as well as
+    adds/removes packages from your Pipfile as you install/uninstall packages. It
+    also generates the ever-important Pipfile.lock, which is used to produce
+    deterministic builds.
 
 Here we will see
 
@@ -231,6 +233,12 @@ To Generate a `requirements.txt` (list of dependencies) for the project
 
 ```
 pipenv lock --requirements
+-i https://pypi.org/simple
+certifi==2020.6.20
+chardet==3.0.4
+idna==2.10; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
+requests==2.24.0
+urllib3==1.25.11; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4' and python_version < '4'
 ```
 
 ### Deactivating the virtual environment
