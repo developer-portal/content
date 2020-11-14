@@ -6,7 +6,7 @@ order: 11
 
 # Pipenv
 
-As the official documentation of `pipenv` says.
+As the [official documentation of `pipenv`](https://pipenv.pypa.io/en/latest/) says.
 
     Pipenv is a tool that aims to bring the best of all packaging worlds (bundler,
     composer, npm, cargo, yarn, etc.) to the Python world.
@@ -32,8 +32,8 @@ To install `pipenv` on your machine,
 $ sudo dnf install pipenv
 ```
 
-Once it is done, you can use `pipenv` to create, manage and remove python
-environments with different python versions.
+Once it is done, you can use `pipenv` to create, manage and remove Python
+environments with different Python versions.
 
 Let's see what all opetions `pipenv` provides.
 
@@ -41,7 +41,7 @@ Let's see what all opetions `pipenv` provides.
 
 ### Creating a virtual environment.
 
-To create a new virtualenv with a `python3` interpreter.
+To create a new virtualenv with a `python3` interpreter:
 
 ```
 $ pipenv --python 3
@@ -61,23 +61,23 @@ Virtualenv location: /home/fedorauser/.local/share/virtualenvs/pipenv-dir-O2-8SZ
 Creating a Pipfile for this project…
 ```
 
-It will create a file called `Pipfile` in your current directory.
+This will create a file called `Pipfile` in your current directory.
 
-You can get the project location using
+You can get the project location using:
 
 ```
 $ pipenv --where
 /home/fedorauser/pipenv-dir
 ```
 
-To get the virtualenv location for this project
+To get the virtualenv location for this project:
 
 ```
 $ pipenv --venv
 /home/fedorauser/.local/share/virtualenvs/pipenv-dir-O2-8SZy2
 ```
 
-To get the python interpreter location for this `virtualenv`
+To get the python interpreter location for this `virtualenv`:
 
 ```
 $ pipenv --py
@@ -99,9 +99,9 @@ Alternatively, run a command inside the virtualenv with pipenv run.
 
 This will install packages listed in the `Pipfile`.
 
-Alternatively you can install packages using the `pipenv` command itself.
-In order to do that you have to run `pipenv install <package-name>`.
-For example let's install [requests](https://requests.readthedocs.io/en/master/) package.
+Alternatively, you can install packages using the `pipenv` command itself.
+In order to do that you can run `pipenv install <package-name>`.
+For example let's install the [requests](https://requests.readthedocs.io/en/master/) package.
 
 ```
 $ pipenv install requests
@@ -121,11 +121,9 @@ To activate this project's virtualenv, run pipenv shell.
 Alternatively, run a command inside the virtualenv with pipenv run.
 ```
 
-You can also install the packages for specific environment also.
-For example, you will need [pytest](https://docs.pytest.org/en/latest/)
-and [black](https://black.readthedocs.io/en/stable/) in the developement
-environment. So in order to install `black` in dev envitonment. Also you can
-specify the version of that package.
+You can also install the packages for a specific environment.
+For example, you might need [black](https://black.readthedocs.io/en/stable/)
+of a specific version in your developement environment. To install it, run:
 
 ```
 $ pipenv install --dev black=="20.8b0"
@@ -148,10 +146,10 @@ To activate this project's virtualenv, run pipenv shell.
 Alternatively, run a command inside the virtualenv with pipenv run.
 ```
 
-Now that you have installed `requests`, and `black` in the current environment,
+Now that you have installed `requests` and `black` in the current environment,
 `pipenv` has added those to your `Pipfile`.
 
-If you caeck the contents of `Pipfile` it will be something like
+If you check the contents of `Pipfile`, it will be something like:
 
 ```
 $cat Pipfile
@@ -192,7 +190,7 @@ if __name__ == "__main__":
         make_request(sys.argv[1])
 ```
 
-To launch the virtual environment, run `pipenv shell`.
+To launch a shell in the virtual environment, run `pipenv shell`:
 
 ```
 $ pipenv shell
@@ -201,8 +199,7 @@ Launching subshell in virtual environment…
 (pipenv-dir) $
 ```
 
-You can run this program from shell by using environment from the shell that
-we launched using `pipenv shell`.
+You can run the program from this shell:
 
 ```
 (pipenv-dir) $ python http-request.py http://cheat.sh/pipenv
@@ -216,20 +213,30 @@ pipenv
 
 # Create a new project using Python 3:
 pipenv --three
-......
+ . . .
 ```
 
 You can also run it directly using `pipenv run` without activating the
-shell.
+shell:
 
 ```
 $ pipenv run python http-request.py http://cheat.sh/pipenv
-......
+# pipenv
+# Simple and unified Python development workflow.
+# Manages packages and the virtual environment for a project.
+# More information: <https://pypi.org/project/pipenv>.
+
+# Create a new project:
+pipenv
+
+# Create a new project using Python 3:
+pipenv --three
+ . . .
 ```
 
 ### Generating dependency list for the project
 
-To Generate a `requirements.txt` (list of dependencies) for the project
+To generate a `requirements.txt` file with a list of dependencies for the project, run:
 
 ```
 pipenv lock --requirements
@@ -243,8 +250,8 @@ urllib3==1.25.11; python_version >= '2.7' and python_version not in '3.0, 3.1, 3
 
 ### Deactivating the virtual environment
 
-To deactivate the virtual environment the command is `deactivate` or
-you can just `exit` both of them work just fine.
+The command to deactivate the virtual environment is `deactivate`. Or
+you can just `exit`; both of these work just fine.
 
 ```
 (pipenv-dir) $ deactivate
@@ -254,7 +261,7 @@ $
 ### Removing the virtual environment.
 
 Finally, if you want to delete this virtual environment, you can do it
-with
+with:
 
 ```
 $ pipenv --rm
