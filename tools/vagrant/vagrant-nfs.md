@@ -71,5 +71,5 @@ Afterwards add yourself to the `vagrant` group if you are not there already by r
 ```
 $ sudo getent group vagrant >/dev/null || sudo groupadd -r vagrant
 $ sudo gpasswd -a ${USER} vagrant
-$ newgrp vagrant
+$ sudo -u ${USER} ${SHELL}
 ```
