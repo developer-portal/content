@@ -42,17 +42,15 @@ $ sudo dnf module install nodejs:8
 [Yarn](https://yarnpkg.com/en/) package manager is available since Fedora 29. You can install it by running:
 
 ```
-$ sudo dnf install nodejs-yarn
+$ sudo dnf install yarnpkg
 ```
 
-Because of conflicts with other packages, yarn has to be used in the following manner:
+Yarn can be used in the following manner:
 
 ```
-$ nodejs-yarn add request
 $ yarnpkg add request
+$ yarn add request
 ```
-
-If you still wish to use `yarn` instead of `nodejs-yarn`, the best way is to use bash alias.
 
 ## Installing npm modules
 
