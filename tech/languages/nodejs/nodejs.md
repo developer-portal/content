@@ -55,3 +55,25 @@ $ yarn add request
 ## Installing npm modules
 
 Installing Node.js modules is covered in [Node.js modules](/tech/languages/nodejs/modules.html).
+
+## Installing Global Modules
+
+Create a directory for global installations inside your home directory:
+```
+mkdir ~/.npm-global
+```
+
+Set the new directory path for npm:
+```
+npm config set prefix '~/.npm-global'
+```
+
+Open/create the `~/.profile` file and add the following line:
+```
+export PATH=~/.npm-global/bin:$PATH
+```
+
+Update your system variables with this command:
+```
+source ~/.profile
+```
