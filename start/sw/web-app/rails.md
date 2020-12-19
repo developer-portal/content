@@ -31,8 +31,8 @@ exec $SHELL
 Install Ruby
 
 ```
-rbenv install 2.3.1
-rbenv global 2.3.1
+rbenv install 2.6.6
+rbenv global 2.6.6
 ruby -v
 
 ```
