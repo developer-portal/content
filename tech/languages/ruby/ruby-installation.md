@@ -56,3 +56,53 @@ RUBYPICK=_jruby_
 ```
 
 [Read more about RubyPick](https://github.com/fedora-ruby/rubypick).
+
+## Installing Ruby with rbenv
+
+The first step is to install dependencies for Ruby.
+
+```
+sudo dnf install git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel
+```
+
+Install rbenv
+
+```
+cd
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+exec $SHELL
+
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+exec $SHELL
+```
+
+Install Ruby
+
+```
+rbenv install 2.6.6
+rbenv global 2.6.6
+ruby -v
+
+```
+Use this command if you do not want rubygems to install the documentation for each package locally.
+
+```
+echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+```
+
+Install bundler
+
+```
+gem install bundler
+```
+
+Whenever you install a new version of Ruby or a gem, you should run the rehash sub-command. This will make executables known to rbenv, which will allow us to run those executables:
+
+``` 
+rbenv rehash 
+``` 
