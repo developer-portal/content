@@ -13,7 +13,7 @@ PyGObject provides full support of GObject Introspection and all of its features
 To install PyGObject on Fedora, run:
 
 ```
-$ sudo dnf install pygobject3 python3-gobject
+$ sudo dnf install python3-gobject
 ```
 
 ## Getting started
