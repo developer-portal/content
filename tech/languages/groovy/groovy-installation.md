@@ -8,7 +8,7 @@ description:
 
 # Groovy installation
 
-To install Groogy in Fedora, simply type:
+To install Groovy in Fedora, simply type:
 
 ```
 $ sudo dnf install groovy
