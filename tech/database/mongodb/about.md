@@ -28,7 +28,7 @@ Access the directory and create a file mongodb-org-*release_series*.repo
 
 ```
 $ cd /etc/yum.repos.d/
-$ sudo touch mongodb-org-4.0.repo  
+$ sudo touch mongodb-org-4.4.repo  
 ```
 
 Insert this content inside mongodb-org-*release_series*.repo, edit if you want install another version.
@@ -36,10 +36,10 @@ Insert this content inside mongodb-org-*release_series*.repo, edit if you want i
 ```
 [Mongodb]
 name=MongoDB Repository
-baseurl=https://repo.mongodb.org/yum/amazon/2013.03/mongodb-org/4.0/x86_64/
+baseurl=https://repo.mongodb.org/yum/redhat/8/mongodb-org/4.4/x86_64/
 gpgcheck=1
 enabled=1
-gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc
+gpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc
 ```
 
 Now you can install with dnf
