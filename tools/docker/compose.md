@@ -79,13 +79,12 @@ web:
   ports:
    - "8000:8000"
   volumes:
-   - ./awesome_web:/code
   links:
    - db
 db:
   image: fedora-postgresql
   volumes:
-   - ./db:/var/lib/pgsql/data
+   - ./db:/var/lib/pgsql/data:z
   environment:
    - POSTGRESQL_DATABASE=awesome_web
    - POSTGRESQL_USER=awesome_web_user
