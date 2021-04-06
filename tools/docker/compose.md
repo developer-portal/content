@@ -138,7 +138,7 @@ Nowadays this is done by `manage.py migrate`. We need to run the database contai
 
 ```
 $ sudo docker-compose up -d db
-$ sudo docker-compose run web python manage.py migrate
+$ sudo docker-compose run web python3 manage.py migrate
 Operations to perform:
   Synchronize unmigrated apps: staticfiles, messages
   Apply all migrations: admin, contenttypes, auth, sessions
