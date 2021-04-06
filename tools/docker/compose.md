@@ -163,7 +163,7 @@ Running migrations:
 Is the database really populated?
 
 ```
-$ sudo docker exec -ti awesomeweb_db_1 bash
+$ sudo docker exec -ti awesome_web_db_1 bash
 bash-4.3$ psql
 psql (9.4.4)
 Type "help" for help.
