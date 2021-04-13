@@ -50,8 +50,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
-**Warning:** For production purposes you should use the `python3` or `python2`
-packages only. Other CPython versions might be **unstable** or even **dangerous**
+**Warning:** For production purposes you should use the `python3`
+package only. Other CPython versions might be **unstable** or even **dangerous**
 (either because they are extremely old or quite the contrary alpha/beta quality)
 and are intended solely for development.
 
