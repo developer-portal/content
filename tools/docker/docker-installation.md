@@ -28,15 +28,6 @@ To install the docker engine. The Docker daemon relies on a OCI compliant runtim
 $ sudo dnf install docker-ce docker-ce-cli containerd.io
 ```
 
-Afterwards you need to enable the backward compatability for Cgroups. Docker Engine on Linux relies on control groups (cgroups). A cgroup limits an application to a specific set of resources. Control groups allow Docker Engine to share available hardware resources to containers and optionally enforce limits and constraints.
-
-```console
-$ sudo grubby --update-kernel=ALL --args="systemd.unified_cgroup_hierarchy=0"
-```
-
-You must reboot after running the command for the changes to take effect
-
-
 To start the Docker service use:
 
 ```console
