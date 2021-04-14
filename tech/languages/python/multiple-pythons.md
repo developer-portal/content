@@ -20,12 +20,12 @@ ready for you in the repositories:
  * CPython 3.8
  * CPython 3.7
  * CPython 3.6
- * CPython 3.5
+ * CPython 3.5<sup>💀</sup>
  * CPython 2.7
  * PyPy 2
  * PyPy 3
- * Jython\*
- * MicroPython\*
+ * Jython<sup>💀</sup>
+ * MicroPython
 
 Quite a nest, isn't it?
 You can install them like this:
@@ -36,7 +36,7 @@ $ sudo dnf install python3.8  # to get CPython 3.8
 $ sudo dnf install python3.7  # to get CPython 3.7
 $ sudo dnf install python3.6  # to get CPython 3.7
 $ sudo dnf install python2.7  # to get CPython 2.7
-$ sudo dnf install pypy2 pypy3 jython python3.5  # to get more at once
+$ sudo dnf install pypy2 pypy3 python3.10  # to get more at once
 ```
 
 After that, you can run an interactive console or your script with, let's say,
@@ -55,10 +55,7 @@ package only. Other CPython versions might be **unstable** or even **dangerous**
 (either because they are extremely old or quite the contrary alpha/beta quality)
 and are intended solely for development.
 
-**\*** Interpreters marked with \* do not work with Tox and virtualenv
-packaged in Fedora.
-For using tox, virtualenv or pip with these interpreters, see the bottom
-sections of this page.
+**\*** Interpreters marked with <sup>💀</sup> are to be removed in Fedora 35.
 
 ## Getting it and running it all with tox
 
@@ -203,6 +200,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 
 ### Jython
+
+**Warning:** Jython will be [removed from Fedora in Fedora 35](https://lists.fedoraproject.org/archives/list/users@lists.fedoraproject.org/thread/GCZL4Y63RPCSIHGX2KEJC5WRGTOKZVKS/).
 
 The versions of virtualenv and tox packages in Fedora do not support Jython,
 an interpreter that interoperates with the Java ecosystem.
