@@ -91,5 +91,5 @@ As an alternative, you can create the environment with `--system-site-packages` 
 ### What next?
 
 * [Python homepage](https://www.python.org/)
-* [Python Documentation](https://docs.python.org/3/)
+* [Python Documentation](https://docs.python.org/)
 * [Python Documentation: venv](https://docs.python.org/3/library/venv.html#module-venv)
