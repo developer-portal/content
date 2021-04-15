@@ -14,8 +14,8 @@ Python 3 is already pre-installed on Fedora. Let's use it!
 
 ## Running Python
 
-1. Open the _Terminal_ (press `Alt` + `F1`, type _Terminal_ and click on the black square icon or just press `Enter`).
-2. To run Python 3 type `python3`. You should see something like this:
+1. Open your _terminal_. (In GNOME, press `Alt` + `F1`, type _Terminal_ and press <kbd>Enter</kbd>.)
+2. To run Python, type `python` <kbd>Enter</kbd>. You should see something like this:
 
 ```python
 Python 3.9.0 (default, Oct  6 2020, 00:00:00) 
@@ -32,14 +32,14 @@ print('Hello World!')
 
 If you want to **exit** Python, press `Ctrl` + `D`.
 
-To run a program written in Python, type `python3` followed by the path and name of the program. Like this:
+To run a program written in Python, type `python` followed by the file name of the program. Like this:
 
 ```bash
-$ python3 example.py
+$ python example.py
 ```
 
-The command `python` (without the `3`) will also work.
-You can also use a specific version of Python, like `python3.9`, if you have that interpreter installed.
+In some guides, you will see `python3` used instead of `python`. These commands are equivalent.
+You can also run a more specific version of Python, like `python3.9`, if you have that interpreter installed.
 See the [Multiple Interpreters section](https://developer.fedoraproject.org/tech/languages/python/multiple-pythons.html) for details.
 
 
@@ -60,7 +60,7 @@ It also makes it easy to collaborate with people who don't use Fedora yet.
 Let's create a virtual environment called `project_venv` which will contain Python and pip. You can use pip to install a project's dependencies.
 
 ```bash
-$ python3 -m venv project_venv
+$ python -m venv project_venv
 ```
 
 If you want to work in the virtual environment, you have to activate it.
@@ -91,11 +91,5 @@ As an alternative, you can create the environment with `--system-site-packages` 
 ### What next?
 
 * [Python homepage](https://www.python.org/)
-* [Python 3 Documentation](https://docs.python.org/3/)
+* [Python Documentation](https://docs.python.org/)
 * [Python Documentation: venv](https://docs.python.org/3/library/venv.html#module-venv)
-
-## Python 2
-
-If you are looking for the older major version of Python, Fedora also includes Python 2.7.
-
-* [Python 2 Documentation](https://docs.python.org/2/)
