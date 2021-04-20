@@ -18,26 +18,26 @@ Except HTML, which is almost always improved by CSS, most developers add dynamic
 * [Angular](https://angular.io/), one framework for mobile and desktop
 * [PatternFly](https://www.patternfly.org/) to build better experiences with repeatable, scalable design
 
-A client application is most often a browser like Firefox or Chromium, which talks to the server via HTTP protocol. It does not need to be that case always, a client application might be also substituted by a [GUI]({% link start/sw/gui-app/about.md %}) or [terminal]({% link start/sw/cli-app/about.md %}) application.
+A client application is most often a browser like Firefox or Chromium, which talks to the server via HTTP protocol. It does not need to be that case always, a client application might be also substituted by a [GUI]({% link content/start/sw/gui-app/about.md %}) or [terminal]({% link content/start/sw/cli-app/about.md %}) application.
 
 ### Languages often used for back-end development
 
-* [Python]({% link tech/languages/python/flask-installation.md %})
-* [Ruby]({% link tech/languages/ruby/ruby-installation.md %})
-* [PHP]({% link tech/languages/php/php-installation.md %})
-* [Node.js/JavaScript]({% link tech/languages/nodejs/nodejs.md %})
-* [Golang]({% link tech/languages/go/go-installation.md %})
-* [Rust]({% link tech/languages/rust/rust-installation.md %})
+* [Python]({% link content/tech/languages/python/flask-installation.md %})
+* [Ruby]({% link content/tech/languages/ruby/ruby-installation.md %})
+* [PHP]({% link content/tech/languages/php/php-installation.md %})
+* [Node.js/JavaScript]({% link content/tech/languages/nodejs/nodejs.md %})
+* [Golang]({% link content/tech/languages/go/go-installation.md %})
+* [Rust]({% link content/tech/languages/rust/rust-installation.md %})
 
 ### Webservers for static pages or processing HTTP requests
 
-* [Apache HTTPD]({% link start/sw/web-app/apache.md %})
-* [Nginx]({% link start/sw/web-app/nginx.md %})
+* [Apache HTTPD]({% link content/start/sw/web-app/apache.md %})
+* [Nginx]({% link content/start/sw/web-app/nginx.md %})
 
 ### Databases for more complex web applications
 
-* [PostgreSQL]({% link tech/database/postgresql/about.md %})
-* [MariaDB]({% link tech/database/mariadb/about.md %})
+* [PostgreSQL]({% link content/tech/database/postgresql/about.md %})
+* [MariaDB]({% link content/tech/database/mariadb/about.md %})
 
 ### Certificates
 
