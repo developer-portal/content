@@ -56,15 +56,30 @@ If you no longer need it, deactivate it and delete it with `rm -rv project_venv`
 
 Sometimes, you don't want to use a virtual environment.
 For example, you're installing a tool you will use in multiple projects, but the tool is not available in Fedora repositories.
-In such cases, install with the `--user` option.
+In such cases, you might need to install `pip` if you do not already have it system-wide:
+
+```bash
+$ sudo dnf install python3-pip
+```
+
+Then, use pip's `--user` option.
 For example, to install a Python implementation of `cowsay` (rather than the original Perl one available in Fedora), run:
 
 ```bash
 $ python -m pip install --user cowsay
 ```
 
-If you're feeling lucky or impatient, you can use the shorter command `pip install cowsay`, without the `python -m`.
+If you're feeling lucky or impatient, you can use the shorter command `pip install --user cowsay`, without the `python -m`.
 Usually, this will install using the correct version of Python.
+
+## Updating packages
+
+Since software installed using `pip` are not part of Fedora, it is your responsibility to keep it updated as needed.
+However you ran `pip install`, running it again with `--update` will update to the latest release. For example:
+
+```bash
+(project_venv) $ python -m pip install --update requests
+```
 
 
 ### What next?
