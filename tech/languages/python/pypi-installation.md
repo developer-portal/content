@@ -74,8 +74,9 @@ Usually, this will install using the correct version of Python.
 
 ## Updating packages
 
-Since software installed using `pip` are not part of Fedora, it is your responsibility to keep it updated as needed.
-However you ran `pip install`, running it again with `--update` will update to the latest release. For example:
+Since software installed using `pip` is not part of Fedora, it is your responsibility to keep it updated as needed.
+However you ran `pip install`, running it again with `--update` will update to the latest release.
+For example, to update `requests` library:
 
 ```bash
 (project_venv) $ python -m pip install --update requests
