@@ -69,8 +69,6 @@ For example, to install a Python implementation of `cowsay` (rather than the ori
 $ python -m pip install --user cowsay
 ```
 
-If you're feeling lucky or impatient, you can use the shorter command `pip install --user cowsay`, without the `python -m`.
-Usually, this will install using the correct version of Python.
 
 ## Updating packages
 
