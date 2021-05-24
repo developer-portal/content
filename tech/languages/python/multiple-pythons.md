@@ -34,7 +34,7 @@ You can install them like this:
 $ sudo dnf install python3.9  # to get CPython 3.9
 $ sudo dnf install python3.8  # to get CPython 3.8
 $ sudo dnf install python3.7  # to get CPython 3.7
-$ sudo dnf install python3.6  # to get CPython 3.7
+$ sudo dnf install python3.6  # to get CPython 3.6
 $ sudo dnf install python2.7  # to get CPython 2.7
 $ sudo dnf install pypy2 pypy3 python3.10  # to get more at once
 ```
