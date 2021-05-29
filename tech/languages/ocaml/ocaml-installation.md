@@ -1,0 +1,50 @@
+---
+title: OCaml
+subsection: ocaml
+section: tech-languages
+order: 1
+version: 1.0
+description: An open source multi-paradigm programming language and toolchain. 
+---
+
+# What is OCaml?
+
+Quoting the [ocaml.org](https://ocaml.org/) website:
+
+> OCaml is an industrial-strength programming language supporting functional, imperative and object-oriented styles.
+
+## OCaml installation
+
+To install the Go tools, type on a terminal:
+
+```console
+$ sudo dnf install ocaml
+```
+
+The `ocaml` and `ocamlfind`, `ocamlc` and `ocamlopt` binaries will become available on the system.
+
+# OPAM 
+
+OPAM (**O**Caml **Pa**ckage **M**anager)  is a source-based package manager for OCaml. It supports multiple simultaneous compiler installations, flexible package constraints, and a Git-friendly development workflow. 
+
+To install OPAM in your Fedora just:
+```console
+$ sudo dnf install opam
+```
+
+To use OPAM to install and manage your OCaml instalation just:
+```bash
+# environment setup
+opam init
+eval $(opam env)
+# install given version of the compiler
+opam switch create 4.12.0
+eval $(opam env)
+# check you got what you want
+which ocaml
+ocaml -version
+```
+
+## References
+
+- [OCaml Documentation](https://ocaml.org/docs/install.html)
