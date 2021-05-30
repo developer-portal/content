@@ -15,7 +15,7 @@ Quoting the [ocaml.org](https://ocaml.org/) website:
 
 ## OCaml installation
 
-To install the Go tools, type on a terminal:
+To install the OCaml tools, type on a terminal:
 
 ```console
 $ sudo dnf install ocaml
