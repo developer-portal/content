@@ -39,7 +39,7 @@ $ eval $(opam env)
 $ opam switch create 4.12.0
 $ eval $(opam env)
 # check you got what you want
-ocaml -version
+$ ocaml -version
 ```
 
 ## References
