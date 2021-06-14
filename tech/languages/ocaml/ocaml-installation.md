@@ -21,7 +21,7 @@ $ sudo dnf install ocaml
 
 The REPL (Read-Evaluate-Print-Loop) tool (`ocaml`), the library manager ( `ocamlfind`), the bytecode compiler (`ocamlc`), and the native-code compiler binaries (`ocamlopt`) will become available on the system. 
 
-# OPAM 
+# OPAM
 
 OPAM (**O**Caml **Pa**ckage **M**anager)  is a source-based package manager for OCaml. It supports multiple simultaneous compiler installations, flexible package constraints, and a Git-friendly development workflow. 
 
