@@ -19,7 +19,7 @@ To install the OCaml tools, type on a terminal:
 $ sudo dnf install ocaml
 ```
 
-The `ocaml` the REPL (Read-Evaluate-Print-Loop) tool of the language and `ocamlfind` the library manager, `ocamlc` the bytecode compiler and `ocamlopt` the native-code compiler binaries will become available on the system. 
+The REPL (Read-Evaluate-Print-Loop) tool (`ocaml`), the library manager ( `ocamlfind`), the bytecode compiler (`ocamlc`), and the native-code compiler binaries (`ocamlopt`) will become available on the system. 
 
 # OPAM 
 
