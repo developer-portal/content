@@ -16,7 +16,7 @@ OCaml is an industrial-strength programming language supporting functional, impe
 To install the OCaml tools, type on a terminal:
 
 ```console
-$ sudo dnf install ocaml
+$ sudo dnf install ocaml ocaml-findlib 
 ```
 
 The REPL (Read-Evaluate-Print-Loop) tool (`ocaml`), the library manager ( `ocamlfind`), the bytecode compiler (`ocamlc`), and the native-code compiler binaries (`ocamlopt`) will become available on the system. 
@@ -31,7 +31,7 @@ $ sudo dnf install opam
 ```
 
 To use OPAM to install and manage your OCaml instalation just:
-```bash
+```console
 # environment setup
 $ opam init
 $ eval $(opam env)
