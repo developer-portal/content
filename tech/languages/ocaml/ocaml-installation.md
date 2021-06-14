@@ -23,7 +23,7 @@ The REPL (Read-Evaluate-Print-Loop) tool (`ocaml`), the library manager ( `ocaml
 
 # OPAM
 
-OPAM (**O**Caml **Pa**ckage **M**anager)  is a source-based package manager for OCaml. It supports multiple simultaneous compiler installations, flexible package constraints, and a Git-friendly development workflow. 
+OPAM (**O**Caml **Pa**ckage **M**anager)  is a source-based package manager for OCaml. It supports multiple simultaneous compiler installations, flexible package constraints, and a Git-friendly development workflow.
 
 To install OPAM in your Fedora just:
 ```console
