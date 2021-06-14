@@ -31,7 +31,7 @@ $ sudo dnf install opam
 ```
 
 To use OPAM to install and manage your OCaml instalation just:
-```bash
+```console
 # environment setup
 $ opam init
 $ eval $(opam env)
