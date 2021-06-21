@@ -25,20 +25,33 @@ The REPL (Read-Evaluate-Print-Loop) tool (`ocaml`), the library manager ( `ocaml
 
 OPAM (**O**Caml **Pa**ckage **M**anager)  is a source-based package manager for OCaml. It supports multiple simultaneous compiler installations, flexible package constraints, and a Git-friendly development workflow.
 
+### Installation
+
 To install OPAM in your Fedora just:
 ```console
 $ sudo dnf install opam
 ```
 
-To use OPAM to install and manage your OCaml instalation just:
+### Environment setup
+
+You can use OPAM to install and manage your OCaml environment. To do it first is necessary to add the enviroment variables in your default shell, OPAM do it for you when you run the `init` command, and after it you can use `eval` in your first time to load the configuration.
+
 ```console
-# environment setup
 $ opam init
+# the console will ask if you want to really modify your ~/.bashrc (or default), use 'y' to confirm.
 $ eval $(opam env)
-# install desired version of the compiler.
+```
+
+After add the enviroment variables in your default shell you can install the desired version of OCaml compiler using the `switch` command and you can load the new enviroment variables running `eval` soon after it.
+
+```console
 $ opam switch create 4.12.0
 $ eval $(opam env)
-# check you got what you want
+```
+
+Now you can check if your OCaml version is the one you installed.
+
+```console
 $ ocaml -version
 ```
 
