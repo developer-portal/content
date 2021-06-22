@@ -42,7 +42,7 @@ $ opam init
 $ eval $(opam env)
 ```
 
-After add the enviroment variables in your default shell you can install the desired version of OCaml compiler using the `switch` command and you can load the new enviroment variables running `eval` soon after it.
+After adding the environment variables in your default shell you can install the desired version of OCaml compiler using the `switch` command and you can load the new environment variables running `eval` soon after it.
 
 ```console
 $ opam switch create 4.12.0
