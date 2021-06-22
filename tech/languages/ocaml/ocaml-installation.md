@@ -34,7 +34,7 @@ $ sudo dnf install opam
 
 ### Environment setup
 
-You can use OPAM to install and manage your OCaml environment. To do it first is necessary to add the enviroment variables in your default shell, OPAM do it for you when you run the `init` command, and after it you can use `eval` in your first time to load the configuration.
+You can use OPAM to install and manage your OCaml environment. First, it is necessary to add the environment variables in your default shell, OPAM does it for you when you run the `init` command, and after it, you can use `eval` in your first time to load the configuration.
 
 ```console
 $ opam init
