@@ -2,9 +2,9 @@
 title: Fortran
 subsection: fortran
 section: tech-languages
-version: 
+version: 11.1.1
 order: 1
-description: A general-purpose, imperative computer programming language.
+description: A general-purpose, imperative computer programming language, especially suited to numeric computation and scientific computing.
 ---
 # Fortran installation and usage
 
@@ -32,6 +32,7 @@ $ ./a.out
 ```
 
 To see the man page of `gfortran`, simply type:
+
 ```
 $ man gfortran
 ```
