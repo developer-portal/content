@@ -106,7 +106,7 @@ If you prefer video over wiki, you can check recording of [Packaging Workshop](h
 
 ## Packaging for other distribution
 
-Command rpmbuild creates package only for architecture and distribution of your own workstation. If you want to create RPM for other distribution and other architecture, you need to use [Mock](https://fedoraproject.org/wiki/Mock). It can build packages for different architectures and different Fedora or RHEL versions than the build host has. Mock creates chroots and builds packages in them. Its only task is to reliably populate a chroot and attempt to build a package in that chroot.
+Command rpmbuild creates package only for architecture and distribution of your own workstation. If you want to create RPM for other distribution and other architecture, you need to use [Mock](https://github.com/rpm-software-management/mock/wiki). It can build packages for different architectures and different Fedora or RHEL versions than the build host has. Mock creates chroots and builds packages in them. Its only task is to reliably populate a chroot and attempt to build a package in that chroot.
 
 ### Setup
 
