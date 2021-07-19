@@ -9,45 +9,51 @@ description: In-memory data structure store, used as a database, cache and messa
 
 Redis is a free and open source in memory data structure store. It is widely used as a database, in memory cache or a message broker.
 
-# Quick start
+## Quick start
 
-Redis installation on fedora
+To install Redis on Fedora, run the following commands:
 
-```sh
+```console
 $ sudo dnf install redis     # Install redis cli and server
 $ sudo systemctl start redis # Initialize redis server
 ```
 
 To start redis on boot, run
 
-```sh
-sudo systemctl enable redis
+```console
+$ sudo systemctl enable redis
 ```
 
-To test, run
+To test redis-cli, run
 
-```sh
-$ redis-cli ping # output will be pong
+```console
+$ redis-cli ping
 ```
 
-# Configuring Redis
+the result from the above command will be 
 
-The config file for redis is located at `/etc/redis.conf`.
+```console
+pong
+```
 
-```sh
-sudo nano /etc/redis.conf
+## Configuring Redis
+
+The config file for Redis is located at `/etc/redis/redis.conf`.
+
+```console
+$ sudo nano /etc/redis/redis.conf
 ```
 
 Redis should be always restarted after changing settings. Restart redis by running
 
-```sh
-sudo systemctl restart redis
+```console
+$ sudo systemctl restart redis
 ```
 
-Secure redis by enabling authentication. Add this line in redis.conf
+Secure redis by enabling authentication. Add this line in `/etc/redis/redis.conf`
 
-```sh
-requirepass  <AuthPassword>
+```console
+$ requirepass  <AuthPassword>
 ```
 
-and after redis server restart, all clients must execute `AUTH <AuthPassword>` to execute commands in redis.
+and after the Redis server restarts, all clients must execute `AUTH <AuthPassword>` to be able to execute commands in Redis.
