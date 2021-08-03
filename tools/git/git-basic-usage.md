@@ -132,3 +132,45 @@ Once an upstream branch is available for the currently checked out local branch 
 git push origin <branch-name-according-to-what-would-be-worked-on>
 ```
 
+## Git Pull
+
+There are cases you want to view some changes wich are already in your fork (e.g. modified using Github WebUI). We're using variables holding your remote and branch names:
+
+If you already have branch in your computer your can just pull via "git pull"
+
+```
+# Pulls curent branch commits from remote
+$ git pull 
+```
+
+If you don't have remote branch in your computer then you can fetch the changes from your fork:
+
+```
+$ git fetch remote-branch
+```
+
+And then checkout the branch:
+
+```
+$ git checkout -b new-branch-name -t $remote/$branch 
+```
+
+## Git Rebases
+
+To update the `foo/` directory, switch to that directory, make sure you are on your development branch and rebase on the latest stuff:
+
+```
+$ cd foo
+$ git checkout my-devel-branch
+$ git fetch origin
+$ git rebase origin/master
+```
+
+If conflicts occured, you need to resolve them, and continue with rebase.
+
+```
+$ nano file/that/has/conflict.md
+# properly adjusted / edited to show correct foo-content
+$ git add file/that/has/conflict.md
+$ git rebase --continue
+``` 
