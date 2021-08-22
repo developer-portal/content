@@ -1,7 +1,7 @@
 ---
 title: Configuring Git
 subsection: git
-order: 1
+order: 3
 ---
 
 # Configuring Git
