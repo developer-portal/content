@@ -28,11 +28,6 @@ To test redis-cli, run
 
 ```console
 $ redis-cli ping
-```
-
-the result from the above command will be 
-
-```console
 pong
 ```
 
@@ -53,7 +48,7 @@ $ sudo systemctl restart redis
 Secure redis by enabling authentication. Add this line in `/etc/redis/redis.conf`
 
 ```console
-$ requirepass  <AuthPassword>
+requirepass  <AuthPassword>
 ```
 
 and after the Redis server restarts, all clients must execute `AUTH <AuthPassword>` to be able to execute commands in Redis.
