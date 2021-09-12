@@ -48,6 +48,10 @@ Now you can install with dnf
 $ sudo dnf install -y mongodb-org
 ```
 
+Version >=4.4.8 has broken dependencies for the following packages:
+mongodb-org, mongodb-org-database-tools-extra, mongodb-org-tools
+[See MongoDB issue ticket SERVER-58870](https://jira.mongodb.org/browse/SERVER-58870)
+
 ## Run mongoDB 
 
 Start mongoDB service and after run mongoshell to test connection  
