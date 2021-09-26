@@ -6,8 +6,6 @@ order: 6
 
 # Setting up intrinsic VNC server with VMs
 
-> More information can be found here https://qemu-project.gitlab.io/qemu/system/vnc-security.html
-
 1. Download the Fedora Workstation ISO file from website and store it in a reference directory `cdromimg`.  
    ```
    https://getfedora.org
@@ -46,3 +44,6 @@ order: 6
    ![03](https://user-images.githubusercontent.com/49605954/127031519-117036dc-c8a6-41f8-af28-8bafd368017b.png)
 8. Finally a window showing the virtual desktop of the live environment would show up and it can be used to interact with the VM.  
    ![04](https://user-images.githubusercontent.com/49605954/127031520-47639fc8-e38c-4448-92f1-44a6cb99a2e6.png)
+
+## References
+1. [https://qemu-project.gitlab.io/qemu/system/vnc-security.html](https://qemu-project.gitlab.io/qemu/system/vnc-security.html)

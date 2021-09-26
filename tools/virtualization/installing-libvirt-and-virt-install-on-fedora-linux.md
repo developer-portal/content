@@ -6,7 +6,9 @@ order: 3
 
 # Installing libvirt and virt-install on Fedora Linux
 
-## Libvirt
+## Common terms
+
+### Libvirt
 
 Libvirt is an open-source API, daemon and management tool for managing platform virtualization. It can be used to manage KVM, Xen, VMware ESXi, QEMU and other virtualization technologies. These APIs are widely used in the orchestration layer of hypervisors in the development of a cloud-based solution.
 
@@ -19,7 +21,7 @@ The Libvirt project:
 
 [Read more about Libvirt here](https://libvirt.org/)
 
-## Virt-install
+### Virt-install
 
 virt-install is a command line tool for creating new KVM , Xen, or Linux container guests using the "libvirt" hypervisor management library. See the EXAMPLES section at the end of this document to quickly get started.
 
@@ -43,3 +45,6 @@ Given suitable command line arguments, "virt-install" is capable of running comp
    $ sudo dnf install virt-install -y
    ```
    ![02](https://user-images.githubusercontent.com/49605954/131217805-c65674e7-86b0-4037-8c59-a6ce5b41c53b.png)
+
+## Usages
+1. [Setting up Fedora Workstation domain on libvirt](/tools/virtualization/setting-up-fedora-workstation-domain-on-libvirt.html)

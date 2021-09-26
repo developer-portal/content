@@ -6,7 +6,9 @@ order: 1
 
 # Installing QEMU
 
-## QEMU 
+## Common terms
+
+### QEMU 
 
 QEMU is a generic and open source machine & userspace emulator and virtualizer.
 
@@ -18,7 +20,7 @@ QEMU aims to fit into a variety of use cases. It can be invoked directly by user
 
 [Read more about QEMU here](https://www.qemu.org/)
 
-## KVM
+### KVM
 
 KVM (for Kernel-based Virtual Machine) is a full virtualization solution for Linux on x86 hardware containing virtualization extensions (Intel VT or AMD-V). It consists of a loadable kernel module, kvm.ko, that provides the core virtualization infrastructure and a processor specific module, kvm-intel.ko or kvm-amd.ko.
 
@@ -33,3 +35,15 @@ Using KVM, one can run multiple virtual machines running unmodified Linux or Win
    $ sudo dnf install qemu -y
    ```
    ![01](https://user-images.githubusercontent.com/49605954/127774416-b748ce6e-5c04-40d8-8470-7962b57053e4.png)  
+
+## Usages
+
+1. [Setting up Fedora Workstation VM on QEMU using BIOS](/tools/virtualization/setting-up-fedora-workstation-vm-on-qemu-using-bios.html)
+2. [Setting up Fedora Workstation VM on QEMU using UEFI](/tools/virtualization/setting-up-fedora-workstation-vm-on-qemu-using-uefi.html)
+3. [Setting up intrinsic VNC server with VMs](/tools/virtualization/setting-up-intrinsic-vnc-server-with-vms.html)
+4. [Setting viewport resolution using OVMF BIOS](/tools/virtualization/setting-viewport-resolution-using-ovmf-bios.html)
+5. [Sharing a chunk of memory as video memory in QEMU](/tools/virtualization/sharing-memory-chunk-as-video-memory-in-qemu.html)
+6. [Mapping a virtualized guest port to a host port](/tools/virtualization/mapping-a-virtualised-guest-port-to-a-host-port.html)
+7. [Playing around with various VGA providers](/tools/virtualization/playing-around-with-various-vga-providers.html)
+8. [Offloading domain TTY output to console with custom kernel/initramfs images](/tools/virtualization/offloading-domain-tty-output-to-console-with-custom-kernel-initramfs-images.html)
+9. [Offloading domain TTY output to console with original kernel/initramfs images](/tools/virtualization/offloading-domain-tty-output-to-console-with-original-kernel-initramfs-images.html)

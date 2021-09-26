@@ -6,7 +6,7 @@ order: 9
 
 # Sharing a chunk of memory as video memory in QEMU
 
-1. Continuing on from the end of the guide about **Setting up Fedora Workstation VM on QEMU using BIOS**, start up the same VM by executing the following command.  
+1. Continuing on from the end of the guide about [**Setting up Fedora Workstation VM on QEMU using BIOS**](/tools/virtualization/setting-up-fedora-workstation-vm-on-qemu-using-bios.html), start up the same VM by executing the following command.  
    ```console
    $ qemu-system-x86_64 \
        -boot menu=on \

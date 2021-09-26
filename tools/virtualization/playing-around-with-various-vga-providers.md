@@ -6,8 +6,6 @@ order: 11
 
 # Playing around with various VGA providers
 
-> More information can be found here https://www.kraxel.org/blog/2019/09/display-devices-in-qemu/
-
 1. Download the Fedora Workstation ISO file from website and store it in a reference directory `cdromimg`.  
    ```
    https://getfedora.org
@@ -137,3 +135,6 @@ We will test out each VGA provider one-by-one and list the information for each 
       ![11](https://user-images.githubusercontent.com/49605954/127106067-fb3217b3-e840-47cb-955b-6f9307524055.png)
    2. `lspci`  
       ![12](https://user-images.githubusercontent.com/49605954/127106070-632dbf75-320c-4537-a545-57fe1e999212.png)
+
+## References
+1. [https://www.kraxel.org/blog/2019/09/display-devices-in-qemu/](https://www.kraxel.org/blog/2019/09/display-devices-in-qemu/)

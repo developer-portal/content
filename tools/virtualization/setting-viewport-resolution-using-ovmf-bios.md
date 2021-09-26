@@ -10,7 +10,7 @@ order: 7
    ```
    https://getfedora.org
    ```
-2. Source OVMF UEFI assets by following the **Fetching OVMF UEFI from the correct source** guide, if not done already.  
+2. Source OVMF UEFI assets by following the [**Fetching OVMF UEFI from the correct source**](/tools/virtualization/fetching-ovmf-uefi-from-the-correct-source.html) guide, if not done already.  
 3. Start a virtual machine for playing around with setting viewport resolution for the live ISO and there is no need for a virtual disk image here.  
    ```console
    $ qemu-system-x86_64 \

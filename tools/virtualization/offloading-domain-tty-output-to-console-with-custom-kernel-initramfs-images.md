@@ -41,7 +41,7 @@ order: 12
    -rw-------. 1 t0xic0der t0xic0der 33002599 Aug  2 15:36 initramfs-5.13.5-200.fc34.x86_64.img
    -rw-------. 1 t0xic0der t0xic0der 32910001 Aug  2 15:36 initramfs-5.13.6-200.fc34.x86_64.img
    ```
-4. Reuse the domain with the custom partitioning based on EXT4  that was created by the end of the **Setting up Fedora Workstation VM on QEMU using BIOS** and start it up by executing the following command.  
+4. Reuse the domain with the custom partitioning based on EXT4  that was created by the end of the [**Setting up Fedora Workstation VM on QEMU using BIOS**](/tools/virtualization/setting-up-fedora-workstation-vm-on-qemu-using-bios.html) and start it up by executing the following command.  
    ```console
    $ qemu-system-x86_64 \
        -boot menu=on \
@@ -122,4 +122,4 @@ order: 12
           valid_lft forever preferred_lft forever
    ```
    As evidenced by the output of the above command executed inside the console of the virtualized domain, the kernel modules for network are apparently broken and the hostname of the host is taken up by the virtualized domain due to the mismatch of kernel images, initramfs images and installed firmware versions.  
-9. For best compatibility, keep the versions for kernel image, initramfs image and installed firmware inline with each other. Instructions for the same have been provided in the **Offloading domain TTY output to console with original kernel/initramfs images** documentation.  
+9. For best compatibility, keep the versions for kernel image, initramfs image and installed firmware inline with each other. Instructions for the same have been provided in the [**Offloading domain TTY output to console with original kernel/initramfs images**](/tools/virtualization/offloading-domain-tty-output-to-console-with-original-kernel-initramfs-images.html) documentation.  
