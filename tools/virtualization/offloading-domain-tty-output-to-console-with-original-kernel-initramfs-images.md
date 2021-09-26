@@ -8,6 +8,12 @@ order: 13
 
 > This documentation extends from the [**Offloading domain TTY output to console with custom kernel/initramfs images**](/tools/virtualization/offloading-domain-tty-output-to-console-with-custom-kernel-initramfs-images.html) documentation, so it is highly recommended to read that document first.
 
+## Introduction
+
+In a headless virtual machine hosts accessible by SSH, the activities on a virtual machines can be discovered by offloading the console prompts on the current TTY. This is a great alternative to setting up SSH inside the virtual machine or connecting to the virtual machine via VNC or SPICE.
+
+## Steps
+
 1. Reuse the domain with the custom partitioning based on EXT4  that was created by the end of the [**Setting up Fedora Workstation VM on QEMU using BIOS**](/tools/virtualization/setting-up-fedora-workstation-vm-on-qemu-using-bios.html) and start it up by executing the following command.  
    ```console
    $ qemu-system-x86_64 \

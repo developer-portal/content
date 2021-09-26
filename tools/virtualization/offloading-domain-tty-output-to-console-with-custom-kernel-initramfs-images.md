@@ -6,6 +6,12 @@ order: 12
 
 # Offloading domain TTY output to console with custom kernel/initramfs images
 
+## Introduction
+
+In a headless virtual machine hosts accessible by SSH, the activities on a virtual machines can be discovered by offloading the console prompts on the current TTY. This is a great alternative to setting up SSH inside the virtual machine or connecting to the virtual machine via VNC or SPICE.
+
+## Steps
+
 1. Navigate to the `/boot` directory of the Fedora installation of the host to grab some kernel and initramfs images.  
    ```console
    $ cd /boot
