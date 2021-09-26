@@ -59,8 +59,8 @@ order: 8
 5. Visit https://www.realvnc.com/en/connect/download/viewer/ in an internet browser of choice, download and install the VNC viewer application either on the host device or another device in the same network.  
 6. Switch to the VNC Viewer window and type in `0.0.0.0:5920` from the host device (or `<ip-address-of-host-device>:5920` if accessed from another device in the same network) to continue installing.  
 7. A greeting window would open up inside the VNC Viewer, providing with two options - Either to `Try Fedora` or `Install to Hard Drive`.  
-   ![01](https://user-images.githubusercontent.com/49605954/131218712-6b19f1b5-9a31-4c32-a4f6-92ecd0f5137a.png)  
-8. Now, follow either the instructions **Setting up Fedora Workstation VM on QEMU using BIOS** guide if BIOS is being used or **Setting up Fedora Workstation VM on QEMU using UEFI** guide if UEFI is being used to complete the installation.  
+   ![01](/content/tools/virtualization/images/setting-up-fedora-workstation-domain-on-libvirt/01.png)  
+8. Now, follow either the instructions [**Setting up Fedora Workstation VM on QEMU using BIOS**](/tools/virtualization/setting-up-fedora-workstation-vm-on-qemu-using-bios.html) guide if BIOS is being used or [**Setting up Fedora Workstation VM on QEMU using UEFI**](/tools/virtualization/setting-up-fedora-workstation-vm-on-qemu-using-uefi.html) guide if UEFI is being used to complete the installation.  
 9. Once the installation is completed, power off the domain. It would show up like the following when listed on the host.  
    ```console
    $ virsh list --all

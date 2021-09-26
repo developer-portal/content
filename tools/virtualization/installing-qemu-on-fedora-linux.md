@@ -34,7 +34,7 @@ Using KVM, one can run multiple virtual machines running unmodified Linux or Win
    ```console
    $ sudo dnf install qemu -y
    ```
-   ![01](https://user-images.githubusercontent.com/49605954/127774416-b748ce6e-5c04-40d8-8470-7962b57053e4.png)  
+   ![01](/content/tools/virtualization/images/installing-qemu-on-fedora-linux/01.png)
 
 ## Usages
 

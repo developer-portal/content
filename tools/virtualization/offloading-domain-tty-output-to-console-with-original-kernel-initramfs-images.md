@@ -30,30 +30,30 @@ In a headless virtual machine hosts accessible by SSH, the activities on a virtu
    ```console
    $ uname -a
    ```
-   ![01](https://user-images.githubusercontent.com/49605954/127960539-6bd3771f-4ffa-44bb-9cad-1b92b2e86159.png)
+   ![01](/content/tools/virtualization/images/offloading-domain-tty-output-to-console-with-original-kernel-initramfs-images/01.png)
 3. With appropriate permissions, copy the kernel image and the initramfs image of the aforementioned version to the home directory of the default user in the virtualized domain.  
    ```console
    $ ls -la /boot
    ```
-   ![02](https://user-images.githubusercontent.com/49605954/127960689-fb019eba-ecdc-49cd-a4b7-f183bd86a697.png)
+   ![02](/content/tools/virtualization/images/offloading-domain-tty-output-to-console-with-original-kernel-initramfs-images/02.png)
    ```console
    $ sudo cp /boot/<vmlinux-x.yy.zz-aaa-fcRR.x86_64> .
    $ sudo cp /boot/<initramfs-x.yy.zz-aaa-fcRR.x86_64.img> .
    $ ls -lh .
    ```
-   ![03](https://user-images.githubusercontent.com/49605954/127961056-08ecdef0-b5c0-4f30-891d-f66d78be5ceb.png)
+   ![03](/content/tools/virtualization/images/offloading-domain-tty-output-to-console-with-original-kernel-initramfs-images/03.png)
 4. Take up the ownership of the copied kernel images and kernel images by executing the following command in a terminal session in the virtualized domain.  
    ```console
    $ sudo chown $(whoami):$(whoami) <vmlinux-x.yy.zz-aaa-fcRR.x86_64>
    $ sudo chown $(whoami):$(whoami) <initramfs-x.yy.zz-aaa-fcRR.x86_64.img>
    $ ls -lh .
    ```
-   ![04](https://user-images.githubusercontent.com/49605954/127961516-321b54aa-7c69-4645-b938-5ba8834b79d2.png)
+   ![04](/content/tools/virtualization/images/offloading-domain-tty-output-to-console-with-original-kernel-initramfs-images/04.png)
 5. Start an HTTP server in the same directory by executing the following command in a terminal session in the virtualized domain.  
    ```console
    $ python3 -m http.server 8080
    ```
-   ![05](https://user-images.githubusercontent.com/49605954/127961795-d836ce1a-448d-4805-8c04-755ccc3a0fba.png)
+   ![05](/content/tools/virtualization/images/offloading-domain-tty-output-to-console-with-original-kernel-initramfs-images/05.png)
 6. In a new terminal session of the host, execute the following command to pull the kernel image and initramfs image into reference directories `linxkrnl` and `initrmfs` respectively.  
    ```console
    $ wget http://localhost:6969/vmlinuz-x.yy.zz-aaa.fcRR.x86_64 -O linxkrnl/vmlinuz-x.yy.zz-aaa.fcRR.x86_64

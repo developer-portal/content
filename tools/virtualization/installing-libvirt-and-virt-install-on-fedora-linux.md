@@ -39,12 +39,13 @@ Given suitable command line arguments, "virt-install" is capable of running comp
    ```console
    $ sudo dnf install libvirt -y
    ```
-   ![01](https://user-images.githubusercontent.com/49605954/131217762-da304d01-eaee-4072-8555-4de0f9ea39f2.png)
+   ![01](/content/tools/virtualization/images/installing-libvirt-and-virt-install-on-fedora-linux/01.png)
 2. Execute the following command to install virt-install on the host device, if not already installed.
    ```console
    $ sudo dnf install virt-install -y
    ```
-   ![02](https://user-images.githubusercontent.com/49605954/131217805-c65674e7-86b0-4037-8c59-a6ce5b41c53b.png)
+   ![02](/content/tools/virtualization/images/installing-libvirt-and-virt-install-on-fedora-linux/02.png)
 
 ## Usages
+
 1. [Setting up Fedora Workstation domain on libvirt](/tools/virtualization/setting-up-fedora-workstation-domain-on-libvirt.html)
