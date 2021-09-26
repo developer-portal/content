@@ -12,20 +12,20 @@ order: 5
    ```
 2. Source OVMF UEFI assets by following the **Fetching OVMF UEFI from the correct source** guide, if not done already.  
 3. Create a virtual disk image of type `16GB` and of format `RAW` in a reference directory `datadrct` by executing the following command.  
-   ```
-   qemu-img create -f raw datadrct/fedouefi.raw 16G
+   ```console
+   $ qemu-img create -f raw datadrct/fedouefi.raw 16G
    ```
 4. Start a virtual machine for installing Fedora Workstation on the virtual disk image by executing the following command on the host.  
-   ```
-   qemu-system-x86_64 \
-     -boot menu=on \
-     -m 2048 \
-     -cpu max \
-     -smp 4 \
-     -cdrom cdromimg/<Fedora-Workstation-Live-x86_64-xx-y.z.iso> \
-     -drive file=datadrct/fedouefi.raw,format=raw \
-     -bios /usr/share/edk2/ovmf/OVMF_CODE.fd \
-     -accel kvm
+   ```console
+   $ qemu-system-x86_64 \
+       -boot menu=on \
+       -m 2048 \
+       -cpu max \
+       -smp 4 \
+       -cdrom cdromimg/<Fedora-Workstation-Live-x86_64-xx-y.z.iso> \
+       -drive file=datadrct/fedouefi.raw,format=raw \
+       -bios /usr/share/edk2/ovmf/OVMF_CODE.fd \
+       -accel kvm
    ```
    ![01](https://user-images.githubusercontent.com/49605954/127776674-b4d8b61f-1fc1-41f8-95db-4cc0d607f194.png)  
    ![02](https://user-images.githubusercontent.com/49605954/127780377-4999ee0c-a256-42d7-99b2-9b791f31f26e.png)  
@@ -33,8 +33,8 @@ order: 5
    Close the window for now.  
    ![03](https://user-images.githubusercontent.com/49605954/127777826-749920ab-06d1-4a8a-99a7-0955a5dd69fa.png)  
 6. In a new terminal session inside the virtualized guest, execute the following command to confirm UEFI boot.  
-   ```
-   ls -la /sys/firmware/efi/efivars/
+   ```console
+   $ ls -la /sys/firmware/efi/efivars/
    ```
    ![04](https://user-images.githubusercontent.com/49605954/127778019-b6bee93c-da46-4bed-b6f3-81b6b2029252.png)  
 7. Open up the installer application by clicking on the `Install to Hard Drive` icon from the GNOME drawer inside the virtualized guest.  
@@ -58,15 +58,15 @@ order: 5
 10. Let the installation finish, click the `Finish Installation` button to exit the installer application and then power off the virtualized guest.  
     ![11](https://user-images.githubusercontent.com/49605954/127864129-67d1884a-cdbc-4471-803f-97b43d4f03ac.png)  
 11. Start a virtual machine where Fedora Workstation was just installed by executing the following command on the host.  
-    ```
-    qemu-system-x86_64 \
-      -boot menu=on \
-      -m 2048 \
-      -cpu max \
-      -smp 4 \
-      -drive file=datadrct/fedouefi.raw,format=raw \
-      -bios /usr/share/edk2/ovmf/OVMF_CODE.fd \
-      -accel kvm
+    ```console
+    $ qemu-system-x86_64 \
+        -boot menu=on \
+        -m 2048 \
+        -cpu max \
+        -smp 4 \
+        -drive file=datadrct/fedouefi.raw,format=raw \
+        -bios /usr/share/edk2/ovmf/OVMF_CODE.fd \
+        -accel kvm
     ```
 12. Set up the Fedora Workstation according to preferences.  
     ![12](https://user-images.githubusercontent.com/49605954/127778478-84669816-87c4-4c39-a702-b07fd6f3f9c7.png)  

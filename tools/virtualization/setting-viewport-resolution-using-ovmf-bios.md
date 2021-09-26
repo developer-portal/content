@@ -12,15 +12,15 @@ order: 7
    ```
 2. Source OVMF UEFI assets by following the **Fetching OVMF UEFI from the correct source** guide, if not done already.  
 3. Start a virtual machine for playing around with setting viewport resolution for the live ISO and there is no need for a virtual disk image here.  
-   ```
-   qemu-system-x86_64 \
-     -boot menu=on \
-     -m 2048 \
-     -cpu max \
-     -smp 4 \
-     -bios /usr/share/edk2/ovmf/OVMF_CODE.fd \
-     -cdrom cdromimg/<Fedora-Workstation-Live-x86_64-xx-y.z.iso> \
-     -accel kvm
+   ```console
+   $ qemu-system-x86_64 \
+       -boot menu=on \
+       -m 2048 \
+       -cpu max \
+       -smp 4 \
+       -bios /usr/share/edk2/ovmf/OVMF_CODE.fd \
+       -cdrom cdromimg/<Fedora-Workstation-Live-x86_64-xx-y.z.iso> \
+       -accel kvm
    ```
 4. Press `ESC` key when the following screen is visible during the startup to navigate into the OVMF UEFI settings.  
    ![01](https://user-images.githubusercontent.com/49605954/127020743-854bfcf1-90f7-4a5c-8812-82dfc6c32d95.png)
@@ -31,12 +31,12 @@ order: 7
 7. Once the live environment of Fedora Workstation has booted up, open up a terminal instance.  
    ![04](https://user-images.githubusercontent.com/49605954/127020756-6d9f7600-4ce7-4d7d-931d-31dd97295a02.png)
 8. Execute the following command to install `xrandr` on the live environment.  
-   ```
-   sudo dnf install xrandr
+   ```console
+   $ sudo dnf install xrandr
    ```
 9. Once `xrandr` is installed on the live environment, execute it to find a list of supported resolutions and refresh rates for the current renderer.  
-   ```
-   xrandr
+   ```console
+   $ xrandr
    ```
    ![05](https://user-images.githubusercontent.com/49605954/127020760-402adde3-abcc-4648-a426-c4bac9b40983.png)
 10. Restart the live environment and press the `ESC` key during the startup to navigate into the OVMF UEFI settings.  

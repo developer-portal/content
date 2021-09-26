@@ -13,16 +13,16 @@ order: 6
    https://getfedora.org
    ```
 2. Start a virtual machine for setting up intrinsic VNC server for the live ISO and there is no need for a virtual disk image here.  
-   ```
-   qemu-system-x86_64 \
-     -boot menu=on \
-     -m 2048 \
-     -cpu max \
-     -smp 4 \
-     -cdrom cdromimg/<Fedora-Workstation-Live-x86_64-xx-y.z.iso> \
-     -vnc 0.0.0.0:59,password=on \
-     -accel kvm
-     -monitor stdio
+   ```console
+   $ qemu-system-x86_64 \
+       -boot menu=on \
+       -m 2048 \
+       -cpu max \
+       -smp 4 \
+       -cdrom cdromimg/<Fedora-Workstation-Live-x86_64-xx-y.z.iso> \
+       -vnc 0.0.0.0:59,password=on \
+       -accel kvm
+       -monitor stdio
    ```
    ```
    QEMU 5.2.0 monitor - type 'help' for more information
