@@ -10,6 +10,14 @@ order: 4
 
 MongoDB is a free and open source database and uses a document-oriented data model.
 
+## Security
+Fedora has determined that the Server Side Public Licensev1 (SSPL) is not a Free Software License. Therefore, we need to drop MongoDB from Fedora or never update it again. Never updating it would bring security issues, hence we decided to remove it.
+
+References:
+[MongoDB removal from Fedora](https://fedoraproject.org/wiki/Changes/MongoDB_Removal)
+[How to get MongoDB Server on Fedora](https://fedoramagazine.org/how-to-get-mongodb-server-on-fedora/)
+[See MongoDB issue ticket SERVER-58870](https://jira.mongodb.org/browse/SERVER-58870)
+
 ## Installation 
 
 ```
@@ -47,10 +55,6 @@ Now you can install with dnf
 ```
 $ sudo dnf install -y mongodb-org
 ```
-
-Version >=4.4.8 has broken dependencies for the following packages:
-mongodb-org, mongodb-org-database-tools-extra, mongodb-org-tools
-[See MongoDB issue ticket SERVER-58870](https://jira.mongodb.org/browse/SERVER-58870)
 
 ## Run mongoDB 
 
