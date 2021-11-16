@@ -3,7 +3,7 @@ title: Lua
 subsection: lua
 section: tech-languages
 order: 1
-version: 1.0.0
+version: 5.4.3
 description:  Lua is a powerful, efficient, lightweight, embeddable scripting language.
 ---
 
@@ -15,7 +15,8 @@ Some examples of Lua's usage areas: network software, video games, user graphica
 
 Lua interpreter is written in ANSI C and it is extremely small, both interpreter and source code is only about 1Mb. Lua is considered one of the fastest interpreted languages.
 
-## Lua installation
+
+## Checking Lua
 
 Some distributions already have Lua pre-installed. Open your terminal and type:
 
@@ -34,6 +35,8 @@ Congratulations! Lua is already installed on your system and ready to use.
 
 <ins>Hint!</ins> To exit Lua's interpreter press <kbd>Ctrl + D</kbd>.
 
+## Lua installation
+
 If you see the message:
 
 ```bash
@@ -49,7 +52,23 @@ Congratulations! Lua interpreter is installed!
 
 ## Lua syntax
 
-Lua syntax is very similar to languages Python, Ruby ad C.
+Lua syntax is very similar to languages Python, Ruby and C. To demonstrate the syntax, here is example of program to calculate factorial, from the book [Programming in Lua](https://www.lua.org/pil/1.html).
+
+```lua
+-- defines a factorial function
+function fact (n)
+  if n == 0 then
+    return 1
+  else
+    return n * fact(n-1)
+  end
+end
+
+print("enter a number:")
+a = io.read("*n") -- read a number
+print(fact(a))
+```
+
 
 ### Learning Lua
 
