@@ -15,7 +15,7 @@ Some examples of Lua's usage areas: network software, video games, user graphica
 
 Lua interpreter is written in ANSI C and it is extremely small, both interpreter and source code is only about 1Mb. Lua is considered one of the fastest interpreted languages.
 
-## Lua installation from package manager on Fedora
+## Lua installation
 
 Some distributions already have Lua pre-installed. Open your terminal and type:
 
