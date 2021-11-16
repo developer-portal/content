@@ -42,7 +42,7 @@ bash: lua: command not found
 
 It means that Lua is not installed yet. The simplest way to install Lua from package manager `dnf`, which comes with Fedora. In your terminal type command:
 ```bash
-sudo dnf install lua
+$ sudo dnf install lua
 ```
 
 Congratulations! Lua interpreter is installed!
