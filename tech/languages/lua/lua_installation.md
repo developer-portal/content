@@ -52,10 +52,19 @@ Congratulations! Lua interpreter is installed!
 
 ## Lua syntax
 
-Lua syntax is very similar to languages Python, Ruby and C. To demonstrate the syntax, here is example of program to calculate factorial, from the book [Programming in Lua](https://www.lua.org/pil/1.html).
+Lua's syntax is very similar to languages Python, Ruby and C. For details check [official Lua manual](https://www.lua.org/manual/5.4/manual.html).
+
+### Learning Lua
+
+Lua is very fun and simple to learn, but hard to master. Here is an example of classical _hello world_ program:
 
 ```lua
--- defines a factorial function
+print("Hello, world!")
+```
+
+Example of the program to calculate factorial, from the book [Programming in Lua](https://www.lua.org/pil/1.html).
+
+```lua
 function fact (n)
   if n == 0 then
     return 1
@@ -69,11 +78,3 @@ a = io.read("*n") -- read a number
 print(fact(a))
 ```
 
-
-### Learning Lua
-
-Lua is very fun and simple to learn, but hard to master. Here is an example of classical _hello world_ program:
-
-```lua
-print("Hello, world!")
-```
