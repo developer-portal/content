@@ -55,7 +55,7 @@ package only. Other CPython versions might be **unstable** or even **dangerous**
 (either because they are extremely old or quite the contrary alpha/beta quality)
 and are intended solely for development.
 
-**\*** Interpreters marked with <sup>💀</sup> are to be removed in Fedora 35.
+**\*** Interpreters marked with <sup>💀</sup> were removed in Fedora Linux 35 and are only available in Fedora Linux 34.
 
 ## Getting it and running it all with tox
 
