@@ -88,7 +88,7 @@ by default, virtual environments are isolated from the system.
 As an alternative, you can create the environment with `--system-site-packages` -- but note that when you update your Fedora packages, they may get out of sync with modules installed inside the environment.
 
 
-### What next?
+### What next? 
 
 * [Python homepage](https://www.python.org/)
 * [Python Documentation](https://docs.python.org/)
