@@ -35,7 +35,7 @@ $ sudo dnf install pipenv
 Once it is done, you can use `pipenv` to create, manage and remove Python
 environments with different Python versions.
 
-Let's see what all opetions `pipenv` provides.
+Let's see what all operations `pipenv` provides.
 
 ## Usage
 
