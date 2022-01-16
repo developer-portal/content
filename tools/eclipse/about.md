@@ -11,6 +11,9 @@ description: Full featured development environment for various programming langu
 
 ## Installing Eclipse on Fedora
 
+| WARNING: As of 2022-01 eclipse and all its plugins are orphaned within Fedora. This means, that the following instructions are outdated, as they describe the installation based upon provided RPM packages. As eclipse is orphaned none of them is provided anymore. Please follow the description of the Eclipse Foundation (http://www.eclipse.org/) to install eclipse onto your system. If you want to step up as a new maintainer of Eclipse on Fedora, please go to https://src.fedoraproject.org/rpms/eclipse. |
+| --- |
+
 On Fedora install the eclipse package:
 
 ```
