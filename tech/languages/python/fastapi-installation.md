@@ -36,7 +36,7 @@ Now you can start working on your project.
 
 ## First Application
 
-This is an example of how a FastApi application look like.
+The following is an example of an application using FastApi.
 Create a file named 'main.py'.
 
 ```python
