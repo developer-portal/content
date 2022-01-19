@@ -58,7 +58,7 @@ def read_item(item_id: int, q: Optional[str] = None):
 ```
 ### Running
 
-To run a FastApi app in a development server, Just go to that directory in the terminal and write the following code.
+To run a FastApi app on a development server, go to that directory in the terminal and run:
 
 ```bash
 uvicorn main:app --reload
