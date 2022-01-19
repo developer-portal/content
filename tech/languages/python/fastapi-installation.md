@@ -11,7 +11,8 @@ order: 5
 ## Installation of FastApi in a virtual environment
 
 It is always useful to install FastApi as a third-party package inside a *virtual environemnt*.
-This will keep your project separate from your system, giving you more freedom in choosing additional libraries & their versions.And it's easy collaborating with different operating system.
+This will keep your project separate from your system, giving you more freedom in choosing additional libraries & their versions. And it's easy collaborating with
+a different operating system.
 
 Let's create a new project & a virtual environement
 Open the terminal. Then, create a new folder 'my_project', open it, and create a virtual environment called 'project_env' or whatever you like.
