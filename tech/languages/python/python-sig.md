@@ -13,4 +13,4 @@ in Python and Fedora, join us!
 ## Contact
 Wikipage: [SIGs/Python](https://fedoraproject.org/wiki/SIGs/Python)<BR>
 Mailing List: [python-devel](https://lists.fedoraproject.org/archives/list/python-devel@lists.fedoraproject.org/)<BR>
-IRC: #fedora-python on irc.freenode.net
+IRC: #fedora-python on irc.libera.chat
