@@ -27,7 +27,7 @@ To work in the virtual environment, you have to activate it.
 $ source project-env/bin/activate
 ```
 
-In an active the virtual environment (with the name `(project_env)` included in your command line prompt), you can install fastapi.
+Now that we have an active virtual environment (this can be identified by having the `(project_env)` in the command line prompt), install FastApi and a server using `pip`.
 
 ```bash
 (project_venv) $ pip install fastapi uvicorn[standard]
