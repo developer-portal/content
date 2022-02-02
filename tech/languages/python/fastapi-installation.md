@@ -15,7 +15,7 @@ This will keep your project separate from your system, giving you more freedom i
 a different operating system.
 
 Let's create a new project a virtual environment.
-Open the terminal. Then, create a new folder 'my_project', open it, and create a virtual environment called 'project_env' or whatever you like.
+Open the terminal. Then, create a new folder 'my_project', enter it, and create a virtual environment called 'project_env'.
 
 ```bash
 $ mkdir my_project && cd my_project
