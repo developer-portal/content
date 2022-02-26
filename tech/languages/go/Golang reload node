@@ -1,7 +1,0 @@
-## Running Go lang in nodemon server
-
-```bash
-nodemon --exec go run main.go --signal SIGTERM
-```
-
-running this command will run the golang application on node server.

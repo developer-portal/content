@@ -64,13 +64,18 @@ To run a FastApi app on a development server, go to that directory in the termin
 ```console
 $ uvicorn main:app --reload
 ```
-This will start the server listening on localhost, IP:8000.
+This will start the server listening on `127.0.0.1:8000`.
 
 Then open the terminal and run this command to get the response.
 ```console
 $ curl -X 'GET' \
   'http://127.0.0.1:8000/' \
   -H 'accept: application/json'
+```
+
+The response looks like this:
+```
+{"Hello":"World"}
 ```
 
 See [FastApi Website](https://fastapi.tiangolo.com/) for complete documentation & deployment options.
