@@ -25,6 +25,20 @@ $ sudo dnf install rubygem-{tk{,-doc},rake,test-unit}
 
 Please note that we have already unbundled these libraries from Ruby itself, so they come in their own packages and need a specific dependency requirement in .gemspec or Gemfile as well as a specific `require()` call in your Ruby code.
 
+You might, also, want to install gems on your user's directory; as opposed to the system's, by default. If so, edit `$HOME/.gemrc` like this:
+
+```
+gem: --user-install
+```
+
+Remember to add: `HOME/.local/share/gem/ruby/bin` to your `$PATH`. One way of doing this is adding the following to `$HOME/.bash_profile`: 
+
+```
+# my path
+## ruby
+export PATH="$HOME/.local/share/gem/ruby/bin:$PATH"
+```
+
 ## JRuby
 
 Alternatively Fedora comes with JRuby packages that can be installed via:
