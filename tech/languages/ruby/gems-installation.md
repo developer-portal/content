@@ -74,7 +74,7 @@ To look whether the required gem is available as an RPM package, look at
 integration within the Fedora project by listing available information about
 packaged gems.
 
-## Installing gems as a regular user
+## Configuring RubyGems
 
 You might want to install gems on your user's directory; as opposed to the system's, by default. If so, edit `$HOME/.gemrc` like this:
 
