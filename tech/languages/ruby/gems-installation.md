@@ -73,3 +73,19 @@ To look whether the required gem is available as an RPM package, look at
 [IsItFedoraRuby.com](http://isitfedoraruby.com/) site which tracks the Ruby
 integration within the Fedora project by listing available information about
 packaged gems.
+
+## Installing gems as a regular user
+
+You might want to install gems on your user's directory; as opposed to the system's, by default. If so, edit `$HOME/.gemrc` like this:
+
+```
+gem: --user-install
+```
+
+Remember to add: `HOME/.local/share/gem/ruby/bin` to your `$PATH`. One way of doing this is adding the following to `$HOME/.bash_profile`: 
+
+```
+# my path
+## ruby
+export PATH="$HOME/.local/share/gem/ruby/bin:$PATH"
+```
