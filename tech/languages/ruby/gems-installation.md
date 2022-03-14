@@ -88,7 +88,7 @@ install: --no-document
 
 This method will not override the system's defaults.
 
-Or, in order to override the system's default, one can use:
+Or, in order to override the system's default, use:
 
 ```
 gem: --user-install
