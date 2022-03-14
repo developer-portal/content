@@ -76,13 +76,26 @@ packaged gems.
 
 ## Configuring RubyGems
 
-To install gems on your user's directory; as opposed to the system's, by default, edit `$HOME/.gemrc` like this:
+Fedora configures ruby to install gems on your user's directory; as opposed to the system's, by default. The gems get installed at: `$HOME/.local/share/gem`. 
+
+One can check the defaults [here](https://src.fedoraproject.org/rpms/ruby/blob/rawhide/f/operating_system.rb).
+
+If one would like, say, to disable documentation generation at install time, one could do it in two ways:
+
+```
+install: --no-document
+```
+
+This method won't override the system's defaults. 
+
+Or, in order to override the system's default, one can use:
 
 ```
 gem: --user-install
 ```
+Remember to add: `$HOME/.local/share/gem/ruby/bin` to your `$PATH` if you do since all settings aforementioned will be overriden. 
 
-Remember to add: `$HOME/.local/share/gem/ruby/bin` to your `$PATH`. One way of doing this is adding the following to `$HOME/.bash_profile`: 
+One way of doing this is adding the following to `$HOME/.bash_profile`: 
 
 ```
 # my path
