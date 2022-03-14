@@ -82,7 +82,7 @@ You might want to install gems on your user's directory; as opposed to the syste
 gem: --user-install
 ```
 
-Remember to add: `HOME/.local/share/gem/ruby/bin` to your `$PATH`. One way of doing this is adding the following to `$HOME/.bash_profile`: 
+Remember to add: `$HOME/.local/share/gem/ruby/bin` to your `$PATH`. One way of doing this is adding the following to `$HOME/.bash_profile`: 
 
 ```
 # my path
