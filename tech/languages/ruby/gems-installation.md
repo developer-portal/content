@@ -76,7 +76,7 @@ packaged gems.
 
 ## Configuring RubyGems
 
-You might want to install gems on your user's directory; as opposed to the system's, by default. If so, edit `$HOME/.gemrc` like this:
+To install gems on your user's directory; as opposed to the system's, by default, edit `$HOME/.gemrc` like this:
 
 ```
 gem: --user-install
