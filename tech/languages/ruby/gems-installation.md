@@ -93,7 +93,7 @@ Or, in order to override the system's default, use:
 ```
 gem: --user-install
 ```
-Remember to add: `$HOME/.local/share/gem/ruby/bin` to your `$PATH` if you do since all settings aforementioned will be overriden. 
+Remember to add: `$HOME/.local/share/gem/ruby/bin` to your `$PATH` if you choose to use `gem: ...` since all default settings would be overriden if you do. 
 
 One way of doing this is adding the following to `$HOME/.bash_profile`: 
 
