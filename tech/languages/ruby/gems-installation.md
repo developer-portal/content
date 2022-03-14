@@ -86,7 +86,7 @@ If one would like, say, to disable documentation generation at install time, one
 install: --no-document
 ```
 
-This method won't override the system's defaults. 
+This method will not override the system's defaults.
 
 Or, in order to override the system's default, one can use:
 
