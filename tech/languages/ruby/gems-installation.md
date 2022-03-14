@@ -80,7 +80,7 @@ Fedora configures ruby to install gems on your user's directory; as opposed to t
 
 One can check the defaults [here](https://src.fedoraproject.org/rpms/ruby/blob/rawhide/f/operating_system.rb).
 
-If one would like, say, to disable documentation generation at install time, one could do it in two ways:
+For example, to disable documentation generation at install time, we can do the following:
 
 ```
 install: --no-document
