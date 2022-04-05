@@ -88,4 +88,4 @@ When you finish your work, you can deactivate the virtual environemnt.
 
 ### What's next?
 
-* [FastApi] (https://fastapi.tiangolo.com/)
+* [FastApi](https://fastapi.tiangolo.com/)
