@@ -10,9 +10,9 @@ order: 5
 
 ## Installation of FastApi in a virtual environment
 
-It is always useful to install FastApi as a third-party package inside a *virtual environemnt*.
-This will keep your project separate from your system, giving you more freedom in choosing additional libraries & their versions. And it's easy collaborating with
-a different operating system.
+Fedora includes a `python3-fastapi` package that you can install and import.
+However, unless you are developing or packaging an application for Fedora, it is more useful to install FastAPI as a third-party package inside a *virtual environment*.
+This will keep your project separate from your system, giving you more freedom in choosing additional libraries and their versions, and easing collaboration with people who aren't using Fedora yet.
 
 Let's create a new project a virtual environment.
 Open the terminal. Then, create a new folder 'my_project', enter it, and create a virtual environment called 'project_env'.
