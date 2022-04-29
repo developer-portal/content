@@ -40,6 +40,6 @@ PHP contains simple web server which can be used instead of full-featured web se
 You can start PHP development server by typing this in your project's root:
 
 ```
-$ sudo php --server localhost:8080 --docroot  .
+$ sudo php -s localhost:8080 -t /PATH_TO_FILE/
 ```
 Server will be accessible on `http://localhost:8080/`.
