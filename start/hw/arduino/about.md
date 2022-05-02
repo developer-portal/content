@@ -23,11 +23,20 @@ It allows you to:
  * upload the binary firmware to the board using variety of programmers
  * connect to the board's serial console and communicate with it
 
-To install Arduino IDE on Fedora, just run:
+Install Arduino IDE on Fedora through [Flatpak](/deployment/flatpak/about.html):
 
-    $ sudo dnf install arduino
+    $ flatpak install cc.arduino.arduinoide
 
-Now you are all set to start developing you project using Arduino IDE on Fedora. Just start it from your desktop environment applications menu or run the <code>arduino</code> command from the command line. For more information on how to use the Arduino IDE, please refer to the [documentation](https://www.arduino.cc/en/Guide/Environment).
+Now you are all set to start developing you project using Arduino IDE on Fedora. Just start it from your desktop environment applications menu or run the <code>arduino</code> command from the command line. For more information on how to use the Arduino IDE, please refer to the [documentation](https://docs.arduino.cc/software/ide-v1/tutorials/arduino-ide-v1-basics).
+
+## Fix denied access
+
+When uploading sketch or connecting to arduino boards, following error might show up:
+```
+Error opening serial port...
+```
+
+You need to add your user to the `dialout` group. Follow the steps in this [Arduino guide](https://docs.arduino.cc/software/ide-v1/tutorials/Linux#please-read).
 
 <!--
 ## Ino
