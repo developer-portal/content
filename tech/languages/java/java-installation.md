@@ -11,7 +11,7 @@ description: General-purpose, object-oriented and concurrent computer programmin
 Fedora comes with [OpenJDK](https://openjdk.java.net/) - a free and open source implementation of the Java Platform, Standard Edition. To install it, simply type:
 
 ```
-$ sudo dnf install java-openjdk-devel
+$ sudo dnf install java-devel
 ```
 
 This command will install Java Development Kit - runtime environment and associated development tools.
