@@ -15,6 +15,7 @@ Fedora includes all Python versions which are [supported upstream](https://devgu
 At the time of this writing, Fedora has the following Pythons
 ready for you in the repositories:
  
+ * CPython 3.11
  * CPython 3.10
  * CPython 3.9
  * CPython 3.8
