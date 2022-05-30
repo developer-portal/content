@@ -23,7 +23,9 @@ ready for you in the repositories:
  * CPython 3.6
  * CPython 2.7
  * PyPy 2
- * PyPy 3
+ * PyPy 3.7
+ * PyPy 3.8
+ * PyPy 3.9
  * MicroPython
 
 Quite a nest, isn't it?
@@ -35,7 +37,7 @@ $ sudo dnf install python3.8  # to get CPython 3.8
 $ sudo dnf install python3.7  # to get CPython 3.7
 $ sudo dnf install python3.6  # to get CPython 3.6
 $ sudo dnf install python2.7  # to get CPython 2.7
-$ sudo dnf install pypy2 pypy3 python3.10  # to get more at once
+$ sudo dnf install pypy2 pypy3.9 python3.10  # to get more at once
 ```
 
 After that, you can run an interactive console or your script with, let's say,
