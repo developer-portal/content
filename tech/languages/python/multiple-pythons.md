@@ -20,11 +20,9 @@ ready for you in the repositories:
  * CPython 3.8
  * CPython 3.7
  * CPython 3.6
- * CPython 3.5<sup>💀</sup>
  * CPython 2.7
  * PyPy 2
  * PyPy 3
- * Jython<sup>💀</sup>
  * MicroPython
 
 Quite a nest, isn't it?
@@ -55,7 +53,6 @@ package only. Other CPython versions might be **unstable** or even **dangerous**
 (either because they are extremely old or quite the contrary alpha/beta quality)
 and are intended solely for development.
 
-**\*** Interpreters marked with <sup>💀</sup> were removed in Fedora Linux 35 and are only available in Fedora Linux 34.
 
 ## Getting it and running it all with tox
 
@@ -195,59 +192,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> ...
 >>> exit()
 (env)$ deactivate  # go back to "normal"
-```
-
-
-
-### Jython
-
-**Warning:** Jython will be [removed from Fedora in Fedora 35](https://lists.fedoraproject.org/archives/list/users@lists.fedoraproject.org/thread/GCZL4Y63RPCSIHGX2KEJC5WRGTOKZVKS/).
-
-The versions of virtualenv and tox packages in Fedora do not support Jython,
-an interpreter that interoperates with the Java ecosystem.
-
-If you need to support it, you will need to install
-and use older virtualenv/tox versions from PyPI.
-
-First, create and activate a virtual environment with a newer Python, preferably `python3`:
-
-```console
-$ python3 -m venv py3env
-$ source py3env/bin/activate  # activate it
-```
-
-Then, install older packages (virtualenv 15 and tox 2) into it:
-
-```console
-(py3env)$ python -m pip install 'virtualenv<16' 'tox<3'
-```
-
-Now, whenever the Python 3 virtual environment is activated, you can invoke
-tox 2 using the `tox` command.
-Include `jython` in the `envlist` section in `tox.ini` to test
-on that interpreters.
-
-You can also use the older virtualenv to create environments for Jython:
-
-```console
-(py3env)$ python -m virtualenv --python /usr/bin/jython jyenv --no-setuptools --no-pip --no-wheel
-```
-
-To activate these, you don't need the `py3env` activated.
-That is only needed to create them.
-
-```console
-$ source jyenv/bin/activate
-(jyenv)$ python --version
-Jython 2.7.1
-```
-
-To be able to install packages, run Jython's `ensurepip` command.
-This will install a compatible version of `pip`.
-
-```console
-(jyenv)$ python -m ensurepip
-(jyenv)$ python -m pip install requests
 ```
 
 ### MicroPython
