@@ -92,7 +92,7 @@ ruby -v
 Use this command if you do not want rubygems to install the documentation for each package locally.
 
 ```
-echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+echo "gem: --no-document" > ~/.gemrc
 ```
 
 Install bundler

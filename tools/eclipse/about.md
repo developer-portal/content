@@ -11,37 +11,35 @@ description: Full featured development environment for various programming langu
 
 ## Installing Eclipse on Fedora
 
-On Fedora install the eclipse package:
+On Fedora the Eclipse IDE is available as a [Flatpak](/deployment/flatpak/about.html):
 
 ```
-$ sudo dnf install eclipse
+$ flatpak install org.eclipse.Java
 ```
 
-This would give you Eclipse Platform with Java and Plugin development tools but it's easy to install support for various other languages and ecosystems as they are packaged in Fedora:
+This would give you Eclipse Platform with Java and Plugin development tools but it's easy to install support for various other languages and ecosystems as they are available in the Eclipse Marketplace:
 
-* C/C++ - eclipse-cdt packages
-* PHP - eclipse-pdt package
-* Ruby - eclipse-dltk-ruby package
-* TCL - eclipse-dltk-tcl package
-* Shell script - eclipse-dltk-sh package
-* Python - eclipse-pydev package
-* Photran - eclipse-photran package
-* Web technologies - eclipse-webtools-* packages
+* C/C++ - cdt
+* PHP - pdt
+* Ruby - dltk-ruby
+* TCL - dltk-tcl
+* Shell script - dltk-sh
+* Python - pydev
+* Photran - photran
+* Web technologies - webtools-*
 
 Plugins providing integration for various other technologies is also available:
 
-* Git - eclipse-egit and eclipse-egit-github
-* Subversion - eclipse-subclipse
-* Maven - eclipse-m2e-*
-* Gcov/Gprof - eclipse-gcov/eclipse-gprof
-* Systemtap - eclipse-systemtap
-* Kernel Perf - eclipse-perf
-* Oprofile - eclipse-oprofile
-* Bug trackers and CIs - eclipse-mylyn-* packages
+* Git - egit and egit-github
+* Subversion - subclipse
+* Maven - m2e-*
+* Gcov/Gprof - gcov/gprof
+* Systemtap - systemtap
+* Kernel Perf - perf
+* Oprofile - oprofile
+* Bug trackers and CIs - mylyn-*
 
-The list above doesn't contain all Eclipse plugins available in Fedora but is supposed to serve as an example of the range of different technologies integrated.
+The list above doesn't contain all Eclipse plugins available but is supposed to serve as an example of the range of different technologies integrated.
 
-Alternative method for installing Eclipse on Fedora is by using `gnome-software`. Some of the packaged plugins ship proper metadata so they can be seen and installed directly from it.
-
-Last but not least there is [Eclipse Marketplace](http://marketplace.eclipse.org/) (`sudo dnf install eclipse-mpc`) giving you access to even bigger list of plugins to integrate even more tools in your ide. Once Eclipse is running go to `Help\Eclipse Marketplace...` and search for plugins serving your needs.
+Last but not least there is [Eclipse Marketplace](http://marketplace.eclipse.org/) giving you access to even bigger list of plugins to integrate even more tools in your ide. Once Eclipse is running go to `Help\Eclipse Marketplace...` and search for plugins serving your needs.
 

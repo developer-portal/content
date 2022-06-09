@@ -20,7 +20,7 @@ $ sudo dnf install rstudio-desktop
 
 Then, RStudio will be available in your _Applications_ menu.
 
-[![RStudio Desktop](/content/tech/languages/r/rstudio_downscale.png)](/content/tech/languages/r/rstudio.png)
+[![RStudio Desktop](/content/tech/languages/r/rstudio_downscale.png)](/content/tech/languages/r/rstudio.png){:target="_blank"}
 
 ### RStudio Server
 

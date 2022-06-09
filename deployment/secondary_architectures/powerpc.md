@@ -56,7 +56,7 @@ Builds specific to ppc64(le) are hosted at [http://ppc.koji.fedoraproject.org/](
 ## Reaching out for help
 If you face any difficulty reach out to us for help:
 
-- On freenode IRC channel [#fedora-ppc](https://webchat.freenode.net/?channels=#fedora-ppc)
+- On libera IRC channel [#fedora-ppc](https://web.libera.chat/?channels=#fedora-ppc)
 - Send an email to <ppc@lists.fedoraproject.org> mailing list
 - Get [ppc64(le) machine access](https://fedoraproject.org/wiki/Architectures/PowerPC#PPC_Shell_access_for_debugging)
 
