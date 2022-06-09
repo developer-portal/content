@@ -2,51 +2,62 @@
 title: Julia
 subsection: julia
 section: tech-languages
-version: 1.7.2
+version: 1.7.3
 order: 1
 description: High-level, high-performance dynamic language for technical computing
 ---
+
 # Julia installation and usage
 
-## julia installation
-Julia is a high-level, high-performance dynamic programming language for technical computing, with syntax that is familiar to users of other technical computing environments. It provides a sophisticated compiler, distributed parallel execution, numerical accuracy, and an extensive mathematical function library. The library, largely written in Julia itself, also integrates mature best-of-breed C and Fortran libraries for linear algebra, random number generation, signal processing, and string processing.
+## Julia installation
 
-```
+[Julia](https://julialang.org/) is a high-level, general-purpose language usually suited for numerical analysis and computational science. It provides a sophisticated compiler, distributed parallel execution, numerical accuracy, and an extensive mathematical function library. To install Julia on Fedora, simply type:
+
+```bash
 $ sudo dnf install julia
 ```
 
-This command should download and install package with compiler called gfortran. Create a Fortran program `your_source.f90`. `.f90` is the standard file extension for modern Fortran source files. The 90 refers to the first modern Fortran standard in 1990. To compile and link the program, simply run the `gfortran` command like this:
+You can now start the Julia REPL (read-eval-print loop), which is an interactive session by invoking the `julia` command in the terminal. You can expect an output as below.
+
+```bash
+$ julia
+               _
+   _       _ _(_)_     |  Documentation: https://docs.julialang.org
+  (_)     | (_) (_)    |
+   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
+  | | | | | | |/ _` |  |
+  | | |_| | | | (_| |  |  Version 1.7.3 (2022-05-06)
+ _/ |\__'_|_|_|\__'_|  |  Fedora 36 build
+|__/                   |
+
+julia> 
 
 ```
-$ gfortran your_source.f90
-```
 
-This will produce a binary file created from your source code. By default, this binary
-file is named `a.out`.
-You can run this binary by typing:
+Now, you can run julia commands inside the REPL.
 
-```
-$ ./a.out
-```
+```julia
+julia> 1+1
+2
 
-There are many options you can use when running the compiler. To specify the binary file name, you can use:
+julia> 
 
 ```
-$ gfortran your_source.f90 -o your_binary
+
+To exit the REPL, you can use <kbd>Ctrl + D</kbd> or type `exit()`.
+
+Julia source files have the file extension `.jl`. Create a julia program `your_source.jl`. You can run the file using the command below:
+
+```bash
+$ julia your_source.jl
 ```
 
-You can run this binary file by typing:
+To see the manual page of `julia`, simply type:
 
-```
-$ ./your_binary
-```
-
-To see the man page of `gfortran`, simply type:
-
-```
-$ man gfortran
+```bash
+$ man julia
 ```
 
 ## References
 
-- [Fortran website](https://fortran-lang.org/)
+- [Julia Documentation](https://docs.julialang.org)
