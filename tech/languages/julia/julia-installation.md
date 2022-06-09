@@ -4,7 +4,7 @@ subsection: julia
 section: tech-languages
 version: 1.7.3
 order: 1
-description: High-level, high-performance dynamic language for technical computing
+description: High-level, high-performance dynamic language for technical computing.
 ---
 
 # Julia installation and usage
