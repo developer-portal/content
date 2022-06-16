@@ -7,9 +7,7 @@ order: 1
 description: High-level, high-performance dynamic language for technical computing.
 ---
 
-# Julia installation and usage
-
-## Julia installation
+# Julia installation
 
 [Julia](https://julialang.org/) is a high-level, general-purpose language usually suited for numerical analysis and computational science. It provides a sophisticated compiler, distributed parallel execution, numerical accuracy, and an extensive mathematical function library. To install Julia on Fedora, simply type:
 
