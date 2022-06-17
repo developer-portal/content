@@ -10,11 +10,13 @@ order: 3
 
 Upstream projects can be installed with `go install` command, but only if they have `main` package. Package names follows the import paths so to install `github.com/go-delve/delve` from GitHub you need to reference the `main` package with a suffix like `@v1.2.3` or `@latest` run:
 
+To install a specific version run:
 ```console
-# Install a specific version.
 $ go install github.com/go-delve/delve/cmd/dlv@v1.8.2
+```
 
-# Install the highest available version.
+To install the highest available version run:
+```console
 $ go install github.com/go-delve/delve/cmd/dlv@latest
 ```
 
