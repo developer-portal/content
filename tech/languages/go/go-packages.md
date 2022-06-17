@@ -33,10 +33,10 @@ Alternatively, various Go packages are packaged and available in Fedora.
 
 The package name idiom is that the import paths of libraries are fully qualified domain names. This way you have clarity to the precise upstream being used. By truncating domain names, using '-' instead of '/' and appending `-devel` suffix you know how is the associated Fedora package called. For example, 'github.com/gorilla/context' would become `golang-github-gorilla-context-devel`. Similarly, the 'code.google.com/p/go.net' repository would become `golang-googlecode-net-devel`.
 
-To install `golang-googlecode-net-devel` package, you use DNF as usual:
+To install `golang-x-net-devel` package, you use DNF as usual:
 
 ```console
-$ sudo dnf install golang-googlecode-net-devel
+$ sudo dnf install golang-x-net-devel
 ```
 
 ## References
