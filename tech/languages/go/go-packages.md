@@ -8,7 +8,7 @@ order: 3
 
 ## Go packages from upstream
 
-Upstream projects can be installed with `go install` command, but only if they have `main` package. Package names follows the import paths so to install `github.com/go-delve/delve` from GitHub you need to reference the `main` package with a suffix like `@v1.2.3` or `@latest` run:
+Upstream projects can be installed with `go install` command, but only if they have `main` package. Package names follow the import paths so to install `github.com/go-delve/delve` from GitHub you need to reference the `main` package with a suffix like `@v1.2.3` or `@latest`.
 
 To install a specific version run:
 ```console
