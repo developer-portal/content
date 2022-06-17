@@ -8,15 +8,19 @@ order: 3
 
 ## Go packages from upstream
 
-Upstream projects can be installed with `go get` command. Package names follows the import paths so to install `github.com/gorilla/context` from GitHub run:
+Upstream projects can be installed with `go install` command, but only if they have `main` package. Package names follows the import paths so to install `github.com/go-delve/delve` from GitHub you need to reference the `main` package with a suffix like `@v1.2.3` or `@latest` run:
 
-```
-$ go get github.com/gorilla/context
+```console
+# Install a specific version.
+$ go install github.com/go-delve/delve/cmd/dlv@v1.8.2
+
+# Install the highest available version.
+$ go install github.com/go-delve/delve/cmd/dlv@latest
 ```
 
-If the requested package comes with an executable binary, you will find it in `$GOPATH/bin`. If you have not added that to your `PATH` environment variable yet, you can do so with these commands:
+This will build and install the binary in `$GOPATH/bin`. If you have not added that to your `PATH` environment variable yet, you can do so with these commands:
 
-```
+```console
 $ echo 'export PATH=$PATH:$GOPATH/bin' >> $HOME/.bashrc
 $ source $HOME/.bashrc
 ```
@@ -29,6 +33,10 @@ The package name idiom is that the import paths of libraries are fully qualified
 
 To install `golang-googlecode-net-devel` package, you use DNF as usual:
 
-```
+```console
 $ sudo dnf install golang-googlecode-net-devel
 ```
+
+## References
+
+- [Go Documentation: Deprecation of go get](https://go.dev/doc/go-get-install-deprecation)
