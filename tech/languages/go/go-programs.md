@@ -56,7 +56,7 @@ $ ./hello
 Hello, Fedora!
 ```
 
-Yet another option is to use `go install`. You still need to configure the modules as it was detailed before:
+Yet another option is to use `go install`. You still need to configure the modules as mentioned above:
 
 ```console
 $ go install
