@@ -35,13 +35,18 @@ $ go run hello.go
 Hello, Fedora!
 ```
 
-The command `go run` builds and runs a Go program, and is useful for quick experiments.
-To build the program and generate a compiled binary, use `go build`:
+The command `go run` compiles and runs the named main Go program, and is useful for quick experiments.
+To build the program along with the dependencies, you need to configure the modules first, and use `go build`:
 
 ```console
+$ go mod init
+go: creating new go.mod: module hello
+go: to add module requirements and sums:
+	go mod tidy
+$ go mod tidy
 $ go build
 $ ls
-hello  hello.go
+go.mod  hello  hello.go
 ```
 
 Without arguments, `go build` builds the package in the current directory, and in case of a main package it places a binary in the same directory. Let's try it:
@@ -51,7 +56,7 @@ $ ./hello
 Hello, Fedora!
 ```
 
-Yet another option is to use `go install`:
+Yet another option is to use `go install`. You still need to configure the modules as it was detailed before:
 
 ```console
 $ go install
@@ -71,3 +76,7 @@ $ source $HOME/.bashrc
 $ hello
 Hello, Fedora!
 ```
+
+## References
+
+- [Go Documentation: Create a Go module](https://go.dev/doc/tutorial/create-module)
