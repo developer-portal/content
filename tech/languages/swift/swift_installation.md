@@ -17,13 +17,13 @@ Although inspired by Objective-C and many other languages, Swift is not itself a
 
 To install Swift on Fedora, simply type:
 
-```bash
+```console
 $ sudo dnf install swiftlang
 ```
 
 You can now start Swift's REPL (read-eval-print loop), which is an interactive session by invoking the `swift` command in the terminal. The Swift REPL will start like this:
 
-```
+```console
 $ swift
 Swift version 5.6.1 (swift-5.6.1-RELEASE)
 Target: aarch64-unknown-linux-gnu
@@ -48,7 +48,7 @@ Type :help for assistance.
 ```
 Now, you can run Swift commands inside the REPL.
 
-```
+```console
   1> let x = 6
 x: Int = 6
   2> let y = 7
@@ -59,15 +59,21 @@ The answer is 42
 ```
 To exit the REPL, press <kbd>Ctrl + D</kbd>.
 
-Swift source files have the file extension `.swift`. Create a Swift program `your_source.swift`. You can run the file using the command below:
+Swift source files have the file extension `.swift`. Create a Swift program `your_source.swift`. You can compile the file using the command below:
 
-```
+```console
 $ swiftc your_source.swift
+```
+
+This will compile the file and create an executable file `your_source` in the current directory.
+You can run the file like so:
+```console
+$ ./your_source
 ```
 
 To see the manual page of `swift`, simply type:
 
-```bash
+```console
 $ man swift
 ```
 
