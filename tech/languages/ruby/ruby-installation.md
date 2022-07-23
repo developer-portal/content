@@ -17,10 +17,10 @@ To install CRuby, simply type:
 $ sudo dnf install ruby
 ```
 
-Above command will install latest stable CRuby packages including RDoc, Psych, JSON, BigDecimal and IO/Console, and interactive Ruby shell `irb`. Other bundled libraries such as TclTk bindings, Rake and Test::Unit found in upstream Ruby distribution needs to be installed separately:
+Above command will install latest stable CRuby packages including RDoc, Psych, JSON, BigDecimal and IO/Console. Other bundled libraries such as TclTk bindings, Rake, the interactive Ruby shell `irb` and Test::Unit found in upstream Ruby distribution needs to be installed separately:
 
 ```
-$ sudo dnf install rubygem-{tk{,-doc},rake,test-unit}
+$ sudo dnf install rubygem-{tk{,-doc},rake,irb,test-unit}
 ```
 
 Please note that we have already unbundled these libraries from Ruby itself, so they come in their own packages and need a specific dependency requirement in .gemspec or Gemfile as well as a specific `require()` call in your Ruby code.
