@@ -51,7 +51,3 @@ $ mongo
 MongoDB shell version: 4.0.0
 connecting to: test
 ```
-
-## MongoDB GUI (not tested)
-
-[MongoDB Admin](https://github.com/hatamiarash7/MongoDB_Admin/wiki/1.-Getting-Start) is a Cross Platform GUI.
