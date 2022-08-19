@@ -23,19 +23,21 @@ It allows you to:
  * upload the binary firmware to the board using variety of programmers
  * connect to the board's serial console and communicate with it
 
-Install Arduino IDE on Fedora through [Flatpak](/deployment/flatpak/about.html).
+## Installing Arduino IDE
 
-First add the remote to have Arduino IDE available for install:
+Arduino on Fedora is available through [Flatpak](/deployment/flatpak/about.html).
+
+To install the Arduino IDE flatpak, first, add the remote to have Arduino IDE available:
 
     $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-See [Flatpak Usage](/deployment/flatpak/flatpak-usage.html) for more details on Flatpak remotes.
+> See [Flatpak Usage](/deployment/flatpak/flatpak-usage.html) for more details on Flatpak remotes.
 
-Then you can install the Arduino IDE through flatpak.
+Then install the Arduino IDE with flatpak:
 
     $ flatpak install cc.arduino.arduinoide
 
-Now you are all set to start developing you project using Arduino IDE on Fedora. Just start it from your desktop environment applications menu or run the <code>arduino</code> command from the command line. For more information on how to use the Arduino IDE, please refer to the [documentation](https://docs.arduino.cc/software/ide-v1/tutorials/arduino-ide-v1-basics).
+Now you are all set to start developing you project using Arduino IDE on Fedora. Just start it from your desktop environment applications menu or run the <code>flatpak run cc.arduino.arduinoide</code> command from the command line. For more information on how to use the Arduino IDE, please refer to the [documentation](https://docs.arduino.cc/software/ide-v1/tutorials/arduino-ide-v1-basics).
 
 ## Fix denied access
 
