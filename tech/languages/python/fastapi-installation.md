@@ -11,6 +11,9 @@ order: 5
 ## Installation of FastApi in a virtual environment
 
 Fedora includes a `python3-fastapi` package that you can install and import.
+
+**Warning:** The `python-fastapi` package [will be removed from Fedora in Fedora 37](https://src.fedoraproject.org/rpms/python-fastapi/c/584bd1fef19c95576a4511a3dae77b4d35136258?branch=f37).
+
 However, unless you are developing or packaging an application for Fedora, it is more useful to install FastAPI as a third-party package inside a *virtual environment*.
 This will keep your project separate from your system, giving you more freedom in choosing additional libraries and their versions, and easing collaboration with people who aren't using Fedora yet.
 
