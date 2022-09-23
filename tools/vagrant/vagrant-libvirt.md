@@ -6,10 +6,11 @@ order: 2
 
 # Vagrant with libvirt support installation
 
-To use Vagrant with libvirt, you need to install the `vagrant-libvirt` package:
+To use Vagrant with libvirt, you need to install the `vagrant-libvirt` package and the `virtualization` group:
 
 ```
 $ sudo dnf install vagrant-libvirt
+$ sudo dnf group install virtualization
 ```
 
 There is also *@vagrant* package collection created with libvirt provider in mind. With the following command you can install all necessary Vagrant packages as well:
@@ -18,10 +19,11 @@ There is also *@vagrant* package collection created with libvirt provider in min
 $ sudo dnf install @vagrant
 ```
 
-Afterwards make sure that libvirt daemon is running and that you have `kvm` module loaded in the kernel:
+Afterwards make sure that libvirt and virtnetworkd daemons are running and that you have `kvm` module loaded in the kernel:
 
 ```
-$ sudo systemctl enable libvirtd
+$ sudo systemctl enable --now libvirtd
+$ sudo systemctl enable --now virtnetworkd
 $ lsmod | grep kvm
 kvm_intel             167936  3
 kvm                   499712  1 kvm_intel
