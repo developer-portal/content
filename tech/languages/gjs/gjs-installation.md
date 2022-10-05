@@ -1,7 +1,9 @@
 ---
 title: Gjs
-subsection: javascript
-order: 0
+subsection: gjs
+section: tech-languages
+order: 1
+description: Gjs is a Javascript binding for GNOME and can be used to interact with Gtk+.
 ---
 
 # Gjs: Javascript Bindings for GNOME
