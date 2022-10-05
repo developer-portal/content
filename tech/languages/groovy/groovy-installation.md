@@ -1,10 +1,13 @@
 ---
 title: Groovy
 subsection: groovy
+section: tech-languages
 order: 1
-section: Powerful, optionally typed and dynamic language with static compilation capabilities on JVM.
-description:
+version: 2.4.8
+description: Powerful, optionally typed and dynamic language with static compilation capabilities on JVM.
 ---
+
+{% include content-deprecation.html %}
 
 # Groovy installation
 
