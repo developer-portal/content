@@ -5,6 +5,8 @@ section: tech-database
 description: OpenSource database server for high-scale application.
 ---
 
+{% include content-deprecation.html %}
+
 # Apache Cassandra
 
 The Apache Cassandra database is the right choice when you need scalability and
