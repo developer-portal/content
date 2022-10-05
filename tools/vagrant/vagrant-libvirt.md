@@ -44,10 +44,20 @@ Read more on the `vagrant-libvirt` configuration in the [upstream documentation]
 
 ## Manage guest networks via Vagrant
 
-In Fedora `qemu://session` is used by default. This allows causes vagrant to run in userspace, not requiring password and being much safer. Downside is that not all Vagrant features are accessible, as they require root. To revert for your selected boxes to `qemu://system`:
+In Fedora `qemu://session` is used by default. This allows causes vagrant to run in userspace, not requiring password and being much safer. Downside is that if some Vagrant functionality requires root permissions, it might not be available (some cases are resolved via "qemu bridge").
+
+To revert for your box to `qemu://system`, you can put something like the following into your Vagrantfile:
+
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.provider :libvirt do |libvirt|
+    # Use QEMU session instead of system connection
+    libvirt.qemu_use_session = true
+
+```
 
 - Fedora change: [https://fedoraproject.org/wiki/Changes/Vagrant_2.2_with_QEMU_Session](https://fedoraproject.org/wiki/Changes/Vagrant_2.2_with_QEMU_Session)
-- Upstream documentation: [https://github.com/vagrant-libvirt/vagrant-libvirt#qemu-session-support](https://github.com/vagrant-libvirt/vagrant-libvirt#qemu-session-support)
+- Upstream documentation: [https://github.com/vagrant-libvirt/vagrant-libvirt/blob/main/docs/examples.markdown#qemu-session-support](https://github.com/vagrant-libvirt/vagrant-libvirt/blob/main/docs/examples.markdown#qemu-session-support)
 
 ## Using libvirt from Vagrant without password prompts
 
