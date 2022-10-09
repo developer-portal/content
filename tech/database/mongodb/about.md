@@ -10,7 +10,7 @@ order: 4
 
 # MongoDB 
 
-MongoDB is a free and open source database and uses a document-oriented data model.
+MongoDB is a database that uses a document-oriented data model and used to be free and open source.
 
 ## Security
 
