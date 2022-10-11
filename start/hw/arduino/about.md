@@ -31,7 +31,7 @@ To install the Arduino IDE flatpak, first, add the remote to have Arduino IDE av
 
     $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-> See [Flatpak Usage](/deployment/flatpak/flatpak-usage.html) for more details on Flatpak remotes.
+_See [Flatpak Usage](/deployment/flatpak/flatpak-usage.html) for more details on Flatpak remotes._
 
 Then install the Arduino IDE with flatpak:
 
