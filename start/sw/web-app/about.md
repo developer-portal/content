@@ -11,7 +11,7 @@ Web application development can be anything from classic server-side application
 
 ## Technologies used for web development
 
-Except HTML, which is almost always improved by CSS, most developers add dynamic items to the web pages via JavaScript. For both, CSS nad JavaScript, libraries exist to make developers' tasks easier:
+Except HTML, which is almost always improved by CSS, most developers add dynamic items to the web pages via JavaScript. For both, CSS and JavaScript, libraries exist to make developers' tasks easier:
 
 * [JQuery](https://jquery.com/), a fast, small, and feature-rich JavaScript library
 * [React](https://reactjs.org/), a JavaScript library for building user interfaces
