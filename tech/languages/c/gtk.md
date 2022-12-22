@@ -17,7 +17,7 @@ sudo dnf install gtk3-devel gstreamer1-devel clutter-devel webkit2gtk3-devel lib
 In addition, you will want to install the documentation packages of this libraries so you can view them in the API browser (devhelp):
 
 ```
-sudo dnf install devhelp gtk3-devel-docs gstreamer1-devel-docs clutter-doc
+sudo dnf install devhelp gtk3-devel-docs clutter-doc
 ```
 
 ## Getting started
