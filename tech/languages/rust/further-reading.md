@@ -32,14 +32,14 @@ Documentation for crates available at [crates.io](https://crates.io/):
 
 # IDE recommendations
 
-There are plugins for popular editor such as Vim, Atom or Gnome Builder which are based on the Rust Language Server (RLS) implementation. Alternatively, IntelliJ IDEA provides their own, custom plugin. Unfortunatelly, the debugging support is available only in paid CLion IDE.
+There are plugins for popular editor such as Vim, Atom or Gnome Builder which are based on the rust-analyzer implementation. Alternatively, IntelliJ IDEA provides their own, custom plugin. Unfortunatelly, the debugging support is available only in paid CLion IDE.
 
 Before you try to configure your editor or IDE, it is recommended to use install `rustup`:
 [rustup.rs](https://rustup.rs/)
 
-If you want to start with Rust programming, it is easiest to try the RLS frontend for Visual Studio Code:
+If you want to start with Rust programming, it is easiest to try the rust-analyzer for Visual Studio Code:
  1. Install the VSCode RPM package: [code.visualstudio.com/docs/setup/linux](https://code.visualstudio.com/docs/setup/linux)
- 2. Follow the instructions given at the extension Github page: [github.com/rust-lang-nursery/rls-vscode](https://github.com/rust-lang-nursery/rls-vscode)
+ 2. Follow the instructions given at the extension Github page:  [github.com/rust-lang/rust-analyzer](https://github.com/rust-lang/rust-analyzer)
 
 In case you prefer IDEs over editors, try the Intellij IDEA extension:
  1. Install the IDE (instructions are available under the "Installation Instructions" link): [www.jetbrains.com/idea/download/#section=linux](https://www.jetbrains.com/idea/download/#section=linux)
