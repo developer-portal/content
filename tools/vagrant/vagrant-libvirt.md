@@ -51,9 +51,10 @@ To revert for your box to `qemu://system`, you can put something like the follow
 ```ruby
 Vagrant.configure("2") do |config|
   config.vm.provider :libvirt do |libvirt|
-    # Use QEMU session instead of system connection
-    libvirt.qemu_use_session = true
-
+    # Use QEMU system instead of session connection
+    libvirt.qemu_use_session = false
+  end
+end
 ```
 
 - Fedora change: [https://fedoraproject.org/wiki/Changes/Vagrant_2.2_with_QEMU_Session](https://fedoraproject.org/wiki/Changes/Vagrant_2.2_with_QEMU_Session)
