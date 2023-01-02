@@ -53,6 +53,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider :libvirt do |libvirt|
     # Use QEMU system instead of session connection
     libvirt.qemu_use_session = false
+  end
 end
 ```
 
