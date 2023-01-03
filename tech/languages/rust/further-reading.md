@@ -39,7 +39,7 @@ Before you try to configure your editor or IDE, it is recommended to use install
 
 If you want to start with Rust programming, it is easiest to try the rust-analyzer for Visual Studio Code:
  1. Install the VSCode RPM package: [code.visualstudio.com/docs/setup/linux](https://code.visualstudio.com/docs/setup/linux)
- 2. Follow the instructions given at the extension Github page:  [github.com/rust-lang/rust-analyzer](https://github.com/rust-lang/rust-analyzer)
+ 2. Follow the instructions given at the extension Github page:  [https://rust-analyzer.github.io/manual.html#vs-code](https://rust-analyzer.github.io/manual.html#vs-code)
 
 In case you prefer IDEs over editors, try the Intellij IDEA extension:
  1. Install the IDE (instructions are available under the "Installation Instructions" link): [www.jetbrains.com/idea/download/#section=linux](https://www.jetbrains.com/idea/download/#section=linux)
