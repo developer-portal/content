@@ -7,9 +7,9 @@ version: 7.8.4
 
 ## .NET Core Installation
 
-### .NET Core 3.1
+### .NET Core 6
 
-.NET Core 3.1 is included in Fedora 32 (and later versions.) Simply install it using one of the below variants:
+.NET Core 6 and 7 is included in Fedora 36 and 37 Simply install it using one of the below variants:
 
 Install the latest SDK:
 ```
@@ -17,9 +17,10 @@ $ sudo dnf install dotnet
 ```
 
 Or a specific version:
+### Install .NET Core 6 SDK
+
 ```
-# Install .NET Core 3.1 SDK
-$ sudo dnf install dotnet-sdk-3.1
+$ sudo dnf install dotnet-sdk-6.0
 ```
 
 To install runtime only, for example to merely deploy already prebuilt applications, where _x_ stands for major and _y_ stands for minor version:
