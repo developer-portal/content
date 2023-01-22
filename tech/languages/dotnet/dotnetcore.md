@@ -7,7 +7,7 @@ version: 7.8.4
 
 ## .NET Core Installation
 
-### .NET Core 6
+### .NET Core 6 and 7
 
 .NET Core 6 and 7 is included in Fedora 36 and 37 Simply install it using one of the below variants:
 
