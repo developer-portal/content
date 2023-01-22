@@ -20,8 +20,6 @@ permalink: /tech/languages/csharp/dotnet-installation.html
 $ sudo dnf install dotnet
 ```
 
-It is not advised to mix these packages with those provided by Microsoft, please disable any other repositories providing dotnet before installing these.
-
 See the [.NET Core](dotnetcore.html) page for more information.
 
 ## Mono

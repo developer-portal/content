@@ -7,8 +7,6 @@ version: 7.8.4
 
 ## .NET Core Installation
 
-It is not advised to mix these packages with those provided by Microsoft, please disable any other repositories providing dotnet before installing these.
-
 ### .NET Core 3.1
 
 .NET Core 3.1 is included in Fedora 32 (and later versions.) Simply install it using one of the below variants:
