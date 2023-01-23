@@ -20,7 +20,7 @@ If you get errors about missing packages, you may need to set a $GOROOT environm
 
 ```console
 $ sudo dnf install golang-src
-$ export GOROOT /usr/lib/golang
+$ export GOROOT=/usr/lib/golang
 ```
 
 Now, edit the file `hello.go` with your favorite editor and type the following:
