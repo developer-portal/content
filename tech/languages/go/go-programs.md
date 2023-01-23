@@ -16,6 +16,13 @@ $ cd $HOME/go/src/hello
 $ touch hello.go
 ```
 
+If you get errors about missing packages, you may need to set a $GOROOT environment variable also. Fedora's `golang-src` package installs common packages into a GOROOT at `/usr/lib/golang` which should clear up most missing packages. Some distributions use `/usr/lib/golang` so this may be confusing for Fedora users reading docs from other distros. If you don't have root or sudo access, you may need to download your own [local GOROOT](https://go.dev/doc/manage-install) archive with basic packages into your home dir.
+
+```console
+$ sudo dnf install golang-src
+$ export GOROOT /usr/lib/golang
+```
+
 Now, edit the file `hello.go` with your favorite editor and type the following:
 
 ```go
