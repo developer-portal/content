@@ -24,7 +24,7 @@ Where `x.y` is a .NET version number, like `7.0` or `6.0`.
 
 It is not advised to mix these packages with those provided by Microsoft. Please disable any other repositories providing dotnet before installing these. If you run into any errors that refer to `/usr/share/dotnet` or a missing `libhostfxr.so` see [troubleshoot .NET errors related to missing files on Linux](https://learn.microsoft.com/en-us/dotnet/core/install/linux-package-mixup) which describes how to fix the errors.
 
-See the [.NET](dotnetcore.html) page for more information.
+See the [.NET](../dotnet/dotnetcore.html) page for more information.
 
 ## Mono
 
