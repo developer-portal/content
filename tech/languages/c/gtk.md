@@ -10,14 +10,14 @@ Gtk+ is a cross-platform GUI toolkit created for the development of the GIMP pro
 
 For C programming with Gtk+ you need to install the development version of the important GNOME libraries. Those contain the header files and additional linker information:
 
-```
-sudo dnf install gtk3-devel gstreamer1-devel clutter-devel webkit2gtk3-devel libgda-devel gobject-introspection-devel
+```console
+$ sudo dnf install gtk3-devel gstreamer1-devel clutter-devel webkit2gtk3-devel libgda-devel gobject-introspection-devel
 ```
 
-In addition, you will want to install the documentation packages of this libraries so you can view them in the API browser (devhelp):
+In addition, you will want to install the documentation packages of the libraries so you can view them in the API browser (devhelp):
 
-```
-sudo dnf install devhelp gtk3-devel-docs gstreamer1-devel-docs clutter-doc
+```console
+$ sudo dnf install devhelp gtk3-devel-docs clutter-doc
 ```
 
 ## Getting started
@@ -47,11 +47,11 @@ main(int   argc,
 
 You can compile the above program with gcc using:
 
-```
-gcc hello.c -o hello `pkg-config --cflags --libs gtk+-3.0`
+```console
+$ gcc hello.c -o hello `pkg-config --cflags --libs gtk+-3.0`
 ```
 
-In the program above we initially included gtk/gtk.h, which declares all the gtk+ objects used in the rest of the program:
+In the program above we initially included `gtk/gtk.h`, which declares all the gtk+ objects used in the rest of the program:
 
 ```c
 #include <gtk/gtk.h>
@@ -63,13 +63,13 @@ or
 #include <gtk-3.0/gtk/gtk.h>
 ```
 
-After the declaration of the window object variable, we call the gtk_init method which initializes the library and its internal procedures.
+After the declaration of the window object variable, we call the `gtk_init` method which initializes the library and its internal procedures.
 
 ```c
 gtk_init (&argc, &argv);
 ```
 
-The next line creates a GtkWindow object with the GTK_WINDOW_TOPLEVEL type. Nearly always, that's the type of the GtkWindow, but it could differ if you are implementing something else.
+The next line creates a GtkWindow object with the `GTK_WINDOW_TOPLEVEL` type. Nearly always, that's the type of the GtkWindow, but it could differ if you are implementing something else.
 
 ```c
 window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
@@ -81,7 +81,7 @@ Below that, we set the title of the GtkWindow to a string of our choice:
 gtk_window_set_title (GTK_WINDOW (window), "Hello World");
 ```
 
-After that, the gtk_widget_show() function lets Gtk+ know that we are done setting the attributes of this widget, and that it can display it.
+After that, the `gtk_widget_show()` function lets Gtk+ know that we are done setting the attributes of this widget, and that it can display it.
 
 ```c
 gtk_window_show (window);
