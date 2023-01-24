@@ -8,9 +8,9 @@ description: ".NET and Mono are open-source .NET platforms. .NET applications ar
 permalink: /tech/languages/csharp/dotnet-installation.html
 ---
 
-.NET (and .NET Core) and Mono are available on Fedora. .NET applications are developed using the C#, F# and VB.NET programming languages.
+.NET, .NET Core and Mono are available on Fedora. .NET applications are developed using the C#, F# and VB.NET programming languages.
 
-## .NET (and .NET Core)
+## .NET and .NET Core
 
 [.NET](https://docs.microsoft.com/en-us/dotnet/core/) is a general-purpose, modular, cross-platform and open-source development Platform.
 
