@@ -10,7 +10,9 @@ Dune is a build system for OCaml. It provides a comprehensive and uniform interf
 
 ## Install
 
-You can install Dune with OPAM that we installed in the enviroment setup. For do it just run:
+You can install Dune with OPAM that we installed in the enviroment setup.
+
+To install Dune using OPAM run:
 
 ```console
 $ opam install dune
