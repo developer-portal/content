@@ -20,36 +20,36 @@ $ opam install dune
 
 ## Starting a new Project
 
-1. Create a new directory for your project.
+Create a new directory for your project.
 
 ```console
 $ mkdir yourprojectname
 ```
 
-2. To initialize a Dune project change into the new directory and run the following command:
+To initialize a Dune project change into the new directory and run the following command:
 
 ```console
 $ cd yourprojectname
 $ dune init
 ```
 
-3. This will create the necessary files and directories for a basic Dune project, including a `dune` file and a `src` directory.
+This will create the necessary files and directories for a basic Dune project, including a `dune` file and a `src` directory.
 
 ## Building the project
 
-1. Change into the **root** directory of your project.
-2. Run the following command to build the project:
+Change into the **root** directory of your project.
+Run the following command to build the project:
 
 ```console
 $ dune build
 ```
 
-3. Dune will compile the source files and generate the necessary executables.
+Dune will compile the source files and generate the necessary executables.
 
 ## Running the project
 
-1. Change into the **root** directory of your project.
-2. Run the following command to run the main executable:
+Change into the **root** directory of your project.
+Run the following command to run the main executable:
 
 ```console
 $ dune exec ./bin/your-executable.exe
@@ -58,25 +58,25 @@ $ dune exec ./bin/your-executable.exe
 
 ## Adding a library to project
 
-1. First, make sure you have the required library installed. You can use the following command to install a library using Opam:
+First, make sure you have the required library installed. You can use the following command to install a library using Opam:
 
 ```console
 $ opam install library-name
 ```
 
-2. Open the `dune` file in your project's root directory.
-3. Add the following line to the `(library ...)` section to include the library:
+Open the `dune` file in your project's root directory.
+Add the following line to the `(library ...)` section to include the library:
 
 ```dune
 (libraries library-name)
 ```
 
-4. Replace `library-name` with the actual name of the library you want to add.
-5. Save and close the `dune` file.
-6. Rebuild the project using the following command:
+Replace `library-name` with the actual name of the library you want to add.
+Save and close the `dune` file.
+Rebuild the project using the following command:
 
 ```console
 $ dune build
 ```
 
-7. The added library should now be available for use in your project.
+The added library should now be available for use in your project.
