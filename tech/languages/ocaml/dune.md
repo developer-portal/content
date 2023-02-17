@@ -26,7 +26,7 @@ $ opam install dune
 $ mkdir yourprojectname
 ```
 
-2. Change into the new directory and run the following command to initialize a Dune project:
+2. To initialize a Dune project change into the new directory and run the following command:
 
 ```console
 $ cd yourprojectname
