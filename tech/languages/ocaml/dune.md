@@ -6,7 +6,7 @@ order: 2
 
 # Dune
 
-Dune is a build system for OCaml. It provides a comprehensive and uniform interface for the building, testing, and installation of OCaml projects, making it incredibly easy for developers to manage dependencies between packages. Its primary focus is to offer simplicity, speed, and ease of use, making it a suitable solution for even the most complex and extensive OCaml projects. With Dune, you can enjoy the benefits of incremental builds, which result in faster build times by recompiling only the necessary files. Moreover, Dune makes it convenient to generate optimized native code and perform static analysis, contributing to the development of high-performance and reliable OCaml applications.
+Dune is a build system for OCaml. It provides a comprehensive and uniform interface for the building, testing, and intalling OCaml projects, making it incredibly easy for developers to manage dependencies between packages. Its primary focus is to offer simplicity, speed, and ease of use, making it a suitable solution for even the most complex and extensive OCaml projects. With Dune, you can enjoy the benefits of incremental builds, which result in faster build times by recompiling only the necessary files. Moreover, Dune makes it convenient to generate optimized native code and perform static analysis, contributing to the development of high-performance and reliable OCaml applications.
 
 ## Install
 
