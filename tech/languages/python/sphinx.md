@@ -68,6 +68,18 @@ Please use `make <target>' where <target> is one of
 
 You will probably want to use `html` for local testing purposes and `dirhtml` for deploying. You are able to test it by hitting `make html` to the command line. If Sphinx tells you that "Build finished. The HTML pages are in \_build/html", all is well. Open the web browser in the current working directory (if you are not sure which one it is, just run `pwd` to make sure), navigate to the build directory that Sphinx told you (i.e. `_build/html`) and open `index.html` -- your new documentation.
 
+## latexpdf
+
+In order to be able to run the `latexpdf` target, you will need to install the following dependencies:
+
+``` sh
+dnf -y install latexmk python3-sphinx texlive-babel-spanish texlive-capt-of texlive-cmap texlive-ec texlive-fncychap texlive-framed texlive-makeindex texlive-metafont texlive-needspace texlive-parskip texlive-tabulary texlive-tex-gyre texlive-upquote texlive-wrapfig
+```
+After that, you can continue building the target:
+
+``` sh
+make latexpdf
+```
 
 ## What next
 - See working examples to get an inspiration [Sphinx examples](http://sphinx-doc.org/examples.html)
