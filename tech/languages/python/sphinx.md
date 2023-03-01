@@ -73,8 +73,9 @@ You will probably want to use `html` for local testing purposes and `dirhtml` fo
 In order to be able to run the `latexpdf` target, you will need to install the following dependencies:
 
 ``` sh
-dnf -y install latexmk python3-sphinx texlive-capt-of texlive-cmap texlive-ec texlive-fncychap texlive-framed texlive-makeindex texlive-metafont texlive-needspace texlive-parskip texlive-tabulary texlive-tex-gyre texlive-upquote texlive-wrapfig
+dnf -y install latexmk texlive-capt-of texlive-cmap texlive-ec texlive-fncychap texlive-framed texlive-makeindex texlive-metafont texlive-needspace texlive-parskip texlive-tabulary texlive-tex-gyre texlive-upquote texlive-wrapfig
 ```
+
 After that, you can continue building the target:
 
 ``` sh
