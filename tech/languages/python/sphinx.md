@@ -76,7 +76,7 @@ In order to be able to run the `latexpdf` target, you will need to install the f
 dnf -y install latexmk texlive-capt-of texlive-cmap texlive-ec texlive-fncychap texlive-framed texlive-makeindex texlive-metafont texlive-needspace texlive-parskip texlive-tabulary texlive-tex-gyre texlive-upquote texlive-wrapfig
 ```
 
-Additionally, you need to install babel support for your project's language. for example, if you're default language is English, install `texlive-babel-english`:
+Additionally, you need to install babel support for your project's language. for example, if your default language is English, install `texlive-babel-english`:
 
 ``` sh
 dnf -y install texlive-babel-english
