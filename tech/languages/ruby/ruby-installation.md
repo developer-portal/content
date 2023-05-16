@@ -49,48 +49,46 @@ RUBYPICK=_mri_
 
 The first step is to install dependencies for Ruby.
 
-```
-sudo dnf install git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel
-```
-
-Install rbenv
-
-```
-cd
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-source ~/.bashrc
-exec $SHELL
-
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
-exec $SHELL
+```console
+$ sudo dnf install git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel
 ```
 
-Install Ruby
+Then we are going to clone rbenv and the ruby-build rbenv plugin into the home directory.
+To make rbenv command available we append your shell's rc file with initialization.
 
+```console
+$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+$ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+$ echo 'eval "$(~/.rbenv/bin/rbenv init -)"' >> ~/.bashrc
 ```
-rbenv install 2.6.6
-rbenv global 2.6.6
-ruby -v
 
+Next step we have to refresh the shell to make the binaries available. This can be achieved
+by either the following command or opening a new terminal:
+```console
+$ exec $SHELL
 ```
+
+Now you can install Ruby simply via `rbenv install`
+```console
+$ rbenv install 3.0.4
+$ rbenv global 3.0.4
+$ ruby -v
+```
+
 Use this command if you do not want rubygems to install the documentation for each package locally.
 
-```
-echo "gem: --no-document" > ~/.gemrc
+```console
+$ echo "gem: --no-document" > ~/.gemrc
 ```
 
 Install bundler
 
-```
-gem install bundler
+```console
+$ gem install bundler
 ```
 
 Whenever you install a new version of Ruby or a gem, you should run the rehash sub-command. This will make executables known to rbenv, which will allow us to run those executables:
 
-``` 
-rbenv rehash 
+```console
+$ rbenv rehash
 ``` 
