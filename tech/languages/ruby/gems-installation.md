@@ -67,13 +67,6 @@ This way Bundler won't try to get other gems from RubyGems.org and will only use
 
 Note that system gems are installed into `/usr/share/gems` and this path needs to be included in `$GEM_PATH` in case you are about to modify it.
 
-### IsItFedoraRuby
-
-To look whether the required gem is available as an RPM package, look at
-[IsItFedoraRuby.com](http://isitfedoraruby.com/) site which tracks the Ruby
-integration within the Fedora project by listing available information about
-packaged gems.
-
 ## Configuring RubyGems
 
 Fedora configures ruby to install gems on your user's directory; as opposed to the system's, by default. The gems get installed at: `$HOME/.local/share/gem`. 
