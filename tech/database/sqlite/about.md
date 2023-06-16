@@ -14,11 +14,10 @@ $ sudo dnf install sqlite
 ```
 
 This package provides the basic library and the command-line client `sqlite`. In
-order to access SQLite databases from various programming languages (C, Tcl,
-Java), the language bindings need to be installed separately:
+order to access SQLite databases from various programming languages (C, Tcl), the language bindings need to be installed separately:
 
 ```
-$ sudo dnf install sqlite-devel sqlite-tcl sqlite-jdbc
+$ sudo dnf install sqlite-devel sqlite-tcl
 ```
 
 ## Graphical clients
@@ -56,11 +55,10 @@ If you are new to SQL databases and would like to learn more, you can visit a
 ## Getting help with SQLite
 
 As is the custom in Fedora, SQLite documentation is available in `-doc`
-sub-package. Additionally, the JavaDoc documentation for JDBC bindings is also
-available:
+sub-package:
 
 ```
-$ sudo dnf install sqlite-doc sqlite-jdbc-javadoc
+$ sudo dnf install sqlite-doc
 ```
 
 After the packages are installed, the actual documentation is located within `/usr/share/doc/PACKAGE` directory and is formatted in HTML. For example, to view documentation for SQLite itself, you can open this URL in your browser:
