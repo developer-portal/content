@@ -29,6 +29,14 @@ To work in the virtual environment, you have to activate it.
 $ source project_venv/bin/activate
 ```
 
+## How to install mod_wsgi in a virtual environment before installing Django
+
+```bash
+(project_venv) $ pip install wheel
+(project_venv) $ pip install mod_wsgi
+```
+Without installalling 'wheel' first, you will get a warning about legacy install method. See https://github.com/pypa/pip/issues/8559 for more details. Though as of pip 23.1, pythong 3.11, it should still install correctly without wheel. Additional dependencies 'may' include python3-devel, httpd, httpd-devel, setuptools, redhat-rpm-config. 
+
 In an active the virtual environment (with the name `(project_venv)` included in your command line prompt), you can install Django [from PyPI](https://developer.fedoraproject.org/tech/languages/python/pypi-install.html).
 
 ```bash
