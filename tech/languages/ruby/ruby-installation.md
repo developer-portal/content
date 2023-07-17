@@ -62,7 +62,7 @@ RUBYPICK=_jruby_
 The first step is to install dependencies for Ruby.
 
 ```
-sudo dnf install git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel
+sudo dnf install git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel perl-FindBin
 ```
 
 Install rbenv
@@ -84,8 +84,8 @@ exec $SHELL
 Install Ruby
 
 ```
-rbenv install 2.6.6
-rbenv global 2.6.6
+rbenv install 2.7.8
+rbenv global 2.7.8
 ruby -v
 
 ```
