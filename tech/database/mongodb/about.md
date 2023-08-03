@@ -29,18 +29,18 @@ latter is typically used for repository configuration and takes precedence over 
 Create a file mongodb-org-*release_series*.repo
 
 ```console
-$ sudo nano /etc/yum.repos.d/mongodb-org-4.4.repo
+$ sudo nano /etc/yum.repos.d/mongodb-org-6.0.repo
 ```
 
 Insert this content inside the mongodb-org-*release_series*.repo file, edit the *release_series* in the filename and the baseurl and gpgkey fields URLs if you want to install another version.
 
 ```
-[Mongodb]
+[mongodb-org-6.0]
 name=MongoDB Repository
-baseurl=https://repo.mongodb.org/yum/redhat/8/mongodb-org/4.4/x86_64/
+baseurl=https://repo.mongodb.org/yum/redhat/9/mongodb-org/6.0/x86_64/
 gpgcheck=1
 enabled=1
-gpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc
+gpgkey=https://www.mongodb.org/static/pgp/server-6.0.asc
 ```
 
 Now you can install with dnf
@@ -73,9 +73,10 @@ $ sudo systemctl status mongod.service
 Run mongoshell to test the connection:
 
 ```console
-$ mongo
-MongoDB shell version: 4.0.0
-connecting to: test
+$ mongosh
+Current Mongosh Log ID:	<ID>
+Connecting to:		mongodb://<address:port>
+Using MongoDB:		6.0.8
 ```
 
 ## MongoDB GUI (not tested)
