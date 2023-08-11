@@ -6,8 +6,6 @@ description: Document-oriented and NoSQL database
 order: 4
 ---
 
-{% include content-deprecation.html %}
-
 # MongoDB 
 
 MongoDB is a database that uses a document-oriented data model and used to be free and open source.
