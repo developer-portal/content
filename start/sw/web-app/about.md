@@ -51,7 +51,6 @@ The following IDE are popular even for web development:
 
 * [PyCharm](https://www.jetbrains.com/pycharm/), a popular IDE for Python development, is available as a [copr repository](https://copr.fedorainfracloud.org/coprs/phracek/PyCharm/)
 * [Visual Studio Code](https://code.visualstudio.com/): Microsoft's famous Visual Studio, rewritten to a modern web-based platform based on open-source technologies, [read here](https://fedoramagazine.org/using-visual-studio-code-fedora/) how you can install it on your Fedora
-* [Atom](https://atom.io/) is another modern IDE, which can be [installed easily on Fedora](https://fedoramagazine.org/install-atom-fedora/) as well
 
 ## More information
 For learning more about web technologies, visit for example web [w3schools.com](https://www.w3schools.com/).
