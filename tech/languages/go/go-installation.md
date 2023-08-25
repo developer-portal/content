@@ -46,7 +46,7 @@ Writing Go programs is covered in [Go programs](/tech/languages/go/go-programs.h
 
 ## Fedora Specific Notes
 
-The default installation of Go on Fedora contains two (2) changes that Go developers should be aware of.
+The default installation of Go on Fedora contains two changes that Go developers should be aware of.
 
 ### GOPROXY
 
