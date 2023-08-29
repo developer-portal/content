@@ -44,6 +44,21 @@ Where 'user' will be your user name.
 
 Writing Go programs is covered in [Go programs](/tech/languages/go/go-programs.html).
 
+## Fedora Specific Notes
+
+The default installation of Go on Fedora contains two changes that Go developers should be aware of.
+
+### GOPROXY
+
+The value of `GOPROXY` in `$GOROOT/go.env` is set to `direct`. A value of `direct` disables access to the module mirror. See [https://proxy.golang.org](https://proxy.golang.org) for more information on `GOPROXY` and the module mirror. A project specifc `go.env` can override this setting.
+
+### GOTOOLCHAIN
+
+Go 1.21 introduces `GOTOOLCHAIN` which facilitates project specific choices for the Go language toolchain of compiler, standard library, assembler, and other tools. The value of `GOTOOLCHAIN` is set to `local` instead of the default `auto`. See the [Go Toolchain](https://go.dev/doc/toolchain) documentation for more information on toolchains in Go and the implications of using `local` as the default. A project specific `go.env` file can override this setting.
+
+
 ## References
 
 - [Go Documentation](https://golang.org/doc/)
+- [Go Module Proxy](https://proxy.golang.org)
+- [Go Toolchain](https://go.dev/doc/toolchain)
