@@ -81,7 +81,7 @@ Use this command if you do not want rubygems to install the documentation for ea
 $ echo "gem: --no-document" > ~/.gemrc
 ```
 
-Install bundler
+Install gems using the `gem` command. Install `bunder` by running:
 
 ```console
 $ gem install bundler
