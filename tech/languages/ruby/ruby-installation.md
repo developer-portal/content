@@ -86,9 +86,3 @@ Install bundler
 ```console
 $ gem install bundler
 ```
-
-Whenever you install a new version of Ruby or a gem, you should run the rehash sub-command. This will make executables known to rbenv, which will allow us to run those executables:
-
-```console
-$ rbenv rehash
-``` 
