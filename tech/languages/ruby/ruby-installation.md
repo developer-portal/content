@@ -59,7 +59,7 @@ To make rbenv command available we append your shell's rc file with initializati
 ```console
 $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 $ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-$ echo 'eval "$(~/.rbenv/bin/rbenv init - bash)"' >> ~/.bash_profile
+$ echo 'eval "$(~/.rbenv/bin/rbenv init -)"' >> ~/.bash_profile
 ```
 
 Next step we have to refresh the shell to make the binaries available. This can be achieved
