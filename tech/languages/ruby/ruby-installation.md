@@ -65,7 +65,7 @@ $ echo 'eval "$(~/.rbenv/bin/rbenv init -)"' >> ~/.bash_profile
 Next step we have to refresh the shell to make the binaries available. This can be achieved
 by either the following command or opening a new terminal:
 ```console
-$ exec $SHELL
+$ exec $SHELL -l
 ```
 
 Now you can install Ruby simply via `rbenv install`
