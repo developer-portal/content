@@ -50,7 +50,7 @@ RUBYPICK=_mri_
 The first step is to install dependencies for Ruby.
 
 ```console
-$ sudo dnf install -y gcc rust patch make bzip2 openssl-devel libyaml-devel libffi-devel readline-devel zlib-devel gdbm-devel ncurses-devel
+$ sudo dnf install -y git-core gcc rust patch make bzip2 openssl-devel libyaml-devel libffi-devel readline-devel zlib-devel gdbm-devel ncurses-devel perl-FindBin perl-lib perl-File-Compare
 ```
 
 Then we are going to clone rbenv and the ruby-build rbenv plugin into the home directory.
