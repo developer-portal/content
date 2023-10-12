@@ -50,7 +50,7 @@ RUBYPICK=_mri_
 The first step is to install dependencies for Ruby.
 
 ```console
-$ sudo dnf install git-core zlib zlib-devel gcc-c++ patch readline readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison curl sqlite-devel perl-FindBin
+$ sudo dnf install -y git-core gcc rust patch make bzip2 openssl-devel libyaml-devel libffi-devel readline-devel zlib-devel gdbm-devel ncurses-devel perl-FindBin perl-lib perl-File-Compare
 ```
 
 Then we are going to clone rbenv and the ruby-build rbenv plugin into the home directory.
@@ -59,13 +59,13 @@ To make rbenv command available we append your shell's rc file with initializati
 ```console
 $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 $ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-$ echo 'eval "$(~/.rbenv/bin/rbenv init -)"' >> ~/.bashrc
+$ echo 'eval "$(~/.rbenv/bin/rbenv init -)"' >> ~/.bash_profile
 ```
 
 Next step we have to refresh the shell to make the binaries available. This can be achieved
 by either the following command or opening a new terminal:
 ```console
-$ exec $SHELL
+$ exec $SHELL -l
 ```
 
 Now you can install Ruby simply via `rbenv install`
@@ -81,14 +81,8 @@ Use this command if you do not want rubygems to install the documentation for ea
 $ echo "gem: --no-document" > ~/.gemrc
 ```
 
-Install bundler
+Install bundler:
 
 ```console
 $ gem install bundler
 ```
-
-Whenever you install a new version of Ruby or a gem, you should run the rehash sub-command. This will make executables known to rbenv, which will allow us to run those executables:
-
-```console
-$ rbenv rehash
-``` 
