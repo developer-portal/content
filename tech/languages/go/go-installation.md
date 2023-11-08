@@ -67,7 +67,7 @@ $ go env -w GOPROXY=https://proxy.golang.org,direct
 The value of `GOSUMDB` in `$GOROOT/go.env` is set to `off` replacing the default value of `sum.golang.org`. The GOSUMDB environment variable identifies the name of the checksum database used to help validate downloaded modules. A project specific `go.env` can override this setting. A user specific override can be set with:
 
 ```console
-go env -w GOSUMDB=sum.golang.org
+$ go env -w GOSUMDB=sum.golang.org
 ```
 
 ### GOTOOLCHAIN
