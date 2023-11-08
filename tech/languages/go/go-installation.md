@@ -59,7 +59,7 @@ $ go help environment
 The value of `GOPROXY` in `$GOROOT/go.env` is set to `direct`. A value of `direct` disables access to the module mirror. See [https://proxy.golang.org](https://proxy.golang.org) for more information on `GOPROXY` and the module mirror. A project specific `go.env` can override this setting. A user specific override can be set with:
 
 ```console
-go env -w GOPROXY=https://proxy.golang.org,direct
+$ go env -w GOPROXY=https://proxy.golang.org,direct
 ```
 
 ### GOSUMDB
