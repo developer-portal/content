@@ -75,7 +75,7 @@ go env -w GOSUMDB=sum.golang.org
 Go 1.21 introduces `GOTOOLCHAIN` which facilitates project specific choices for the Go language toolchain of compiler, standard library, assembler, and other tools. The value of `GOTOOLCHAIN` is set to `local` instead of the default `auto`. When GOTOOLCHAIN is set to local, the go command always runs the bundled Go toolchain. See the [Go Toolchain](https://go.dev/doc/toolchain) documentation for more information on toolchains in Go. A project specific `go.env` file can override this setting. A user specific override can be set with:
 
 ```console
-go env -w GOTOOLCHAIN=auto
+$ go env -w GOTOOLCHAIN=auto
 ```
 
 
