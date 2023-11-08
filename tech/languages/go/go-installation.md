@@ -46,19 +46,43 @@ Writing Go programs is covered in [Go programs](/tech/languages/go/go-programs.h
 
 ## Fedora Specific Notes
 
-The default installation of Go on Fedora contains two changes that Go developers should be aware of.
+The default installation of Go on Fedora contains changes to the default values of `GOPROXY`, `GOSUMDB`, and `GOTOOLCHAIN` environment variables that Go developers should be aware of. The `go` command and related tools make extensive use of environment variables for configuration. Default values are set globally in `/usr/lib/golang/go.env`, and can be overridden on per user or per project basis.
+
+For extensive help and information see:
+
+```console
+$ go help environment
+```
 
 ### GOPROXY
 
-The value of `GOPROXY` in `$GOROOT/go.env` is set to `direct`. A value of `direct` disables access to the module mirror. See [https://proxy.golang.org](https://proxy.golang.org) for more information on `GOPROXY` and the module mirror. A project specifc `go.env` can override this setting.
+The value of `GOPROXY` in `$GOROOT/go.env` is set to `direct`. A value of `direct` disables access to the module mirror. See [https://proxy.golang.org](https://proxy.golang.org) for more information on `GOPROXY` and the module mirror. A project specific `go.env` can override this setting. A user specific override can be set with:
+
+```console
+$ go env -w GOPROXY=https://proxy.golang.org,direct
+```
+
+### GOSUMDB
+
+The value of `GOSUMDB` in `$GOROOT/go.env` is set to `off` replacing the default value of `sum.golang.org`. The GOSUMDB environment variable identifies the name of the checksum database used to help validate downloaded modules. A project specific `go.env` can override this setting. A user specific override can be set with:
+
+```console
+$ go env -w GOSUMDB=sum.golang.org
+```
 
 ### GOTOOLCHAIN
 
-Go 1.21 introduces `GOTOOLCHAIN` which facilitates project specific choices for the Go language toolchain of compiler, standard library, assembler, and other tools. The value of `GOTOOLCHAIN` is set to `local` instead of the default `auto`. See the [Go Toolchain](https://go.dev/doc/toolchain) documentation for more information on toolchains in Go and the implications of using `local` as the default. A project specific `go.env` file can override this setting.
+Go 1.21 introduces `GOTOOLCHAIN` which facilitates project specific choices for the Go language toolchain of compiler, standard library, assembler, and other tools. The value of `GOTOOLCHAIN` is set to `local` instead of the default `auto`. When GOTOOLCHAIN is set to local, the go command always runs the bundled Go toolchain. See the [Go Toolchain](https://go.dev/doc/toolchain) documentation for more information on toolchains in Go. A project specific `go.env` file can override this setting. A user specific override can be set with:
+
+```console
+$ go env -w GOTOOLCHAIN=auto
+```
 
 
 ## References
 
 - [Go Documentation](https://golang.org/doc/)
+- [Go Environment Variables](https://pkg.go.dev/cmd/go#hdr-Environment_variables)
 - [Go Module Proxy](https://proxy.golang.org)
+- [GOSUMDB Environment](https://goproxy.io/docs/GOSUMDB-env.html)
 - [Go Toolchain](https://go.dev/doc/toolchain)
