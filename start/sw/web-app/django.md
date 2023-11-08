@@ -16,6 +16,10 @@ $ sudo dnf install python3-pip
 
 ## Get started
 
+Fedora includes a `python3-django` package that you can install and import.
+However, unless you are developing or packaging an application for Fedora, it is more useful to install Django as a third-party package inside a *virtual environment*.
+This will keep your project separate from your system, giving you more freedom in choosing additional libraries and their versions, and easing collaboration with people who aren't using Fedora yet.
+
 ### How to install virtualenv
 
 It's recommended to keep your project inside virtual environment. But you can skip this step if you want. 
@@ -109,4 +113,9 @@ $ mkvirtualenv env2
 $ workon env1
 $ workon env2
 ```
+
+### What's next?
+
+ * [Django Documentation](https://docs.djangoproject.com/)
+ * [Python Documentation: venv](https://docs.python.org/3/library/venv.html#module-venv)
 
