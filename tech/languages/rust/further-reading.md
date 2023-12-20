@@ -34,8 +34,40 @@ Documentation for crates available at [crates.io](https://crates.io/):
 
 There are plugins for popular editor such as Vim, Atom or Gnome Builder which are based on the rust-analyzer implementation. Alternatively, IntelliJ IDEA provides their own, custom plugin. Unfortunatelly, the debugging support is available only in paid CLion IDE.
 
-Before you try to configure your editor or IDE, it is recommended to use install `rustup`:
-[rustup.rs](https://rustup.rs/)
+## Rustup
+
+Before you try to configure your editor or IDE, it is recommended to install `rustup`
+
+You can do so with DNF. Run:
+```console
+$ sudo dnf install rustup
+```
+The above command will install `rustup-init` command that you can then run to setup `rustup`.
+
+Note that if you have installed rust via `dnf`, there may be warnings like:
+```
+warning: it looks like you have an existing installation of Rust at:
+warning: /usr/bin
+warning: It is recommended that rustup be the primary Rust installation.
+warning: Otherwise you may have confusion unless you are careful with your PATH
+warning: If you are sure that you want both rustup and your already installed Rust
+warning: then please reply `y' or `yes' or set RUSTUP_INIT_SKIP_PATH_CHECK to yes
+warning: or pass `-y' to ignore all ignorable checks.
+error: cannot install while Rust is installed
+
+Continue? (y/N)
+```
+This can be safely ignored as it is not known to cause any issues, simply answer with `y` and
+continue.
+
+To then register system installation with `rustup` run the following command:
+```console
+$ rustup toolchain link system /usr
+```
+
+Alternatively you install upstream `rustup` as described here: [rustup.rs](https://rustup.rs/).
+
+## IDEs
 
 If you want to start with Rust programming, it is easiest to try the rust-analyzer for Visual Studio Code:
  1. Install the VSCode RPM package: [code.visualstudio.com/docs/setup/linux](https://code.visualstudio.com/docs/setup/linux)
