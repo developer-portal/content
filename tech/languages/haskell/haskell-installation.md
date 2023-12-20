@@ -53,9 +53,9 @@ in general.
 # The Haskell Platform
 
 Another option is to install the
-[Haskell Platform](https://www.haskell.org/platform/), which provides `ghc` and
-`ghci` as above, but also includes a plethora of useful Haskell libraries and
-utilities to help kickstart your Haskell programming experience.
+[Haskell Platform](https://src.fedoraproject.org/rpms/haskell-platform) package,
+which provides `ghc` and `ghci` as above, but also includes a plethora of useful Haskell libraries
+and utilities to help kickstart your Haskell programming experience.
 
 The Haskell Platform also includes Cabal, which aids in the packaging,
 distribution, and installation of Haskell libraries and applications.
