@@ -42,30 +42,17 @@ $ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
 ## Rbenv rehash
 
-Running rbenv rehash is not needed for simple `gem install`. rbenv triggers a rehash automatically.
-It may be desired to rehash after installing gems with executables via bundler.
-It will make the Ruby gem executables known to rbenv, which allows running those executables.
-
-You can rehash by executing the following:
-
+`rbenv rehash` is not needed when installing gems via `gem install` as rbenv will automatically
+trigger the rehash. You may need to trigger a rehash manually after installing gems using bundler.
+You can do so by running
 ```console
 $ rbenv rehash
 ```
 
-Since [rbenv commit 325abac](https://github.com/rbenv/rbenv/commit/325abac17de79a230152bb7038126a0641c6aa64)
-the `rbenv rehash` command is not required when using bundler.
-A rehash will trigger automatically similarly to running `gem install`.
-
-If you have cloned rbenv from upstream ensure you have the latest rbenv that contains the fix.
-You can update rbenv pulled from upstream using git.
-
-Assuming you have cloned your rbenv to `~/.rbenv`, enter rbenv's directory and pull latest updates
-from the upstream git repository:
-
-```console
-$ cd ~/.rbenv
-$ git pull
-```
+Since [rbenv commit 325abac](https://github.com/rbenv/rbenv/commit/325abac17de79a230152bb7038126a0641c6aa64),
+there is no need to run `rbenv rehash` when installing gems via bundler or `gem install`.
+Rbenv will automatically trigger the rehash using either of those methods. To ensure you have this
+version installed, follow the [basic git checkout installation instructions](https://github.com/rbenv/rbenv?tab=readme-ov-file#basic-git-checkout).
 
 # Installing Rails
 
