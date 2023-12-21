@@ -14,7 +14,7 @@ $ sudo dnf install git-core zlib zlib-devel gcc-c++ patch readline-devel libyaml
 
 To use Fedora packaged rbenv also install:
 ```console
-$ sudo dnf install rbenv rbenv-build-rbenv
+$ sudo dnf install rbenv ruby-build-rbenv
 ```
 
 To use upstream rbenv, follow the steps in [Installing Ruby with
