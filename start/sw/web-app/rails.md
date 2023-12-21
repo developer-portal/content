@@ -37,7 +37,7 @@ $ ruby -v
 Use this command if you do not want rubygems to install the documentation for each package locally.
 
 ```console
-echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+$ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 ```
 
 ## Rbenv rehash
