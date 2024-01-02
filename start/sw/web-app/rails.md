@@ -8,70 +8,82 @@ order: 6
 
 The first step is to install dependencies for Ruby and rbenv.
 
+```console
+$ sudo dnf install git-core zlib zlib-devel gcc-c++ patch readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison libcurl-devel sqlite-devel perl-FindBin perl-lib perl-File-Compare
 ```
-sudo dnf install git-core zlib zlib-devel gcc-c++ patch readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison libcurl-devel sqlite-devel rbenv rbenv-build-rbenv
+
+To use Fedora packaged rbenv also install:
+```console
+$ sudo dnf install rbenv ruby-build-rbenv
 ```
+
+To use upstream rbenv, follow the steps in [Installing Ruby with
+rbenv](/tech/languages/ruby/ruby-installation.html#installing-ruby-with-rbenv).
 
 Then configure your shell to enable rbenv:
 
-```
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-source ~/.bashrc
+```console
+$ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+$ source ~/.bashrc
 ```
 
 Install a Ruby version, such as 3.1.2. See `rbenv install --list` for available versions.
 
-```
-rbenv install 3.1.2
-rbenv global 3.1.2
-ruby -v
-
+```console
+$ rbenv install 3.1.2
+$ rbenv global 3.1.2
+$ ruby -v
 ```
 Use this command if you do not want rubygems to install the documentation for each package locally.
 
-```
-echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+```console
+$ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 ```
 
-Whenever you install a new version of Ruby or a gem, you should run the rehash sub-command. This will make rails executables known to rbenv, which will allow us to run those executables:
+## Rbenv rehash
 
-``` 
-rbenv rehash 
-``` 
+`rbenv rehash` is not needed when installing gems via `gem install` as rbenv will automatically
+trigger the rehash. You may need to trigger a rehash manually after installing gems using bundler.
+You can do so by running
+```console
+$ rbenv rehash
+```
+
+Since [rbenv commit 325abac](https://github.com/rbenv/rbenv/commit/325abac17de79a230152bb7038126a0641c6aa64),
+there is no need to run `rbenv rehash` when installing gems via bundler or `gem install`.
+Rbenv will automatically trigger the rehash using either of those methods. To ensure you have this
+version installed, follow the [basic git checkout installation instructions](https://github.com/rbenv/rbenv?tab=readme-ov-file#basic-git-checkout).
 
 # Installing Rails
 
 Rails depends on a Javascript runtime, install nodejs.
 
-```
-sudo dnf install nodejs
+```console
+$ sudo dnf install nodejs
 ```
 
 And now install Rails
 
-```
-gem install rails -v 7.1.2
-```
-```
-rbenv rehash
+```console
+$ gem install rails -v 7.1.2
 ```
 
-```
-rails -v
+```console
+$ rails -v
 ```
 
-#Create your first Rails app
+# Create your first Rails app
 
-```
-rails new myapp
+```console
+$ rails new myapp
 
 # Move into the application directory
-cd myapp
+$ cd myapp
 
 # Create the database
-rake db:create
+$ rake db:create
 
 # Start the server
-rails server
+$ rails server
 ```
 You can now visit http://localhost:3000 to view your new website.
