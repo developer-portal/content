@@ -1,5 +1,5 @@
 ---
-title: Ruby on Rails      
+title: Ruby on Rails
 subsection: web-app
 order: 6
 ---
@@ -56,7 +56,11 @@ version installed, follow the [basic git checkout installation instructions](htt
 
 # Installing Rails
 
-Rails depends on a Javascript runtime, install nodejs.
+Rails depends on a Javascript runtime. Follow [this guide](https://github.com/nodenv/nodenv?tab=readme-ov-file#basic-github-checkout)
+to install `nodejs` using `nodenv`.
+
+If you would rather have Fedora packaged `nodejs` and will not need multiple versions of `nodejs` (like for different projects)
+you can install it with `dnf`:
 
 ```console
 $ sudo dnf install nodejs
