@@ -63,7 +63,7 @@ Enter password for new role:
 Enter it again:
 $ createdb testdb --owner testuser
 $ # add 'local all testuser md5' line **before** 'local all all peer' line
-$ # (typical mistake is "just" appending the line at the and of the file)
+$ # (typical mistake is "just" appending the line at the end of the file)
 $ vim ~/data/pg_hba.conf
 $ cat ~/data/pg_hba.conf | grep ^local
 local   all             testuser                                md5
