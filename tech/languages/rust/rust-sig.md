@@ -1,6 +1,7 @@
 ---
 title: Rust SIG
 subsection: rust
+section: tech-languages
 order: 5
 ---
 

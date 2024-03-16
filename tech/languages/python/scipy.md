@@ -1,6 +1,7 @@
 ---
 title: Scientific Python Stack
 subsection: python
+section: tech-languages
 order: 10
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Copr command line interface
+section: deployment
 subsection: copr
 ---
 

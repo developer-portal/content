@@ -1,6 +1,7 @@
 ---
 title: Autotools
 subsection: c
+section: tech-languages
 order: 3
 ---
 

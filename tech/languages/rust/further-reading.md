@@ -1,6 +1,7 @@
 ---
 title: Further reading
 subsection: rust
+section: tech-languages
 order: 4
 ---
 
@@ -87,4 +88,3 @@ If you want to start with some web applications, a list of useful frameworks is 
 
 If you are brave enough and you want to try the nightly compiler edition (or you just want to try the awesome [Rocket framework](https://rocket.rs/)), it is recommended to use rustup:
 [rustup.rs](https://rustup.rs/)
-

@@ -1,6 +1,7 @@
 ---
 title: R SIG
 subsection: r
+section: tech-languages
 order: 5
 ---
 

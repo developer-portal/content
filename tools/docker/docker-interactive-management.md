@@ -1,6 +1,7 @@
 ---
 title: sen — interactive management
 subsection: docker
+section: tools
 description: Manage your containers interactively!
 ---
 

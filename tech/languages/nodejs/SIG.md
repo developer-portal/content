@@ -1,6 +1,7 @@
 ---
 title: Node.js SIG
 subsection: nodejs
+section: tech-languages
 order: 3
 ---
 

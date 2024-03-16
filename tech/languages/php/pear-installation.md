@@ -1,6 +1,7 @@
 ---
 title: PEAR
 subsection: php
+section: tech-languages
 order: 2
 ---
 

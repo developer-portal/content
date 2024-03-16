@@ -1,6 +1,7 @@
 ---
 title: Docker images
 subsection: docker
+section: tools
 order: 4
 ---
 
@@ -94,4 +95,3 @@ To download them just run `docker pull IMAGE_NAME`.
 | openshift/python-33-centos7     | Python 3.3 platform for building and running applications |
 | openshift/nodejs-010-centos7    | NodeJS 0.10 platform for building and running applications |
 | openshift/perl-516-centos7      | Perl 5.16 platform for building and running applications |
-

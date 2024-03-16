@@ -1,6 +1,7 @@
 ---
 title: DotNet SIG
 subsection: dotnet
+section: tech-languages
 order: 5
 ---
 
@@ -11,4 +12,3 @@ The [DotNet SIG](https://fedoraproject.org/wiki/SIGs/DotNet) is a group of Fedor
 ## .NET Foundation
 
 You can contribute to the .NET Core upstream on [GitHub.com/dotnet](https://github.com/dotnet)
-

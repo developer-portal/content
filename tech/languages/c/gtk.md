@@ -1,6 +1,7 @@
 ---
 title: Gtk+
 subsection: c
+section: tech-languages
 order: 7
 ---
 
@@ -27,20 +28,20 @@ To begin our introduction to Gtk+, we will start with the simplest program possi
 ```c
 #include <gtk/gtk.h>
 
-int 
+int
 main(int   argc,
      char *argv[])
 {
   GtkWidget *window;
-    
+
   gtk_init (&argc, &argv);
-    
+
   window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
   gtk_window_set_title (GTK_WINDOW (window), "Hello World");
   gtk_widget_show  (window);
-    
+
   gtk_main ();
-    
+
   return 0;
 }
 ```
