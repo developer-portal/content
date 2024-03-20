@@ -1,6 +1,7 @@
 ---
 title: FastApi
 subsection: python
+section: tech-languages
 order: 5
 ---
 

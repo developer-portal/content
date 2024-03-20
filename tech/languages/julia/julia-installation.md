@@ -28,7 +28,7 @@ $ julia
  _/ |\__'_|_|_|\__'_|  |  Fedora 36 build
 |__/                   |
 
-julia> 
+julia>
 
 ```
 
@@ -38,7 +38,7 @@ Now, you can run julia commands inside the REPL.
 julia> 1+1
 2
 
-julia> 
+julia>
 
 ```
 

@@ -1,6 +1,7 @@
 ---
 title: R IDE
 subsection: r
+section: tech-languages
 order: 4
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Docker basics
 subsection: docker
+section: tools
 order: 2
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Python SIG
 subsection: python
+section: tech-languages
 order: 7
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Apache HTTP Server
+section: start-sw
 subsection: web-app
 order: 2
 ---
@@ -27,7 +28,7 @@ To run the Apache server immediately, type:
 sudo systemctl start httpd.service
 ```
 
-To try if your Apache server is running, visit your localhost page at [http://localhost](http://localhost). 
+To try if your Apache server is running, visit your localhost page at [http://localhost](http://localhost).
 
 If everything goes as expected, you will see the Fedora Test Page:
 
@@ -35,9 +36,9 @@ If everything goes as expected, you will see the Fedora Test Page:
 
 # How to run your own web presentation
 
-The root directory of your web server is now situated at ```/var/www/html/```. 
+The root directory of your web server is now situated at ```/var/www/html/```.
 
-**WARNING: The owner of this directory is the root user!** 
+**WARNING: The owner of this directory is the root user!**
 
 To disable rendering the Fedora Test Page, comment out all the lines in ```/etc/httpd/conf.d/welcome.conf```.
 After that, create an ```index.html``` file with your customized content in the ```/var/www/html/``` directory, for example:
@@ -70,5 +71,5 @@ sudo systemctl restart httpd.service
 
 # More information
 
-For more information about the Apache HTTP Server in Fedora you can visit [Fedora Wiki page](https://fedoraproject.org/wiki/Apache_HTTP_Server). 
+For more information about the Apache HTTP Server in Fedora you can visit [Fedora Wiki page](https://fedoraproject.org/wiki/Apache_HTTP_Server).
 For general information about the Apache HTTP Server you can visit [Apache HTTP Server documentation page](https://httpd.apache.org/docs/current/).

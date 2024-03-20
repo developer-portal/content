@@ -1,6 +1,7 @@
 ---
 title: Getting started with Docker on Fedora
 subsection: docker
+section: tools
 order: 1
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: PowerPC
 subsection: secondary_architectures
-
+section: deployment
 order: 2
 ---
 
@@ -63,6 +63,3 @@ If you face any difficulty reach out to us for help:
 ## More documentation
 
 - More Fedora PowerPC specific details cane be found at [fedoraproject wiki](https://fedoraproject.org/wiki/Architectures/PowerPC)
-
-
-

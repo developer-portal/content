@@ -1,6 +1,7 @@
 ---
 title: Multiple Pythons
 subsection: python
+section: tech-languages
 order: 3
 ---
 
@@ -14,7 +15,7 @@ Fedora includes all Python versions which are [supported upstream](https://devgu
 
 At the time of this writing, Fedora has the following Pythons
 ready for you in the repositories:
- 
+
  * CPython 3.11
  * CPython 3.10
  * CPython 3.9
@@ -45,10 +46,10 @@ CPython 3.6:
 
 ```console
 $ python3.6
-Python 3.6.12 (default, Aug 19 2020, 00:00:00) 
+Python 3.6.12 (default, Aug 19 2020, 00:00:00)
 [GCC 10.2.1 20200723 (Red Hat 10.2.1-1)] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> 
+>>>
 ```
 
 **Warning:** For production purposes you should use the `python3`
@@ -160,7 +161,7 @@ $ source env/bin/activate  # activate it
 (env)$ python -m pip install requests  # install a package with pip
 ...
 (env)$ python  # run python from that environment
-Python 3.9.0 (default, Oct  6 2020, 00:00:00) 
+Python 3.9.0 (default, Oct  6 2020, 00:00:00)
 [GCC 10.2.1 20200723 (Red Hat 10.2.1-1)] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import requests
@@ -188,7 +189,7 @@ $ source env/bin/activate  # activate it
 (env)$ python -m pip install requests  # install a package with pip
 ...
 (env)$ python  # run python from that virtualenv
-Python 2.7.11 (default, Jul  8 2016, 19:45:00) 
+Python 2.7.11 (default, Jul  8 2016, 19:45:00)
 [GCC 5.3.1 20160406 (Red Hat 5.3.1-6)] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import requests

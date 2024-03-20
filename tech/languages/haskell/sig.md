@@ -1,6 +1,7 @@
 ---
 title: Haskell SIG
 subsection: haskell
+section: tech-languages
 order: 3
 ---
 

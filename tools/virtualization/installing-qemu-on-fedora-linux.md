@@ -1,14 +1,15 @@
 ---
-title: Installing QEMU on Fedora Linux  
-subsection: virtualization  
-order: 1  
+title: Installing QEMU on Fedora Linux
+subsection: virtualization
+section: tools
+order: 1
 ---
 
 # Installing QEMU
 
 ## Common terms
 
-### QEMU 
+### QEMU
 
 QEMU is a generic and open source machine & userspace emulator and virtualizer.
 
@@ -30,7 +31,7 @@ Using KVM, one can run multiple virtual machines running unmodified Linux or Win
 
 ## Installing steps
 
-1. Execute the following command to install QEMU on the host device, if not already installed.  
+1. Execute the following command to install QEMU on the host device, if not already installed.
    ```console
    $ sudo dnf install qemu -y
    ```

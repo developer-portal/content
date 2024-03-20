@@ -1,6 +1,7 @@
 ---
 title: Cabal
 subsection: haskell
+section: tech-languages
 order: 2
 ---
 

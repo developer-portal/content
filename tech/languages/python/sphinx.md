@@ -1,6 +1,7 @@
 ---
 title: Sphinx
 subsection: python
+section: tech-languages
 order: 9
 ---
 
@@ -70,7 +71,7 @@ You will probably want to use `html` for local testing purposes and `dirhtml` fo
 
 ## latexpdf
 
-Sphinx allows you to render your work in PDF format. 
+Sphinx allows you to render your work in PDF format.
 
 In order to be able to run the `latexpdf` target, you will need to install the following dependencies:
 
@@ -90,7 +91,7 @@ After that, you can continue building the target:
 make latexpdf
 ```
 
-You will see a lot of output showing the process of producing the PDF file and, finally; if successful, find the rendered PDF at `build/latex/<projectname>.pdf`; along with many other files used to produce it. 
+You will see a lot of output showing the process of producing the PDF file and, finally; if successful, find the rendered PDF at `build/latex/<projectname>.pdf`; along with many other files used to produce it.
 
 ## What next
 - See working examples to get an inspiration [Sphinx examples](http://sphinx-doc.org/examples.html)

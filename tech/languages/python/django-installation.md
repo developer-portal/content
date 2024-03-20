@@ -1,6 +1,7 @@
 ---
 title: Django
 subsection: python
+section: tech-languages
 order: 4
 ---
 

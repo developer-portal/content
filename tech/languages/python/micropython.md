@@ -1,6 +1,7 @@
 ---
 title: MicroPython
 subsection: python
+section: tech-languages
 order: 6
 ---
 
@@ -196,8 +197,8 @@ noreset is     : no
 nolock is      : no
 send_cmd is    : sz -vv
 receive_cmd is : rz -vv
-imap is        : 
-omap is        : 
+imap is        :
+omap is        :
 emap is        : crcrlf,delbs,
 
 Terminal ready

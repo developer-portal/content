@@ -1,6 +1,7 @@
 ---
 title: Docker Compose
 subsection: docker
+section: tools
 order: 5
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: IDEs
 subsection: dotnet
+section: tech-languages
 order: 4
 ---
 
@@ -37,7 +38,7 @@ order: 4
     ```console
     $ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
     ```
-    
+
     Then, we need to create a repo file `/etc/yum.repos.d/vscode.repo` with the following content:
     ```
     [code]

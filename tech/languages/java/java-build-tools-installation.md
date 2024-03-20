@@ -1,6 +1,7 @@
 ---
 title: Java build tools
 subsection: java
+section: tech-languages
 order: 2
 ---
 
@@ -38,13 +39,13 @@ The project that is created follows the [Maven Project Structure](https://maven.
 
 The sample application created by the Maven archetype contains a single "Hello World" application (jar).
 
-The `target` directory will be created after the first compilation: run 
+The `target` directory will be created after the first compilation: run
 
 ```
 $ mvn compile
 ```
 
-This directory is where your compiled artifacts, or generated outputs (from builds) are stored. Its best to think of this directory as a temp space, used to store the outputs from a build. 
+This directory is where your compiled artifacts, or generated outputs (from builds) are stored. Its best to think of this directory as a temp space, used to store the outputs from a build.
 
 ### Creating a git repo
 
