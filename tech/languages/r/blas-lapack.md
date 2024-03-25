@@ -1,7 +1,6 @@
 ---
 title: BLAS/LAPACK switching
 subsection: r
-section: tech-languages
 order: 3
 ---
 

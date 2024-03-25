@@ -1,7 +1,6 @@
 ---
 title: Cargo
 subsection: rust
-section: tech-languages
 order: 2
 ---
 

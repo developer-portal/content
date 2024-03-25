@@ -1,7 +1,6 @@
 ---
 title: Format Rust code
 subsection: rust
-section: tech-languages
 order: 3
 ---
 

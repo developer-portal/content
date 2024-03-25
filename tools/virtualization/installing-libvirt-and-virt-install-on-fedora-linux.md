@@ -1,8 +1,7 @@
 ---
-title: Installing libvirt and virt-install on Fedora Linux
-subsection: virtualization
-section: tools
-order: 3
+title: Installing libvirt and virt-install on Fedora Linux  
+subsection: virtualization  
+order: 3  
 ---
 
 # Installing libvirt and virt-install on Fedora Linux
@@ -13,7 +12,7 @@ order: 3
 
 Libvirt is an open-source API, daemon and management tool for managing platform virtualization. It can be used to manage KVM, Xen, VMware ESXi, QEMU and other virtualization technologies. These APIs are widely used in the orchestration layer of hypervisors in the development of a cloud-based solution.
 
-The Libvirt project:
+The Libvirt project:  
 - is a toolkit to manage virtualization platforms
 - is accessible from C, Python, Perl, Go and more
 - supports KVM, QEMU, Xen, Virtuozzo, VMWare ESX, LXC, BHyve and more
@@ -36,7 +35,7 @@ Given suitable command line arguments, "virt-install" is capable of running comp
 
 ## Installing steps
 
-1. Execute the following command to install libvirt on the host device, if not already installed.
+1. Execute the following command to install libvirt on the host device, if not already installed.  
    ```console
    $ sudo dnf install libvirt -y
    ```

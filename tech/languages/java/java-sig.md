@@ -1,7 +1,6 @@
 ---
 title: Java SIG
 subsection: java
-section: tech-languages
 order: 3
 ---
 

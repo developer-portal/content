@@ -1,7 +1,6 @@
 ---
 title: Sinatra
 subsection: ruby
-section: tech-languages
 order: 5
 ---
 

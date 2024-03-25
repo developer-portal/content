@@ -1,14 +1,13 @@
 ---
 title: PHP Laravel 5
 subsection: web-app
-section: start-sw
 order: 4
 ---
 
 ## Laravel 5
 > The PHP Framework For Web Artisans
 
-Laravel is a high-level PHP MVC framework. It is also the most used PHP framework today. For more information, [click here](https://laravel.com/).
+Laravel is a high-level PHP MVC framework. It is also the most used PHP framework today. For more information, [click here](https://laravel.com/). 
 
 This guide will help you setup your local development environment for Laravel, and it applies to setting up Lumen as well.
 
@@ -34,17 +33,17 @@ $ sudo dnf install composer
 Your web server needs to be restarted after installing PHP package.
 
 #### Install Valet Linux
-We will need to set it up for easier development. Valet is original designed for MacOS by the Laravel Team; Valet Linux is a port to that. It setups up the neccesary environments for PHP Development, including a test domain. Please do not run valet as root.
-For More Information, you can check them out here:
+We will need to set it up for easier development. Valet is original designed for MacOS by the Laravel Team; Valet Linux is a port to that. It setups up the neccesary environments for PHP Development, including a test domain. Please do not run valet as root. 
+For More Information, you can check them out here: 
 [Valet Linux](https://cpriego.github.io/valet-linux/)  and  [Laravel Valet](https://laravel.com/docs/5.7/valet)
 
 You can also setup Laravel using [Vagrant](/tools/vagrant/about.html), [Docker](/tools/docker/about.html).
 
 ```bash
-# Place the ~/.config/composer/vendor/bin directory in your PATH so the composer
+# Place the ~/.config/composer/vendor/bin directory in your PATH so the composer 
 # global executable can be located by your system.
 $ echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.bashrc
-# Install valet
+# Install valet 
 $ composer global require cpriego/valet-linux
 # Initialize valet
 $ valet install
@@ -66,7 +65,7 @@ $ laravel new ProjectName
 $ cd ProjectName
 $ cp .env.example .env
 #Editing your environment file
-$ gedit .env
+$ gedit .env 
 ```
 
 Edit the .env file with DB_* lines with the correct info

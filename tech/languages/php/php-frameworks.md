@@ -1,7 +1,6 @@
 ---
 title: Frameworks
 subsection: php
-section: tech-languages
 order: 3
 ---
 

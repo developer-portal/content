@@ -1,7 +1,6 @@
 ---
 title: PyGObject
 subsection: python
-section: tech-languages
 order: 8
 ---
 

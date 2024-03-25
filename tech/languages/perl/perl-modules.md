@@ -1,7 +1,6 @@
 ---
 title: Perl modules
 subsection: perl
-section: tech-languages
 order: 2
 ---
 

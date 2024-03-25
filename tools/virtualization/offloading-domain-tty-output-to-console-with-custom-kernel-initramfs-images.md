@@ -1,8 +1,7 @@
 ---
-title: Offloading domain TTY output to console with custom kernel/initramfs images
-subsection: virtualization
-section: tools
-order: 12
+title: Offloading domain TTY output to console with custom kernel/initramfs images  
+subsection: virtualization  
+order: 12  
 ---
 
 # Offloading domain TTY output to console with custom kernel/initramfs images
@@ -13,7 +12,7 @@ In a headless virtual machine hosts accessible by SSH, the activities on a virtu
 
 ## Steps
 
-1. Navigate to the `/boot` directory of the Fedora installation of the host to grab some kernel and initramfs images.
+1. Navigate to the `/boot` directory of the Fedora installation of the host to grab some kernel and initramfs images.  
    ```console
    $ cd /boot
    $ ls -l vmlinuz-*
@@ -22,12 +21,12 @@ In a headless virtual machine hosts accessible by SSH, the activities on a virtu
    -rwxr-xr-x. 1 root root 10851312 Jul 25 22:05 vmlinuz-5.13.5-200.fc34.x86_64
    -rwxr-xr-x. 1 root root 10850800 Jul 28 21:17 vmlinuz-5.13.6-200.fc34.x86_64
    ```
-2. With appropriate permissions, copy the kernel images to a reference directory `linxkrnl` and the initramfs images to a reference directory `initrmfs`.
+2. With appropriate permissions, copy the kernel images to a reference directory `linxkrnl` and the initramfs images to a reference directory `initrmfs`.  
    ```console
    $ sudo cp /boot/vmlinux-* linxkrnl/
    $ sudo cp /boot/initramfs-* initrmfs/
    ```
-3. Take up the ownership of the copied kernel images and kernel images by executing the following command on the reference directories `linxkrnl` and `initrmfs` respectively.
+3. Take up the ownership of the copied kernel images and kernel images by executing the following command on the reference directories `linxkrnl` and `initrmfs` respectively.  
    ```console
    $ sudo chown $(whoami):$(whoami) linxkrnl/ --recursive
    $ sudo chown $(whoami):$(whoami) initrmfs/ --recursive
@@ -48,7 +47,7 @@ In a headless virtual machine hosts accessible by SSH, the activities on a virtu
    -rw-------. 1 t0xic0der t0xic0der 33002599 Aug  2 15:36 initramfs-5.13.5-200.fc34.x86_64.img
    -rw-------. 1 t0xic0der t0xic0der 32910001 Aug  2 15:36 initramfs-5.13.6-200.fc34.x86_64.img
    ```
-4. Reuse the domain with the custom partitioning based on EXT4  that was created by the end of the [**Setting up Fedora Workstation VM on QEMU using BIOS**](/tools/virtualization/setting-up-fedora-workstation-vm-on-qemu-using-bios.html) and start it up by executing the following command.
+4. Reuse the domain with the custom partitioning based on EXT4  that was created by the end of the [**Setting up Fedora Workstation VM on QEMU using BIOS**](/tools/virtualization/setting-up-fedora-workstation-vm-on-qemu-using-bios.html) and start it up by executing the following command.  
    ```console
    $ qemu-system-x86_64 \
        -boot menu=on \
@@ -58,12 +57,12 @@ In a headless virtual machine hosts accessible by SSH, the activities on a virtu
        -drive file=datadrct/fedobios.raw,format=raw \
        -accel kvm
    ```
-5. In a new terminal session inside the virtualized domain, execute the following command to fetch the parameters passed to the kernel during boot.
+5. In a new terminal session inside the virtualized domain, execute the following command to fetch the parameters passed to the kernel during boot.  
    ```console
    $ cat /proc/cmdline
    BOOT_IMAGE=(hd0,msdos1)/vmlinuz-5.11.12-300.fc34.x86_64 root=UUID=0fa356e9-9509-4e18-8283-8983254c79d1 ro rhgb quiet
    ```
-   Take a note of the UUID for the root partition and the same can be confirmed by executing the following command in a terminal session inside the virtualized domain.
+   Take a note of the UUID for the root partition and the same can be confirmed by executing the following command in a terminal session inside the virtualized domain.  
    ```console
    $ cat /etc/fstab
    #
@@ -79,7 +78,7 @@ In a headless virtual machine hosts accessible by SSH, the activities on a virtu
    UUID=0fa356e9-9509-4e18-8283-8983254c79d1 /                       ext4    defaults        1 1
    UUID=2d2863bb-527b-4477-bae5-5955bdb44d7b /boot                   ext4    defaults        1 2
    ```
-6. Power off the virtualized domain and start it up again by executing the following command with the correct UUID for the root partition.
+6. Power off the virtualized domain and start it up again by executing the following command with the correct UUID for the root partition.  
    ```console
    $ qemu-system-x86_64 \
        -boot menu=on \
@@ -93,7 +92,7 @@ In a headless virtual machine hosts accessible by SSH, the activities on a virtu
        -initrd initrmfs/<initramfs-x.yy.zz-aaa.fcRR.x86_64.img> \
        -append "root=UUID=<xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx> rw console=ttyS0"
    ```
-7. A lot of `systemd` prompts would show up on the console and the virtualized domain would boot up. The following is an example output for the above command.
+7. A lot of `systemd` prompts would show up on the console and the virtualized domain would boot up. The following is an example output for the above command.  
    ```
    ...
    [  OK  ] Started Network Manager Script Dispatcher Service.
@@ -109,24 +108,24 @@ In a headless virtual machine hosts accessible by SSH, the activities on a virtu
             Starting GNOME Display Manager...
             Starting Hold until boot process finishes up...
    [  OK  ] Started GNOME Display Manager.
-
+   
    Fedora 34 (Workstation Edition)
    Kernel 5.13.6-200.fc34.x86_64 on an x86_64 (ttyS0)
-
+   
    fedorable login: t0xic0der
-   Password:
+   Password: 
    Last login: Tue Aug  3 09:31:12 on tty2
    [t0xic0der@fedorable ~]$
    ```
-8. As the kernel image and initramfs image versions that we used here are dissimilar from the version of the firmware installed on the virtualized domain, there can be kernel modules which are broken or incompletely loaded.
+8. As the kernel image and initramfs image versions that we used here are dissimilar from the version of the firmware installed on the virtualized domain, there can be kernel modules which are broken or incompletely loaded.  
    ```console
    $ ip a
    1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
        link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
        inet 127.0.0.1/8 scope host lo
           valid_lft forever preferred_lft forever
-       inet6 ::1/128 scope host
+       inet6 ::1/128 scope host 
           valid_lft forever preferred_lft forever
    ```
-   As evidenced by the output of the above command executed inside the console of the virtualized domain, the kernel modules for network are apparently broken and the hostname of the host is taken up by the virtualized domain due to the mismatch of kernel images, initramfs images and installed firmware versions.
-9. For best compatibility, keep the versions for kernel image, initramfs image and installed firmware inline with each other. Instructions for the same have been provided in the [**Offloading domain TTY output to console with original kernel/initramfs images**](/tools/virtualization/offloading-domain-tty-output-to-console-with-original-kernel-initramfs-images.html) documentation.
+   As evidenced by the output of the above command executed inside the console of the virtualized domain, the kernel modules for network are apparently broken and the hostname of the host is taken up by the virtualized domain due to the mismatch of kernel images, initramfs images and installed firmware versions.  
+9. For best compatibility, keep the versions for kernel image, initramfs image and installed firmware inline with each other. Instructions for the same have been provided in the [**Offloading domain TTY output to console with original kernel/initramfs images**](/tools/virtualization/offloading-domain-tty-output-to-console-with-original-kernel-initramfs-images.html) documentation.  

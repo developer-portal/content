@@ -1,7 +1,6 @@
 ---
 title: PHP SIG
 subsection: php
-section: tech-languages
 order: 4
 ---
 

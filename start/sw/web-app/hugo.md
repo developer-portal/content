@@ -1,7 +1,6 @@
 ---
 title: Hugo
 subsection: web-app
-section: start-sw
 order: 8
 ---
 

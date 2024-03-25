@@ -1,13 +1,12 @@
 ---
 title: Leksah
 subsection: haskell
-section: tech-languages
 order: 4
 ---
 
 # Leksah
 
-[Leksah](http://leksah.org/) is a Haskell IDE written in Haskell using Gtk. It offers workspaces for complex project with multiple
+[Leksah](http://leksah.org/) is a Haskell IDE written in Haskell using Gtk. It offers workspaces for complex project with multiple 
 packages with automatic build of dependencies. It enables standard IDE features (debugging, auto completition etc.).
 
 To install Leksah run command:
@@ -60,3 +59,5 @@ $ leksah
 ```
 
 NOTE: It might happen that you need to reboot the system before using Leksah.
+
+

@@ -1,7 +1,6 @@
 ---
 title: Writing Go programs
 subsection: go
-section: tech-languages
 order: 2
 ---
 

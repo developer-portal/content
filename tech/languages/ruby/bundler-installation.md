@@ -1,7 +1,6 @@
 ---
 title: Bundler
 subsection: ruby
-section: tech-languages
 order: 3
 ---
 

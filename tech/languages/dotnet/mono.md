@@ -1,7 +1,6 @@
 ---
 title: Mono
 subsection: dotnet
-section: tech-languages
 order: 3
 ---
 

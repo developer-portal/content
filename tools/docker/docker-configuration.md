@@ -1,7 +1,6 @@
 ---
 title: Configuring Docker
 subsection: docker
-section: tools
 order: 3
 ---
 

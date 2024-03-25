@@ -1,7 +1,6 @@
 ---
 title: Node.js modules
 subsection: nodejs
-section: tech-languages
 order: 2
 ---
 
@@ -17,7 +16,7 @@ To install additional modules from Fedora repositories, use:
 $ sudo dnf install nodejs-<module-name>
 ```
 
-or
+or 
 
 ```
 $ sudo dnf install 'npm(module-name)'
@@ -29,7 +28,7 @@ For example, to install `express`, you need to type:
 $ sudo dnf install nodejs-express
 ```
 
-or
+or 
 
 ```
 $ sudo dnf install 'npm(express)'
@@ -49,7 +48,7 @@ npm allows using `require()` only on locally installed modules. If you want to `
 $ npm link express
 ```
 
-or to load global modules by default, you can set $NODE_PATH as follows:
+or to load global modules by default, you can set $NODE_PATH as follows: 
 
 ```
 $ export NODE_PATH=/usr/lib/node_modules

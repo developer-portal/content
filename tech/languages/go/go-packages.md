@@ -1,7 +1,6 @@
 ---
 title: Go packages
 subsection: go
-section: tech-languages
 order: 3
 ---
 

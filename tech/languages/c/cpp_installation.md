@@ -1,7 +1,6 @@
 ---
 title: C++
 subsection: c
-section: tech-languages
 order: 2
 ---
 

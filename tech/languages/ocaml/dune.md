@@ -1,7 +1,6 @@
 ---
 title: Dune
 subsection: ocaml
-section: tech-languages
 order: 2
 ---
 

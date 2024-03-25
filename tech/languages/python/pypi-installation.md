@@ -1,7 +1,6 @@
 ---
 title: Pip & PyPI
 subsection: python
-section: tech-languages
 order: 2
 ---
 

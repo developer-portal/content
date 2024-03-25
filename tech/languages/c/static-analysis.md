@@ -1,7 +1,6 @@
 ---
 title: Static Analysis
 subsection: c
-section: tech-languages
 order: 6
 ---
 

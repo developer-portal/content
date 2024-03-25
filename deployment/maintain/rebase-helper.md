@@ -1,7 +1,6 @@
 ---
 title: Rebase helper
 subsection: maintain
-section: deployment
 order: 2
 ---
 
@@ -42,6 +41,7 @@ $ cd $HOME/rpmbuild/REPOS/foobar
 $ rebase-helper 1.2.1
 ```
 
-If you do not want to be bothered, add the ``--non-interactive`` option to rebase-helper's command line
+If you do not want to be bothered, add the ``--non-interactive`` option to rebase-helper's command line 
 
 After rebase-helper finishes, check the output.
+

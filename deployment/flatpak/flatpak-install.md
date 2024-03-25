@@ -1,7 +1,6 @@
 ---
 title: Installing Flatpak
 subsection: flatpak
-section: deployment
 order: 2
 ---
 

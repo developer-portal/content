@@ -1,7 +1,6 @@
 ---
 title: Ruby SIG
 subsection: ruby
-section: tech-languages
 order: 6
 ---
 
