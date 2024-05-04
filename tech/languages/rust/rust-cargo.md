@@ -43,10 +43,22 @@ $ cargo run
 Hello, world!
 ```
 
-# crates.io repository
+# Using Rust libraries ("crates")
 Rust calls its compilation unit (either library or executable) a crate. Your project
 is such a crate and it can also depend on other crates specified in `Cargo.toml`. The
 default repository to look for dependencies is [crates.io](https://crates.io/) but you
-can also specify dependencies on a git repository.
+can also specify dependencies on a git repository. More information about all the
+different ways of specifying dependencies is available in the
+[cargo book](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html).
 
-**Note:** Cargo currently supports only source dependencies.
+While many Rust crates are also packaged for Fedora Linux (as `rust-$crate`, with
+`rust-$crate-*-devel` packages available from the package repositories), the crates
+packaged this way are primarily intended to be used for building RPM packages for Rust
+applications. Using these crates as a replacement for [crates.io](https://crates.io/)
+is not a supported use case. In some cases they also diverge from crates as published
+on crates.io because of downstream-specific patches (both concerning crate dependencies
+and behaviour), so they might not even be a suitable development target.
+
+**Note:** Both crates.io and Fedora only distribute Rust crates as source code. Rust
+does not yet provide a stable ABI, so it is not possible to distribute pre-compiled Rust
+crates / libraries in a binary format.
