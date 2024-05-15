@@ -14,13 +14,13 @@ permalink: /tech/languages/csharp/dotnet-installation.html
 
 [.NET](https://docs.microsoft.com/en-us/dotnet/core/) is a general-purpose, modular, cross-platform and open-source development Platform.
 
-.NET 7 and .NET 6 are available in all supported versions of Fedora. Installing an SDK can be done with a simple
+.NET 8 and .NET 6 are available in all supported versions of Fedora. Installing an SDK can be done with a simple
 
 ```
 $ sudo dnf install dotnet-sdk-x.y
 ```
 
-Where `x.y` is a .NET version number, like `7.0` or `6.0`.
+Where `x.y` is a .NET version number, like `8.0` or `6.0`.
 
 It is not advised to mix these packages with those provided by Microsoft. Please disable any other repositories providing dotnet before installing these. If you run into any errors that refer to `/usr/share/dotnet` or a missing `libhostfxr.so` see [troubleshoot .NET errors related to missing files on Linux](https://learn.microsoft.com/en-us/dotnet/core/install/linux-package-mixup) which describes how to fix the errors.
 

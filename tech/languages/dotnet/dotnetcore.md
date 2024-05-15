@@ -29,26 +29,26 @@ To install runtime only, for example to merely deploy an already built (non ASP.
 $ sudo dnf install dotnet-runtime-x.y
 ```
 
-### .NET 7
+### .NET 8
 
-.NET 7 is a Standard Term Support release and will reach its End of Life in May 2024.
+.NET 8 is a Long Term Support release and will reach its End of Life in Nov 2026.
 
-Install the .NET 7 SDK:
-
-```
-$ sudo dnf install dotnet-sdk-7.0
-```
-
-Install the ASP.NET Core 7 Runtime:
+Install the .NET 8 SDK:
 
 ```
-$ sudo dnf install aspnetcore-runtime-7.0
+$ sudo dnf install dotnet-sdk-8.0
 ```
 
-Install the .NET 7 Runtime:
+Install the ASP.NET Core 8 Runtime:
 
 ```
-$ sudo dnf install dotnet-runtime-7.0
+$ sudo dnf install aspnetcore-runtime-8.0
+```
+
+Install the .NET 8 Runtime:
+
+```
+$ sudo dnf install dotnet-runtime-8.0
 ```
 
 ### .NET 6
