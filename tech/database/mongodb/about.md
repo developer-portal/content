@@ -27,7 +27,7 @@ latter is typically used for repository configuration and takes precedence over 
 Create a file mongodb-org-*release_series*.repo
 
 ```console
-$ sudo nano /etc/yum.repos.d/mongodb-org-6.0.repo
+$ sudo nano /etc/yum.repos.d/mongodb-org-7.0.repo
 ```
 
 Insert this content inside the mongodb-org-*release_series*.repo file, edit the *release_series* in the filename and the baseurl and gpgkey fields URLs if you want to install another version.
@@ -41,7 +41,8 @@ enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-7.0.asc
 ```
 
-Now you can install with dnf. Note that we install the dependencies separately, otherwise mongosh throws an error due to mismatched openssl versions.
+Now you can install with dnf. We install all the dependencies separately because by default the `mongodb-org` package is dependent on `mongodb-mongosh`. This package has a dependency on static openssl installed with nodeJS which differs from the version of openssl installed on fedora by default. Therefore, we install `mongodb-mongosh-shared-openssl3` which links with the native openssl library which is openssl 3.x.x.
+([See tickets MONGOSH-1231 and MONGOSH-1270 for more information.](https://jira.mongodb.org/browse/MONGOSH-1270?jql=text%20~%20%22mongodb-mongosh-shared-openssl3%22))
 
 ```console
 $ sudo dnf install mongodb-org mongodb-mongosh-shared-openssl3 openssl mongodb-org-database-tools-extra mongodb-database-tools mongodb-org-tools mongodb-org-server mongodb-org-mongos mongodb-org-database
@@ -96,3 +97,4 @@ Now, run the GUI from the terminal using the command:
 ```console
 $ mongodb-compass
 ```
+[Source](https://www.mongodb.com/docs/compass/current/install/)
