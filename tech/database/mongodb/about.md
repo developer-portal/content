@@ -33,27 +33,25 @@ $ sudo nano /etc/yum.repos.d/mongodb-org-6.0.repo
 Insert this content inside the mongodb-org-*release_series*.repo file, edit the *release_series* in the filename and the baseurl and gpgkey fields URLs if you want to install another version.
 
 ```
-[mongodb-org-6.0]
+[mongodb-org-7.0]
 name=MongoDB Repository
-baseurl=https://repo.mongodb.org/yum/redhat/9/mongodb-org/6.0/x86_64/
+baseurl=https://repo.mongodb.org/yum/redhat/9/mongodb-org/7.0/x86_64/
 gpgcheck=1
 enabled=1
-gpgkey=https://www.mongodb.org/static/pgp/server-6.0.asc
+gpgkey=https://www.mongodb.org/static/pgp/server-7.0.asc
 ```
 
-Now you can install with dnf
+Now you can install with dnf. Note that we install the dependencies separately, otherwise mongosh throws an error due to mismatched openssl versions.
 
 ```console
-$ sudo dnf install mongodb-org
+$ sudo dnf install mongodb-org mongodb-mongosh-shared-openssl3 openssl mongodb-org-database-tools-extra mongodb-database-tools mongodb-org-tools mongodb-org-server mongodb-org-mongos mongodb-org-database
 ```
-
-Currently some packages do not install, however those packages do not affect the functionality of MongoDB.
 
 **Warning:** MongoDB does not guarantee compatibility with Fedora Linux, so newer MongoDB server packages might fail to install. [See MongoDB issue ticket SERVER-58871](https://jira.mongodb.org/browse/SERVER-58870).
 
 ## Enable MongoDB services
 
-To enable and start MongoDB service run:
+Restart the computer and then enable and start MongoDB service by running the command:
 
 ```console
 $ sudo systemctl enable mongod.service
@@ -77,6 +75,24 @@ Connecting to:		mongodb://<address:port>
 Using MongoDB:		6.0.8
 ```
 
-## MongoDB GUI (not tested)
+## MongoDB Compass
 
-[MongoDB Admin](https://github.com/hatamiarash7/MongoDB_Admin/wiki/1.-Getting-Start) is a Cross Platform GUI.
+[MongoDB Compass](https://www.mongodb.com/products/tools/compass) is a GUI for interfacing with MongoDB.
+
+To install Compass, run the command to retrieve the files using wget.
+
+```console
+$ wget https://downloads.mongodb.com/compass/mongodb-compass-1.43.0.x86_64.rpm
+```
+
+Then, install the files using yum.
+
+```console
+$ sudo yum install mongodb-compass-1.43.0.x86_64.rpm
+```
+
+Now, run the GUI from the terminal using the command:
+
+```console
+$ mongodb-compass
+```
