@@ -7,6 +7,8 @@ subsection: copr
 
 [Copr](https://copr.fedoraproject.org/) features a command line interface that can help you with managing projects, submitting builds, etc.
 
+**Note:** A [video tutorial](https://www.youtube.com/playlist?list=PLEOLABfRmCVjhTCrxiHNE9KwDepnbhIXa) covering `copr-cli` usage is available
+
 ## Setup
 
 Install the copr-cli package:
