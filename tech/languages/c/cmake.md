@@ -18,7 +18,7 @@ To familiarize yourself with basic features of CMake you should try the online t
 
 To discover the full application of various features that CMake has to offer use the online documentation:
 
-[CMake latest documantation](http://www.cmake.org/cmake/help/v3.3/)
+[CMake latest documentation](http://www.cmake.org/cmake/help/v3.3/)
 
 
 ## CMake installation
