@@ -9,7 +9,7 @@ description: Platform for distributed applications.
 
 [Docker](https://www.docker.com) is a platform for developers and sysadmins to develop, ship, and run applications inside software containers. Docker lets you quickly assemble applications from components and eliminates the friction that can come when shipping code. Docker will also help you to get your code tested and deployed into production as fast as possible.
 
-See also [Frequently Asked Questions (FAQ)](https://docs.docker.com/engine/faq/).
+[Docker Docs](https://docs.docker.com) is the information hub for Docker documentation.
 
 ## Getting started with Docker
 
@@ -37,5 +37,5 @@ Podman is a daemonless container engine for developing, managing, and running OC
 You can install it with the following command:
 ```console
 $ sudo dnf install podman
-```  
- 
+```
+

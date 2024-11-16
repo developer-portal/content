@@ -8,6 +8,14 @@ order: 1
 
 ## Installation
 
+RPM packages to install Docker are available directly from Fedora repositories or from Docker and the Docker community. Fedora rpms have a slightly different naming convention.
+
+### Fedora rpms and installation guidelines
+
+The [Installing Docker and Docker-Compose](https://docs.fedoraproject.org/en-US/quick-docs/installing-docker/) Quick Doc has information on the Docker rpms available directly from Fedora as well as installation guidelines.
+
+### Docker Community rpms and installation guidelines
+
 Install the `docker-ce` package using the Docker repository:
 
 To install the dnf-plugins-core package (which provides the commands to manage your DNF repositories) and set up the stable repository.
@@ -27,6 +35,8 @@ To install the docker engine. The Docker daemon relies on a OCI compliant runtim
 ```console
 $ sudo dnf install docker-ce docker-ce-cli containerd.io
 ```
+
+## Starting the Docker service
 
 To start the Docker service use:
 

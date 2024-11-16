@@ -6,8 +6,9 @@ order: 5
 
 # Docker Compose
 
-[Docker Compose](https://docs.docker.com/compose/) is a tool to orchestrate Docker containers using a simple YAML file which describes your whole setup.
+[Docker Compose](https://docs.docker.com/compose/) is a tool to orchestrate Docker one or more containers using a simple YAML file which describes your whole setup.
 
+The Docker community released Docker Compose V2 in 2020 with many changes and new features. With V2, Compose runs as a plug-in to Docker rather than the V1 stand-alone application. For example, `docker compose [opts]` instead of the older `docker-compose [opts]`. The [Docker Compose V2 Migration Guide](https://docs.docker.com/compose/releases/migrate/) is a good reference. The legacy `docker-compose` command line is available as an option using [Docker Compose Switch](https://github.com/docker/compose-switch).
 
 ## Installation
 
