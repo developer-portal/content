@@ -18,7 +18,7 @@ $ sudo dnf install dnf-plugins-core
 
 To add the `docker-ce` repository
 * on Fedora 40:
-```
+```console
 $ sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 ```
 * on Fedora 41 and newer:
