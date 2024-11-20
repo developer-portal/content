@@ -18,8 +18,16 @@ $ sudo dnf install dnf-plugins-core
 
 To add the `docker-ce` repository
 
+* on Fedora 40:
+
 ```console
 $ sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+```
+
+* on Fedora 41 and newer:
+
+```console
+$ sudo dnf config-manager addrepo --from-repofile="https://download.docker.com/linux/fedora/docker-ce.repo"
 ```
 
 To install the docker engine. The Docker daemon relies on a OCI compliant runtime (invoked via the containerd daemon) as its interface to the Linux kernel namespaces, cgroups, and SELinux.
