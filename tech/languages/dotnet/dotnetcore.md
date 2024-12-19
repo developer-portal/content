@@ -2,7 +2,7 @@
 title: .NET
 subsection: dotnet
 order: 2
-version: 7.8.4
+version: 7.8.5
 ---
 
 ## .NET Installation
@@ -29,6 +29,28 @@ To install runtime only, for example to merely deploy an already built (non ASP.
 $ sudo dnf install dotnet-runtime-x.y
 ```
 
+### .NET 9
+
+.NET 9 is a Standard Term Support release and will reach its End of Life in May 2026.
+
+Install the .NET 9 SDK:
+
+```
+$ sudo dnf install dotnet-sdk-9.0
+```
+
+Install the ASP.NET Core 9 Runtime:
+
+```
+$ sudo dnf install aspnetcore-runtime-9.0
+```
+
+Install the .NET 9 Runtime:
+
+```
+$ sudo dnf install dotnet-runtime-9.0
+```
+
 ### .NET 8
 
 .NET 8 is a Long Term Support release and will reach its End of Life in Nov 2026.
@@ -51,27 +73,6 @@ Install the .NET 8 Runtime:
 $ sudo dnf install dotnet-runtime-8.0
 ```
 
-### .NET 6
-
-.NET 6 is a Long Term Support release and will reach its End of Life in November 2024.
-
-Install the .NET 6 SDK:
-
-```
-$ sudo dnf install dotnet-sdk-6.0
-```
-
-Install the ASP.NET Core 6 Runtime:
-
-```
-$ sudo dnf install aspnetcore-runtime-6.0
-```
-
-Install the .NET 6 Runtime:
-
-```
-$ sudo dnf install dotnet-runtime-6.0
-```
 
 ### Preview versions
 
