@@ -14,7 +14,7 @@ permalink: /tech/languages/csharp/dotnet-installation.html
 
 [.NET](https://docs.microsoft.com/en-us/dotnet/core/) is a general-purpose, modular, cross-platform and open-source development Platform.
 
-.NET 9 and .NET 6 are available in all supported versions of Fedora. Installing an SDK can be done with a simple
+.NET 9 and .NET 8 are available in all supported versions of Fedora. Installing an SDK can be done with a simple
 
 ```
 $ sudo dnf install dotnet-sdk-x.y
