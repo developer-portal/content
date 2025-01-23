@@ -15,29 +15,28 @@ Fedora includes all Python versions which are [supported upstream](https://devgu
 At the time of this writing, Fedora has the following Pythons
 ready for you in the repositories:
  
+ * CPython 3.14
+ * CPython 3.13 (System `python3` on Fedora 41)
+ * CPython 3.12 (System `python3` on Fedora 40)
  * CPython 3.11
  * CPython 3.10
  * CPython 3.9
  * CPython 3.8
- * CPython 3.7
  * CPython 3.6
- * CPython 2.7
- * PyPy 2
- * PyPy 3.7
- * PyPy 3.8
+ * PyPy 2.7
  * PyPy 3.9
+ * PyPy 3.10
  * MicroPython
 
 Quite a nest, isn't it?
 You can install them like this:
 
 ```console
+$ sudo dnf install python3.11  # to get CPython 3.11
 $ sudo dnf install python3.9  # to get CPython 3.9
 $ sudo dnf install python3.8  # to get CPython 3.8
-$ sudo dnf install python3.7  # to get CPython 3.7
 $ sudo dnf install python3.6  # to get CPython 3.6
-$ sudo dnf install python2.7  # to get CPython 2.7
-$ sudo dnf install pypy2 pypy3.9 python3.10  # to get more at once
+$ sudo dnf install pypy pypy3.9 python3.10  # to get more at once
 ```
 
 After that, you can run an interactive console or your script with, let's say,
