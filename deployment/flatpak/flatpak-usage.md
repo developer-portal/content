@@ -70,5 +70,5 @@ $ flatpak run org.gnome.Polari
 
 ## Further Reading
 
-* [Flathub Applications](https://flathub.org/apps.html)
+* [Flathub Applications](https://flathub.org/)
 * [Fedora Flatpaks](https://docs.fedoraproject.org/en-US/flatpak/tutorial/)
