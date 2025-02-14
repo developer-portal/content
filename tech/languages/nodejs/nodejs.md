@@ -39,7 +39,7 @@ $ sudo dnf module install nodejs:8
 
 ### Managing multiple versions with nvm
 
-[nvm](https://github.com/nvm-sh/nvm#about) (Node Version Manager) is a bash script to manage multiple Node.js versions. nvm makes it easier to install, uninstall, and switch between different versions. Visit it's Github page to follow the latest [installation instructions](https://github.com/nvm-sh/nvm#installing-and-updating).
+[nvm](https://github.com/nvm-sh/nvm#about) (Node Version Manager) is a bash script to manage multiple Node.js versions. nvm makes it easier to install, uninstall, and switch between different versions. Visit its Github page to follow the latest [installation instructions](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ## Yarn
 
