@@ -54,6 +54,21 @@ For extensive help and information see:
 $ go help environment
 ```
 
+### Installing the latest version
+
+Fedora avoids making [major software updates within a stable release](https://docs.fedoraproject.org/en-US/fesco/Updates_Policy/#stable-releases). This means each Fedora version typically includes just one major version of Go.
+
+Sometimes, when a Go version reaches end-of-life (EOL), the Go Special Interest Group (SIG) will try to update the current Fedora version to the next stable Go release.
+
+If you need the newest version of Go right away, you can use [the special repository maintained by the Go SIG](https://copr.fedorainfracloud.org/coprs/g/go-sig/golang-rawhide/). To enable it, run these commands in your terminal:
+
+```console
+$ dnf copr enable @go-sig/golang-rawhide
+$ dnf update golang
+```
+
+This will give you the most recent version of Go, even if it's not in the regular Fedora updates yet.
+
 ### GOPROXY
 
 The value of `GOPROXY` in `$GOROOT/go.env` is set to `direct`. A value of `direct` disables access to the module mirror. See [https://proxy.golang.org](https://proxy.golang.org) for more information on `GOPROXY` and the module mirror. A project specific `go.env` can override this setting. A user specific override can be set with:
