@@ -4,8 +4,7 @@ subsection: mobile-app
 section: start-sw
 order: 1
 description: Creating mobile applications using Google Android Studio.
----
-
+---  
 # Mobile application
 
 Today wide range of smart mobile devices make it possible to create clever applications.
