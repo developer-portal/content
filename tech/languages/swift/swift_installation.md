@@ -18,7 +18,7 @@ Although inspired by Objective-C and many other languages, Swift is not itself a
 To install Swift on Fedora, simply type:
 
 ```console
-$ sudo dnf install swiftlang
+$ sudo dnf install swift-lang
 ```
 
 You can now start Swift's REPL (read-eval-print loop), which is an interactive session by invoking the `swift` command in the terminal. The Swift REPL will start like this:
