@@ -46,7 +46,21 @@ Writing Go programs is covered in [Go programs](/tech/languages/go/go-programs.h
 
 ## Fedora Specific Notes
 
-The default installation of Go on Fedora contains changes to the default values of `GOPROXY`, `GOSUMDB`, and `GOTOOLCHAIN` environment variables that Go developers should be aware of. The `go` command and related tools make extensive use of environment variables for configuration. Default values are set globally in `/usr/lib/golang/go.env`, and can be overridden on per user or per project basis.
+### Fedora 43 and newer
+
+Starting with Go 1.25 in Fedora 43, The default values of `GOPROXY`and `GOSUMDB`as
+provided by the Go development team are retained.
+These defaults are: `GOPROXY=https://proxy.golang.org,direct` and `GOSUMDB=sum.golang.org`.
+To restore the previous behavior, set "GOPROXY=direct" and "GOSUMDB=off".
+
+The `GOTOOLCHAIN` environment variable is set to `GOTOOLCHAIN=local`.
+We change this default from `auto` to `local` so that the distribution-packaged Go
+toolchain is always used and go doesn't automatically download pre-compiled
+alternative versions.
+
+### Fedora 42 and older
+
+The standard rpm-based installation of Go on Fedora contains changes to the default values of `GOPROXY`, `GOSUMDB`, and `GOTOOLCHAIN` environment variables that Go developers should be aware of. The `go` command and related tools make extensive use of environment variables for configuration. Default values are set globally in `/usr/lib/golang/go.env`, and can be overridden on per user or per project basis.
 
 For extensive help and information see:
 
