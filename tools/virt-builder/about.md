@@ -1,3 +1,6 @@
+[Git - Tagging.pdf](https://github.com/user-attachments/files/21694171/Git.-.Tagging.pdf)
+[kernel.org_pub_software_scm_git_sha256sums.asc.pdf](https://github.com/user-attachments/files/21694170/kernel.org_pub_software_scm_git_sha256sums.asc.pdf)
+[Index of _pub_software_scm_git_.pdf](https://github.com/user-attachments/files/21694169/Index.of._pub_software_scm_git_.pdf)
 ---
 title: Virt-builder
 subsection: virt-builder
