@@ -21,21 +21,13 @@ This will install V8 Javascript Engine, Node.js runtime and npm package manager 
 
 ### Alternative versions
 
-There are alternative versions available as [Fedora Modules](https://docs.fedoraproject.org/en-US/modularity/using-modules/). 
-
-**Note:** Modules are available for all editions from Fedora 29, and on the Server Edition from Fedora 28.
-
-To list all available versions, run:
+Alternative supported versions can be installed by specifying stream version, for example for nodejs24:
 
 ```
-$ dnf module list
+$ sudo dnf install nodejs24
 ```
 
-And to install an alternative version, run a command similar to this:
-
-```
-$ sudo dnf module install nodejs:8
-```
+This will also install V8 Javascript Engine, Node.js runtime and npm package manager and their dependencies of the specified version.
 
 ### Managing multiple versions with nvm
 
@@ -63,21 +55,25 @@ Installing Node.js modules is covered in [Node.js modules](/tech/languages/nodej
 ## Installing Global Modules
 
 Create a directory for global installations inside your home directory:
+
 ```
 mkdir ~/.npm-global
 ```
 
 Set the new directory path for npm:
+
 ```
 npm config set prefix '~/.npm-global'
 ```
 
 Open/create the `~/.profile` file and add the following line:
+
 ```
 export PATH=~/.npm-global/bin:$PATH
 ```
 
 Update your system variables with this command:
+
 ```
 source ~/.profile
 ```
