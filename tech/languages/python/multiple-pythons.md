@@ -15,17 +15,18 @@ Fedora includes all Python versions which are [supported upstream](https://devgu
 At the time of this writing, Fedora has the following Pythons
 ready for you in the repositories:
  
- * CPython 3.14
- * CPython 3.13 (System `python3` on Fedora 41)
- * CPython 3.12 (System `python3` on Fedora 40)
+ * CPython 3.14 (System `python3` on Fedora 43)
+ * CPython 3.13 (System `python3` on Fedora 41 and 42)
+ * CPython 3.12
  * CPython 3.11
  * CPython 3.10
  * CPython 3.9
- * CPython 3.8
+ * CPython 3.8 (Retired from Fedora 42+, only available on Fedora 41)
  * CPython 3.6
  * PyPy 2.7
- * PyPy 3.9
+ * PyPy 3.9 (Retired from Fedora 42+, only available on Fedora 41)
  * PyPy 3.10
+ * PyPy 3.11
  * MicroPython
 
 Quite a nest, isn't it?
@@ -82,7 +83,7 @@ directory:
 
 ```
 [tox]
-envlist = py27,py37,py38,py39,pypy,pypy3
+envlist = py39,py310,py311,py312,pypy,pypy3
 skipsdist = True
 [testenv]
 commands=python say.py
@@ -101,10 +102,10 @@ With `tox.ini` in place, run `tox` in the same directory:
 ``` console
 $ tox
 [...]
-ERROR:   py27: commands failed
-  py37: commands succeeded
-  py38: commands succeeded
   py39: commands succeeded
+  py310: commands succeeded
+  py311: commands succeeded
+  py312: commands succeeded
 ERROR:   pypy: commands failed
   pypy3: commands succeeded
 ```
@@ -122,10 +123,10 @@ print('Fedora is the best OS for Python developers', end='\n\n')
 ```console
 $ tox
 [...]
-  py27: commands succeeded
-  py37: commands succeeded
-  py38: commands succeeded
   py39: commands succeeded
+  py310: commands succeeded
+  py311: commands succeeded
+  py312: commands succeeded
   pypy: commands succeeded
   pypy3: commands succeeded
   congratulations :)
@@ -171,24 +172,25 @@ Type "help", "copyright", "credits" or "license" for more information.
 The environment is a directory.
 If you no longer need it, deactivate it and delete it with `rm -rv env`.
 
-### Python 2.7, PyPy 2
+### PyPy 2
 
-For other Python versions, a tool called `virtualenv` can create virtual
+For very old Python versions, a tool called `virtualenv` can create virtual
 environments:
 
 ```console
 $ sudo dnf install /usr/bin/virtualenv  # install the necessary tool
-$ virtualenv --python /usr/bin/python2.7 env  # create the virtualenv
-Running virtualenv with interpreter /usr/bin/python2.7
-New python executable in env/bin/python2.7
-Also creating executable in env/bin/python
-Installing setuptools, pip...done.
+$ virtualenv --python /usr/bin/pypy2.7 env  # create the virtualenv
+created virtual environment PyPy2.7.18.final.42-64 in 229ms
+  creator PyPy2Posix(dest=/home/foo/dev/content/env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(extra_search_dir=/usr/lib64/pypy-7.3/lib-python/2.7/ensurepip/_bundled, /usr/share/python-wheels,download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/foo/.local/share/virtualenv)
+    added seed packages: pip==20.0.2, setuptools==44.0.0, wheel==0.37.1
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
 $ source env/bin/activate  # activate it
 (env)$ python -m pip install requests  # install a package with pip
 ...
 (env)$ python  # run python from that virtualenv
-Python 2.7.11 (default, Jul  8 2016, 19:45:00) 
-[GCC 5.3.1 20160406 (Red Hat 5.3.1-6)] on linux2
+Python 2.7.18 (cd449bbf1df7, Jul 10 2025, 22:49:12)
+[PyPy 7.3.20 with GCC 14.3.1 20250523 (Red Hat 14.3.1-1)] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import requests
 >>> ...
