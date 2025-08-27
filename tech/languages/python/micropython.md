@@ -99,6 +99,16 @@ The download page includes detailed (but not Fedora-specific) information. If yo
 $ sudo dnf install esptool
 ```
 
+Check the `esptool` version to differentiate between commands below.
+Version 5+ (available from Fedora 44) has changed the command names - they
+contain `-` instead of the previous `_` in their names.
+
+```
+$ esptool version
+esptool.py v4.8.1
+4.8.1
+```
+
 With the firmware downloaded and `esptool` installed, you need to know the last
 thing to connect and flash your device - the device's name. You can find it in
 the result of the `dmesg` command. Use `dmesg` with `tail` to obtain the last
@@ -132,6 +142,8 @@ Alternatively, re-login with the command `su - $(whoami)`, but note that this wi
 Use `esptool` to flash your device. It is suggested to erase the flash
 memory before writing new firmware. To do it, type the following and do not forget to replace `ttyUSB0` with the name of your device.
 
+For `esptool` < 5.0.0, type
+
 ```
 $ esptool --port /dev/ttyUSB0 erase_flash
 esptool.py v1.1
@@ -139,11 +151,16 @@ Connecting...
 Erasing flash (this may take a while)...
 ```
 
+For `esptool` >= 5.0.0, the command is as follows
+
+```
+$ esptool --port /dev/ttyUSB0 erase-flash
+```
 
 
 And now you can write MicroPython firmware to empty the flash memory. Again, do not forget to replace `ttyUSB0` with the name of your device.
 
-For an ESP8266:
+For an ESP8266 and `esptool` < 5.0.0:
 
 ```
 $ esptool --port /dev/ttyUSB0 --baud 115200 write_flash --flash_size=detect 0 esp8266-20200911-v1.13.bin
@@ -156,14 +173,27 @@ Wrote 565248 bytes at 0x0 in 49.0 seconds (92.3 kbit/s)...
 Leaving...
 ```
 
-For an ESP32, the command is slightly different:
+For an ESP8266 and `esptool` >= 5.0.0:
 
 ```
-$ esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x1000 esp32-idf3-20200902-v1.13.bin
+$ esptool --port /dev/ttyUSB0 --baud 115200 write-flash --flash-size=detect 0 esp8266-20200911-v1.13.bin
+```
+
+For an ESP32 and `esptool` < 5.0.0, the command is slightly different:
+
+```
+$ esptool --chip esp32 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x1000 esp32-idf3-20200902-v1.13.bin
+```
+
+For an ESP32 and `esptool` >= 5.0.0:
+
+```
+$ esptool --chip esp32 --port /dev/ttyUSB0 --baud 460800 write-flash -z 0x1000 esp32-idf3-20200902-v1.13.bin
 ```
 
 You might need to change the name of your device and the name of the binary file with
-firmware, and some devices require a different `--flash_mode` setting -- see `esptool write_flash --help` for the options.
+firmware, and some devices require a different `--flash_mode` (`--flash-mode` in `esptool` >= 5.0.0) setting
+-- see `esptool write_flash --help` (`esptool write-flash --help` in `esptool` >= 5.0.0) for the options.
 Other parameters such as a baud-rate (connection speed) should be OK in most cases.
 
 ## Picocom - minimal terminal emulation program
