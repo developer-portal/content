@@ -10,7 +10,6 @@ order: 4
 | IDE | License | .NET Core | Mono | Debugger | Packaged in Fedora |
 |---|---|---|---|---|---|
 | [Eclipse](/tools/eclipse/about.html) with [aCute plugin](https://marketplace.eclipse.org/content/acute-c-edition-eclipse-ide-experimental) | [EPL](http://www.eclipse.org/legal/epl-2.0/) | &#x2714; | &#x2714; |  |  |
-| [Monodevelop](http://www.monodevelop.com/) | [LGPLv2](http://www.gnu.org/licenses/lgpl-2.1.html) |  | &#x2714; | &#x2714; | &#x2714; |
 | [JetBrains Rider](http://jetbrains.com/rider) | [Proprietary](https://www.jetbrains.com/store/license.html), free for [Education and OpenSource](https://www.jetbrains.com/store/#edition=discounts) | &#x2714; | &#x2714; | &#x2714; |  |
 | [Visual Studio Code](https://code.visualstudio.com) with [C# plugin](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) | Binary is [Proprietary](https://code.visualstudio.com/License/), Source Code is [MIT](https://github.com/Microsoft/vscode/blob/master/LICENSE.txt), C# extension is [Proprietary](https://marketplace.visualstudio.com/items/ms-vscode.csharp/license) | &#x2714; |  | &#x2714; |  |
 
@@ -65,12 +64,6 @@ After installing Visual Studio Code, to get full features of the editor, install
 
 [VSCodium](https://vscodium.com/) are Free/Libre Open Source Software Binaries of VSCode.
 
-
-## Installing MonoDevelop
-
-```
-$ sudo dnf install monodevelop
-```
 
 ## Installing Eclipse
 
