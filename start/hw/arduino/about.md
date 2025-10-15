@@ -35,9 +35,9 @@ _See [Flatpak Usage](/deployment/flatpak/flatpak-usage.html) for more details on
 
 Then install the Arduino IDE with flatpak:
 
-    $ flatpak install cc.arduino.arduinoide
+    $ flatpak install flathub cc.arduino.IDE2
 
-Now you are all set to start developing you project using Arduino IDE on Fedora. Just start it from your desktop environment applications menu or run the <code>flatpak run cc.arduino.arduinoide</code> command from the command line. For more information on how to use the Arduino IDE, please refer to the [documentation](https://docs.arduino.cc/software/ide-v1/tutorials/arduino-ide-v1-basics).
+Now you are all set to start developing you project using Arduino IDE on Fedora. Just start it from your desktop environment applications menu or run the <code>flatpak run cc.arduino.IDE2</code> command from the command line. For more information on how to use the Arduino IDE, please refer to the [documentation](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2/).
 
 ## Fix denied access
 
@@ -46,7 +46,7 @@ When uploading sketch or connecting to arduino boards, following error might sho
 Error opening serial port...
 ```
 
-You need to add your user to the `dialout` group. Follow the steps in this [Arduino guide](https://docs.arduino.cc/software/ide-v1/tutorials/Linux#please-read).
+You need to add your user to the `dialout` group. Follow the steps in this [Arduino guide](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-uploading-a-sketch/#please-read-only-linux-users).
 
 <!--
 ## Ino
