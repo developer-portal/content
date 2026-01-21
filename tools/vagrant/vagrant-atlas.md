@@ -1,7 +1,7 @@
 ---
 title: Downloading Vagrant images from Atlas
 subsection: vagrant
-order: 6
+order: 7
 ---
 
 # Downloading Vagrant images from Atlas

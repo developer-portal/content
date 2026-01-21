@@ -1,7 +1,7 @@
 ---
 title: Vagrant with libvirt provider
 subsection: vagrant
-order: 2
+order: 3
 ---
 
 # Vagrant with libvirt support installation

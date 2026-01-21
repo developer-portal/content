@@ -19,6 +19,15 @@ Vagrant works on top of some virtualization or containerization technology. To i
 - [Vagrant with VirtualBox](/tools/vagrant/vagrant-virtualbox.html)
 - [Vagrant with Docker](/tools/vagrant/vagrant-docker.html)
 
+## Usage
+
+  $ cd new_folder
+  $ vagrant init
+  $ nano Vagrantfile
+  $ vagrant up
+
+Please see our [Usage page](/tools/vagrant/vagrant-usage.html) for details.
+
 ## Plugins
 
 Vagrant can be extended by plenty of plugins, some of them are even packaged in
