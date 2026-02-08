@@ -15,6 +15,7 @@ order: 4
 The desktop version can be installed as follows:
 
 ```bash
+$ sudo dnf copr enable iucar/rstudio
 $ sudo dnf install rstudio-desktop
 ```
 
@@ -27,6 +28,7 @@ Then, RStudio will be available in your _Applications_ menu.
 Alternatively, a web-based interface to RStudio is available, which is more suitable for Fedora Server or headless installations. To install and run RStudio Server:
 
 ```bash
+$ sudo dnf copr enable iucar/rstudio
 $ sudo dnf install rstudio-server
 $ sudo systemctl enable --now rstudio-server
 ```
