@@ -5,37 +5,29 @@ section: tech-database
 description: Transactional SQL database, an enhanced drop-in replacement for MySQL.
 ---
 
-# MariaDB SQL database
+# MariaDB
 
-[MariaDB](https://mariadb.org/en/about/) is a drop-in replacement of MySQL, forked by the community from the latter. To learn more about MariaDB, visit [upstream feature page](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-features/), and to see main differences from MySQL, see [compatibility documentation](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-compatibility/).
+[MariaDB server](https://mariadb.org/en/about/) is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry. To learn more about MariaDB, visit [upstream feature page](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-features/), and to see main differences from MySQL, see [compatibility documentation](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-compatibility/).
 
-## What implementations of MySQL we have in Fedora
-[MariaDB](https://src.fedoraproject.org/rpms/mariadb) is preferred MySQL implementation in Fedora. MariaDB can be usually used instead of MySQL as a drop-in replacement in most practical cases and most of the applications will work exactly the same. However, when you need to install Community MySQL, it is available as [community-mysql package](https://src.fedoraproject.org/rpms/community-mysql) in Fedora repositories.
+## Versions available
 
-Generally, most of the [documentation for MySQL](http://dev.mysql.com/doc/) is valid also for MariaDB.
+Fedora ships only the LTS releases of MariaDB. <br />
+Currently, there are several available in parallel. Each in the respective versioned package (e.g.: 'mariadb10.11', 'mariadb11.8', ...).
 
-## What versions do we have in Fedora
-
-Fedora usually ships only the most recent stable version of MariaDB.
-You can find various (unsupported) versions in the maintainer's [COPR repositories](https://copr.fedorainfracloud.org/coprs/mschorm/).
-Learn more about current version at [upstream documentation](https://mariadb.com/kb/en/library/library-mariadb-releases/). The package is called `mariadb` (client tools) and `mariadb-server` (server daemon).
-
-You can get an older version either by installing [Software Collection package of MariaDB 5.5](https://www.softwarecollections.org/en/scls/rhscl/mariadb55/) or by downloading [packages provided by upstream](https://downloads.mariadb.org/).
-
-Fedora also ships MariaDB with Galera patch. The package with MariaDB Galera is called `mariadb-galera-server` and the wsrep plug-in is available in package `galera`. See section [How to install MariaDB Galera on Fedora](#how-to-install-mariadb-galera-on-fedora) for more information.
+Only one version in each Fedora Linux release is set to be the 'distribution default' version, which provides the classic uversioned names. (e.g.: 'mariadb', 'mariadb-server', ...)
 
 ## How to install MariaDB on Fedora
 
-In order to install MariaDB client package, run:
-
-```
-$ sudo dnf install mariadb
-```
-
-In order to install MariaDB server package, run:
+In order to install the distribution default version of MariaDB server:
 
 ```
 $ sudo dnf install mariadb-server
+```
+
+If you wish to install a different version, you need to use the versioned names, e.g.:
+
+```
+$ sudo dnf install mariadb10.11-server
 ```
 
 If you need to connect to the MariaDB server using GUI, install either phpMyAdmin:
@@ -80,14 +72,6 @@ The root user has no password set by default and so it is allowed to connect wit
 mysql -u root
 ```
 
-It is suggested to make the MariaDB more secure by running secure installation assistant:
-
-```
-$ sudo mysql_secure_installation
-```
-
-This tool asks you several questions and you are supposed to answer interactively. Do not provide the system administrator's password for your Linux system here. Use a different strong password, since this is a separate authentication for a MySQL user called "root."
-
 ## How to configure MariaDB
 
 Configuration of both, client and server, is done by editing files `/etc/my.cnf`, `~/.my.cnf` and any files under `/etc/my.cnf.d/` with `.cnf` suffix. For more informations how to change configuration, see [the upstream documentation](https://mariadb.com/kb/en/mariadb/server-system-variables/#about-the-server-system-variables).
@@ -99,8 +83,7 @@ When developing an application that uses MariaDB as the storage engine, develope
 ```
 $ sudo systemctl start mariadb
 $ sudo systemctl enable mariadb
-$ sudo mysql_secure_installation
-...My Account sudo mysql -u root -p
+$ sudo mysql -u root -p
 MariaDB [(none)]> create database db1;
 Query OK, 1 row affected (0.00 sec)
 
@@ -128,7 +111,6 @@ In various frameworks or libraries, you will usually use the username, password 
 
 In order to run MariaDB in production development, you should pay extra attention to setting up the service in order to minimize the risk of being exploited. Among other things, this means:
 
- * use `mysql_secure_installation` as mentioned above
  * do not accept connections from all addresses unless absolutely necessary
  * **Always use a strong password**
  * Limit user permissions to those necessary for the application to run
@@ -184,7 +166,7 @@ MariaDB Galera Cluster is a synchronous multi-master cluster for MariaDB.
 In order to install MariaDB Galera server package, run:
 
 ```
-$ sudo dnf install mariadb-galera-server galera
+$ sudo dnf install mariadb-server-galera
 ```
 
 MariaDB Galera uses several packages from base MariaDB and also provides the same service name. Thus, for starting MariaDB Galera, run:
@@ -193,10 +175,10 @@ MariaDB Galera uses several packages from base MariaDB and also provides the sam
 $ sudo systemctl start mariadb
 ```
 
-## How to get MariaDB as Docker container
+## How to get MariaDB container
 
 ```
-$ sudo docker pull fedora/mariadb
+$ podman pull fedora/mariadb
 ```
 
 ## How to extend MariaDB server by installing extensions available in Fedora
