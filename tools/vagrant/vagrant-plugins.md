@@ -1,7 +1,7 @@
 ---
 title: Vagrant plugins
 subsection: vagrant
-order: 5
+order: 6
 ---
 
 # Vagrant plugins

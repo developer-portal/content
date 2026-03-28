@@ -1,7 +1,7 @@
 ---
 title: Synced folders with SSHFS
 subsection: vagrant
-order: 8
+order: 9
 ---
 
 # Synced folders with SSHFS

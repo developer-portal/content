@@ -1,7 +1,7 @@
 ---
 title: Vagrant with VirtualBox provider
 subsection: vagrant
-order: 3
+order: 4
 ---
 
 # Vagrant with VirtualBox support installation
