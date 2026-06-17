@@ -47,39 +47,54 @@ RUBYPICK=_mri_
 
 ## Installing Ruby with rbenv
 
-The first step is to install dependencies for Ruby.
+The first step is to install dependencies for Ruby and rbenv.
 
 ```console
-$ sudo dnf install -y git-core gcc rust patch make bzip2 openssl-devel libyaml-devel libffi-devel readline-devel zlib-devel gdbm-devel ncurses-devel perl-FindBin perl-lib perl-File-Compare
+$ sudo dnf install git-core zlib zlib-devel gcc-c++ patch readline-devel libyaml-devel libffi-devel openssl-devel make bzip2 autoconf automake libtool bison libcurl-devel sqlite-devel perl-FindBin perl-lib perl-File-Compare
 ```
 
-Then we are going to clone rbenv and the ruby-build rbenv plugin into the home directory.
-To make rbenv command available we append your shell's rc file with initialization.
-
+To use Fedora packaged rbenv also install:
 ```console
-$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-$ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-$ echo 'eval "$(~/.rbenv/bin/rbenv init -)"' >> ~/.bash_profile
+$ sudo dnf install rbenv ruby-build-rbenv
 ```
 
-Next step we have to refresh the shell to make the binaries available. This can be achieved
-by either the following command or opening a new terminal:
+To use upstream rbenv, follow the steps in [Installing Ruby with
+rbenv](/tech/languages/ruby/ruby-installation.html#installing-ruby-with-rbenv).
+
+Then configure your shell to enable rbenv:
+
 ```console
-$ exec $SHELL -l
+$ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+$ source ~/.bashrc
 ```
 
-Now you can install Ruby simply via `rbenv install`
+Install a Ruby version, such as 3.4.9. See `rbenv install --list` for available versions.
+
 ```console
-$ rbenv install 3.0.4
-$ rbenv global 3.0.4
+$ rbenv install 3.4.9
+$ rbenv global 3.4.9
 $ ruby -v
 ```
-
 Use this command if you do not want rubygems to install the documentation for each package locally.
 
 ```console
-$ echo "gem: --no-document" > ~/.gemrc
+$ echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 ```
+
+### Rbenv rehash
+
+`rbenv rehash` is not needed when installing gems via `gem install` as rbenv will automatically
+trigger the rehash. You may need to trigger a rehash manually after installing gems using bundler.
+You can do so by running
+```console
+$ rbenv rehash
+```
+
+Since [rbenv commit 325abac](https://github.com/rbenv/rbenv/commit/325abac17de79a230152bb7038126a0641c6aa64),
+there is no need to run `rbenv rehash` when installing gems via bundler or `gem install`.
+Rbenv will automatically trigger the rehash using either of those methods. To ensure you have this
+version installed, follow the [basic git checkout installation instructions](https://github.com/rbenv/rbenv?tab=readme-ov-file#basic-git-checkout).
+
 
 Install bundler:
 

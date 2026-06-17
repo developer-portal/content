@@ -19,7 +19,7 @@ $ sudo dnf install ruby-devel
 In case you lack the C compiler on your Fedora, you can install C development tools group:
 
 ```
-$ sudo dnf group install "C Development Tools and Libraries"
+$ sudo dnf group install c-development
 ```
 
 Other missing header files will depend on the particular gem you want to install. In Fedora the sub-packages containing header files are always suffixed with `-devel` so for example to install the `pg` gem, you will need to compile its C extensions against PostgreSQL header files that can be installed by installing `postgresql-devel` sub-package.
