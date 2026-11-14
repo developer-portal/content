@@ -4,7 +4,7 @@ subsection: rust
 order: 2
 ---
 
-# Installing Cargo
+# Getting started with Cargo
 Cargo is Rust's package manager. You can use it to download your project's dependencies
 and to compile your project. You can start a new project using Cargo by typing:
 ```
